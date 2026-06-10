@@ -1,0 +1,7 @@
+node_modules/
+output/videos/*.mp4
+public/audio/*.wav
+public/audio/*.mp3
+work/
+.DS_Store
+__pycache__/
