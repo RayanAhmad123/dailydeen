@@ -1,4 +1,4 @@
-import { useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
 import { theme } from "../theme";
 import { Ornament } from "./Ornament";
 import { sansFamily } from "../fonts";
@@ -8,20 +8,18 @@ type Props = {
   startSec: number; // timeline-absolute time to fade in
 };
 
-/** Bottom reference card, fades in when the reference is spoken. */
+/** Bottom reference card: springs up with a soft gold halo when the reference is spoken. */
 export const Reference: React.FC<Props> = ({ text, startSec }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const t = frame / fps;
 
-  const opacity = interpolate(t, [startSec, startSec + 0.6], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
+  const startFrame = Math.round(startSec * fps);
+  const rise = spring({
+    frame: frame - startFrame,
+    fps,
+    config: { damping: 14, stiffness: 130, mass: 0.8 },
   });
-  const rise = interpolate(t, [startSec, startSec + 0.6], [24, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  const tracking = interpolate(rise, [0, 1], [12, 5]);
 
   return (
     <div
@@ -34,20 +32,30 @@ export const Reference: React.FC<Props> = ({ text, startSec }) => {
         flexDirection: "column",
         alignItems: "center",
         gap: 22,
-        opacity,
-        transform: `translateY(${rise}px)`,
+        opacity: rise,
+        transform: `translateY(${(1 - rise) * 60}px)`,
       }}
     >
-      <Ornament width={260} opacity={0.9} />
+      {/* Soft halo behind the card */}
+      <div
+        style={{
+          position: "absolute",
+          inset: "-60px 120px",
+          background: `radial-gradient(ellipse 100% 100% at 50% 50%, ${theme.glow}, transparent 70%)`,
+          opacity: rise,
+        }}
+      />
+      <Ornament width={260} opacity={0.9} draw />
       <div
         style={{
           fontFamily: sansFamily,
           fontSize: 34,
-          letterSpacing: 5,
+          letterSpacing: tracking,
           textTransform: "uppercase",
           color: theme.goldSoft,
           textAlign: "center",
           padding: "0 80px",
+          textShadow: "0 0 36px rgba(201, 168, 92, 0.45)",
         }}
       >
         {text}

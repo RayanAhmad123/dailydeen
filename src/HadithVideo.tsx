@@ -1,12 +1,15 @@
 import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from "remotion";
 import { Background } from "./components/Background";
+import { SceneLayer } from "./components/SceneLayer";
 import { Header } from "./components/Header";
 import { Hook } from "./components/Hook";
 import { Captions } from "./components/Captions";
 import { Reference } from "./components/Reference";
+import { Outro } from "./components/Outro";
+import { ProgressBar } from "./components/ProgressBar";
 import { VideoData } from "./types";
 
-const AUDIO_START_SEC = 1; // brief lead-in before the voiceover begins
+const AUDIO_START_SEC = 0.4; // minimal lead-in — the first seconds decide retention
 
 export const HadithVideo: React.FC<VideoData> = (data) => {
   const { fps } = useVideoConfig();
@@ -20,7 +23,8 @@ export const HadithVideo: React.FC<VideoData> = (data) => {
   return (
     <AbsoluteFill>
       <Background />
-      <Header chapter={data.chapter} />
+      {data.scenes && data.scenes.length > 0 && <SceneLayer scenes={data.scenes} />}
+      <Header category={data.category} />
 
       <Sequence from={audioStartFrame}>
         <Audio src={staticFile(data.audioFile)} />
@@ -43,6 +47,11 @@ export const HadithVideo: React.FC<VideoData> = (data) => {
         text={data.reference.text}
         startSec={AUDIO_START_SEC + data.reference.startSec}
       />
+
+      {/* Follow CTA once the voiceover has finished */}
+      <Outro startSec={AUDIO_START_SEC + data.durationSec + 0.4} />
+
+      <ProgressBar />
     </AbsoluteFill>
   );
 };

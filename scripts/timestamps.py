@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def main():
     script = json.loads((ROOT / "work" / "script.json").read_text())
-    audio_path = ROOT / "public" / "audio" / f"hadith_{script['hadith_no']}.wav"
+    audio_path = ROOT / "public" / "audio" / f"{script['id']}.wav"
 
     import whisper
 

@@ -1,0 +1,32 @@
+{
+  "title": "The Lantern District",
+  "premise": "In an old walled city, an elderly calligrapher and his grandson run a small workshop by the market. Each episode, everyday life in the district brings them face to face with the teaching of that day's hadith. The story is continuous: events, debts, friendships and seasons carry over between episodes.",
+  "setting": "A timeless old Islamic walled city: sandstone alleys, arched doorways, hanging brass lanterns, a bustling souk, a courtyard with a fig tree, distant minaret skyline. Era feel: medieval, no modern objects.",
+  "characters": [
+    {
+      "name": "Salim",
+      "role": "elderly calligrapher, the wise voice",
+      "visual": "faceless silhouette of an elderly man with a slight stoop, full rounded beard shape, wearing a long dark emerald robe and a simple cream turban, often holding a reed pen or worry beads"
+    },
+    {
+      "name": "Tariq",
+      "role": "his grandson, eager and impulsive, learns the lesson each episode",
+      "visual": "faceless silhouette of a lean teenage boy, short curly hair shape, wearing a sand-colored tunic with a gold-trimmed vest and a satchel across his chest"
+    },
+    {
+      "name": "Noor",
+      "role": "neighbor, a young widow who runs the bakery, practical and kind",
+      "visual": "faceless silhouette of a woman in a flowing midnight-blue dress and ochre headscarf, sleeves rolled, often carrying a bread basket"
+    }
+  ],
+  "style": "flat storybook illustration in the style of Islamic miniature art, characters shown ONLY as elegant dark silhouettes with no faces and no facial features, deep emerald and midnight navy palette with warm gold lantern light, ornate arabesque and geometric border details, soft film grain, cinematic 9:16 composition, no text, no writing, no calligraphy letters",
+  "seed": 7341,
+  "rules": [
+    "NEVER depict, name, or allude to the Prophet Muhammad, any prophet, Allah/God, angels, or any companion or historical Islamic figure in any image prompt.",
+    "The cast are ordinary fictional people; the hadith's teaching is shown through their daily life only.",
+    "All characters are always faceless silhouettes. Never request faces, eyes, or expressions.",
+    "No Arabic script or readable text in images (AI mangles it).",
+    "No depictions of worship interiors with people praying toward the viewer; mosques may appear only as distant skyline silhouettes.",
+    "Keep scenes warm, dignified and respectful; no violence, no romance."
+  ]
+}

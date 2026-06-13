@@ -25,7 +25,8 @@ const Star: React.FC<{ cx: number; cy: number; r: number }> = ({ cx, cy, r }) =>
 
 export const GeometricPattern: React.FC = () => {
   const frame = useCurrentFrame();
-  const drift = frame * 0.06; // very slow downward drift
+  const drift = frame * 0.12; // slow downward drift
+  const rotate = frame * 0.008; // barely-perceptible rotation for life
 
   const tile = 270;
   const stars: React.ReactNode[] = [];
@@ -49,7 +50,7 @@ export const GeometricPattern: React.FC = () => {
         width={1080}
         height={2200}
         viewBox="0 0 1080 2200"
-        style={{ transform: `translateY(${-140 + (drift % tile)}px)` }}
+        style={{ transform: `translateY(${-140 + (drift % tile)}px) rotate(${rotate}deg)`, transformOrigin: "540px 960px" }}
       >
         {stars}
       </svg>
