@@ -1,0 +1,205 @@
+{
+  "_readme": "Curated topic bank for daily videos. Each topic's `facts` are the grounding — the daily script may simplify but must not go beyond them or invent specifics. Categories rotate naturally since topics are picked in order of id. Add new topics at the end; never reuse an id.",
+  "topics": [
+    {
+      "id": "w1",
+      "category": "Islamic Golden Age",
+      "title": "The world's oldest university was founded by a Muslim woman",
+      "facts": [
+        "Fatima al-Fihri founded the al-Qarawiyyin mosque and learning center in Fez, Morocco, in 859 CE, using her inheritance.",
+        "Al-Qarawiyyin is recognized by UNESCO and Guinness World Records as the oldest continuously operating institution of higher learning in the world.",
+        "It still operates today, more than 1,100 years later."
+      ]
+    },
+    {
+      "id": "w2",
+      "category": "Arabic Origins",
+      "title": "'Algebra' and 'algorithm' are both Arabic",
+      "facts": [
+        "The 9th-century Baghdad scholar Muhammad ibn Musa al-Khwarizmi wrote a mathematics book whose title contained the word 'al-jabr' — the origin of the English word 'algebra'.",
+        "The word 'algorithm' comes from the Latinized form of al-Khwarizmi's own name.",
+        "His books helped carry the Hindu-Arabic numerals 0-9 to Europe."
+      ]
+    },
+    {
+      "id": "w3",
+      "category": "Islamic Teaching",
+      "title": "Giving in secret",
+      "facts": [
+        "Islamic teaching places special value on charity given quietly, so the receiver is not embarrassed and the giver is not showing off.",
+        "A classical ideal describes giving so discreetly that one hand does not know what the other has given.",
+        "Sadaqah (voluntary charity) can be as small as a kind act."
+      ]
+    },
+    {
+      "id": "w4",
+      "category": "Islamic Golden Age",
+      "title": "Hospitals with free care — 1,000 years ago",
+      "facts": [
+        "Medieval Islamic cities like Baghdad, Damascus and Cairo built 'bimaristans' — hospitals that treated patients regardless of wealth, religion or background.",
+        "They had separate wards, pharmacies, and teaching, and care was commonly funded by charitable endowments (waqf) at no cost to the patient.",
+        "Some bimaristans even employed musicians to comfort patients."
+      ]
+    },
+    {
+      "id": "w5",
+      "category": "Night Sky",
+      "title": "The stars still speak Arabic",
+      "facts": [
+        "Many of the brightest stars carry Arabic names from the golden age of Islamic astronomy: Aldebaran ('the follower'), Altair ('the flying eagle'), Vega (from 'the swooping eagle'), Rigel ('the foot'), and Betelgeuse.",
+        "Islamic astronomers refined star catalogs for navigation and for finding the direction and times of prayer.",
+        "Hundreds of star names used today trace back to Arabic."
+      ]
+    },
+    {
+      "id": "w6",
+      "category": "Islamic Teaching",
+      "title": "Tie your camel",
+      "facts": [
+        "A beloved teaching attributed to the Prophet Muhammad (peace be upon him) tells of a man who asked whether he should leave his camel untied and trust in God — the answer: tie your camel first, then trust in God.",
+        "It teaches that trust in God (tawakkul) works together with taking sensible action, not instead of it.",
+        "The saying is recorded in the collection of al-Tirmidhi."
+      ]
+    },
+    {
+      "id": "w7",
+      "category": "Islamic Golden Age",
+      "title": "The man who first understood vision",
+      "facts": [
+        "Ibn al-Haytham, working in Cairo around 1011-1021 CE, wrote the Book of Optics, showing that we see because light enters the eye — overturning ancient theories that eyes send out rays.",
+        "He studied the camera obscura and insisted claims be proven by repeatable experiments, which is why he is often called a father of the scientific method.",
+        "A crater on the Moon is named Alhazen in his honor."
+      ]
+    },
+    {
+      "id": "w8",
+      "category": "Arabic Origins",
+      "title": "Everyday English words that came from Arabic",
+      "facts": [
+        "Sugar comes from the Arabic 'sukkar', cotton from 'qutn', sofa from 'suffa', giraffe from 'zarafa', lemon from 'laymun', and magazine from 'makhazin' (storehouses).",
+        "Many entered European languages through trade and through Muslim Spain (al-Andalus).",
+        "Even 'admiral' traces back to the Arabic 'amir' (commander)."
+      ]
+    },
+    {
+      "id": "w9",
+      "category": "Islamic Teaching",
+      "title": "A smile is charity",
+      "facts": [
+        "A well-known teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Tirmidhi, counts smiling at another person as an act of charity.",
+        "In Islamic teaching, charity (sadaqah) is far broader than money — kindness, a good word, and removing harm from someone's path all count.",
+        "This makes generosity possible for everyone, every day."
+      ]
+    },
+    {
+      "id": "w10",
+      "category": "Islamic Golden Age",
+      "title": "The traveler who out-traveled Marco Polo",
+      "facts": [
+        "Ibn Battuta of Tangier set out in 1325 CE and traveled for nearly 30 years across Africa, the Middle East, India, Southeast Asia and China.",
+        "His journeys covered roughly 117,000 kilometers — about three times the distance credited to Marco Polo.",
+        "His travel account, the Rihla, remains a key source on the 14th-century world."
+      ]
+    },
+    {
+      "id": "w11",
+      "category": "Islamic Golden Age",
+      "title": "The first lady of the astrolabe",
+      "facts": [
+        "Al-Ijliya (Mariam al-Astrulabiyya) was a 10th-century female maker of astrolabes in Aleppo, employed at the court of Sayf al-Dawla.",
+        "Astrolabes were the smartphones of their day — used for navigation, timekeeping and finding the direction of prayer.",
+        "A main-belt asteroid, 7060 Al-'Ijliya, is named after her."
+      ]
+    },
+    {
+      "id": "w12",
+      "category": "Islamic Teaching",
+      "title": "The neighbor's right",
+      "facts": [
+        "Kindness to neighbors holds an extraordinarily high place in Islamic teaching — classical sources describe such repeated emphasis on the neighbor that companions wondered if neighbors would be given a share of inheritance.",
+        "Good character toward those nearest you is treated as a measure of faith itself.",
+        "This applies to neighbors of any background or religion."
+      ]
+    },
+    {
+      "id": "w13",
+      "category": "Islamic Golden Age",
+      "title": "Surgery's 1,000-year-old toolkit",
+      "facts": [
+        "Al-Zahrawi (Abulcasis) of 10th-century Cordoba wrote al-Tasrif, a 30-volume medical encyclopedia with detailed drawings of around 200 surgical instruments.",
+        "He described procedures and tools — including forceps and catgut sutures for internal stitching — that influenced European surgery for centuries.",
+        "He is often called the father of modern surgery."
+      ]
+    },
+    {
+      "id": "w14",
+      "category": "Story of Coffee",
+      "title": "Coffee's journey began with devotion",
+      "facts": [
+        "Coffee drinking spread in 15th-century Yemen, where Sufis used it to stay awake for night devotions.",
+        "The English word 'coffee' traces back to the Arabic 'qahwa', via Turkish 'kahve'.",
+        "From Yemen's port of Mocha, coffee spread to Mecca, Cairo, Istanbul, and eventually Europe."
+      ]
+    },
+    {
+      "id": "w15",
+      "category": "Islamic Teaching",
+      "title": "Seeking knowledge",
+      "facts": [
+        "Seeking knowledge is treated in Islamic teaching as a duty and an act of devotion for every Muslim.",
+        "The very first word of the Quran revealed is widely cited as 'Iqra' — 'Read'.",
+        "This ethos helped fuel the libraries, observatories and universities of the Islamic Golden Age."
+      ]
+    },
+    {
+      "id": "w16",
+      "category": "Islamic Golden Age",
+      "title": "Baghdad's House of Wisdom",
+      "facts": [
+        "The Bayt al-Hikma (House of Wisdom) in Abbasid Baghdad became a great center of translation and scholarship from the 9th century.",
+        "Scholars of different faiths translated Greek, Persian and Indian works into Arabic — preserving and expanding knowledge that later returned to Europe.",
+        "Translators could be paid handsomely, reflecting how prized books were."
+      ]
+    },
+    {
+      "id": "w17",
+      "category": "Islamic Golden Age",
+      "title": "Paper conquered the world through Baghdad",
+      "facts": [
+        "Papermaking reached the Islamic world from China in the 8th century, and Baghdad had paper mills by the late 700s CE.",
+        "Cheap paper replaced costly parchment and papyrus, making books, libraries and bookshops flourish across Muslim cities.",
+        "The technology then passed through Muslim Spain and Sicily into Europe."
+      ]
+    },
+    {
+      "id": "w18",
+      "category": "Islamic Teaching",
+      "title": "Moderation in all things",
+      "facts": [
+        "The Quran describes the Muslim community as 'a middle nation' (ummatan wasatan), and balance (wasatiyyah) is a core Islamic value.",
+        "Classical teaching encourages moderation in eating, spending, worship and speech — avoiding both excess and neglect.",
+        "Even good deeds are encouraged in sustainable, consistent amounts."
+      ]
+    },
+    {
+      "id": "w19",
+      "category": "Islamic Golden Age",
+      "title": "The flying man of Cordoba",
+      "facts": [
+        "In 9th-century Cordoba, the inventor and polymath Abbas ibn Firnas is reported by later sources to have built a glider and attempted flight from a hillside, surviving with injuries.",
+        "He also worked in astronomy, engineering and glassmaking.",
+        "An airport in Baghdad's sister city and a Moon crater carry his name."
+      ]
+    },
+    {
+      "id": "w20",
+      "category": "Islamic Teaching",
+      "title": "Gratitude turns little into much",
+      "facts": [
+        "Gratitude (shukr) is a central Islamic practice — the phrase 'alhamdulillah' (all praise belongs to God) is woven through daily life.",
+        "The Quran teaches that thankfulness brings increase: 'If you are grateful, I will surely increase you' (Quran 14:7).",
+        "Classical scholars describe gratitude of the heart, the tongue, and the limbs — feeling it, saying it, and acting on it."
+      ]
+    }
+  ]
+}

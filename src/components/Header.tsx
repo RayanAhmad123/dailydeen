@@ -1,12 +1,15 @@
-import { useCurrentFrame, useVideoConfig, interpolate } from "remotion";
+import { useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
 import { theme } from "../theme";
 import { sansFamily } from "../fonts";
 
-/** Small persistent brand mark at the top. */
-export const Header: React.FC<{ chapter: string }> = ({ chapter }) => {
+/** Persistent brand mark at the top: springs down, letter-spacing settles in. */
+export const Header: React.FC<{ category: string }> = ({ category }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const opacity = interpolate(frame, [0, fps], [0, 1], { extrapolateRight: "clamp" });
+
+  const drop = spring({ frame, fps, config: { damping: 14, stiffness: 120, mass: 0.8 } });
+  const tracking = interpolate(drop, [0, 1], [22, 9]);
+  const lineWidth = interpolate(drop, [0, 1], [0, 120]);
 
   return (
     <div
@@ -18,21 +21,24 @@ export const Header: React.FC<{ chapter: string }> = ({ chapter }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: 14,
-        opacity,
+        gap: 16,
+        opacity: drop,
+        transform: `translateY(${(1 - drop) * -40}px)`,
       }}
     >
       <div
         style={{
           fontFamily: sansFamily,
           fontSize: 30,
-          letterSpacing: 9,
+          letterSpacing: tracking,
           textTransform: "uppercase",
           color: theme.gold,
+          textShadow: "0 0 30px rgba(201, 168, 92, 0.4)",
         }}
       >
-        Daily Hadith
+        Daily Islamic Wisdom
       </div>
+      <div style={{ width: lineWidth, height: 1.5, background: theme.gold, opacity: 0.7 }} />
       <div
         style={{
           fontFamily: sansFamily,
@@ -41,7 +47,7 @@ export const Header: React.FC<{ chapter: string }> = ({ chapter }) => {
           color: theme.ivoryDim,
         }}
       >
-        {chapter}
+        {category}
       </div>
     </div>
   );

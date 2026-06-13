@@ -1,7 +1,21 @@
 node_modules/
-output/videos/*.mp4
-public/audio/*.wav
-public/audio/*.mp3
 work/
 .DS_Store
 __pycache__/
+*.pyc
+
+# Rendered/generated media — too large for git
+output/videos/
+output/logs/
+output/*.mp4
+public/audio/
+public/scenes/
+
+# Secrets — NEVER commit
+config/google_client_secret.json
+state/yt_token.json
+state/tiktok_token.json
+
+# Voice clone references stay local (only the README is checked in)
+refs/*
+!refs/README.md

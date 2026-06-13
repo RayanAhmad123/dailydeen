@@ -5,11 +5,12 @@ export type Word = {
 };
 
 export type VideoData = {
-  hadithNo: number;
-  chapter: string;
+  id: string;
+  category: string;
   hook: { text: string; words: Word[] };
   body: { words: Word[] };
   reference: { text: string; startSec: number };
   audioFile: string; // relative to public/, e.g. "audio/hadith_1.wav"
   durationSec: number;
+  scenes?: string[]; // AI story illustrations, relative to public/, shown behind captions
 };
