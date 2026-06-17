@@ -8,6 +8,24 @@
       "cta_type": "follow",
       "title": "'Algebra' and 'algorithm' are both Arabic | Daily Islamic Wisdom",
       "uploaded_at": "2026-06-13T08:09:32+00:00"
+    },
+    {
+      "id": "w3",
+      "youtube_id": "Lo0aQuSkQlQ",
+      "category": "Islamic Teaching",
+      "hook_type": "contrarian",
+      "cta_type": "save",
+      "title": "Giving in secret | Daily Islamic Wisdom",
+      "uploaded_at": "2026-06-15T15:23:00+00:00"
+    },
+    {
+      "id": "w8",
+      "youtube_id": "PC_4gSm0hVQ",
+      "category": "Arabic Origins",
+      "hook_type": "list_tease",
+      "cta_type": "comment",
+      "title": "Everyday English words that came from Arabic | Daily Islamic Wisdom",
+      "uploaded_at": "2026-06-16T10:30:42+00:00"
     }
   ]
 }
