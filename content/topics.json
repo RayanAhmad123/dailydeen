@@ -200,6 +200,106 @@
         "The Quran teaches that thankfulness brings increase: 'If you are grateful, I will surely increase you' (Quran 14:7).",
         "Classical scholars describe gratitude of the heart, the tongue, and the limbs — feeling it, saying it, and acting on it."
       ]
+    },
+    {
+      "id": "w21",
+      "category": "Islamic Golden Age",
+      "title": "The engineer who built robots in 1206",
+      "facts": [
+        "Al-Jazari, a 12th-13th century engineer, wrote 'The Book of Knowledge of Ingenious Mechanical Devices' in 1206, describing about fifty machines along with instructions to build them.",
+        "His inventions included elaborate water clocks such as the Elephant Clock and programmable automated figures (early automata).",
+        "His work is regarded as a milestone in the history of engineering and robotics."
+      ]
+    },
+    {
+      "id": "w22",
+      "category": "Islamic Teaching",
+      "title": "Deeds are judged by intentions",
+      "facts": [
+        "A foundational teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Bukhari, states that deeds are judged by their intentions.",
+        "It means the worth of an action depends on the intention behind it, not only its outward appearance.",
+        "This teaching is so important that it often appears first in classic collections of the Prophet's sayings."
+      ]
+    },
+    {
+      "id": "w23",
+      "category": "Islamic Golden Age",
+      "title": "The world map that lasted centuries",
+      "facts": [
+        "In 1154 the geographer al-Idrisi created one of the most accurate world maps of the medieval era for King Roger II of Sicily, known as the Tabula Rogeriana.",
+        "It was paired with a book compiling geographic knowledge gathered from travelers and earlier scholars.",
+        "Al-Idrisi drew his maps with south at the top, and they were consulted in Europe for centuries."
+      ]
+    },
+    {
+      "id": "w24",
+      "category": "Night Sky",
+      "title": "The first galaxy ever recorded",
+      "facts": [
+        "Around 964 CE the astronomer Abd al-Rahman al-Sufi described a 'little cloud' in the constellation Andromeda in his 'Book of Fixed Stars'.",
+        "That little cloud is the Andromeda Galaxy, making his note one of the earliest known records of a galaxy beyond our own.",
+        "Al-Sufi also carefully updated and corrected the older star catalog of Ptolemy."
+      ]
+    },
+    {
+      "id": "w25",
+      "category": "Islamic Golden Age",
+      "title": "The medical textbook used for 600 years",
+      "facts": [
+        "Around 1025 the polymath Ibn Sina (Avicenna) completed 'The Canon of Medicine', a vast medical encyclopedia.",
+        "It organized the medical knowledge of its age and remained a standard university textbook in Europe for roughly six hundred years.",
+        "Ibn Sina wrote on many fields, but in medicine he is best remembered for the Canon."
+      ]
+    },
+    {
+      "id": "w26",
+      "category": "Islamic Teaching",
+      "title": "Mercy to a thirsty dog",
+      "facts": [
+        "A teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Bukhari, tells of a thirsty traveler who climbed into a well to drink, then drew water for a dog dying of thirst.",
+        "For that act of mercy, the man's sins were forgiven.",
+        "Islamic teaching holds that kindness to any living creature is rewarded."
+      ]
+    },
+    {
+      "id": "w27",
+      "category": "Islamic Golden Age",
+      "title": "The man who first broke secret codes",
+      "facts": [
+        "In 9th-century Baghdad the scholar al-Kindi wrote the earliest known work describing how to break secret codes.",
+        "He explained 'frequency analysis' — using how often each letter appears in a language to crack a cipher.",
+        "This method became a foundation of the modern science of cryptography."
+      ]
+    },
+    {
+      "id": "w28",
+      "category": "Islamic Teaching",
+      "title": "The honest merchant's reward",
+      "facts": [
+        "A teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Tirmidhi, places the truthful, trustworthy merchant in the company of the prophets and the righteous.",
+        "Islam strongly emphasizes honesty and fair dealing in trade.",
+        "Cheating in business is condemned, while truthful trade is honored."
+      ]
+    },
+    {
+      "id": "w29",
+      "category": "Islamic Golden Age",
+      "title": "He measured the year to the minute",
+      "facts": [
+        "Al-Battani, an astronomer who died in 929, measured the length of the solar year with remarkable accuracy for his time.",
+        "He refined older astronomical values and produced new, more precise astronomical tables.",
+        "Centuries later his findings were cited by European astronomers, including Copernicus."
+      ]
+    },
+    {
+      "id": "w30",
+      "category": "Islamic Teaching",
+      "title": "Speak good, or stay silent",
+      "facts": [
+        "A teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Bukhari and Muslim, advises that whoever believes in God and the Last Day should speak good or remain silent.",
+        "It ties faith directly to guarding one's words.",
+        "The same teaching also urges honoring one's neighbor and one's guest."
+      ]
     }
   ]
 }
