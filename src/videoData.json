@@ -1,375 +1,435 @@
 {
-  "id": "w9",
-  "category": "Islamic Teaching",
+  "id": "w7",
+  "category": "Islamic Golden Age",
   "hook": {
-    "text": "Did you know charity doesn't have to cost a single coin?",
+    "text": "Did you know the scientific method began a thousand years ago?",
     "words": [
       {
         "word": "Did",
         "start": 0.0,
-        "end": 0.14
+        "end": 0.16
       },
       {
         "word": "you",
-        "start": 0.14,
-        "end": 0.3
+        "start": 0.16,
+        "end": 0.32
       },
       {
         "word": "know",
-        "start": 0.3,
-        "end": 0.46
+        "start": 0.32,
+        "end": 0.48
       },
       {
-        "word": "charity",
-        "start": 0.46,
-        "end": 0.68
+        "word": "the",
+        "start": 0.48,
+        "end": 0.6
       },
       {
-        "word": "doesn't",
-        "start": 0.68,
-        "end": 1.22
+        "word": "scientific",
+        "start": 0.6,
+        "end": 0.94
       },
       {
-        "word": "have",
-        "start": 1.22,
-        "end": 1.42
+        "word": "method",
+        "start": 0.94,
+        "end": 1.62
       },
       {
-        "word": "to",
-        "start": 1.42,
-        "end": 1.56
-      },
-      {
-        "word": "cost",
-        "start": 1.56,
-        "end": 1.8
+        "word": "began",
+        "start": 1.62,
+        "end": 1.94
       },
       {
         "word": "a",
-        "start": 1.8,
-        "end": 2.0
+        "start": 1.94,
+        "end": 2.1
       },
       {
-        "word": "single",
-        "start": 2.0,
-        "end": 2.28
+        "word": "thousand",
+        "start": 2.1,
+        "end": 2.4
       },
       {
-        "word": "coin?",
-        "start": 2.28,
-        "end": 2.6
+        "word": "years",
+        "start": 2.4,
+        "end": 2.7
+      },
+      {
+        "word": "ago?",
+        "start": 2.7,
+        "end": 2.98
       }
     ]
   },
   "body": {
     "words": [
       {
-        "word": "In",
-        "start": 3.5,
-        "end": 3.58
+        "word": "Long",
+        "start": 3.7,
+        "end": 3.96
       },
       {
-        "word": "Islam,",
-        "start": 3.58,
-        "end": 3.92
+        "word": "before",
+        "start": 3.96,
+        "end": 4.16
       },
       {
-        "word": "charity",
-        "start": 4.04,
-        "end": 4.38
+        "word": "Europe's",
+        "start": 4.16,
+        "end": 4.76
       },
       {
-        "word": "—",
-        "start": 4.38,
-        "end": 4.693
+        "word": "great",
+        "start": 4.76,
+        "end": 4.94
       },
       {
-        "word": "sadaqah",
-        "start": 4.693,
-        "end": 5.007
+        "word": "scientists,",
+        "start": 4.94,
+        "end": 5.42
       },
       {
-        "word": "—",
-        "start": 5.007,
-        "end": 5.32
+        "word": "a",
+        "start": 6.04,
+        "end": 6.18
       },
       {
-        "word": "is",
-        "start": 5.32,
-        "end": 5.98
+        "word": "scholar",
+        "start": 6.18,
+        "end": 6.42
       },
       {
-        "word": "so",
-        "start": 5.98,
-        "end": 6.22
+        "word": "named",
+        "start": 6.42,
+        "end": 6.84
       },
       {
-        "word": "much",
-        "start": 6.22,
-        "end": 6.38
+        "word": "Ibn",
+        "start": 6.84,
+        "end": 7.06
       },
       {
-        "word": "bigger",
-        "start": 6.38,
-        "end": 6.64
+        "word": "al-Haytham",
+        "start": 7.06,
+        "end": 7.66
       },
       {
-        "word": "than",
-        "start": 6.64,
-        "end": 6.86
+        "word": "was",
+        "start": 7.66,
+        "end": 7.8
       },
       {
-        "word": "money.",
-        "start": 6.86,
-        "end": 7.12
+        "word": "working",
+        "start": 7.8,
+        "end": 8.08
       },
       {
-        "word": "A",
-        "start": 7.84,
-        "end": 7.88
+        "word": "in",
+        "start": 8.08,
+        "end": 8.22
       },
       {
-        "word": "kind",
-        "start": 7.88,
-        "end": 8.1
+        "word": "Cairo.",
+        "start": 8.22,
+        "end": 8.4
       },
       {
-        "word": "word",
-        "start": 8.1,
-        "end": 8.32
+        "word": "He",
+        "start": 9.2,
+        "end": 9.32
       },
       {
-        "word": "counts.",
-        "start": 8.32,
-        "end": 8.6
+        "word": "proved",
+        "start": 9.32,
+        "end": 9.54
       },
       {
-        "word": "Removing",
-        "start": 9.58,
-        "end": 9.88
+        "word": "we",
+        "start": 9.54,
+        "end": 9.76
       },
       {
-        "word": "something",
-        "start": 9.88,
-        "end": 10.14
+        "word": "see",
+        "start": 9.76,
+        "end": 9.98
       },
       {
-        "word": "harmful",
-        "start": 10.14,
-        "end": 10.64
+        "word": "because",
+        "start": 9.98,
+        "end": 10.36
       },
       {
-        "word": "from",
-        "start": 10.64,
-        "end": 11.0
+        "word": "light",
+        "start": 10.36,
+        "end": 10.7
       },
       {
-        "word": "someone's",
-        "start": 11.0,
-        "end": 11.44
-      },
-      {
-        "word": "path",
-        "start": 11.44,
-        "end": 11.68
-      },
-      {
-        "word": "counts.",
-        "start": 11.68,
-        "end": 12.1
-      },
-      {
-        "word": "It",
-        "start": 12.84,
-        "end": 12.86
-      },
-      {
-        "word": "means",
-        "start": 12.86,
-        "end": 13.0
-      },
-      {
-        "word": "anyone",
-        "start": 13.0,
-        "end": 13.44
-      },
-      {
-        "word": "can",
-        "start": 13.44,
-        "end": 13.74
-      },
-      {
-        "word": "give,",
-        "start": 13.74,
-        "end": 14.04
-      },
-      {
-        "word": "every",
-        "start": 14.04,
-        "end": 14.62
-      },
-      {
-        "word": "single",
-        "start": 14.62,
-        "end": 14.94
-      },
-      {
-        "word": "day.",
-        "start": 14.94,
-        "end": 15.3
-      },
-      {
-        "word": "And",
-        "start": 16.12,
-        "end": 16.14
+        "word": "enters",
+        "start": 10.7,
+        "end": 11.12
       },
       {
         "word": "the",
-        "start": 16.14,
-        "end": 16.26
+        "start": 11.12,
+        "end": 11.32
       },
       {
-        "word": "part",
-        "start": 16.26,
-        "end": 16.44
+        "word": "eye",
+        "start": 11.32,
+        "end": 11.6
       },
       {
-        "word": "most",
-        "start": 16.44,
-        "end": 16.76
+        "word": "—",
+        "start": 11.6,
+        "end": 12.38
       },
       {
-        "word": "people",
-        "start": 16.76,
-        "end": 17.1
-      },
-      {
-        "word": "miss:",
-        "start": 17.1,
-        "end": 17.34
+        "word": "overturning",
+        "start": 12.38,
+        "end": 12.94
       },
       {
         "word": "the",
-        "start": 18.1,
-        "end": 18.2
+        "start": 12.94,
+        "end": 13.06
       },
       {
-        "word": "Prophet",
-        "start": 18.2,
-        "end": 18.6
+        "word": "ancient",
+        "start": 13.06,
+        "end": 13.36
       },
       {
-        "word": "Muhammad",
-        "start": 18.6,
-        "end": 18.94
-      },
-      {
-        "word": "(peace",
-        "start": 19.62,
-        "end": 19.94
-      },
-      {
-        "word": "be",
-        "start": 19.94,
-        "end": 20.12
-      },
-      {
-        "word": "upon",
-        "start": 20.12,
-        "end": 20.36
-      },
-      {
-        "word": "him)",
-        "start": 20.36,
-        "end": 20.66
-      },
-      {
-        "word": "taught",
-        "start": 21.08,
-        "end": 21.32
+        "word": "belief",
+        "start": 13.36,
+        "end": 13.8
       },
       {
         "word": "that",
-        "start": 21.32,
-        "end": 21.56
+        "start": 13.8,
+        "end": 14.12
       },
       {
-        "word": "even",
-        "start": 21.56,
-        "end": 21.88
+        "word": "our",
+        "start": 14.12,
+        "end": 14.26
       },
       {
-        "word": "smiling",
-        "start": 21.88,
-        "end": 22.28
+        "word": "eyes",
+        "start": 14.26,
+        "end": 14.54
       },
       {
-        "word": "at",
-        "start": 22.28,
-        "end": 22.72
+        "word": "shoot",
+        "start": 14.54,
+        "end": 14.78
       },
       {
-        "word": "another",
+        "word": "out",
+        "start": 14.78,
+        "end": 14.96
+      },
+      {
+        "word": "rays.",
+        "start": 14.96,
+        "end": 15.18
+      },
+      {
+        "word": "But",
+        "start": 15.98,
+        "end": 16.08
+      },
+      {
+        "word": "his",
+        "start": 16.08,
+        "end": 16.22
+      },
+      {
+        "word": "real",
+        "start": 16.22,
+        "end": 16.42
+      },
+      {
+        "word": "breakthrough",
+        "start": 16.42,
+        "end": 16.82
+      },
+      {
+        "word": "was",
+        "start": 16.82,
+        "end": 17.26
+      },
+      {
+        "word": "the",
+        "start": 17.26,
+        "end": 17.38
+      },
+      {
+        "word": "method:",
+        "start": 17.38,
+        "end": 17.66
+      },
+      {
+        "word": "he",
+        "start": 18.2,
+        "end": 18.42
+      },
+      {
+        "word": "insisted",
+        "start": 18.42,
+        "end": 18.66
+      },
+      {
+        "word": "every",
+        "start": 18.66,
+        "end": 19.32
+      },
+      {
+        "word": "claim",
+        "start": 19.32,
+        "end": 19.76
+      },
+      {
+        "word": "be",
+        "start": 19.76,
+        "end": 20.08
+      },
+      {
+        "word": "proven",
+        "start": 20.08,
+        "end": 20.44
+      },
+      {
+        "word": "by",
+        "start": 20.44,
+        "end": 20.76
+      },
+      {
+        "word": "repeatable",
+        "start": 20.76,
+        "end": 21.4
+      },
+      {
+        "word": "experiments.",
+        "start": 21.4,
+        "end": 21.96
+      },
+      {
+        "word": "That",
         "start": 22.72,
-        "end": 22.94
+        "end": 22.84
       },
       {
-        "word": "person",
-        "start": 22.94,
-        "end": 23.32
+        "word": "idea",
+        "start": 22.84,
+        "end": 23.2
       },
       {
-        "word": "is",
-        "start": 23.32,
+        "word": "became",
+        "start": 23.2,
         "end": 23.52
       },
       {
-        "word": "charity.",
+        "word": "the",
         "start": 23.52,
-        "end": 23.74
+        "end": 23.72
+      },
+      {
+        "word": "scientific",
+        "start": 23.72,
+        "end": 24.04
+      },
+      {
+        "word": "method.",
+        "start": 24.04,
+        "end": 24.62
+      },
+      {
+        "word": "Today,",
+        "start": 25.16,
+        "end": 25.62
+      },
+      {
+        "word": "a",
+        "start": 25.74,
+        "end": 25.92
+      },
+      {
+        "word": "crater",
+        "start": 25.92,
+        "end": 26.12
+      },
+      {
+        "word": "on",
+        "start": 26.12,
+        "end": 26.4
+      },
+      {
+        "word": "the",
+        "start": 26.4,
+        "end": 26.5
+      },
+      {
+        "word": "Moon",
+        "start": 26.5,
+        "end": 26.66
+      },
+      {
+        "word": "carries",
+        "start": 26.66,
+        "end": 26.92
+      },
+      {
+        "word": "his",
+        "start": 26.92,
+        "end": 27.2
+      },
+      {
+        "word": "name.",
+        "start": 27.2,
+        "end": 27.48
       },
       {
         "word": "Save",
-        "start": 24.9,
-        "end": 25.02
+        "start": 28.1,
+        "end": 28.58
       },
       {
         "word": "this",
-        "start": 25.02,
-        "end": 25.26
+        "start": 28.58,
+        "end": 28.82
       },
       {
-        "word": "as",
-        "start": 25.26,
-        "end": 25.44
+        "word": "one",
+        "start": 28.82,
+        "end": 29.04
       },
       {
-        "word": "your",
-        "start": 25.44,
-        "end": 25.6
+        "word": "to",
+        "start": 29.04,
+        "end": 29.18
       },
       {
-        "word": "daily",
-        "start": 25.6,
-        "end": 25.78
+        "word": "share",
+        "start": 29.18,
+        "end": 29.36
       },
       {
-        "word": "reminder.",
-        "start": 25.78,
-        "end": 26.2
+        "word": "later.",
+        "start": 29.36,
+        "end": 29.72
       }
     ]
   },
   "reference": {
-    "text": "Islamic Teaching · Charity (Sadaqah)",
-    "startSec": 24.9
+    "text": "Islamic Golden Age · Ibn al-Haytham · c.1011 CE",
+    "startSec": 28.1
   },
-  "audioFile": "audio/w9.wav",
-  "durationSec": 26.87,
+  "audioFile": "audio/w7.wav",
+  "durationSec": 30.21,
   "scenes": [
-    "scenes/w9/scene_0.jpg",
-    "scenes/w9/scene_1.jpg",
-    "scenes/w9/scene_2.jpg",
-    "scenes/w9/scene_3.jpg"
+    "scenes/w7/scene_0.jpg",
+    "scenes/w7/scene_1.jpg",
+    "scenes/w7/scene_2.jpg",
+    "scenes/w7/scene_3.jpg"
   ]
 }
