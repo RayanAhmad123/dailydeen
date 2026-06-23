@@ -1,415 +1,425 @@
 {
-  "id": "w5",
+  "id": "w24",
   "category": "Night Sky",
   "hook": {
-    "text": "You think star names are Latin. Most are secretly Arabic.",
+    "text": "The first galaxy ever recorded wasn't found with a telescope.",
     "words": [
       {
-        "word": "You",
+        "word": "The",
         "start": 0.0,
-        "end": 0.14
+        "end": 0.12
       },
       {
-        "word": "think",
-        "start": 0.14,
+        "word": "first",
+        "start": 0.12,
         "end": 0.32
       },
       {
-        "word": "star",
+        "word": "galaxy",
         "start": 0.32,
-        "end": 0.54
+        "end": 0.6
       },
       {
-        "word": "names",
-        "start": 0.54,
-        "end": 0.78
-      },
-      {
-        "word": "are",
-        "start": 0.78,
-        "end": 0.94
-      },
-      {
-        "word": "Latin.",
-        "start": 0.94,
+        "word": "ever",
+        "start": 0.6,
         "end": 1.12
       },
       {
-        "word": "Most",
-        "start": 1.54,
-        "end": 1.78
+        "word": "recorded",
+        "start": 1.12,
+        "end": 1.48
       },
       {
-        "word": "are",
-        "start": 1.78,
+        "word": "wasn't",
+        "start": 1.48,
         "end": 1.92
       },
       {
-        "word": "secretly",
+        "word": "found",
         "start": 1.92,
-        "end": 2.2
+        "end": 2.08
       },
       {
-        "word": "Arabic.",
-        "start": 2.2,
-        "end": 2.52
+        "word": "with",
+        "start": 2.08,
+        "end": 2.24
+      },
+      {
+        "word": "a",
+        "start": 2.24,
+        "end": 2.28
+      },
+      {
+        "word": "telescope.",
+        "start": 2.28,
+        "end": 2.64
       }
     ]
   },
   "body": {
     "words": [
       {
-        "word": "A",
-        "start": 3.48,
-        "end": 3.56
+        "word": "Centuries",
+        "start": 3.5,
+        "end": 4.06
       },
       {
-        "word": "thousand",
-        "start": 3.56,
-        "end": 3.78
-      },
-      {
-        "word": "years",
-        "start": 3.78,
-        "end": 4.12
-      },
-      {
-        "word": "ago,",
-        "start": 4.12,
-        "end": 4.46
-      },
-      {
-        "word": "Muslim",
-        "start": 4.84,
-        "end": 5.18
-      },
-      {
-        "word": "astronomers",
-        "start": 5.18,
-        "end": 5.6
-      },
-      {
-        "word": "mapped",
-        "start": 5.6,
-        "end": 6.42
+        "word": "before",
+        "start": 4.06,
+        "end": 4.3
       },
       {
         "word": "the",
-        "start": 6.42,
-        "end": 6.7
+        "start": 4.3,
+        "end": 4.56
       },
       {
-        "word": "night",
-        "start": 6.7,
-        "end": 6.88
+        "word": "telescope",
+        "start": 4.56,
+        "end": 4.94
       },
       {
-        "word": "sky",
-        "start": 6.88,
-        "end": 7.12
+        "word": "existed,",
+        "start": 4.94,
+        "end": 5.4
       },
       {
-        "word": "with",
-        "start": 7.12,
-        "end": 7.48
+        "word": "an",
+        "start": 6.18,
+        "end": 6.22
       },
       {
-        "word": "such",
-        "start": 7.48,
-        "end": 7.76
+        "word": "astronomer",
+        "start": 6.22,
+        "end": 6.46
       },
       {
-        "word": "care",
-        "start": 7.76,
-        "end": 8.16
+        "word": "named",
+        "start": 6.46,
+        "end": 7.18
       },
       {
-        "word": "that",
-        "start": 8.16,
-        "end": 8.76
+        "word": "al-Sufi",
+        "start": 7.18,
+        "end": 7.88
       },
       {
-        "word": "their",
-        "start": 8.76,
-        "end": 8.9
+        "word": "was",
+        "start": 7.88,
+        "end": 8.46
       },
       {
-        "word": "star",
-        "start": 8.9,
-        "end": 9.16
+        "word": "carefully",
+        "start": 8.46,
+        "end": 8.82
       },
       {
-        "word": "names",
-        "start": 9.16,
-        "end": 9.48
-      },
-      {
-        "word": "stuck.",
-        "start": 9.48,
-        "end": 9.9
-      },
-      {
-        "word": "They",
-        "start": 10.62,
-        "end": 10.74
-      },
-      {
-        "word": "charted",
-        "start": 10.74,
-        "end": 11.14
+        "word": "mapping",
+        "start": 8.82,
+        "end": 9.24
       },
       {
         "word": "the",
-        "start": 11.14,
-        "end": 11.24
+        "start": 9.24,
+        "end": 9.56
       },
       {
-        "word": "heavens",
-        "start": 11.24,
-        "end": 11.54
+        "word": "stars.",
+        "start": 9.56,
+        "end": 9.8
       },
       {
-        "word": "to",
-        "start": 11.54,
-        "end": 11.82
+        "word": "Around",
+        "start": 11.2,
+        "end": 11.76
       },
       {
-        "word": "navigate,",
-        "start": 11.82,
-        "end": 12.08
+        "word": "964,",
+        "start": 11.76,
+        "end": 12.32
       },
       {
-        "word": "and",
-        "start": 12.08,
+        "word": "in",
+        "start": 12.32,
         "end": 12.84
       },
       {
-        "word": "to",
+        "word": "his",
         "start": 12.84,
-        "end": 12.94
+        "end": 12.98
       },
       {
-        "word": "find",
-        "start": 12.94,
-        "end": 13.2
+        "word": "Book",
+        "start": 12.98,
+        "end": 13.18
+      },
+      {
+        "word": "of",
+        "start": 13.18,
+        "end": 13.34
+      },
+      {
+        "word": "Fixed",
+        "start": 13.34,
+        "end": 13.52
+      },
+      {
+        "word": "Stars,",
+        "start": 13.52,
+        "end": 13.9
+      },
+      {
+        "word": "he",
+        "start": 14.54,
+        "end": 14.66
+      },
+      {
+        "word": "noted",
+        "start": 14.66,
+        "end": 14.84
+      },
+      {
+        "word": "a",
+        "start": 14.84,
+        "end": 15.02
+      },
+      {
+        "word": "faint",
+        "start": 15.02,
+        "end": 15.28
+      },
+      {
+        "word": "little",
+        "start": 15.28,
+        "end": 15.66
+      },
+      {
+        "word": "cloud",
+        "start": 15.66,
+        "end": 15.94
+      },
+      {
+        "word": "in",
+        "start": 15.94,
+        "end": 16.2
       },
       {
         "word": "the",
-        "start": 13.2,
-        "end": 13.36
+        "start": 16.2,
+        "end": 16.28
       },
       {
-        "word": "direction",
-        "start": 13.36,
-        "end": 13.66
+        "word": "constellation",
+        "start": 16.28,
+        "end": 16.82
+      },
+      {
+        "word": "Andromeda.",
+        "start": 16.82,
+        "end": 17.4
+      },
+      {
+        "word": "He",
+        "start": 18.4,
+        "end": 18.62
+      },
+      {
+        "word": "couldn't",
+        "start": 18.62,
+        "end": 18.92
+      },
+      {
+        "word": "have",
+        "start": 18.92,
+        "end": 19.0
+      },
+      {
+        "word": "known",
+        "start": 19.0,
+        "end": 19.16
+      },
+      {
+        "word": "what",
+        "start": 19.16,
+        "end": 19.4
+      },
+      {
+        "word": "it",
+        "start": 19.4,
+        "end": 19.48
+      },
+      {
+        "word": "truly",
+        "start": 19.48,
+        "end": 19.66
+      },
+      {
+        "word": "was.",
+        "start": 19.66,
+        "end": 20.1
+      },
+      {
+        "word": "That",
+        "start": 20.72,
+        "end": 21.06
+      },
+      {
+        "word": "little",
+        "start": 21.06,
+        "end": 21.26
+      },
+      {
+        "word": "cloud",
+        "start": 21.26,
+        "end": 21.6
+      },
+      {
+        "word": "is",
+        "start": 21.6,
+        "end": 21.84
+      },
+      {
+        "word": "the",
+        "start": 21.84,
+        "end": 21.96
+      },
+      {
+        "word": "Andromeda",
+        "start": 21.96,
+        "end": 22.28
+      },
+      {
+        "word": "Galaxy,",
+        "start": 22.28,
+        "end": 22.78
       },
       {
         "word": "and",
-        "start": 13.66,
-        "end": 13.94
+        "start": 23.42,
+        "end": 23.54
       },
       {
-        "word": "times",
-        "start": 13.94,
-        "end": 14.14
+        "word": "his",
+        "start": 23.54,
+        "end": 23.66
       },
       {
-        "word": "of",
-        "start": 14.14,
-        "end": 14.4
+        "word": "note",
+        "start": 23.66,
+        "end": 23.98
       },
       {
-        "word": "prayer.",
-        "start": 14.4,
-        "end": 14.62
+        "word": "is",
+        "start": 23.98,
+        "end": 24.22
       },
       {
-        "word": "So",
-        "start": 15.68,
-        "end": 15.74
-      },
-      {
-        "word": "when",
-        "start": 15.74,
-        "end": 15.88
-      },
-      {
-        "word": "you",
-        "start": 15.88,
-        "end": 16.02
-      },
-      {
-        "word": "look",
-        "start": 16.02,
-        "end": 16.16
-      },
-      {
-        "word": "up",
-        "start": 16.16,
-        "end": 16.32
-      },
-      {
-        "word": "tonight,",
-        "start": 16.32,
-        "end": 16.58
-      },
-      {
-        "word": "you",
-        "start": 16.98,
-        "end": 17.18
-      },
-      {
-        "word": "are",
-        "start": 17.18,
-        "end": 17.3
-      },
-      {
-        "word": "reading",
-        "start": 17.3,
-        "end": 17.54
-      },
-      {
-        "word": "their",
-        "start": 17.54,
-        "end": 17.8
-      },
-      {
-        "word": "work.",
-        "start": 17.8,
-        "end": 18.04
-      },
-      {
-        "word": "Altair,",
-        "start": 18.8,
-        "end": 19.08
-      },
-      {
-        "word": "the",
-        "start": 19.6,
-        "end": 19.7
-      },
-      {
-        "word": "flying",
-        "start": 19.7,
-        "end": 19.96
-      },
-      {
-        "word": "eagle.",
-        "start": 19.96,
-        "end": 20.22
-      },
-      {
-        "word": "Aldebaran,",
-        "start": 21.04,
-        "end": 21.66
-      },
-      {
-        "word": "the",
-        "start": 21.98,
-        "end": 22.0
-      },
-      {
-        "word": "follower.",
-        "start": 22.0,
-        "end": 22.26
-      },
-      {
-        "word": "Rigel,",
-        "start": 23.28,
-        "end": 23.5
-      },
-      {
-        "word": "the",
-        "start": 24.04,
-        "end": 24.08
-      },
-      {
-        "word": "foot.",
-        "start": 24.08,
-        "end": 24.28
-      },
-      {
-        "word": "Hundreds",
-        "start": 24.96,
-        "end": 25.12
+        "word": "one",
+        "start": 24.22,
+        "end": 24.38
       },
       {
         "word": "of",
-        "start": 25.12,
-        "end": 25.36
+        "start": 24.38,
+        "end": 24.48
       },
       {
-        "word": "stars",
-        "start": 25.36,
-        "end": 25.6
+        "word": "the",
+        "start": 24.48,
+        "end": 24.58
       },
       {
-        "word": "still",
-        "start": 25.6,
-        "end": 26.0
+        "word": "earliest",
+        "start": 24.58,
+        "end": 24.92
       },
       {
-        "word": "carry",
-        "start": 26.0,
-        "end": 26.32
+        "word": "known",
+        "start": 24.92,
+        "end": 25.18
       },
       {
-        "word": "Arabic",
-        "start": 26.32,
-        "end": 26.68
+        "word": "records",
+        "start": 25.18,
+        "end": 25.52
       },
       {
-        "word": "names.",
-        "start": 26.68,
-        "end": 27.04
+        "word": "of",
+        "start": 25.52,
+        "end": 25.82
       },
       {
-        "word": "Save",
-        "start": 27.8,
-        "end": 28.28
+        "word": "a",
+        "start": 25.82,
+        "end": 25.88
       },
       {
-        "word": "this",
-        "start": 28.28,
-        "end": 28.5
+        "word": "galaxy",
+        "start": 25.88,
+        "end": 26.22
       },
       {
-        "word": "for",
-        "start": 28.5,
-        "end": 28.68
+        "word": "beyond",
+        "start": 26.22,
+        "end": 26.58
       },
       {
-        "word": "your",
-        "start": 28.68,
-        "end": 28.8
+        "word": "our",
+        "start": 26.58,
+        "end": 26.8
       },
       {
-        "word": "next",
-        "start": 28.8,
-        "end": 29.0
+        "word": "own.",
+        "start": 26.8,
+        "end": 27.08
       },
       {
-        "word": "clear",
-        "start": 29.0,
-        "end": 29.26
+        "word": "Which",
+        "start": 27.08,
+        "end": 28.1
       },
       {
-        "word": "night.",
-        "start": 29.26,
-        "end": 29.52
+        "word": "fact",
+        "start": 28.1,
+        "end": 28.3
+      },
+      {
+        "word": "surprised",
+        "start": 28.3,
+        "end": 28.7
+      },
+      {
+        "word": "you?",
+        "start": 28.7,
+        "end": 29.1
+      },
+      {
+        "word": "Tell",
+        "start": 29.66,
+        "end": 29.76
+      },
+      {
+        "word": "me",
+        "start": 29.76,
+        "end": 29.92
+      },
+      {
+        "word": "below.",
+        "start": 29.92,
+        "end": 30.2
       }
     ]
   },
   "reference": {
-    "text": "Islamic Astronomy · Star Names",
-    "startSec": 27.8
+    "text": "Islamic Astronomy · 964 CE",
+    "startSec": 27.08
   },
-  "audioFile": "audio/w5.wav",
-  "durationSec": 30.03,
+  "audioFile": "audio/w24.wav",
+  "durationSec": 30.77,
   "scenes": [
-    "scenes/w5/scene_0.jpg",
-    "scenes/w5/scene_1.jpg",
-    "scenes/w5/scene_2.jpg",
-    "scenes/w5/scene_3.jpg"
+    "scenes/w24/scene_0.jpg",
+    "scenes/w24/scene_1.jpg",
+    "scenes/w24/scene_2.jpg",
+    "scenes/w24/scene_3.jpg"
   ]
 }
