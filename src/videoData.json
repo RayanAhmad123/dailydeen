@@ -1,435 +1,415 @@
 {
-  "id": "w7",
-  "category": "Islamic Golden Age",
+  "id": "w5",
+  "category": "Night Sky",
   "hook": {
-    "text": "Did you know the scientific method began a thousand years ago?",
+    "text": "You think star names are Latin. Most are secretly Arabic.",
     "words": [
       {
-        "word": "Did",
+        "word": "You",
         "start": 0.0,
-        "end": 0.16
+        "end": 0.14
       },
       {
-        "word": "you",
-        "start": 0.16,
+        "word": "think",
+        "start": 0.14,
         "end": 0.32
       },
       {
-        "word": "know",
+        "word": "star",
         "start": 0.32,
-        "end": 0.48
+        "end": 0.54
       },
       {
-        "word": "the",
-        "start": 0.48,
-        "end": 0.6
+        "word": "names",
+        "start": 0.54,
+        "end": 0.78
       },
       {
-        "word": "scientific",
-        "start": 0.6,
+        "word": "are",
+        "start": 0.78,
         "end": 0.94
       },
       {
-        "word": "method",
+        "word": "Latin.",
         "start": 0.94,
-        "end": 1.62
+        "end": 1.12
       },
       {
-        "word": "began",
-        "start": 1.62,
-        "end": 1.94
+        "word": "Most",
+        "start": 1.54,
+        "end": 1.78
       },
       {
-        "word": "a",
-        "start": 1.94,
-        "end": 2.1
+        "word": "are",
+        "start": 1.78,
+        "end": 1.92
       },
       {
-        "word": "thousand",
-        "start": 2.1,
-        "end": 2.4
+        "word": "secretly",
+        "start": 1.92,
+        "end": 2.2
       },
       {
-        "word": "years",
-        "start": 2.4,
-        "end": 2.7
-      },
-      {
-        "word": "ago?",
-        "start": 2.7,
-        "end": 2.98
+        "word": "Arabic.",
+        "start": 2.2,
+        "end": 2.52
       }
     ]
   },
   "body": {
     "words": [
       {
-        "word": "Long",
-        "start": 3.7,
-        "end": 3.96
+        "word": "A",
+        "start": 3.48,
+        "end": 3.56
       },
       {
-        "word": "before",
-        "start": 3.96,
-        "end": 4.16
+        "word": "thousand",
+        "start": 3.56,
+        "end": 3.78
       },
       {
-        "word": "Europe's",
-        "start": 4.16,
-        "end": 4.76
+        "word": "years",
+        "start": 3.78,
+        "end": 4.12
       },
       {
-        "word": "great",
-        "start": 4.76,
-        "end": 4.94
+        "word": "ago,",
+        "start": 4.12,
+        "end": 4.46
       },
       {
-        "word": "scientists,",
-        "start": 4.94,
-        "end": 5.42
+        "word": "Muslim",
+        "start": 4.84,
+        "end": 5.18
       },
       {
-        "word": "a",
-        "start": 6.04,
-        "end": 6.18
+        "word": "astronomers",
+        "start": 5.18,
+        "end": 5.6
       },
       {
-        "word": "scholar",
-        "start": 6.18,
+        "word": "mapped",
+        "start": 5.6,
         "end": 6.42
       },
       {
-        "word": "named",
+        "word": "the",
         "start": 6.42,
-        "end": 6.84
+        "end": 6.7
       },
       {
-        "word": "Ibn",
-        "start": 6.84,
-        "end": 7.06
+        "word": "night",
+        "start": 6.7,
+        "end": 6.88
       },
       {
-        "word": "al-Haytham",
-        "start": 7.06,
-        "end": 7.66
+        "word": "sky",
+        "start": 6.88,
+        "end": 7.12
       },
       {
-        "word": "was",
-        "start": 7.66,
-        "end": 7.8
+        "word": "with",
+        "start": 7.12,
+        "end": 7.48
       },
       {
-        "word": "working",
-        "start": 7.8,
-        "end": 8.08
+        "word": "such",
+        "start": 7.48,
+        "end": 7.76
       },
       {
-        "word": "in",
-        "start": 8.08,
-        "end": 8.22
-      },
-      {
-        "word": "Cairo.",
-        "start": 8.22,
-        "end": 8.4
-      },
-      {
-        "word": "He",
-        "start": 9.2,
-        "end": 9.32
-      },
-      {
-        "word": "proved",
-        "start": 9.32,
-        "end": 9.54
-      },
-      {
-        "word": "we",
-        "start": 9.54,
-        "end": 9.76
-      },
-      {
-        "word": "see",
-        "start": 9.76,
-        "end": 9.98
-      },
-      {
-        "word": "because",
-        "start": 9.98,
-        "end": 10.36
-      },
-      {
-        "word": "light",
-        "start": 10.36,
-        "end": 10.7
-      },
-      {
-        "word": "enters",
-        "start": 10.7,
-        "end": 11.12
-      },
-      {
-        "word": "the",
-        "start": 11.12,
-        "end": 11.32
-      },
-      {
-        "word": "eye",
-        "start": 11.32,
-        "end": 11.6
-      },
-      {
-        "word": "—",
-        "start": 11.6,
-        "end": 12.38
-      },
-      {
-        "word": "overturning",
-        "start": 12.38,
-        "end": 12.94
-      },
-      {
-        "word": "the",
-        "start": 12.94,
-        "end": 13.06
-      },
-      {
-        "word": "ancient",
-        "start": 13.06,
-        "end": 13.36
-      },
-      {
-        "word": "belief",
-        "start": 13.36,
-        "end": 13.8
+        "word": "care",
+        "start": 7.76,
+        "end": 8.16
       },
       {
         "word": "that",
-        "start": 13.8,
-        "end": 14.12
+        "start": 8.16,
+        "end": 8.76
       },
       {
-        "word": "our",
-        "start": 14.12,
-        "end": 14.26
+        "word": "their",
+        "start": 8.76,
+        "end": 8.9
       },
       {
-        "word": "eyes",
-        "start": 14.26,
-        "end": 14.54
+        "word": "star",
+        "start": 8.9,
+        "end": 9.16
       },
       {
-        "word": "shoot",
-        "start": 14.54,
-        "end": 14.78
+        "word": "names",
+        "start": 9.16,
+        "end": 9.48
       },
       {
-        "word": "out",
-        "start": 14.78,
-        "end": 14.96
+        "word": "stuck.",
+        "start": 9.48,
+        "end": 9.9
       },
       {
-        "word": "rays.",
-        "start": 14.96,
-        "end": 15.18
+        "word": "They",
+        "start": 10.62,
+        "end": 10.74
       },
       {
-        "word": "But",
-        "start": 15.98,
-        "end": 16.08
-      },
-      {
-        "word": "his",
-        "start": 16.08,
-        "end": 16.22
-      },
-      {
-        "word": "real",
-        "start": 16.22,
-        "end": 16.42
-      },
-      {
-        "word": "breakthrough",
-        "start": 16.42,
-        "end": 16.82
-      },
-      {
-        "word": "was",
-        "start": 16.82,
-        "end": 17.26
+        "word": "charted",
+        "start": 10.74,
+        "end": 11.14
       },
       {
         "word": "the",
-        "start": 17.26,
-        "end": 17.38
+        "start": 11.14,
+        "end": 11.24
       },
       {
-        "word": "method:",
-        "start": 17.38,
-        "end": 17.66
-      },
-      {
-        "word": "he",
-        "start": 18.2,
-        "end": 18.42
-      },
-      {
-        "word": "insisted",
-        "start": 18.42,
-        "end": 18.66
-      },
-      {
-        "word": "every",
-        "start": 18.66,
-        "end": 19.32
-      },
-      {
-        "word": "claim",
-        "start": 19.32,
-        "end": 19.76
-      },
-      {
-        "word": "be",
-        "start": 19.76,
-        "end": 20.08
-      },
-      {
-        "word": "proven",
-        "start": 20.08,
-        "end": 20.44
-      },
-      {
-        "word": "by",
-        "start": 20.44,
-        "end": 20.76
-      },
-      {
-        "word": "repeatable",
-        "start": 20.76,
-        "end": 21.4
-      },
-      {
-        "word": "experiments.",
-        "start": 21.4,
-        "end": 21.96
-      },
-      {
-        "word": "That",
-        "start": 22.72,
-        "end": 22.84
-      },
-      {
-        "word": "idea",
-        "start": 22.84,
-        "end": 23.2
-      },
-      {
-        "word": "became",
-        "start": 23.2,
-        "end": 23.52
-      },
-      {
-        "word": "the",
-        "start": 23.52,
-        "end": 23.72
-      },
-      {
-        "word": "scientific",
-        "start": 23.72,
-        "end": 24.04
-      },
-      {
-        "word": "method.",
-        "start": 24.04,
-        "end": 24.62
-      },
-      {
-        "word": "Today,",
-        "start": 25.16,
-        "end": 25.62
-      },
-      {
-        "word": "a",
-        "start": 25.74,
-        "end": 25.92
-      },
-      {
-        "word": "crater",
-        "start": 25.92,
-        "end": 26.12
-      },
-      {
-        "word": "on",
-        "start": 26.12,
-        "end": 26.4
-      },
-      {
-        "word": "the",
-        "start": 26.4,
-        "end": 26.5
-      },
-      {
-        "word": "Moon",
-        "start": 26.5,
-        "end": 26.66
-      },
-      {
-        "word": "carries",
-        "start": 26.66,
-        "end": 26.92
-      },
-      {
-        "word": "his",
-        "start": 26.92,
-        "end": 27.2
-      },
-      {
-        "word": "name.",
-        "start": 27.2,
-        "end": 27.48
-      },
-      {
-        "word": "Save",
-        "start": 28.1,
-        "end": 28.58
-      },
-      {
-        "word": "this",
-        "start": 28.58,
-        "end": 28.82
-      },
-      {
-        "word": "one",
-        "start": 28.82,
-        "end": 29.04
+        "word": "heavens",
+        "start": 11.24,
+        "end": 11.54
       },
       {
         "word": "to",
-        "start": 29.04,
-        "end": 29.18
+        "start": 11.54,
+        "end": 11.82
       },
       {
-        "word": "share",
-        "start": 29.18,
-        "end": 29.36
+        "word": "navigate,",
+        "start": 11.82,
+        "end": 12.08
       },
       {
-        "word": "later.",
-        "start": 29.36,
-        "end": 29.72
+        "word": "and",
+        "start": 12.08,
+        "end": 12.84
+      },
+      {
+        "word": "to",
+        "start": 12.84,
+        "end": 12.94
+      },
+      {
+        "word": "find",
+        "start": 12.94,
+        "end": 13.2
+      },
+      {
+        "word": "the",
+        "start": 13.2,
+        "end": 13.36
+      },
+      {
+        "word": "direction",
+        "start": 13.36,
+        "end": 13.66
+      },
+      {
+        "word": "and",
+        "start": 13.66,
+        "end": 13.94
+      },
+      {
+        "word": "times",
+        "start": 13.94,
+        "end": 14.14
+      },
+      {
+        "word": "of",
+        "start": 14.14,
+        "end": 14.4
+      },
+      {
+        "word": "prayer.",
+        "start": 14.4,
+        "end": 14.62
+      },
+      {
+        "word": "So",
+        "start": 15.68,
+        "end": 15.74
+      },
+      {
+        "word": "when",
+        "start": 15.74,
+        "end": 15.88
+      },
+      {
+        "word": "you",
+        "start": 15.88,
+        "end": 16.02
+      },
+      {
+        "word": "look",
+        "start": 16.02,
+        "end": 16.16
+      },
+      {
+        "word": "up",
+        "start": 16.16,
+        "end": 16.32
+      },
+      {
+        "word": "tonight,",
+        "start": 16.32,
+        "end": 16.58
+      },
+      {
+        "word": "you",
+        "start": 16.98,
+        "end": 17.18
+      },
+      {
+        "word": "are",
+        "start": 17.18,
+        "end": 17.3
+      },
+      {
+        "word": "reading",
+        "start": 17.3,
+        "end": 17.54
+      },
+      {
+        "word": "their",
+        "start": 17.54,
+        "end": 17.8
+      },
+      {
+        "word": "work.",
+        "start": 17.8,
+        "end": 18.04
+      },
+      {
+        "word": "Altair,",
+        "start": 18.8,
+        "end": 19.08
+      },
+      {
+        "word": "the",
+        "start": 19.6,
+        "end": 19.7
+      },
+      {
+        "word": "flying",
+        "start": 19.7,
+        "end": 19.96
+      },
+      {
+        "word": "eagle.",
+        "start": 19.96,
+        "end": 20.22
+      },
+      {
+        "word": "Aldebaran,",
+        "start": 21.04,
+        "end": 21.66
+      },
+      {
+        "word": "the",
+        "start": 21.98,
+        "end": 22.0
+      },
+      {
+        "word": "follower.",
+        "start": 22.0,
+        "end": 22.26
+      },
+      {
+        "word": "Rigel,",
+        "start": 23.28,
+        "end": 23.5
+      },
+      {
+        "word": "the",
+        "start": 24.04,
+        "end": 24.08
+      },
+      {
+        "word": "foot.",
+        "start": 24.08,
+        "end": 24.28
+      },
+      {
+        "word": "Hundreds",
+        "start": 24.96,
+        "end": 25.12
+      },
+      {
+        "word": "of",
+        "start": 25.12,
+        "end": 25.36
+      },
+      {
+        "word": "stars",
+        "start": 25.36,
+        "end": 25.6
+      },
+      {
+        "word": "still",
+        "start": 25.6,
+        "end": 26.0
+      },
+      {
+        "word": "carry",
+        "start": 26.0,
+        "end": 26.32
+      },
+      {
+        "word": "Arabic",
+        "start": 26.32,
+        "end": 26.68
+      },
+      {
+        "word": "names.",
+        "start": 26.68,
+        "end": 27.04
+      },
+      {
+        "word": "Save",
+        "start": 27.8,
+        "end": 28.28
+      },
+      {
+        "word": "this",
+        "start": 28.28,
+        "end": 28.5
+      },
+      {
+        "word": "for",
+        "start": 28.5,
+        "end": 28.68
+      },
+      {
+        "word": "your",
+        "start": 28.68,
+        "end": 28.8
+      },
+      {
+        "word": "next",
+        "start": 28.8,
+        "end": 29.0
+      },
+      {
+        "word": "clear",
+        "start": 29.0,
+        "end": 29.26
+      },
+      {
+        "word": "night.",
+        "start": 29.26,
+        "end": 29.52
       }
     ]
   },
   "reference": {
-    "text": "Islamic Golden Age · Ibn al-Haytham · c.1011 CE",
-    "startSec": 28.1
+    "text": "Islamic Astronomy · Star Names",
+    "startSec": 27.8
   },
-  "audioFile": "audio/w7.wav",
-  "durationSec": 30.21,
+  "audioFile": "audio/w5.wav",
+  "durationSec": 30.03,
   "scenes": [
-    "scenes/w7/scene_0.jpg",
-    "scenes/w7/scene_1.jpg",
-    "scenes/w7/scene_2.jpg",
-    "scenes/w7/scene_3.jpg"
+    "scenes/w5/scene_0.jpg",
+    "scenes/w5/scene_1.jpg",
+    "scenes/w5/scene_2.jpg",
+    "scenes/w5/scene_3.jpg"
   ]
 }
