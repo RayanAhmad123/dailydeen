@@ -1,5 +1,5 @@
 {
-  "_readme": "Curated topic bank for daily videos. Each topic's `facts` are the grounding — the daily script may simplify but must not go beyond them or invent specifics. Categories rotate naturally since topics are picked in order of id. Add new topics at the end; never reuse an id.",
+  "_readme": "Curated topic bank for daily videos. Each topic's `facts` are the grounding — the daily script may simplify but must not go beyond them or invent specifics. CONTENT DIRECTION: this is a Daily Islamic Wisdom channel — every script must anchor in a clear Islamic/spiritual angle (faith, gratitude to God, awe of His creation, prophetic character, knowledge as worship, mercy, good akhlaq), even when the topic is history or science. History/science is a vehicle for the spiritual lesson, never trivia for its own sake. Categories rotate naturally since topics are picked in order of id. Add new topics at the end; never reuse an id.",
   "topics": [
     {
       "id": "w1",
@@ -129,16 +129,6 @@
         "Al-Zahrawi (Abulcasis) of 10th-century Cordoba wrote al-Tasrif, a 30-volume medical encyclopedia with detailed drawings of around 200 surgical instruments.",
         "He described procedures and tools — including forceps and catgut sutures for internal stitching — that influenced European surgery for centuries.",
         "He is often called the father of modern surgery."
-      ]
-    },
-    {
-      "id": "w14",
-      "category": "Story of Coffee",
-      "title": "Coffee's journey began with devotion",
-      "facts": [
-        "Coffee drinking spread in 15th-century Yemen, where Sufis used it to stay awake for night devotions.",
-        "The English word 'coffee' traces back to the Arabic 'qahwa', via Turkish 'kahve'.",
-        "From Yemen's port of Mocha, coffee spread to Mecca, Cairo, Istanbul, and eventually Europe."
       ]
     },
     {
@@ -309,46 +299,6 @@
         "Ulugh Beg, a grandson of the conqueror Timur, ruled from Samarkand and built one of the great observatories of the medieval world in the 1420s.",
         "From it his team produced the Zij-i-Sultani, a star catalog giving positions for just over a thousand stars — the most accurate catalog made before the telescope.",
         "A crater on the Moon is named Ulugh Beigh in his honor."
-      ]
-    },
-    {
-      "id": "w32",
-      "category": "Arabic Origins",
-      "title": "Chemistry speaks Arabic too",
-      "facts": [
-        "The word 'alchemy' and 'chemistry' trace back to the Arabic 'al-kimiya', and 'alcohol' comes from 'al-kuhl'.",
-        "Other lab words are Arabic in origin: 'alkali' from 'al-qili', 'alembic' (a distilling flask) from 'al-anbiq', and 'elixir' from 'al-iksir'.",
-        "The 8th-century scholar Jabir ibn Hayyan is often called a father of chemistry for his emphasis on experiment."
-      ]
-    },
-    {
-      "id": "w33",
-      "category": "Night Sky",
-      "title": "Why so many stars begin with 'Al'",
-      "facts": [
-        "A surprising number of star names start with 'Al' — Algol, Aldebaran, Altair, Alnitak, Alnilam — because 'al' is simply the Arabic word for 'the'.",
-        "Algol comes from 'al-ghul', 'the ghoul', because the star visibly dims and brightens; it is still nicknamed the Demon Star.",
-        "These names entered European star charts during the golden age of Islamic astronomy."
-      ]
-    },
-    {
-      "id": "w34",
-      "category": "Story of Coffee",
-      "title": "The world's first coffeehouses",
-      "facts": [
-        "After coffee spread through the Islamic world, the first coffeehouses opened in cities like Mecca and Cairo, and one famously opened in Istanbul in 1554.",
-        "They became lively centers for conversation, chess, music, poetry and the exchange of news.",
-        "They were sometimes nicknamed 'schools of the wise' for the learning and debate that happened there."
-      ]
-    },
-    {
-      "id": "w35",
-      "category": "Arabic Origins",
-      "title": "Where the word 'zero' comes from",
-      "facts": [
-        "The English words 'zero' and 'cipher' both come from the Arabic 'sifr', meaning 'empty' or 'nothing'.",
-        "The concept of zero as a number reached Europe through the work of Muslim mathematicians such as al-Khwarizmi, who built on Indian numerals.",
-        "Without a symbol for zero, the place-value number system we use every day could not work."
       ]
     },
     {
