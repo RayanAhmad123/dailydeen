@@ -1,450 +1,440 @@
 {
-  "id": "w20",
-  "category": "Islamic Teaching",
+  "id": "w13",
+  "category": "Islamic Golden Age",
   "hook": {
-    "text": "What if gratitude actually multiplied what you already have?",
+    "text": "The father of modern surgery lived a thousand years ago.",
     "words": [
       {
-        "word": "What",
+        "word": "The",
         "start": 0.0,
-        "end": 0.16
+        "end": 0.14
       },
       {
-        "word": "if",
-        "start": 0.16,
-        "end": 0.28
+        "word": "father",
+        "start": 0.14,
+        "end": 0.4
       },
       {
-        "word": "gratitude",
-        "start": 0.28,
-        "end": 0.5
+        "word": "of",
+        "start": 0.4,
+        "end": 0.56
       },
       {
-        "word": "actually",
-        "start": 0.5,
-        "end": 1.24
+        "word": "modern",
+        "start": 0.56,
+        "end": 0.72
       },
       {
-        "word": "multiplied",
-        "start": 1.24,
-        "end": 1.58
+        "word": "surgery",
+        "start": 0.72,
+        "end": 1.12
       },
       {
-        "word": "what",
-        "start": 1.58,
-        "end": 2.02
+        "word": "lived",
+        "start": 1.12,
+        "end": 1.7
       },
       {
-        "word": "you",
-        "start": 2.02,
-        "end": 2.18
+        "word": "a",
+        "start": 1.7,
+        "end": 1.86
       },
       {
-        "word": "already",
-        "start": 2.18,
-        "end": 2.48
+        "word": "thousand",
+        "start": 1.86,
+        "end": 2.14
       },
       {
-        "word": "have?",
-        "start": 2.48,
-        "end": 2.96
+        "word": "years",
+        "start": 2.14,
+        "end": 2.46
+      },
+      {
+        "word": "ago.",
+        "start": 2.46,
+        "end": 2.76
       }
     ]
   },
   "body": {
     "words": [
       {
-        "word": "In",
+        "word": "His",
+        "start": 3.52,
+        "end": 3.72
+      },
+      {
+        "word": "name",
         "start": 3.72,
-        "end": 3.92
+        "end": 3.88
       },
       {
-        "word": "Islam,",
-        "start": 3.92,
-        "end": 4.22
+        "word": "was",
+        "start": 3.88,
+        "end": 4.06
       },
       {
-        "word": "gratitude",
-        "start": 4.82,
-        "end": 5.28
-      },
-      {
-        "word": "—",
-        "start": 5.28,
-        "end": 5.9
-      },
-      {
-        "word": "shukr",
-        "start": 5.9,
-        "end": 6.22
-      },
-      {
-        "word": "—",
-        "start": 6.22,
-        "end": 6.56
-      },
-      {
-        "word": "isn't",
-        "start": 6.56,
-        "end": 7.2
-      },
-      {
-        "word": "a",
-        "start": 7.2,
-        "end": 7.3
-      },
-      {
-        "word": "once-in-a-while",
-        "start": 7.3,
-        "end": 7.98
-      },
-      {
-        "word": "feeling.",
-        "start": 7.98,
-        "end": 8.36
-      },
-      {
-        "word": "It's",
-        "start": 8.84,
-        "end": 9.12
-      },
-      {
-        "word": "woven",
-        "start": 9.12,
-        "end": 9.36
-      },
-      {
-        "word": "into",
-        "start": 9.36,
-        "end": 9.68
-      },
-      {
-        "word": "every",
-        "start": 9.68,
-        "end": 10.04
-      },
-      {
-        "word": "single",
-        "start": 10.04,
-        "end": 10.32
-      },
-      {
-        "word": "day,",
-        "start": 10.32,
-        "end": 10.64
-      },
-      {
-        "word": "in",
-        "start": 10.64,
-        "end": 11.08
-      },
-      {
-        "word": "one",
-        "start": 11.08,
-        "end": 11.34
-      },
-      {
-        "word": "small",
-        "start": 11.34,
-        "end": 11.62
-      },
-      {
-        "word": "phrase:",
-        "start": 11.62,
-        "end": 12.06
-      },
-      {
-        "word": "'alhamdulillah',",
-        "start": 13.4,
-        "end": 14.0
-      },
-      {
-        "word": "all",
-        "start": 14.36,
-        "end": 14.76
-      },
-      {
-        "word": "praise",
-        "start": 14.76,
-        "end": 15.12
-      },
-      {
-        "word": "belongs",
-        "start": 15.12,
-        "end": 15.52
-      },
-      {
-        "word": "to",
-        "start": 15.52,
-        "end": 15.82
-      },
-      {
-        "word": "God.",
-        "start": 15.82,
-        "end": 16.08
-      },
-      {
-        "word": "And",
-        "start": 16.58,
-        "end": 16.76
-      },
-      {
-        "word": "the",
-        "start": 16.76,
-        "end": 16.86
-      },
-      {
-        "word": "Quran",
-        "start": 16.86,
-        "end": 17.12
-      },
-      {
-        "word": "makes",
-        "start": 17.12,
-        "end": 17.58
-      },
-      {
-        "word": "a",
-        "start": 17.58,
-        "end": 17.74
-      },
-      {
-        "word": "striking",
-        "start": 17.74,
-        "end": 18.08
-      },
-      {
-        "word": "promise",
-        "start": 18.08,
-        "end": 18.56
-      },
-      {
-        "word": "about",
-        "start": 18.56,
-        "end": 18.98
-      },
-      {
-        "word": "it:",
-        "start": 18.98,
-        "end": 19.14
-      },
-      {
-        "word": "'If",
-        "start": 19.7,
-        "end": 19.74
-      },
-      {
-        "word": "you",
-        "start": 19.74,
-        "end": 19.88
-      },
-      {
-        "word": "are",
-        "start": 19.88,
-        "end": 20.02
-      },
-      {
-        "word": "grateful,",
-        "start": 20.02,
-        "end": 20.3
-      },
-      {
-        "word": "I",
-        "start": 20.86,
-        "end": 21.04
-      },
-      {
-        "word": "will",
-        "start": 21.04,
-        "end": 21.2
-      },
-      {
-        "word": "surely",
-        "start": 21.2,
-        "end": 21.52
-      },
-      {
-        "word": "increase",
-        "start": 21.52,
-        "end": 21.9
-      },
-      {
-        "word": "you.'",
-        "start": 21.9,
-        "end": 22.26
-      },
-      {
-        "word": "True",
-        "start": 23.12,
-        "end": 23.4
-      },
-      {
-        "word": "gratitude",
-        "start": 23.4,
-        "end": 23.7
-      },
-      {
-        "word": "lives",
-        "start": 23.7,
-        "end": 24.2
-      },
-      {
-        "word": "in",
-        "start": 24.2,
-        "end": 24.44
-      },
-      {
-        "word": "three",
-        "start": 24.44,
-        "end": 24.68
-      },
-      {
-        "word": "places",
-        "start": 24.68,
-        "end": 25.06
-      },
-      {
-        "word": "at",
-        "start": 25.06,
-        "end": 25.3
-      },
-      {
-        "word": "once",
-        "start": 25.3,
-        "end": 25.52
-      },
-      {
-        "word": "—",
-        "start": 25.52,
-        "end": 26.14
-      },
-      {
-        "word": "the",
-        "start": 26.14,
-        "end": 26.32
-      },
-      {
-        "word": "heart",
-        "start": 26.32,
-        "end": 26.54
-      },
-      {
-        "word": "that",
-        "start": 26.54,
-        "end": 26.74
-      },
-      {
-        "word": "feels",
-        "start": 26.74,
-        "end": 27.0
-      },
-      {
-        "word": "it,",
-        "start": 27.0,
-        "end": 27.26
-      },
-      {
-        "word": "the",
-        "start": 27.76,
-        "end": 27.86
-      },
-      {
-        "word": "tongue",
-        "start": 27.86,
-        "end": 28.04
-      },
-      {
-        "word": "that",
-        "start": 28.04,
-        "end": 28.3
-      },
-      {
-        "word": "speaks",
-        "start": 28.3,
-        "end": 28.58
-      },
-      {
-        "word": "it,",
-        "start": 28.58,
-        "end": 28.84
+        "word": "al-Zahrawi,",
+        "start": 4.06,
+        "end": 4.56
       },
       {
         "word": "and",
-        "start": 28.84,
-        "end": 29.42
+        "start": 4.94,
+        "end": 5.16
       },
       {
-        "word": "the",
-        "start": 29.42,
-        "end": 29.52
+        "word": "in",
+        "start": 5.16,
+        "end": 5.28
       },
       {
-        "word": "hands",
-        "start": 29.52,
-        "end": 29.78
+        "word": "tenth-century",
+        "start": 5.28,
+        "end": 5.94
+      },
+      {
+        "word": "Cordoba",
+        "start": 5.94,
+        "end": 6.48
+      },
+      {
+        "word": "he",
+        "start": 7.04,
+        "end": 7.08
+      },
+      {
+        "word": "wrote",
+        "start": 7.08,
+        "end": 7.26
+      },
+      {
+        "word": "a",
+        "start": 7.26,
+        "end": 7.38
+      },
+      {
+        "word": "thirty-volume",
+        "start": 7.38,
+        "end": 8.1
+      },
+      {
+        "word": "medical",
+        "start": 8.1,
+        "end": 8.4
+      },
+      {
+        "word": "encyclopedia.",
+        "start": 8.4,
+        "end": 8.82
+      },
+      {
+        "word": "In",
+        "start": 9.9,
+        "end": 10.22
+      },
+      {
+        "word": "it",
+        "start": 10.22,
+        "end": 10.34
+      },
+      {
+        "word": "he",
+        "start": 10.4,
+        "end": 10.5
+      },
+      {
+        "word": "drew",
+        "start": 10.5,
+        "end": 10.68
+      },
+      {
+        "word": "around",
+        "start": 10.68,
+        "end": 10.96
+      },
+      {
+        "word": "two",
+        "start": 10.96,
+        "end": 11.12
+      },
+      {
+        "word": "hundred",
+        "start": 11.12,
+        "end": 11.28
+      },
+      {
+        "word": "surgical",
+        "start": 11.28,
+        "end": 12.0
+      },
+      {
+        "word": "instruments",
+        "start": 12.0,
+        "end": 12.38
+      },
+      {
+        "word": "—",
+        "start": 12.38,
+        "end": 13.16
+      },
+      {
+        "word": "including",
+        "start": 13.16,
+        "end": 13.48
+      },
+      {
+        "word": "forceps",
+        "start": 13.48,
+        "end": 14.12
+      },
+      {
+        "word": "and",
+        "start": 14.12,
+        "end": 14.34
+      },
+      {
+        "word": "dissolving",
+        "start": 14.34,
+        "end": 14.76
+      },
+      {
+        "word": "stitches",
+        "start": 14.76,
+        "end": 15.1
+      },
+      {
+        "word": "—",
+        "start": 15.1,
+        "end": 15.83
       },
       {
         "word": "that",
-        "start": 29.78,
-        "end": 30.0
+        "start": 15.83,
+        "end": 16.12
       },
       {
-        "word": "act",
-        "start": 30.0,
-        "end": 30.16
+        "word": "shaped",
+        "start": 16.12,
+        "end": 16.36
       },
       {
-        "word": "on",
-        "start": 30.16,
-        "end": 30.42
+        "word": "European",
+        "start": 16.36,
+        "end": 16.94
       },
       {
-        "word": "it.",
-        "start": 30.42,
-        "end": 30.54
-      },
-      {
-        "word": "What",
-        "start": 31.44,
-        "end": 31.66
-      },
-      {
-        "word": "are",
-        "start": 31.66,
-        "end": 31.76
-      },
-      {
-        "word": "you",
-        "start": 31.76,
-        "end": 31.9
-      },
-      {
-        "word": "grateful",
-        "start": 31.9,
-        "end": 32.12
+        "word": "surgery",
+        "start": 16.94,
+        "end": 17.3
       },
       {
         "word": "for",
-        "start": 32.12,
-        "end": 32.44
+        "start": 17.3,
+        "end": 17.66
       },
       {
-        "word": "today?",
-        "start": 32.44,
-        "end": 32.76
+        "word": "the",
+        "start": 17.66,
+        "end": 17.76
+      },
+      {
+        "word": "next",
+        "start": 17.76,
+        "end": 17.94
+      },
+      {
+        "word": "five",
+        "start": 17.94,
+        "end": 18.07
+      },
+      {
+        "word": "hundred",
+        "start": 18.07,
+        "end": 18.2
+      },
+      {
+        "word": "years.",
+        "start": 18.2,
+        "end": 18.7
+      },
+      {
+        "word": "But",
+        "start": 19.32,
+        "end": 19.48
+      },
+      {
+        "word": "behind",
+        "start": 19.48,
+        "end": 19.78
+      },
+      {
+        "word": "the",
+        "start": 19.78,
+        "end": 20.02
+      },
+      {
+        "word": "science",
+        "start": 20.02,
+        "end": 20.36
+      },
+      {
+        "word": "lay",
+        "start": 20.36,
+        "end": 20.66
+      },
+      {
+        "word": "something",
+        "start": 20.66,
+        "end": 20.98
+      },
+      {
+        "word": "deeper:",
+        "start": 20.98,
+        "end": 21.44
+      },
+      {
+        "word": "in",
+        "start": 22.38,
+        "end": 22.52
+      },
+      {
+        "word": "Islam,",
+        "start": 22.52,
+        "end": 23.0
+      },
+      {
+        "word": "easing",
+        "start": 23.34,
+        "end": 23.52
+      },
+      {
+        "word": "another's",
+        "start": 23.52,
+        "end": 23.84
+      },
+      {
+        "word": "suffering",
+        "start": 23.84,
+        "end": 24.28
+      },
+      {
+        "word": "is",
+        "start": 24.28,
+        "end": 24.66
+      },
+      {
+        "word": "an",
+        "start": 24.66,
+        "end": 24.76
+      },
+      {
+        "word": "act",
+        "start": 24.76,
+        "end": 24.94
+      },
+      {
+        "word": "of",
+        "start": 24.94,
+        "end": 25.1
+      },
+      {
+        "word": "mercy,",
+        "start": 25.1,
+        "end": 25.28
+      },
+      {
+        "word": "and",
+        "start": 25.87,
+        "end": 26.16
+      },
+      {
+        "word": "to",
+        "start": 26.16,
+        "end": 26.28
+      },
+      {
+        "word": "heal",
+        "start": 26.28,
+        "end": 26.52
+      },
+      {
+        "word": "is",
+        "start": 26.52,
+        "end": 26.78
+      },
+      {
+        "word": "a",
+        "start": 26.78,
+        "end": 26.9
+      },
+      {
+        "word": "way",
+        "start": 26.9,
+        "end": 27.06
+      },
+      {
+        "word": "of",
+        "start": 27.06,
+        "end": 27.18
+      },
+      {
+        "word": "serving",
+        "start": 27.18,
+        "end": 27.52
+      },
+      {
+        "word": "God",
+        "start": 27.52,
+        "end": 27.8
+      },
+      {
+        "word": "through",
+        "start": 27.8,
+        "end": 28.08
+      },
+      {
+        "word": "His",
+        "start": 28.08,
+        "end": 28.26
+      },
+      {
+        "word": "creation.",
+        "start": 28.26,
+        "end": 28.52
+      },
+      {
+        "word": "Save",
+        "start": 29.54,
+        "end": 30.02
+      },
+      {
+        "word": "this",
+        "start": 30.02,
+        "end": 30.24
+      },
+      {
+        "word": "to",
+        "start": 30.24,
+        "end": 30.42
+      },
+      {
+        "word": "remember.",
+        "start": 30.42,
+        "end": 30.66
       }
     ]
   },
   "reference": {
-    "text": "Islamic Teaching · Gratitude",
-    "startSec": 31.44
+    "text": "Islamic Golden Age · Cordoba",
+    "startSec": 29.54
   },
-  "audioFile": "audio/w20.wav",
-  "durationSec": 33.28,
+  "audioFile": "audio/w13.wav",
+  "durationSec": 31.37,
   "scenes": [
-    "scenes/w20/scene_0.jpg",
-    "scenes/w20/scene_1.jpg",
-    "scenes/w20/scene_2.jpg",
-    "scenes/w20/scene_3.jpg"
+    "scenes/w13/scene_0.jpg",
+    "scenes/w13/scene_1.jpg",
+    "scenes/w13/scene_2.jpg",
+    "scenes/w13/scene_3.jpg"
   ]
 }
