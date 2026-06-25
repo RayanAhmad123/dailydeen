@@ -1,68 +1,53 @@
 {
-  "id": "w31",
-  "category": "Night Sky",
+  "id": "w20",
+  "category": "Islamic Teaching",
   "hook": {
-    "text": "The most accurate star map before telescopes was made by a king.",
+    "text": "What if gratitude actually multiplied what you already have?",
     "words": [
       {
-        "word": "The",
+        "word": "What",
         "start": 0.0,
-        "end": 0.14
+        "end": 0.16
       },
       {
-        "word": "most",
-        "start": 0.14,
-        "end": 0.32
+        "word": "if",
+        "start": 0.16,
+        "end": 0.28
       },
       {
-        "word": "accurate",
-        "start": 0.32,
-        "end": 0.86
+        "word": "gratitude",
+        "start": 0.28,
+        "end": 0.5
       },
       {
-        "word": "star",
-        "start": 0.86,
-        "end": 1.22
+        "word": "actually",
+        "start": 0.5,
+        "end": 1.24
       },
       {
-        "word": "map",
-        "start": 1.22,
-        "end": 1.44
+        "word": "multiplied",
+        "start": 1.24,
+        "end": 1.58
       },
       {
-        "word": "before",
-        "start": 1.44,
-        "end": 1.82
+        "word": "what",
+        "start": 1.58,
+        "end": 2.02
       },
       {
-        "word": "telescopes",
-        "start": 1.82,
-        "end": 2.14
+        "word": "you",
+        "start": 2.02,
+        "end": 2.18
       },
       {
-        "word": "was",
-        "start": 2.14,
-        "end": 2.86
+        "word": "already",
+        "start": 2.18,
+        "end": 2.48
       },
       {
-        "word": "made",
-        "start": 2.86,
-        "end": 3.08
-      },
-      {
-        "word": "by",
-        "start": 3.08,
-        "end": 3.28
-      },
-      {
-        "word": "a",
-        "start": 3.28,
-        "end": 3.38
-      },
-      {
-        "word": "king.",
-        "start": 3.38,
-        "end": 3.6
+        "word": "have?",
+        "start": 2.48,
+        "end": 2.96
       }
     ]
   },
@@ -70,356 +55,396 @@
     "words": [
       {
         "word": "In",
-        "start": 4.52,
-        "end": 4.6
+        "start": 3.72,
+        "end": 3.92
       },
       {
-        "word": "the",
-        "start": 4.6,
-        "end": 4.68
+        "word": "Islam,",
+        "start": 3.92,
+        "end": 4.22
       },
       {
-        "word": "1420s,",
-        "start": 4.68,
-        "end": 5.66
+        "word": "gratitude",
+        "start": 4.82,
+        "end": 5.28
       },
       {
-        "word": "Ulugh",
-        "start": 5.92,
-        "end": 6.2
+        "word": "—",
+        "start": 5.28,
+        "end": 5.9
       },
       {
-        "word": "Beg",
-        "start": 6.2,
-        "end": 6.48
+        "word": "shukr",
+        "start": 5.9,
+        "end": 6.22
       },
       {
-        "word": "wasn't",
-        "start": 6.48,
+        "word": "—",
+        "start": 6.22,
+        "end": 6.56
+      },
+      {
+        "word": "isn't",
+        "start": 6.56,
         "end": 7.2
       },
       {
-        "word": "only",
-        "start": 7.2,
-        "end": 7.44
-      },
-      {
         "word": "a",
-        "start": 7.44,
-        "end": 7.52
+        "start": 7.2,
+        "end": 7.3
       },
       {
-        "word": "ruler",
-        "start": 7.52,
-        "end": 7.76
+        "word": "once-in-a-while",
+        "start": 7.3,
+        "end": 7.98
       },
       {
-        "word": "in",
-        "start": 7.76,
-        "end": 7.94
+        "word": "feeling.",
+        "start": 7.98,
+        "end": 8.36
       },
       {
-        "word": "Samarkand,",
-        "start": 7.94,
-        "end": 8.52
+        "word": "It's",
+        "start": 8.84,
+        "end": 9.12
       },
       {
-        "word": "he",
-        "start": 8.86,
-        "end": 9.1
-      },
-      {
-        "word": "was",
-        "start": 9.1,
-        "end": 9.24
-      },
-      {
-        "word": "an",
-        "start": 9.24,
+        "word": "woven",
+        "start": 9.12,
         "end": 9.36
       },
       {
-        "word": "astronomer.",
+        "word": "into",
         "start": 9.36,
-        "end": 9.62
+        "end": 9.68
       },
       {
-        "word": "He",
-        "start": 10.5,
+        "word": "every",
+        "start": 9.68,
+        "end": 10.04
+      },
+      {
+        "word": "single",
+        "start": 10.04,
+        "end": 10.32
+      },
+      {
+        "word": "day,",
+        "start": 10.32,
         "end": 10.64
       },
       {
-        "word": "built",
+        "word": "in",
         "start": 10.64,
-        "end": 10.82
+        "end": 11.08
       },
       {
         "word": "one",
-        "start": 10.82,
-        "end": 11.02
+        "start": 11.08,
+        "end": 11.34
       },
       {
-        "word": "of",
-        "start": 11.02,
-        "end": 11.1
+        "word": "small",
+        "start": 11.34,
+        "end": 11.62
       },
       {
-        "word": "the",
-        "start": 11.1,
-        "end": 11.18
+        "word": "phrase:",
+        "start": 11.62,
+        "end": 12.06
       },
       {
-        "word": "greatest",
-        "start": 11.18,
-        "end": 11.48
+        "word": "'alhamdulillah',",
+        "start": 13.4,
+        "end": 14.0
       },
       {
-        "word": "observatories",
-        "start": 11.48,
-        "end": 12.22
-      },
-      {
-        "word": "of",
-        "start": 12.22,
-        "end": 12.48
-      },
-      {
-        "word": "the",
-        "start": 12.48,
-        "end": 12.6
-      },
-      {
-        "word": "medieval",
-        "start": 12.6,
-        "end": 12.8
-      },
-      {
-        "word": "world",
-        "start": 12.8,
-        "end": 13.26
-      },
-      {
-        "word": "and",
-        "start": 13.26,
-        "end": 13.88
-      },
-      {
-        "word": "gathered",
-        "start": 13.88,
-        "end": 14.24
-      },
-      {
-        "word": "a",
-        "start": 14.24,
-        "end": 14.34
-      },
-      {
-        "word": "team",
-        "start": 14.34,
-        "end": 14.58
-      },
-      {
-        "word": "to",
-        "start": 14.58,
+        "word": "all",
+        "start": 14.36,
         "end": 14.76
       },
       {
-        "word": "chart",
+        "word": "praise",
         "start": 14.76,
-        "end": 14.94
+        "end": 15.12
+      },
+      {
+        "word": "belongs",
+        "start": 15.12,
+        "end": 15.52
+      },
+      {
+        "word": "to",
+        "start": 15.52,
+        "end": 15.82
+      },
+      {
+        "word": "God.",
+        "start": 15.82,
+        "end": 16.08
+      },
+      {
+        "word": "And",
+        "start": 16.58,
+        "end": 16.76
       },
       {
         "word": "the",
-        "start": 14.94,
-        "end": 15.16
+        "start": 16.76,
+        "end": 16.86
       },
       {
-        "word": "heavens.",
-        "start": 15.16,
-        "end": 15.38
+        "word": "Quran",
+        "start": 16.86,
+        "end": 17.12
       },
       {
-        "word": "Together",
-        "start": 16.24,
-        "end": 16.38
-      },
-      {
-        "word": "they",
-        "start": 16.38,
-        "end": 16.74
-      },
-      {
-        "word": "measured",
-        "start": 16.74,
-        "end": 17.02
-      },
-      {
-        "word": "the",
-        "start": 17.02,
-        "end": 17.24
-      },
-      {
-        "word": "positions",
-        "start": 17.24,
-        "end": 17.68
-      },
-      {
-        "word": "of",
-        "start": 17.68,
-        "end": 18.12
-      },
-      {
-        "word": "over",
-        "start": 18.12,
-        "end": 18.4
+        "word": "makes",
+        "start": 17.12,
+        "end": 17.58
       },
       {
         "word": "a",
-        "start": 18.4,
+        "start": 17.58,
+        "end": 17.74
+      },
+      {
+        "word": "striking",
+        "start": 17.74,
+        "end": 18.08
+      },
+      {
+        "word": "promise",
+        "start": 18.08,
         "end": 18.56
       },
       {
-        "word": "thousand",
+        "word": "about",
         "start": 18.56,
-        "end": 18.88
+        "end": 18.98
       },
       {
-        "word": "stars,",
-        "start": 18.88,
-        "end": 19.36
+        "word": "it:",
+        "start": 18.98,
+        "end": 19.14
       },
       {
-        "word": "producing",
-        "start": 20.04,
-        "end": 20.34
+        "word": "'If",
+        "start": 19.7,
+        "end": 19.74
       },
       {
-        "word": "a",
-        "start": 20.34,
-        "end": 20.64
+        "word": "you",
+        "start": 19.74,
+        "end": 19.88
       },
       {
-        "word": "catalog",
-        "start": 20.64,
-        "end": 20.98
+        "word": "are",
+        "start": 19.88,
+        "end": 20.02
       },
       {
-        "word": "so",
-        "start": 20.98,
-        "end": 21.44
+        "word": "grateful,",
+        "start": 20.02,
+        "end": 20.3
       },
       {
-        "word": "precise",
-        "start": 21.44,
-        "end": 21.94
+        "word": "I",
+        "start": 20.86,
+        "end": 21.04
       },
       {
-        "word": "it",
-        "start": 21.94,
-        "end": 22.18
+        "word": "will",
+        "start": 21.04,
+        "end": 21.2
       },
       {
-        "word": "stayed",
-        "start": 22.18,
-        "end": 22.4
+        "word": "surely",
+        "start": 21.2,
+        "end": 21.52
       },
       {
-        "word": "the",
-        "start": 22.4,
-        "end": 22.58
+        "word": "increase",
+        "start": 21.52,
+        "end": 21.9
       },
       {
-        "word": "most",
-        "start": 22.58,
-        "end": 22.76
+        "word": "you.'",
+        "start": 21.9,
+        "end": 22.26
       },
       {
-        "word": "accurate",
-        "start": 22.76,
-        "end": 23.22
+        "word": "True",
+        "start": 23.12,
+        "end": 23.4
       },
       {
-        "word": "on",
-        "start": 23.22,
-        "end": 23.48
-      },
-      {
-        "word": "Earth",
-        "start": 23.48,
+        "word": "gratitude",
+        "start": 23.4,
         "end": 23.7
       },
       {
-        "word": "until",
+        "word": "lives",
         "start": 23.7,
-        "end": 24.22
+        "end": 24.2
       },
       {
-        "word": "the",
-        "start": 24.22,
-        "end": 24.4
+        "word": "in",
+        "start": 24.2,
+        "end": 24.44
       },
       {
-        "word": "telescope",
-        "start": 24.4,
-        "end": 24.74
+        "word": "three",
+        "start": 24.44,
+        "end": 24.68
       },
       {
-        "word": "was",
-        "start": 24.74,
+        "word": "places",
+        "start": 24.68,
         "end": 25.06
       },
       {
-        "word": "invented.",
+        "word": "at",
         "start": 25.06,
-        "end": 25.32
+        "end": 25.3
       },
       {
-        "word": "Follow",
-        "start": 26.28,
-        "end": 26.66
+        "word": "once",
+        "start": 25.3,
+        "end": 25.52
+      },
+      {
+        "word": "—",
+        "start": 25.52,
+        "end": 26.14
+      },
+      {
+        "word": "the",
+        "start": 26.14,
+        "end": 26.32
+      },
+      {
+        "word": "heart",
+        "start": 26.32,
+        "end": 26.54
+      },
+      {
+        "word": "that",
+        "start": 26.54,
+        "end": 26.74
+      },
+      {
+        "word": "feels",
+        "start": 26.74,
+        "end": 27.0
+      },
+      {
+        "word": "it,",
+        "start": 27.0,
+        "end": 27.26
+      },
+      {
+        "word": "the",
+        "start": 27.76,
+        "end": 27.86
+      },
+      {
+        "word": "tongue",
+        "start": 27.86,
+        "end": 28.04
+      },
+      {
+        "word": "that",
+        "start": 28.04,
+        "end": 28.3
+      },
+      {
+        "word": "speaks",
+        "start": 28.3,
+        "end": 28.58
+      },
+      {
+        "word": "it,",
+        "start": 28.58,
+        "end": 28.84
+      },
+      {
+        "word": "and",
+        "start": 28.84,
+        "end": 29.42
+      },
+      {
+        "word": "the",
+        "start": 29.42,
+        "end": 29.52
+      },
+      {
+        "word": "hands",
+        "start": 29.52,
+        "end": 29.78
+      },
+      {
+        "word": "that",
+        "start": 29.78,
+        "end": 30.0
+      },
+      {
+        "word": "act",
+        "start": 30.0,
+        "end": 30.16
+      },
+      {
+        "word": "on",
+        "start": 30.16,
+        "end": 30.42
+      },
+      {
+        "word": "it.",
+        "start": 30.42,
+        "end": 30.54
+      },
+      {
+        "word": "What",
+        "start": 31.44,
+        "end": 31.66
+      },
+      {
+        "word": "are",
+        "start": 31.66,
+        "end": 31.76
+      },
+      {
+        "word": "you",
+        "start": 31.76,
+        "end": 31.9
+      },
+      {
+        "word": "grateful",
+        "start": 31.9,
+        "end": 32.12
       },
       {
         "word": "for",
-        "start": 26.66,
-        "end": 26.92
+        "start": 32.12,
+        "end": 32.44
       },
       {
-        "word": "a",
-        "start": 26.92,
-        "end": 27.02
-      },
-      {
-        "word": "new",
-        "start": 27.02,
-        "end": 27.2
-      },
-      {
-        "word": "wonder",
-        "start": 27.2,
-        "end": 27.44
-      },
-      {
-        "word": "each",
-        "start": 27.44,
-        "end": 27.8
-      },
-      {
-        "word": "day.",
-        "start": 27.8,
-        "end": 28.12
+        "word": "today?",
+        "start": 32.44,
+        "end": 32.76
       }
     ]
   },
   "reference": {
-    "text": "Islamic Astronomy · Samarkand, 1420s",
-    "startSec": 26.28
+    "text": "Islamic Teaching · Gratitude",
+    "startSec": 31.44
   },
-  "audioFile": "audio/w31.wav",
-  "durationSec": 28.63,
+  "audioFile": "audio/w20.wav",
+  "durationSec": 33.28,
   "scenes": [
-    "scenes/w31/scene_0.jpg",
-    "scenes/w31/scene_1.jpg",
-    "scenes/w31/scene_2.jpg",
-    "scenes/w31/scene_3.jpg"
+    "scenes/w20/scene_0.jpg",
+    "scenes/w20/scene_1.jpg",
+    "scenes/w20/scene_2.jpg",
+    "scenes/w20/scene_3.jpg"
   ]
 }
