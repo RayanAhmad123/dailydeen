@@ -1,7 +1,7 @@
 {
-  "_readme": "Curated footage approved from work/footage_candidates.json (reviewed visually). `src` is relative to assets/footage/. `dur` is the clean single-shot length available from `start`; build_reflection.py outputs a uniform 15s, looping shorter shots. `theme` loosely matches quote themes (falls back to rotation). Skipped: crowded squares, construction, signage, rotated, person-focused shots.",
+  "_readme": "Curated footage approved from work/footage_candidates.json (reviewed visually). `src` is relative to assets/footage/. `dur` is the clean single-shot length available from `start`; build_reflection.py outputs a uniform 15s, looping shorter shots. `theme` loosely matches quote themes (falls back to rotation). Optional `rotate` ('cw'|'ccw') fixes clips shot in portrait but stored as landscape with no rotation metadata (set during visual review). Skipped: crowded squares, construction, signage, person-focused shots.",
   "clips": [
-    { "id": "f1", "src": "raw/DJI_20260618163914_0034_D.MP4", "start": 0.4, "dur": 18.0, "theme": "remembrance", "tags": ["mosque-interior", "dome", "blue-mosque"] },
+    { "id": "f1", "src": "raw/DJI_20260618163914_0034_D.MP4", "start": 0.4, "dur": 18.0, "rotate": "cw", "theme": "remembrance", "tags": ["mosque-interior", "dome", "blue-mosque"] },
     { "id": "f2", "src": "raw/DJI_20260618163828_0033_D.MP4", "start": 0.4, "dur": 18.0, "theme": "nearness", "tags": ["mosque-interior", "blue-mosque"] },
     { "id": "f3", "src": "raw/DJI_20260619112733_0024_D.MP4", "start": 0.4, "dur": 7.7, "theme": "remembrance", "tags": ["mosque-interior", "domes"] },
     { "id": "f4", "src": "raw/DJI_20260618164114_0035_D.MP4", "start": 0.4, "dur": 15.4, "theme": "peace", "tags": ["courtyard", "blue-mosque", "arches"] },
