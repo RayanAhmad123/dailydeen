@@ -90,9 +90,14 @@ def main():
             name = f"cand{cid:03d}.jpg"
             run(["ffmpeg", "-y", "-ss", str(mid), "-i", str(clip), "-frames:v", "1",
                  "-vf", "scale=540:-1", "-q:v", "3", str(PREV / name)])
-            candidates.append({"id": f"c{cid}", "src": rel, "start": start,
-                               "dur": round(min(seglen, 18), 2),
-                               "preview": f"curated/previews/{name}"})
+            cand = {"id": f"c{cid}", "src": rel, "start": start,
+                    "dur": round(min(seglen, 18), 2),
+                    "preview": f"curated/previews/{name}"}
+            # DJI Action saves all footage as landscape with no rotation flag.
+            # Clips dropped in a `vertical/` subfolder were filmed vertically -> rotate.
+            if "vertical" in rel.lower():
+                cand["rotate"] = "cw"  # verify direction visually during review
+            candidates.append(cand)
             print(f"  candidate {rel}  start={start}s dur~{round(min(seglen,18),2)}s -> {name}")
 
     (ROOT / "work").mkdir(exist_ok=True)
