@@ -15,8 +15,7 @@ content/topics.json (curated topic bank, grounded facts)
   → scripts/build_props.py     assemble props            → src/videoData.json
   → npx remotion render        1080x1920 @ 30fps         → output/videos/<id>.mp4
   → scripts/finalize.py        state + story + metadata
-  → scripts/upload_youtube.py  YouTube upload + registry → state/uploads.json
-  → scripts/upload_tiktok.py   TikTok (drafts until app audit)
+  → scripts/upload_postpeer.py PostPeer → YouTube + TikTok (public) + registry → state/uploads.json
   ↺ scripts/analyze_performance.py (next run, step 0)     → work/strategy.json
 ```
 
@@ -31,7 +30,7 @@ Run the whole thing with the `/daily-video` slash command.
 - **Content rules**: scripts must stay within the topic's `facts` — no invented specifics; NEVER fabricate hadith or Quran quotes; "The Prophet Muhammad (peace be upon him)" phrasing; respectful hooks only, no clickbait.
 - **Faith-first framing (user preference, non-negotiable)**: this is a *Daily Islamic Wisdom* channel — every script must anchor in a clear Islamic/spiritual angle (faith, gratitude to God, awe of His creation, prophetic character, knowledge as worship, mercy, good akhlaq). History/science topics (Golden Age, Night Sky, Arabic Origins) are vehicles for a spiritual lesson, NOT trivia for its own sake — the body and especially the payoff must tie the fact back to God/faith, not just "Muslims invented X". Pure linguistics/science-trivia topics that can't carry a spiritual lesson were removed from the bank; keep new additions on-theme.
 - **Image rules** (non-negotiable): never depict or name the Prophet, any prophet, Allah, angels, or companions; all characters are faceless silhouettes ("solid black featureless silhouette, head completely dark" front-loaded in every prompt); never use negations in image prompts ("crescent-less" draws crescents); no text in images. `generate_scenes.py` enforces a blocklist.
-- **Distribution**: YouTube via official API (`config/google_client_secret.json` + cached `state/yt_token.json`; unverified Google projects may force uploads private — publish from Studio). TikTok via Content Posting API — drafts only until TikTok audits the app (`TIKTOK_DIRECT_POST=1` after audit). Every upload is registered in `state/uploads.json`; `analyze_performance.py` scores them (retention-weighted, every 4th run explores) and the next run follows `work/strategy.json`.
+- **Distribution**: **PostPeer** (`scripts/upload_postpeer.py`, `POSTPEER_API_KEY` in `~/.zshenv`) is the primary path — one call posts to YouTube + TikTok, publishing PUBLIC directly (it ignores YouTube privacyStatus) with the caption, and avoids the TikTok sandbox draft cap. Schedule with `PP_WHEN=<ISO time>`. Account IDs + flow in the PostPeer memory. Every upload registers the YouTube id in `state/uploads.json`; `analyze_performance.py` scores them (retention-weighted, every 4th run explores) and the next run follows `work/strategy.json`. Legacy/fallback: `scripts/upload_youtube.py` (official API, honors privacy — use for a PRIVATE review copy); `scripts/upload_tiktok.py` (old sandbox Content Posting API, drafts-only + per-day cap — superseded by PostPeer).
 - **Visual design** (src/): elegant Islamic theme — emerald/navy, gold (#c9a85c), Cormorant Garamond, karaoke word highlighting, spring animations, Ken Burns scene layer, progress bar, outro CTA. Colors in `src/theme.ts`.
 - `work/` is scratch (gitignored). `src/videoData.json` is overwritten each run; a sample is committed so Remotion Studio always opens.
 

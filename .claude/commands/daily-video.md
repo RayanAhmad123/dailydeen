@@ -35,10 +35,8 @@ Run the daily Islamic wisdom video pipeline from start to finish:
 
 8. **Finalize**: `python3 scripts/finalize.py` — updates state, advances the story, writes upload metadata.
 
-9. **Upload — YouTube**: `python3 scripts/upload_youtube.py` (uses `output/videos/<id>.meta.json`; registers the upload in `state/uploads.json` for the feedback loop). If OAuth isn't configured yet, give the user the setup steps from the script's docstring and skip. If YouTube locks the video private (unverified API project), tell the user to publish it in YouTube Studio.
+9. **Upload — PostPeer (YouTube + TikTok in one call)**: `python3 scripts/upload_postpeer.py` — presigned-uploads the video and posts to both platforms (reads `work/script.json` id + `output/videos/<id>.meta.json`; registers the YouTube id in `state/uploads.json`). **PostPeer publishes PUBLIC directly** (it ignores YouTube privacyStatus) and TikTok posts publicly with the caption — this is the path that avoids the TikTok sandbox cap. To schedule instead of posting now, pass `PP_WHEN=<ISO time>` (+ `PP_TZ`). If `POSTPEER_API_KEY` is missing, note it and skip. (Legacy direct scripts remain for special cases: `scripts/upload_youtube.py` for a PRIVATE review copy on YouTube; `scripts/upload_tiktok.py` is the old capped sandbox path — avoid.)
 
-10. **Upload — TikTok**: `python3 scripts/upload_tiktok.py` (sends to TikTok inbox/drafts with a suggested caption unless `TIKTOK_DIRECT_POST=1`). If `TIKTOK_ACCESS_TOKEN` is missing, note it and skip.
-
-11. **Report**: topic + category (and why the strategy chose it, if it did), the hook and body, the episode beat, video path, upload links/status for both platforms, and the title/description used.
+10. **Report**: topic + category (and why the strategy chose it, if it did), the hook and body, the episode beat, video path, upload links/status for both platforms, and the title/description used.
 
 If a step fails, diagnose and fix it before moving on; only skip with a clear explanation.
