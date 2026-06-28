@@ -14,7 +14,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DUR_MIN, DUR_MAX = 16, 20
+TARGET_SEC = 15  # uniform short length (short-form retention; long enough to read a quote)
 HASHTAG_BASE = ["islam", "islamicreminders", "muslim", "quran", "deen", "shorts"]
 
 
@@ -42,17 +42,28 @@ def pick_clip(clips, theme, used):
     return None
 
 
-def trim_clip(src_abs, start, dur, out_path):
-    """Crop-to-cover 9:16, mute, 30fps, fixed duration."""
+VF = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1"
+
+
+def _encode(args, vf_in, dur, out_path):
+    subprocess.run(["ffmpeg", "-y", *args, "-an", "-vf", vf_in, "-t", str(dur),
+                    "-r", "30", "-c:v", "libx264", "-preset", "medium",
+                    "-pix_fmt", "yuv420p", str(out_path)], check=True, capture_output=True)
+
+
+def trim_clip(src_abs, start, avail, target, out_path):
+    """Crop-to-cover 9:16, mute, 30fps. If the clean shot is shorter than the
+    target, loop it to fill (no mid-video hard cut)."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        "ffmpeg", "-y", "-ss", str(start), "-t", str(dur), "-i", str(src_abs),
-        "-an",
-        "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1",
-        "-r", "30", "-c:v", "libx264", "-preset", "medium", "-pix_fmt", "yuv420p",
-        str(out_path),
-    ]
-    subprocess.run(cmd, check=True, capture_output=True)
+    if avail >= target:
+        _encode(["-ss", str(start), "-i", str(src_abs)], VF, target, out_path)
+    else:
+        tmp = out_path.with_name("_seg_" + out_path.name)
+        _encode(["-ss", str(start), "-i", str(src_abs)], VF, round(avail, 2), tmp)
+        subprocess.run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(tmp),
+                        "-t", str(target), "-c", "copy", str(out_path)],
+                       check=True, capture_output=True)
+        tmp.unlink(missing_ok=True)
 
 
 def main():
@@ -68,17 +79,18 @@ def main():
     clip = pick_clip(footage, q.get("theme"), set(state["used_clips"]))
 
     clip_rel = None
-    dur = DUR_MAX
+    dur = TARGET_SEC
     if clip:
         src_abs = ROOT / "assets" / "footage" / clip["src"]
         if not src_abs.exists():
             print(f"  ! curated clip missing on disk: {src_abs} — rendering quote-only")
             clip = None
         else:
-            dur = max(DUR_MIN, min(DUR_MAX, int(clip.get("dur", DUR_MAX))))
+            avail = float(clip.get("dur", TARGET_SEC))
             out = ROOT / "public" / "reflection" / f"{vid}.mp4"
-            print(f"  trimming {clip['src']} @ {clip.get('start', 0)}s for {dur}s -> {out.name}")
-            trim_clip(src_abs, clip.get("start", 0), dur, out)
+            print(f"  trimming {clip['src']} @ {clip.get('start', 0)}s -> {dur}s"
+                  + ("  (looped)" if avail < dur else "") + f"  {out.name}")
+            trim_clip(src_abs, clip.get("start", 0), avail, dur, out)
             clip_rel = f"reflection/{vid}.mp4"
 
     props = {"id": vid, "quote": q["text"], "source": q["source"],
@@ -102,6 +114,15 @@ def main():
     out_dir = ROOT / "output" / "videos"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / f"{vid}.meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
+
+    # Advance rotation state so the next run picks a fresh quote/clip
+    if vid not in state["used_quotes"]:
+        state["used_quotes"].append(vid)
+    if clip and clip["id"] not in state["used_clips"]:
+        state["used_clips"].append(clip["id"])
+    state["last"] = vid
+    (ROOT / "state").mkdir(exist_ok=True)
+    (ROOT / "state" / "reflection.json").write_text(json.dumps(state, indent=2, ensure_ascii=False))
 
     print(f"Reflection ready: id={vid}")
     print(f"  quote : \"{q['text']}\"  ({q['source']})")
