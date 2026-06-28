@@ -17,7 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REC_DIR = ROOT / "assets" / "recitations"
-RECITER = "Husary_128kbps"
+RECITER = "Minshawy_Murattal_128kbps"
+RECITER_NAME = "Mohamed Siddiq El-Minshawi"
 TEXT_API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,en.sahih"
 AUDIO_URL = "https://everyayah.com/data/{rec}/{code}.mp3"
 
@@ -95,7 +96,7 @@ def main():
             "arabic": " ".join(ar_parts),
             "translation": " ".join(en_parts).replace("[", "").replace("]", ""),
             "audio": f"recitations/{vid}.mp3",
-            "reciter": "Mahmoud Khalil al-Husary",
+            "reciter": RECITER_NAME,
             "durationSec": duration(out_mp3),
         }
         bank.append(entry)
@@ -104,8 +105,8 @@ def main():
     (ROOT / "content" / "ayat.json").write_text(json.dumps(
         {"_readme": "Ayah bank for AyahVideos. Arabic (Uthmani) + Sahih International "
                     "translation are fetched verbatim from api.alquran.cloud — never hand-typed. "
-                    "Audio is Husary murattal from everyayah.com (widely redistributed; small "
-                    "Content-ID risk on YouTube). Rebuild with scripts/fetch_ayat.py.",
+                    "Audio is murattal from everyayah.com (reciter set by RECITER in fetch_ayat.py; "
+                    "widely redistributed, small Content-ID risk on YouTube). Rebuild with scripts/fetch_ayat.py.",
          "ayat": bank}, indent=2, ensure_ascii=False))
     print(f"\n{len(bank)} ayat -> content/ayat.json ; audio in {REC_DIR}")
 
