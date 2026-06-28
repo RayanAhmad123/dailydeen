@@ -1,455 +1,475 @@
 {
-  "id": "w18",
-  "category": "Islamic Teaching",
+  "id": "w23",
+  "category": "Islamic Golden Age",
   "hook": {
-    "text": "Even worship can be overdone, and Islam warns against it.",
+    "text": "A map drawn 900 years ago put south at the top.",
     "words": [
       {
-        "word": "Even",
+        "word": "A",
         "start": 0.0,
-        "end": 0.22
+        "end": 0.12
       },
       {
-        "word": "worship",
-        "start": 0.22,
-        "end": 0.44
+        "word": "map",
+        "start": 0.12,
+        "end": 0.34
       },
       {
-        "word": "can",
-        "start": 0.44,
-        "end": 0.72
+        "word": "drawn",
+        "start": 0.34,
+        "end": 0.54
       },
       {
-        "word": "be",
-        "start": 0.72,
-        "end": 0.86
+        "word": "900",
+        "start": 0.54,
+        "end": 0.92
       },
       {
-        "word": "overdone,",
-        "start": 0.86,
-        "end": 1.24
+        "word": "years",
+        "start": 0.92,
+        "end": 1.38
       },
       {
-        "word": "and",
-        "start": 1.24,
-        "end": 1.6
+        "word": "ago",
+        "start": 1.38,
+        "end": 1.66
       },
       {
-        "word": "Islam",
-        "start": 1.6,
-        "end": 1.84
+        "word": "put",
+        "start": 1.66,
+        "end": 1.9
       },
       {
-        "word": "warns",
-        "start": 1.84,
-        "end": 2.06
+        "word": "south",
+        "start": 1.9,
+        "end": 2.14
       },
       {
-        "word": "against",
-        "start": 2.06,
-        "end": 2.38
+        "word": "at",
+        "start": 2.14,
+        "end": 2.4
       },
       {
-        "word": "it.",
-        "start": 2.38,
-        "end": 2.6
+        "word": "the",
+        "start": 2.4,
+        "end": 2.48
+      },
+      {
+        "word": "top.",
+        "start": 2.48,
+        "end": 2.74
       }
     ]
   },
   "body": {
     "words": [
       {
-        "word": "We",
-        "start": 3.44,
-        "end": 3.5
+        "word": "In",
+        "start": 3.88,
+        "end": 4.36
       },
       {
-        "word": "tend",
-        "start": 3.5,
-        "end": 3.66
-      },
-      {
-        "word": "to",
-        "start": 3.66,
-        "end": 3.82
-      },
-      {
-        "word": "think",
-        "start": 3.82,
-        "end": 4.0
-      },
-      {
-        "word": "more",
-        "start": 4.0,
-        "end": 4.3
-      },
-      {
-        "word": "is",
-        "start": 4.3,
-        "end": 4.58
-      },
-      {
-        "word": "always",
-        "start": 4.58,
-        "end": 4.9
-      },
-      {
-        "word": "better",
-        "start": 4.9,
-        "end": 5.34
-      },
-      {
-        "word": "—",
-        "start": 5.34,
-        "end": 5.94
-      },
-      {
-        "word": "more",
-        "start": 5.94,
-        "end": 6.1
-      },
-      {
-        "word": "work,",
-        "start": 6.1,
-        "end": 6.36
-      },
-      {
-        "word": "more",
-        "start": 6.7,
-        "end": 6.94
-      },
-      {
-        "word": "spending,",
-        "start": 6.94,
-        "end": 7.3
-      },
-      {
-        "word": "even",
-        "start": 7.82,
-        "end": 8.18
-      },
-      {
-        "word": "more",
-        "start": 8.18,
-        "end": 8.42
-      },
-      {
-        "word": "worship.",
-        "start": 8.42,
-        "end": 8.74
-      },
-      {
-        "word": "But",
-        "start": 9.52,
-        "end": 9.56
-      },
-      {
-        "word": "Islam",
-        "start": 9.56,
-        "end": 9.74
-      },
-      {
-        "word": "teaches",
-        "start": 9.74,
-        "end": 10.24
-      },
-      {
-        "word": "balance.",
-        "start": 10.24,
-        "end": 10.72
-      },
-      {
-        "word": "The",
-        "start": 11.6,
-        "end": 11.64
-      },
-      {
-        "word": "Quran",
-        "start": 11.64,
-        "end": 11.82
-      },
-      {
-        "word": "calls",
-        "start": 11.82,
-        "end": 12.26
+        "word": "1154,",
+        "start": 4.36,
+        "end": 4.84
       },
       {
         "word": "the",
-        "start": 12.26,
-        "end": 12.48
+        "start": 5.04,
+        "end": 5.1
       },
       {
         "word": "Muslim",
-        "start": 12.48,
-        "end": 12.76
+        "start": 5.1,
+        "end": 5.36
       },
       {
-        "word": "community",
-        "start": 12.76,
-        "end": 13.22
+        "word": "geographer",
+        "start": 5.36,
+        "end": 6.12
       },
       {
-        "word": "'a",
-        "start": 13.22,
-        "end": 13.92
+        "word": "al-Idrisi",
+        "start": 6.4,
+        "end": 6.96
       },
       {
-        "word": "middle",
-        "start": 13.92,
-        "end": 14.1
+        "word": "made",
+        "start": 7.44,
+        "end": 7.56
       },
       {
-        "word": "nation',",
-        "start": 14.1,
-        "end": 14.52
+        "word": "one",
+        "start": 7.56,
+        "end": 7.74
       },
       {
-        "word": "and",
-        "start": 15.28,
-        "end": 15.28
-      },
-      {
-        "word": "classical",
-        "start": 15.28,
-        "end": 15.54
-      },
-      {
-        "word": "scholars",
-        "start": 15.54,
-        "end": 16.3
-      },
-      {
-        "word": "urged",
-        "start": 16.3,
-        "end": 16.7
-      },
-      {
-        "word": "moderation",
-        "start": 16.7,
-        "end": 17.22
-      },
-      {
-        "word": "in",
-        "start": 17.22,
-        "end": 17.72
-      },
-      {
-        "word": "everything:",
-        "start": 17.72,
-        "end": 17.96
-      },
-      {
-        "word": "how",
-        "start": 18.84,
-        "end": 18.9
-      },
-      {
-        "word": "we",
-        "start": 18.9,
-        "end": 19.1
-      },
-      {
-        "word": "eat,",
-        "start": 19.1,
-        "end": 19.34
-      },
-      {
-        "word": "how",
-        "start": 19.74,
-        "end": 19.9
-      },
-      {
-        "word": "we",
-        "start": 19.9,
-        "end": 20.1
-      },
-      {
-        "word": "spend,",
-        "start": 20.1,
-        "end": 20.32
-      },
-      {
-        "word": "how",
-        "start": 20.98,
-        "end": 21.18
-      },
-      {
-        "word": "we",
-        "start": 21.18,
-        "end": 21.38
-      },
-      {
-        "word": "speak,",
-        "start": 21.38,
-        "end": 21.62
-      },
-      {
-        "word": "and",
-        "start": 22.24,
-        "end": 22.44
-      },
-      {
-        "word": "even",
-        "start": 22.44,
-        "end": 22.62
-      },
-      {
-        "word": "how",
-        "start": 22.62,
-        "end": 22.84
-      },
-      {
-        "word": "we",
-        "start": 22.84,
-        "end": 23.0
-      },
-      {
-        "word": "worship.",
-        "start": 23.0,
-        "end": 23.22
-      },
-      {
-        "word": "Even",
-        "start": 24.08,
-        "end": 24.32
-      },
-      {
-        "word": "good",
-        "start": 24.32,
-        "end": 24.56
-      },
-      {
-        "word": "deeds",
-        "start": 24.56,
-        "end": 24.8
-      },
-      {
-        "word": "are",
-        "start": 24.8,
-        "end": 25.04
-      },
-      {
-        "word": "best",
-        "start": 25.04,
-        "end": 25.26
-      },
-      {
-        "word": "done",
-        "start": 25.26,
-        "end": 25.54
-      },
-      {
-        "word": "in",
-        "start": 25.54,
-        "end": 25.68
-      },
-      {
-        "word": "steady,",
-        "start": 25.68,
-        "end": 25.98
-      },
-      {
-        "word": "sustainable",
-        "start": 25.98,
-        "end": 26.58
-      },
-      {
-        "word": "amounts.",
-        "start": 26.58,
-        "end": 26.9
-      },
-      {
-        "word": "In",
-        "start": 27.58,
-        "end": 28.06
-      },
-      {
-        "word": "Islam,",
-        "start": 28.06,
-        "end": 28.38
+        "word": "of",
+        "start": 7.74,
+        "end": 7.82
       },
       {
         "word": "the",
-        "start": 28.98,
-        "end": 29.14
+        "start": 7.82,
+        "end": 7.9
       },
       {
-        "word": "path",
-        "start": 29.14,
-        "end": 29.36
+        "word": "most",
+        "start": 7.9,
+        "end": 8.06
       },
       {
-        "word": "to",
-        "start": 29.36,
-        "end": 29.6
+        "word": "accurate",
+        "start": 8.06,
+        "end": 8.56
       },
       {
-        "word": "God",
-        "start": 29.6,
-        "end": 29.84
+        "word": "world",
+        "start": 8.56,
+        "end": 8.88
       },
       {
-        "word": "is",
-        "start": 29.84,
-        "end": 30.06
+        "word": "maps",
+        "start": 8.88,
+        "end": 9.12
+      },
+      {
+        "word": "of",
+        "start": 9.12,
+        "end": 9.42
+      },
+      {
+        "word": "his",
+        "start": 9.42,
+        "end": 9.54
+      },
+      {
+        "word": "age",
+        "start": 9.54,
+        "end": 9.76
+      },
+      {
+        "word": "for",
+        "start": 9.76,
+        "end": 10.0
+      },
+      {
+        "word": "King",
+        "start": 10.0,
+        "end": 10.18
+      },
+      {
+        "word": "Roger",
+        "start": 10.18,
+        "end": 10.44
+      },
+      {
+        "word": "the",
+        "start": 10.44,
+        "end": 10.7
+      },
+      {
+        "word": "Second",
+        "start": 10.7,
+        "end": 10.96
+      },
+      {
+        "word": "of",
+        "start": 10.96,
+        "end": 11.18
+      },
+      {
+        "word": "Sicily.",
+        "start": 11.18,
+        "end": 11.32
+      },
+      {
+        "word": "He",
+        "start": 12.24,
+        "end": 12.34
+      },
+      {
+        "word": "gathered",
+        "start": 12.34,
+        "end": 12.56
+      },
+      {
+        "word": "knowledge",
+        "start": 12.56,
+        "end": 12.98
+      },
+      {
+        "word": "from",
+        "start": 12.98,
+        "end": 13.26
+      },
+      {
+        "word": "countless",
+        "start": 13.26,
+        "end": 13.6
+      },
+      {
+        "word": "travelers",
+        "start": 13.6,
+        "end": 14.06
+      },
+      {
+        "word": "into",
+        "start": 14.06,
+        "end": 14.5
       },
       {
         "word": "a",
-        "start": 30.06,
-        "end": 30.14
+        "start": 14.5,
+        "end": 14.66
       },
       {
-        "word": "balanced",
-        "start": 30.14,
-        "end": 30.46
+        "word": "single",
+        "start": 14.66,
+        "end": 14.86
       },
       {
-        "word": "one.",
-        "start": 30.46,
-        "end": 30.72
+        "word": "book",
+        "start": 14.86,
+        "end": 15.14
       },
       {
-        "word": "Where",
-        "start": 31.58,
-        "end": 31.78
+        "word": "and",
+        "start": 15.14,
+        "end": 15.28
       },
       {
-        "word": "do",
-        "start": 31.78,
-        "end": 31.92
+        "word": "map",
+        "start": 15.28,
+        "end": 15.46
       },
       {
-        "word": "you",
-        "start": 31.92,
-        "end": 32.0
+        "word": "—",
+        "start": 15.46,
+        "end": 16.12
       },
       {
-        "word": "need",
-        "start": 32.0,
-        "end": 32.16
+        "word": "drawn,",
+        "start": 16.12,
+        "end": 16.38
       },
       {
-        "word": "more",
-        "start": 32.16,
-        "end": 32.36
+        "word": "like",
+        "start": 16.38,
+        "end": 16.78
       },
       {
-        "word": "balance?",
-        "start": 32.36,
-        "end": 32.7
+        "word": "many",
+        "start": 16.78,
+        "end": 16.98
+      },
+      {
+        "word": "Muslim",
+        "start": 16.98,
+        "end": 17.4
+      },
+      {
+        "word": "maps,",
+        "start": 17.4,
+        "end": 17.78
+      },
+      {
+        "word": "with",
+        "start": 17.78,
+        "end": 18.12
+      },
+      {
+        "word": "south",
+        "start": 18.12,
+        "end": 18.32
+      },
+      {
+        "word": "at",
+        "start": 18.32,
+        "end": 18.54
+      },
+      {
+        "word": "the",
+        "start": 18.54,
+        "end": 18.64
+      },
+      {
+        "word": "top.",
+        "start": 18.64,
+        "end": 18.86
+      },
+      {
+        "word": "Europe",
+        "start": 19.94,
+        "end": 19.94
+      },
+      {
+        "word": "relied",
+        "start": 19.94,
+        "end": 20.24
+      },
+      {
+        "word": "on",
+        "start": 20.24,
+        "end": 20.6
+      },
+      {
+        "word": "it",
+        "start": 20.6,
+        "end": 20.72
+      },
+      {
+        "word": "for",
+        "start": 20.72,
+        "end": 20.86
+      },
+      {
+        "word": "centuries.",
+        "start": 20.86,
+        "end": 21.1
+      },
+      {
+        "word": "To",
+        "start": 22.1,
+        "end": 22.14
+      },
+      {
+        "word": "chart",
+        "start": 22.14,
+        "end": 22.32
+      },
+      {
+        "word": "the",
+        "start": 22.32,
+        "end": 22.56
+      },
+      {
+        "word": "earth",
+        "start": 22.56,
+        "end": 22.68
+      },
+      {
+        "word": "so",
+        "start": 22.68,
+        "end": 22.98
+      },
+      {
+        "word": "carefully",
+        "start": 22.98,
+        "end": 23.36
+      },
+      {
+        "word": "was,",
+        "start": 23.36,
+        "end": 23.9
+      },
+      {
+        "word": "for",
+        "start": 24.18,
+        "end": 24.34
+      },
+      {
+        "word": "him,",
+        "start": 24.34,
+        "end": 24.54
+      },
+      {
+        "word": "a",
+        "start": 25.22,
+        "end": 25.24
+      },
+      {
+        "word": "way",
+        "start": 25.24,
+        "end": 25.42
+      },
+      {
+        "word": "of",
+        "start": 25.42,
+        "end": 25.58
+      },
+      {
+        "word": "marveling",
+        "start": 25.58,
+        "end": 26.16
+      },
+      {
+        "word": "at",
+        "start": 26.16,
+        "end": 26.28
+      },
+      {
+        "word": "the",
+        "start": 26.28,
+        "end": 26.38
+      },
+      {
+        "word": "vastness",
+        "start": 26.38,
+        "end": 26.86
+      },
+      {
+        "word": "of",
+        "start": 26.86,
+        "end": 27.04
+      },
+      {
+        "word": "God's",
+        "start": 27.04,
+        "end": 27.36
+      },
+      {
+        "word": "creation.",
+        "start": 27.36,
+        "end": 27.52
+      },
+      {
+        "word": "Follow",
+        "start": 28.52,
+        "end": 29.02
+      },
+      {
+        "word": "for",
+        "start": 29.02,
+        "end": 29.28
+      },
+      {
+        "word": "a",
+        "start": 29.28,
+        "end": 29.38
+      },
+      {
+        "word": "daily",
+        "start": 29.38,
+        "end": 29.58
+      },
+      {
+        "word": "dose",
+        "start": 29.58,
+        "end": 29.94
+      },
+      {
+        "word": "of",
+        "start": 29.94,
+        "end": 30.12
+      },
+      {
+        "word": "wisdom.",
+        "start": 30.12,
+        "end": 30.36
       }
     ]
   },
   "reference": {
-    "text": "Islamic Teaching · Moderation",
-    "startSec": 31.58
+    "text": "Islamic Golden Age · 1154 CE",
+    "startSec": 28.52
   },
-  "audioFile": "audio/w18.wav",
-  "durationSec": 33.32,
+  "audioFile": "audio/w23.wav",
+  "durationSec": 30.95,
   "scenes": [
-    "scenes/w18/scene_0.jpg",
-    "scenes/w18/scene_1.jpg",
-    "scenes/w18/scene_2.jpg",
-    "scenes/w18/scene_3.jpg"
+    "scenes/w23/scene_0.jpg",
+    "scenes/w23/scene_1.jpg",
+    "scenes/w23/scene_2.jpg",
+    "scenes/w23/scene_3.jpg"
   ]
 }
