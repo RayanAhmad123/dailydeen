@@ -5,11 +5,16 @@ poster) — avoids our TikTok sandbox draft cap.
 Flow: presigned media upload -> S3 PUT -> POST /v1/posts.
 Reads work/script.json (id) + output/videos/<id>.meta.json (title/desc/caption/tags).
 
+NOTE: PostPeer PUBLISHES DIRECTLY — its YouTube integration ignores privacyStatus
+(posts public). To control timing use PP_WHEN (scheduledFor), not private staging.
+For a private review copy, use scripts/upload_youtube.py instead.
+
 Env:
   POSTPEER_API_KEY   required (in ~/.zshenv)
   PP_PLATFORMS       "youtube,tiktok" (default both)
-  PP_YT_PRIVACY      youtube privacyStatus: private|unlisted|public (default private)
-  PP_TIKTOK_DRAFT    "1" -> TikTok inbox draft (default), "0" -> publish public
+  PP_YT_PRIVACY      youtube privacyStatus: public|unlisted|private (default public;
+                     note PostPeer may publish public regardless)
+  PP_TIKTOK_DRAFT    "0" -> publish public (default), "1" -> TikTok inbox draft
   PP_WHEN            "now" (default) or ISO time "2026-06-30T09:00:00" to schedule
   PP_TZ              timezone for scheduling (default "Europe/Stockholm")
 
@@ -62,8 +67,8 @@ def main():
         sys.exit(f"Video not found: {video}")
 
     want = os.environ.get("PP_PLATFORMS", "youtube,tiktok").split(",")
-    yt_privacy = os.environ.get("PP_YT_PRIVACY", "private")
-    tiktok_draft = os.environ.get("PP_TIKTOK_DRAFT", "1") == "1"
+    yt_privacy = os.environ.get("PP_YT_PRIVACY", "public")
+    tiktok_draft = os.environ.get("PP_TIKTOK_DRAFT", "0") == "1"
     when = os.environ.get("PP_WHEN", "now")
 
     public_url = upload_media(key, video)
