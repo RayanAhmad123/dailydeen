@@ -10,6 +10,8 @@ output/logs/
 output/*.mp4
 public/audio/
 public/scenes/
+public/reflection/
+public/recitation/
 
 # Secrets — NEVER commit
 config/google_client_secret.json

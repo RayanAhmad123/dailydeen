@@ -24,3 +24,15 @@ export type ReflectionData = {
   clipFile?: string | null; // trimmed 9:16 clip, relative to public/, e.g. "reflection/r1.mp4"
   durationSec: number;
 };
+
+// AyahVideo: footage (muted) + on-screen ayah (Arabic + translation + reference)
+// with the MATCHING Quran recitation baked in — posts directly, no in-app audio.
+export type AyahData = {
+  id: string;
+  arabic: string;
+  translation: string;
+  reference: string; // e.g. "Quran 94:5-6"
+  clipFile?: string | null; // trimmed 9:16 footage, relative to public/
+  audioFile: string; // recitation, relative to public/, e.g. "recitation/ay_ease.mp3"
+  durationSec: number;
+};
