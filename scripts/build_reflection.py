@@ -45,7 +45,7 @@ def pick_clip(clips, theme, used):
 COVER = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1"
 # Some clips are shot in portrait but stored as landscape with no rotation flag,
 # so the scene is on its side — fix with a transpose before the cover-crop.
-ROTATE = {"cw": "transpose=1,", "ccw": "transpose=2,", "180": "transpose=2,transpose=2,"}
+ROTATE = {"cw": "transpose=1", "ccw": "transpose=2", "180": "transpose=2,transpose=2"}
 
 
 def _encode(args, vf_in, dur, out_path):
@@ -55,19 +55,18 @@ def _encode(args, vf_in, dur, out_path):
 
 
 def trim_clip(src_abs, start, avail, target, out_path, rotate=None):
-    """Rotate (if needed) then crop-to-cover 9:16, mute, 30fps. If the clean
-    shot is shorter than the target, loop it to fill (no mid-video hard cut)."""
+    """Rotate (if needed) then crop-to-cover 9:16, mute, 30fps. If the clean shot
+    is shorter than the target, SLOW it (setpts) to fill the full length — smooth
+    slow-motion, no loop seam. Longer shots are trimmed at normal speed."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    vf = ROTATE.get(rotate, "") + COVER
-    if avail >= target:
-        _encode(["-ss", str(start), "-i", str(src_abs)], vf, target, out_path)
-    else:
-        tmp = out_path.with_name("_seg_" + out_path.name)
-        _encode(["-ss", str(start), "-i", str(src_abs)], vf, round(avail, 2), tmp)
-        subprocess.run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(tmp),
-                        "-t", str(target), "-c", "copy", str(out_path)],
-                       check=True, capture_output=True)
-        tmp.unlink(missing_ok=True)
+    parts = []
+    if rotate in ROTATE:
+        parts.append(ROTATE[rotate])
+    if avail < target - 0.05:
+        # stretch `avail` seconds of source to `target` seconds of output
+        parts.append(f"setpts=PTS*{target / avail:.4f}")
+    parts.append(COVER)
+    _encode(["-ss", str(start), "-i", str(src_abs)], ",".join(parts), target, out_path)
 
 
 def main():
@@ -94,7 +93,7 @@ def main():
             out = ROOT / "public" / "reflection" / f"{vid}.mp4"
             print(f"  trimming {clip['src']} @ {clip.get('start', 0)}s -> {dur}s"
                   + (f"  (rotate {clip['rotate']})" if clip.get("rotate") else "")
-                  + ("  (looped)" if avail < dur else "") + f"  {out.name}")
+                  + ("  (slowed)" if avail < dur else "") + f"  {out.name}")
             trim_clip(src_abs, clip.get("start", 0), avail, dur, out, clip.get("rotate"))
             clip_rel = f"reflection/{vid}.mp4"
 
