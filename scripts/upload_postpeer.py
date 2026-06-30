@@ -54,6 +54,22 @@ def upload_media(key, video_path):
     return pub
 
 
+def already_posted_platforms(key, caption):
+    """Platforms that already have a SUCCESSFUL post for this exact caption
+    (a real platformPostUrl). Used to make publishing idempotent."""
+    done = set()
+    try:
+        r = requests.get(f"{API}/posts?limit=30", headers=headers(key), timeout=30)
+        for p in (r.json().get("posts") or r.json().get("data") or []):
+            if (p.get("content") or "").strip() == caption.strip():
+                for pl in (p.get("platforms") or []):
+                    if str(pl.get("platformPostUrl") or "").startswith("http"):
+                        done.add(pl.get("platform"))
+    except requests.RequestException:
+        pass
+    return done
+
+
 def verify_by_media(key, public_url, tries=3):
     """After a 502/timeout, confirm whether the post actually landed by matching the
     unique uploaded media URL in recent posts. Returns the post dict or None."""
@@ -87,6 +103,17 @@ def main():
     yt_privacy = os.environ.get("PP_YT_PRIVACY", "public")
     tiktok_draft = os.environ.get("PP_TIKTOK_DRAFT", "0") == "1"
     when = os.environ.get("PP_WHEN", "now")
+    caption = meta.get("caption", meta["title"])
+
+    # IDEMPOTENCY: never publish a platform that already has this caption posted.
+    # (PostPeer 502s can be gateway timeouts that still publish — this makes re-runs safe.)
+    done = already_posted_platforms(key, caption)
+    want = [p for p in want if p not in done]
+    if done:
+        print(f"  already posted on {sorted(done)} — skipping those")
+    if not want:
+        print("Nothing to post — every requested platform already has this caption. Done.")
+        return
 
     public_url = upload_media(key, video)
     print(f"  media public URL: {public_url}")
