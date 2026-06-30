@@ -54,6 +54,23 @@ def upload_media(key, video_path):
     return pub
 
 
+def verify_by_media(key, public_url, tries=3):
+    """After a 502/timeout, confirm whether the post actually landed by matching the
+    unique uploaded media URL in recent posts. Returns the post dict or None."""
+    import time
+    for _ in range(tries):
+        time.sleep(4)
+        try:
+            r = requests.get(f"{API}/posts?limit=15", headers=headers(key), timeout=30)
+            for p in (r.json().get("posts") or r.json().get("data") or []):
+                if public_url in [m.get("url") for m in (p.get("mediaItems") or [])]:
+                    return {"success": True, "postId": p.get("postId"),
+                            "platforms": p.get("platforms", [])}
+        except requests.RequestException:
+            pass
+    return None
+
+
 def main():
     key = os.environ.get("POSTPEER_API_KEY")
     if not key:
@@ -108,12 +125,27 @@ def main():
         body["scheduledFor"] = when
         body["timezone"] = os.environ.get("PP_TZ", "Europe/Stockholm")
 
-    r = requests.post(f"{API}/posts", headers=headers(key), json=body, timeout=120)
-    data = r.json()
-    if not r.ok or data.get("success") is False:
-        sys.exit(f"PostPeer post failed ({r.status_code}): {json.dumps(data)[:600]}")
+    try:
+        r = requests.post(f"{API}/posts", headers=headers(key), json=body, timeout=120)
+        data = r.json() if r.content else {}
+        ok = r.ok and data.get("success") is not False
+        code = r.status_code
+    except requests.RequestException as e:
+        data, ok, code = {}, False, f"exc:{e}"
 
-    print(f"PostPeer post created: {json.dumps(data)[:600]}")
+    if not ok:
+        # A 502/timeout can be a gateway timeout where the post WAS created. Verify by
+        # the unique media URL we just uploaded — NEVER blind-retry (that duplicated posts).
+        print(f"  post returned {code}; verifying whether it landed (no blind retry)...")
+        verified = verify_by_media(key, public_url)
+        if verified:
+            print("  -> it DID land; using the created post (no retry).")
+            data, ok = verified, True
+        else:
+            sys.exit(f"PostPeer post failed ({code}) and not found on verify: "
+                     f"{json.dumps(data)[:400]}. Re-run is safe (it self-verifies).")
+
+    print(f"PostPeer post: {json.dumps(data)[:600]}")
     print(f"  platforms: {[p['platform'] for p in platforms]} | yt={yt_privacy} | "
           f"tiktok={'draft' if tiktok_draft else 'public'} | when={when}")
 
