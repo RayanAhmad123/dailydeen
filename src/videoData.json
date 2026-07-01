@@ -1,63 +1,58 @@
 {
-  "id": "w29",
-  "category": "Islamic Golden Age",
+  "id": "w38",
+  "category": "Islamic Teaching",
   "hook": {
-    "text": "A thousand years ago, a Muslim measured the year almost exactly.",
+    "text": "The strongest person isn't the one who can overpower others.",
     "words": [
       {
-        "word": "A",
+        "word": "The",
         "start": 0.0,
-        "end": 0.1
+        "end": 0.14
       },
       {
-        "word": "thousand",
-        "start": 0.1,
-        "end": 0.38
+        "word": "strongest",
+        "start": 0.14,
+        "end": 0.34
       },
       {
-        "word": "years",
-        "start": 0.38,
-        "end": 0.72
+        "word": "person",
+        "start": 0.34,
+        "end": 0.7
       },
       {
-        "word": "ago,",
-        "start": 0.72,
-        "end": 1.06
-      },
-      {
-        "word": "a",
-        "start": 1.2,
-        "end": 1.28
-      },
-      {
-        "word": "Muslim",
-        "start": 1.28,
-        "end": 1.54
-      },
-      {
-        "word": "measured",
-        "start": 1.54,
-        "end": 1.98
+        "word": "isn't",
+        "start": 0.7,
+        "end": 1.2
       },
       {
         "word": "the",
-        "start": 1.98,
-        "end": 2.14
+        "start": 1.2,
+        "end": 1.34
       },
       {
-        "word": "year",
-        "start": 2.14,
-        "end": 2.32
+        "word": "one",
+        "start": 1.34,
+        "end": 1.5
       },
       {
-        "word": "almost",
-        "start": 2.32,
-        "end": 2.56
+        "word": "who",
+        "start": 1.5,
+        "end": 1.66
       },
       {
-        "word": "exactly.",
-        "start": 2.56,
-        "end": 3.0
+        "word": "can",
+        "start": 1.66,
+        "end": 1.76
+      },
+      {
+        "word": "overpower",
+        "start": 1.76,
+        "end": 1.96
+      },
+      {
+        "word": "others.",
+        "start": 1.96,
+        "end": 2.4
       }
     ]
   },
@@ -65,296 +60,251 @@
     "words": [
       {
         "word": "The",
-        "start": 4.02,
-        "end": 4.1
+        "start": 3.44,
+        "end": 3.5
       },
       {
-        "word": "astronomer",
-        "start": 4.1,
-        "end": 4.42
+        "word": "Prophet",
+        "start": 3.5,
+        "end": 3.78
       },
       {
-        "word": "al-Battani",
-        "start": 4.42,
-        "end": 5.28
+        "word": "Muhammad",
+        "start": 3.78,
+        "end": 4.26
       },
       {
-        "word": "charted",
-        "start": 5.28,
-        "end": 5.8
+        "word": "(peace",
+        "start": 4.26,
+        "end": 4.56
+      },
+      {
+        "word": "be",
+        "start": 4.56,
+        "end": 4.74
+      },
+      {
+        "word": "upon",
+        "start": 4.74,
+        "end": 5.0
+      },
+      {
+        "word": "him)",
+        "start": 5.0,
+        "end": 5.22
+      },
+      {
+        "word": "said",
+        "start": 5.72,
+        "end": 5.94
       },
       {
         "word": "the",
-        "start": 5.8,
-        "end": 5.88
+        "start": 5.94,
+        "end": 6.08
       },
       {
-        "word": "length",
-        "start": 5.88,
-        "end": 6.1
+        "word": "strong",
+        "start": 6.08,
+        "end": 6.34
       },
       {
-        "word": "of",
-        "start": 6.1,
-        "end": 6.26
-      },
-      {
-        "word": "the",
-        "start": 6.26,
-        "end": 6.38
-      },
-      {
-        "word": "year",
-        "start": 6.38,
-        "end": 6.56
-      },
-      {
-        "word": "with",
-        "start": 6.56,
+        "word": "person",
+        "start": 6.34,
         "end": 6.74
       },
       {
-        "word": "stunning",
+        "word": "isn't",
         "start": 6.74,
-        "end": 7.08
-      },
-      {
-        "word": "accuracy,",
-        "start": 7.08,
-        "end": 7.56
-      },
-      {
-        "word": "and",
-        "start": 7.56,
-        "end": 8.52
-      },
-      {
-        "word": "built",
-        "start": 8.52,
-        "end": 8.72
-      },
-      {
-        "word": "astronomical",
-        "start": 8.72,
-        "end": 9.24
-      },
-      {
-        "word": "tables",
-        "start": 9.24,
-        "end": 9.9
-      },
-      {
-        "word": "so",
-        "start": 9.9,
-        "end": 10.28
-      },
-      {
-        "word": "precise",
-        "start": 10.28,
-        "end": 10.8
-      },
-      {
-        "word": "that",
-        "start": 10.8,
-        "end": 11.48
-      },
-      {
-        "word": "Copernicus",
-        "start": 11.48,
-        "end": 12.04
-      },
-      {
-        "word": "still",
-        "start": 12.04,
-        "end": 12.36
-      },
-      {
-        "word": "cited",
-        "start": 12.36,
-        "end": 12.72
-      },
-      {
-        "word": "them",
-        "start": 12.72,
-        "end": 12.92
-      },
-      {
-        "word": "centuries",
-        "start": 12.92,
-        "end": 13.24
-      },
-      {
-        "word": "later.",
-        "start": 13.24,
-        "end": 13.84
-      },
-      {
-        "word": "But",
-        "start": 14.68,
-        "end": 14.8
-      },
-      {
-        "word": "for",
-        "start": 14.8,
-        "end": 14.94
-      },
-      {
-        "word": "him,",
-        "start": 14.94,
-        "end": 15.12
-      },
-      {
-        "word": "studying",
-        "start": 15.36,
-        "end": 15.64
+        "end": 7.34
       },
       {
         "word": "the",
-        "start": 15.64,
-        "end": 15.84
+        "start": 7.34,
+        "end": 7.46
       },
       {
-        "word": "heavens",
-        "start": 15.84,
-        "end": 16.06
-      },
-      {
-        "word": "was",
-        "start": 16.06,
-        "end": 16.38
-      },
-      {
-        "word": "a",
-        "start": 16.38,
-        "end": 16.5
-      },
-      {
-        "word": "kind",
-        "start": 16.5,
-        "end": 16.8
-      },
-      {
-        "word": "of",
-        "start": 16.8,
-        "end": 16.94
-      },
-      {
-        "word": "worship.",
-        "start": 16.94,
-        "end": 17.16
-      },
-      {
-        "word": "The",
-        "start": 18.0,
-        "end": 18.08
-      },
-      {
-        "word": "breathtaking",
-        "start": 18.08,
-        "end": 18.42
-      },
-      {
-        "word": "order",
-        "start": 18.42,
-        "end": 18.98
-      },
-      {
-        "word": "of",
-        "start": 18.98,
-        "end": 19.14
-      },
-      {
-        "word": "the",
-        "start": 19.14,
-        "end": 19.24
-      },
-      {
-        "word": "cosmos",
-        "start": 19.24,
-        "end": 19.5
-      },
-      {
-        "word": "was",
-        "start": 19.5,
-        "end": 20.08
-      },
-      {
-        "word": "a",
-        "start": 20.08,
-        "end": 20.2
-      },
-      {
-        "word": "sign",
-        "start": 20.2,
-        "end": 20.48
-      },
-      {
-        "word": "pointing",
-        "start": 20.48,
-        "end": 20.86
-      },
-      {
-        "word": "to",
-        "start": 20.86,
-        "end": 21.24
-      },
-      {
-        "word": "the",
-        "start": 21.24,
-        "end": 21.36
-      },
-      {
-        "word": "One",
-        "start": 21.36,
-        "end": 21.56
+        "word": "one",
+        "start": 7.46,
+        "end": 7.66
       },
       {
         "word": "who",
-        "start": 21.56,
-        "end": 21.8
+        "start": 7.66,
+        "end": 7.84
       },
       {
-        "word": "designed",
-        "start": 21.8,
-        "end": 22.08
+        "word": "wins",
+        "start": 7.84,
+        "end": 8.06
       },
       {
-        "word": "it.",
-        "start": 22.08,
-        "end": 22.34
+        "word": "at",
+        "start": 8.06,
+        "end": 8.24
       },
       {
-        "word": "Follow",
-        "start": 23.12,
-        "end": 23.36
+        "word": "wrestling.",
+        "start": 8.24,
+        "end": 8.42
+      },
+      {
+        "word": "Real",
+        "start": 9.38,
+        "end": 9.42
+      },
+      {
+        "word": "strength",
+        "start": 9.42,
+        "end": 9.74
+      },
+      {
+        "word": "is",
+        "start": 9.74,
+        "end": 10.0
+      },
+      {
+        "word": "the",
+        "start": 10.0,
+        "end": 10.12
+      },
+      {
+        "word": "one",
+        "start": 10.12,
+        "end": 10.28
+      },
+      {
+        "word": "who",
+        "start": 10.28,
+        "end": 10.44
+      },
+      {
+        "word": "controls",
+        "start": 10.44,
+        "end": 10.74
+      },
+      {
+        "word": "himself",
+        "start": 10.74,
+        "end": 11.22
+      },
+      {
+        "word": "in",
+        "start": 11.22,
+        "end": 11.56
+      },
+      {
+        "word": "the",
+        "start": 11.56,
+        "end": 11.66
+      },
+      {
+        "word": "moment",
+        "start": 11.66,
+        "end": 11.88
+      },
+      {
+        "word": "of",
+        "start": 11.88,
+        "end": 12.04
+      },
+      {
+        "word": "anger.",
+        "start": 12.04,
+        "end": 12.22
+      },
+      {
+        "word": "In",
+        "start": 13.3,
+        "end": 13.34
+      },
+      {
+        "word": "Islam,",
+        "start": 13.34,
+        "end": 13.62
+      },
+      {
+        "word": "mastering",
+        "start": 14.04,
+        "end": 14.36
+      },
+      {
+        "word": "your",
+        "start": 14.36,
+        "end": 14.58
+      },
+      {
+        "word": "temper",
+        "start": 14.58,
+        "end": 14.8
+      },
+      {
+        "word": "is",
+        "start": 14.8,
+        "end": 15.18
+      },
+      {
+        "word": "a",
+        "start": 15.18,
+        "end": 15.26
+      },
+      {
+        "word": "greater",
+        "start": 15.26,
+        "end": 15.46
+      },
+      {
+        "word": "victory",
+        "start": 15.46,
+        "end": 15.86
+      },
+      {
+        "word": "than",
+        "start": 15.86,
+        "end": 16.26
+      },
+      {
+        "word": "any",
+        "start": 16.26,
+        "end": 16.44
+      },
+      {
+        "word": "fight.",
+        "start": 16.44,
+        "end": 16.7
+      },
+      {
+        "word": "Save",
+        "start": 17.6,
+        "end": 17.8
+      },
+      {
+        "word": "this",
+        "start": 17.8,
+        "end": 18.0
       },
       {
         "word": "for",
-        "start": 23.36,
-        "end": 23.58
+        "start": 18.0,
+        "end": 18.18
       },
       {
-        "word": "daily",
-        "start": 23.58,
-        "end": 23.76
-      },
-      {
-        "word": "wisdom.",
-        "start": 23.76,
-        "end": 24.08
+        "word": "later.",
+        "start": 18.18,
+        "end": 18.36
       }
     ]
   },
   "reference": {
-    "text": "Islamic Golden Age · al-Battani, d. 929",
-    "startSec": 23.12
+    "text": "Islamic Teaching · Self-Control",
+    "startSec": 17.6
   },
-  "audioFile": "audio/w29.wav",
-  "durationSec": 24.73,
+  "audioFile": "audio/w38.wav",
+  "durationSec": 18.88,
   "scenes": [
-    "scenes/w29/scene_0.jpg",
-    "scenes/w29/scene_1.jpg",
-    "scenes/w29/scene_2.jpg",
-    "scenes/w29/scene_3.jpg"
+    "scenes/w38/scene_0.jpg",
+    "scenes/w38/scene_1.jpg",
+    "scenes/w38/scene_2.jpg",
+    "scenes/w38/scene_3.jpg"
   ]
 }
