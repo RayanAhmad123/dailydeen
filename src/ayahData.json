@@ -1,9 +1,9 @@
 {
-  "id": "ay_ease",
-  "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا إِنَّ مَعَ ٱلْعُسْرِ يُسْرًۭا",
-  "translation": "For indeed, with hardship will be ease. Indeed, with hardship will be ease.",
-  "reference": "Quran 94:5-6",
-  "clipFile": "reflection/ay_ease.mp4",
-  "audioFile": "recitation/ay_ease.mp3",
-  "durationSec": 11.94
+  "id": "ay_remember",
+  "arabic": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+  "translation": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+  "reference": "Quran 2:152",
+  "clipFile": "reflection/ay_remember.mp4",
+  "audioFile": "recitation/ay_remember.mp3",
+  "durationSec": 11.21
 }

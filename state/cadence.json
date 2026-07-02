@@ -1,7 +1,7 @@
 {
   "_readme": "Format cadence for 'next video': 3 silhouette /daily-video, then 1 Ayah video, repeating (S S S A). When asked for the next video: if silhouettes_since_ayah < 3 -> make a silhouette and increment; if == 3 -> make an Ayah video and reset to 0. Update last_format/last_id each time.",
   "rule": "3 silhouette : 1 ayah",
-  "silhouettes_since_ayah": 3,
+  "silhouettes_since_ayah": 0,
   "last_format": "ayah",
   "last_id": "ay_ease"
 }
