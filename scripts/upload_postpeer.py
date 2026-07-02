@@ -55,16 +55,19 @@ def upload_media(key, video_path):
 
 
 def already_posted_platforms(key, caption):
-    """Platforms that already have a SUCCESSFUL post for this exact caption
-    (a real platformPostUrl). Used to make publishing idempotent."""
+    """Platforms already ATTEMPTED for this exact caption — in ANY status.
+    Critical: PostPeer marks TikTok PROCESSING_DOWNLOAD timeouts as 'failed' even
+    though TikTok often still publishes them. So a 'failed' attempt may be live —
+    never re-post it. We under-post rather than risk a duplicate; genuine failures
+    are re-posted MANUALLY after checking the platform, not by re-running this."""
     done = set()
     try:
-        r = requests.get(f"{API}/posts?limit=30", headers=headers(key), timeout=30)
+        r = requests.get(f"{API}/posts?limit=40", headers=headers(key), timeout=30)
         for p in (r.json().get("posts") or r.json().get("data") or []):
             if (p.get("content") or "").strip() == caption.strip():
                 for pl in (p.get("platforms") or []):
-                    if str(pl.get("platformPostUrl") or "").startswith("http"):
-                        done.add(pl.get("platform"))
+                    if pl.get("platform"):
+                        done.add(pl.get("platform"))  # any status counts as attempted
     except requests.RequestException:
         pass
     return done
@@ -110,9 +113,10 @@ def main():
     done = already_posted_platforms(key, caption)
     want = [p for p in want if p not in done]
     if done:
-        print(f"  already posted on {sorted(done)} — skipping those")
+        print(f"  already ATTEMPTED on {sorted(done)} for this caption — skipping "
+              f"(a PostPeer 'failed' may still be live on-platform; verify manually before any re-post)")
     if not want:
-        print("Nothing to post — every requested platform already has this caption. Done.")
+        print("Nothing to post — every requested platform was already attempted for this caption. Done.")
         return
 
     public_url = upload_media(key, video)
