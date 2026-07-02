@@ -45,3 +45,17 @@ Run the whole thing with the `/daily-video` slash command.
 - Don't invent facts, hadiths, or Quran quotes, ever.
 - Don't commit rendered videos, audio, or generated scene images (gitignored).
 - Don't mark a topic processed if the render failed.
+
+## Project journal
+
+This project is journaled in an Obsidian vault note:
+`~/Documents/Triad Solutions/ProjectVault/01 Projects/hadith-video/hadith-video.md`
+
+- **At the start of every session, read that note** for context (goal, next action, log).
+- **After completing significant work** (a feature done, a decision made, a blocker hit),
+  append a dated entry under `## 🗒️ Log` — 1-3 bullets: what was done and why. Group
+  bullets under a `### YYYY-MM-DD` heading (create it if today's isn't there yet).
+- **Keep the frontmatter current:** update `next-action` to the single most important
+  next step, and `status` (active / on-hold / done) if it changed.
+- **Never rewrite or delete existing log entries** — only append.
+- **Don't log trivial changes** (typos, formatting).
