@@ -1,0 +1,85 @@
+{
+  "_readme": "Ayah bank for AyahVideos. Arabic (Uthmani) + Sahih International translation are fetched verbatim from api.alquran.cloud — never hand-typed. Audio is murattal from everyayah.com (reciter set by RECITER in fetch_ayat.py; widely redistributed, small Content-ID risk on YouTube). Rebuild with scripts/fetch_ayat.py.",
+  "ayat": [
+    {
+      "id": "ay_ease",
+      "reference": "Quran 94:5-6",
+      "theme": "hope",
+      "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا إِنَّ مَعَ ٱلْعُسْرِ يُسْرًۭا",
+      "translation": "For indeed, with hardship will be ease. Indeed, with hardship will be ease.",
+      "audio": "recitations/ay_ease.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 10.74
+    },
+    {
+      "id": "ay_remember",
+      "reference": "Quran 2:152",
+      "theme": "remembrance",
+      "arabic": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+      "translation": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
+      "audio": "recitations/ay_remember.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 10.01
+    },
+    {
+      "id": "ay_rest",
+      "reference": "Quran 13:28",
+      "theme": "remembrance",
+      "arabic": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+      "translation": "Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.\"",
+      "audio": "recitations/ay_rest.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 16.2
+    },
+    {
+      "id": "ay_trust",
+      "reference": "Quran 65:3",
+      "theme": "trust",
+      "arabic": "وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ ۚ إِنَّ ٱللَّهَ بَٰلِغُ أَمْرِهِۦ ۚ قَدْ جَعَلَ ٱللَّهُ لِكُلِّ شَىْءٍۢ قَدْرًۭا",
+      "translation": "And will provide for him from where he does not expect. And whoever relies upon Allah - then He is sufficient for him. Indeed, Allah will accomplish His purpose. Allah has already set for everything a decreed extent.",
+      "audio": "recitations/ay_trust.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 19.55
+    },
+    {
+      "id": "ay_ikhlas",
+      "reference": "Quran 112:1-4",
+      "theme": "faith",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ ٱللَّهُ ٱلصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "translation": "Say, \"He is Allah, who is One, Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent.\"",
+      "audio": "recitations/ay_ikhlas.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 13.98
+    },
+    {
+      "id": "ay_kawthar",
+      "reference": "Quran 108:1-3",
+      "theme": "gratitude",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ فَصَلِّ لِرَبِّكَ وَٱنْحَرْ إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "translation": "Indeed, We have granted you, O Muhammad, al-Kawthar. So pray to your Lord and sacrifice to Him alone. Indeed, your enemy is the one cut off.",
+      "audio": "recitations/ay_kawthar.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 15.86
+    },
+    {
+      "id": "ay_asr",
+      "reference": "Quran 103:1-3",
+      "theme": "time",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "translation": "By time, Indeed, mankind is in loss, Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+      "audio": "recitations/ay_asr.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 21.71
+    },
+    {
+      "id": "ay_hope",
+      "reference": "Quran 3:139",
+      "theme": "hope",
+      "arabic": "وَلَا تَهِنُوا۟ وَلَا تَحْزَنُوا۟ وَأَنتُمُ ٱلْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
+      "translation": "So do not weaken and do not grieve, and you will be superior if you are true believers.",
+      "audio": "recitations/ay_hope.mp3",
+      "reciter": "Mohamed Siddiq El-Minshawi",
+      "durationSec": 14.48
+    }
+  ]
+}

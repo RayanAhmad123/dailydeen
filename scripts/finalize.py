@@ -5,7 +5,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-HASHTAGS = "#islam #islamicwisdom #islamichistory #islamicfacts #goldenage #muslim #dailywisdom #shorts"
+# Tags every video carries, then category-specific ones appended on top.
+BASE_TAGS = ["islam", "islamicwisdom", "muslim", "dailywisdom", "shorts"]
+CATEGORY_TAGS = {
+    "Islamic Teaching": ["hadith", "deen", "faith", "islamicreminder", "quran"],
+    "Islamic Golden Age": ["islamichistory", "goldenage", "knowledge", "muslimscientists"],
+    "Night Sky": ["islamichistory", "astronomy", "goldenage", "nightsky"],
+    "Arabic Origins": ["arabic", "language", "islamichistory", "etymology"],
+    "Story of Coffee": ["coffee", "islamichistory", "history"],
+}
+
+
+def build_tags(category):
+    """Base tags + category-specific tags, order-preserving and de-duplicated."""
+    merged = []
+    for t in BASE_TAGS + CATEGORY_TAGS.get(category, ["islamichistory", "goldenage"]):
+        if t not in merged:
+            merged.append(t)
+    return merged
 
 
 def main():
@@ -14,12 +31,15 @@ def main():
 
     # Upload metadata — hook first (YouTube surfaces the first line in search/feeds)
     body = script.get("body") or script.get("simplified", "")
+    tags = build_tags(script["category"])
+    hashtags = " ".join("#" + t for t in tags)
+    # Hook-led caption for TikTok (punchier in-feed than the title); capped at TikTok's limit.
+    caption = f"{script['hook']} {hashtags}"[:2200]
     meta = {
         "title": f"{script['title']} | Daily Islamic Wisdom",
-        "description": f"{script['hook']}\n\n{body}\n\n{script['reference_display']}\n\n{HASHTAGS}",
-        "tags": ["islam", "islamic wisdom", "islamic history", "islamic facts",
-                 "golden age", "muslim", "daily wisdom", "shorts",
-                 script["category"].lower()],
+        "description": f"{script['hook']}\n\n{body}\n\n{script['reference_display']}\n\n{hashtags}",
+        "caption": caption,
+        "tags": tags,
         "video": f"output/videos/{vid}.mp4",
     }
     out_dir = ROOT / "output" / "videos"

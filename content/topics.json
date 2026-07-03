@@ -1,5 +1,5 @@
 {
-  "_readme": "Curated topic bank for daily videos. Each topic's `facts` are the grounding — the daily script may simplify but must not go beyond them or invent specifics. Categories rotate naturally since topics are picked in order of id. Add new topics at the end; never reuse an id.",
+  "_readme": "Curated topic bank for daily videos. Each topic's `facts` are the grounding — the daily script may simplify but must not go beyond them or invent specifics. CONTENT DIRECTION: this is a Daily Islamic Wisdom channel — every script must anchor in a clear Islamic/spiritual angle (faith, gratitude to God, awe of His creation, prophetic character, knowledge as worship, mercy, good akhlaq), even when the topic is history or science. History/science is a vehicle for the spiritual lesson, never trivia for its own sake. Categories rotate naturally since topics are picked in order of id. Add new topics at the end; never reuse an id.",
   "topics": [
     {
       "id": "w1",
@@ -129,16 +129,6 @@
         "Al-Zahrawi (Abulcasis) of 10th-century Cordoba wrote al-Tasrif, a 30-volume medical encyclopedia with detailed drawings of around 200 surgical instruments.",
         "He described procedures and tools — including forceps and catgut sutures for internal stitching — that influenced European surgery for centuries.",
         "He is often called the father of modern surgery."
-      ]
-    },
-    {
-      "id": "w14",
-      "category": "Story of Coffee",
-      "title": "Coffee's journey began with devotion",
-      "facts": [
-        "Coffee drinking spread in 15th-century Yemen, where Sufis used it to stay awake for night devotions.",
-        "The English word 'coffee' traces back to the Arabic 'qahwa', via Turkish 'kahve'.",
-        "From Yemen's port of Mocha, coffee spread to Mecca, Cairo, Istanbul, and eventually Europe."
       ]
     },
     {
@@ -299,6 +289,66 @@
         "A teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Bukhari and Muslim, advises that whoever believes in God and the Last Day should speak good or remain silent.",
         "It ties faith directly to guarding one's words.",
         "The same teaching also urges honoring one's neighbor and one's guest."
+      ]
+    },
+    {
+      "id": "w31",
+      "category": "Night Sky",
+      "title": "The king who mapped the stars",
+      "facts": [
+        "Ulugh Beg, a grandson of the conqueror Timur, ruled from Samarkand and built one of the great observatories of the medieval world in the 1420s.",
+        "From it his team produced the Zij-i-Sultani, a star catalog giving positions for just over a thousand stars — the most accurate catalog made before the telescope.",
+        "A crater on the Moon is named Ulugh Beigh in his honor."
+      ]
+    },
+    {
+      "id": "w36",
+      "category": "Islamic Golden Age",
+      "title": "The brothers who built 100 machines",
+      "facts": [
+        "In 9th-century Baghdad, three brothers known as the Banu Musa wrote 'The Book of Ingenious Devices', describing about a hundred mechanical inventions.",
+        "Many ran automatically — trick fountains, self-feeding lamps, and clever vessels controlled by hidden valves and mechanisms.",
+        "The brothers worked at the House of Wisdom and helped fund the translation of Greek science into Arabic."
+      ]
+    },
+    {
+      "id": "w37",
+      "category": "Islamic Teaching",
+      "title": "Clearing the path is charity",
+      "facts": [
+        "A teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Bukhari and Muslim, counts removing a harmful thing from the road as an act of charity.",
+        "In the same teaching, faith is described as having many branches, and the simplest of them is clearing harm from people's path.",
+        "It shows that even small, unseen kindnesses carry real weight in Islam."
+      ]
+    },
+    {
+      "id": "w38",
+      "category": "Islamic Teaching",
+      "title": "Real strength is self-control",
+      "facts": [
+        "A teaching attributed to the Prophet Muhammad (peace be upon him), recorded by al-Bukhari and Muslim, says the strong person is not the one who overpowers others in wrestling.",
+        "True strength, it explains, is the one who controls himself at the moment of anger.",
+        "Islamic teaching repeatedly praises patience and mastering one's temper."
+      ]
+    },
+    {
+      "id": "w39",
+      "category": "Islamic Golden Age",
+      "title": "The doctor who told two diseases apart",
+      "facts": [
+        "The physician al-Razi (known in Europe as Rhazes), who lived around 854-925 CE, wrote a treatise giving the first clear clinical distinction between smallpox and measles.",
+        "He based his descriptions on careful observation of patients while running hospitals in Rayy and Baghdad.",
+        "He wrote extensively on medicine and is remembered as one of history's great clinical doctors."
+      ]
+    },
+    {
+      "id": "w40",
+      "category": "Islamic Golden Age",
+      "title": "The observatory that reached Copernicus",
+      "facts": [
+        "Around 1259 the scholar Nasir al-Din al-Tusi founded a major observatory at Maragha, in present-day Iran, with a large team and a great library.",
+        "To improve old models of planetary motion, al-Tusi devised a geometric construction now called the 'Tusi couple'.",
+        "That very construction later appears in the work of the European astronomer Copernicus."
       ]
     }
   ]

@@ -137,9 +137,13 @@ def main():
     size = video_path.stat().st_size
 
     direct = os.environ.get("TIKTOK_DIRECT_POST") == "1"
-    # Caption: title + hashtags (TikTok pulls hashtags from the caption text)
-    hashtags = " ".join(t for t in meta["description"].split() if t.startswith("#"))
-    caption = f"{meta['title'].split('|')[0].strip()} {hashtags}"[:2200]
+    # Prefer the hook-led caption baked in by finalize.py; fall back to title + hashtags
+    # for older metadata that predates the `caption` field.
+    caption = meta.get("caption")
+    if not caption:
+        hashtags = " ".join(t for t in meta["description"].split() if t.startswith("#"))
+        caption = f"{meta['title'].split('|')[0].strip()} {hashtags}"
+    caption = caption[:2200]
 
     if direct:
         init_url = f"{API}/post/publish/video/init/"

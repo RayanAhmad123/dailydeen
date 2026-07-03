@@ -1,0 +1,113 @@
+{
+  "_readme": "Quote bank for ReflectionVideos (footage + on-screen quote, silent render; Quran recitation added in-app at post time). EVERY quote must be authentic and correctly attributed - real hadith (named collection) or exact Quran translation (surah:ayah). NEVER fabricate or misattribute; do not put words in the mouth of the Prophet (peace be upon him) or the Quran that aren't there. Keep quotes SHORT (fits ~16-20s on screen). `theme` is used to match footage; `source` is shown on screen. Add at the end; never reuse an id.",
+  "quotes": [
+    {
+      "id": "q1",
+      "text": "The best among you are those with the best character.",
+      "source": "Prophet Muhammad (peace be upon him) - Sahih al-Bukhari",
+      "theme": "character"
+    },
+    {
+      "id": "q2",
+      "text": "None of you truly believes until he loves for his brother what he loves for himself.",
+      "source": "Prophet Muhammad (peace be upon him) - Bukhari & Muslim",
+      "theme": "brotherhood"
+    },
+    {
+      "id": "q3",
+      "text": "The strong person is the one who controls himself when angry.",
+      "source": "Prophet Muhammad (peace be upon him) - Bukhari & Muslim",
+      "theme": "self-control"
+    },
+    {
+      "id": "q4",
+      "text": "Whoever believes in God and the Last Day, let him speak good or remain silent.",
+      "source": "Prophet Muhammad (peace be upon him) - Bukhari & Muslim",
+      "theme": "speech"
+    },
+    {
+      "id": "q5",
+      "text": "The most beloved deeds to God are those done consistently, even if small.",
+      "source": "Prophet Muhammad (peace be upon him) - Bukhari & Muslim",
+      "theme": "consistency"
+    },
+    {
+      "id": "q6",
+      "text": "He who shows no mercy will be shown no mercy.",
+      "source": "Prophet Muhammad (peace be upon him) - Bukhari & Muslim",
+      "theme": "mercy"
+    },
+    {
+      "id": "q7",
+      "text": "A kind word is charity.",
+      "source": "Prophet Muhammad (peace be upon him) - Bukhari & Muslim",
+      "theme": "kindness"
+    },
+    {
+      "id": "q8",
+      "text": "Charity never decreases wealth.",
+      "source": "Prophet Muhammad (peace be upon him) - Sahih Muslim",
+      "theme": "charity"
+    },
+    {
+      "id": "q9",
+      "text": "Make things easy, and do not make them difficult.",
+      "source": "Prophet Muhammad (peace be upon him) - Sahih al-Bukhari",
+      "theme": "ease"
+    },
+    {
+      "id": "q10",
+      "text": "Indeed, with hardship comes ease.",
+      "source": "Quran 94:6",
+      "theme": "hope"
+    },
+    {
+      "id": "q11",
+      "text": "And He is with you wherever you are.",
+      "source": "Quran 57:4",
+      "theme": "nearness"
+    },
+    {
+      "id": "q12",
+      "text": "Indeed, in the remembrance of God do hearts find rest.",
+      "source": "Quran 13:28",
+      "theme": "remembrance"
+    },
+    {
+      "id": "q13",
+      "text": "So remember Me; I will remember you.",
+      "source": "Quran 2:152",
+      "theme": "remembrance"
+    },
+    {
+      "id": "q14",
+      "text": "God does not burden a soul beyond what it can bear.",
+      "source": "Quran 2:286",
+      "theme": "hope"
+    },
+    {
+      "id": "q15",
+      "text": "And whoever puts his trust in God, He is sufficient for him.",
+      "source": "Quran 65:3",
+      "theme": "trust"
+    },
+    {
+      "id": "q16",
+      "text": "And be grateful to God.",
+      "source": "Quran 31:12",
+      "theme": "gratitude"
+    },
+    {
+      "id": "q17",
+      "text": "And speak to people kindly.",
+      "source": "Quran 2:83",
+      "theme": "kindness"
+    },
+    {
+      "id": "q18",
+      "text": "Smiling at your brother is charity.",
+      "source": "Prophet Muhammad (peace be upon him) - Jami at-Tirmidhi",
+      "theme": "kindness"
+    }
+  ]
+}

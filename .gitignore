@@ -10,6 +10,8 @@ output/logs/
 output/*.mp4
 public/audio/
 public/scenes/
+public/reflection/
+public/recitation/
 
 # Secrets — NEVER commit
 config/google_client_secret.json
@@ -19,3 +21,7 @@ state/tiktok_token.json
 # Voice clone references stay local (only the README is checked in)
 refs/*
 !refs/README.md
+
+# Footage library is large + machine-local (in this worktree it's a symlink to the
+# main repo's assets/). Never commit it.
+/assets
