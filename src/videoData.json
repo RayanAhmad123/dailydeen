@@ -1,285 +1,285 @@
 {
-  "id": "w17",
+  "id": "w19",
   "category": "Islamic Golden Age",
   "hook": {
-    "text": "Everyone credits the printing press. Paper beat it by centuries.",
+    "text": "Ever wondered who first dared to fly?",
     "words": [
       {
-        "word": "Everyone",
+        "word": "Ever",
         "start": 0.0,
-        "end": 0.38
+        "end": 0.22
       },
       {
-        "word": "credits",
-        "start": 0.38,
-        "end": 0.62
+        "word": "wondered",
+        "start": 0.22,
+        "end": 0.44
       },
       {
-        "word": "the",
-        "start": 0.62,
-        "end": 0.86
+        "word": "who",
+        "start": 0.44,
+        "end": 0.76
       },
       {
-        "word": "printing",
-        "start": 0.86,
-        "end": 1.02
+        "word": "first",
+        "start": 0.76,
+        "end": 1.08
       },
       {
-        "word": "press.",
-        "start": 1.02,
-        "end": 1.32
+        "word": "dared",
+        "start": 1.08,
+        "end": 1.3
       },
       {
-        "word": "Paper",
-        "start": 2.06,
-        "end": 2.3
+        "word": "to",
+        "start": 1.3,
+        "end": 1.5
       },
       {
-        "word": "beat",
-        "start": 2.3,
-        "end": 2.58
-      },
-      {
-        "word": "it",
-        "start": 2.58,
-        "end": 2.74
-      },
-      {
-        "word": "by",
-        "start": 2.74,
-        "end": 2.96
-      },
-      {
-        "word": "centuries.",
-        "start": 2.96,
-        "end": 3.34
+        "word": "fly?",
+        "start": 1.5,
+        "end": 1.72
       }
     ]
   },
   "body": {
     "words": [
       {
-        "word": "By",
-        "start": 4.58,
-        "end": 4.62
+        "word": "In",
+        "start": 2.6,
+        "end": 2.7
+      },
+      {
+        "word": "ninth-century",
+        "start": 2.7,
+        "end": 3.3
+      },
+      {
+        "word": "Cordoba,",
+        "start": 3.3,
+        "end": 3.74
       },
       {
         "word": "the",
-        "start": 4.62,
-        "end": 4.74
+        "start": 4.12,
+        "end": 4.3
       },
       {
-        "word": "late",
-        "start": 4.74,
-        "end": 4.9
+        "word": "Muslim",
+        "start": 4.3,
+        "end": 4.56
       },
       {
-        "word": "700s,",
-        "start": 4.9,
-        "end": 5.62
+        "word": "inventor",
+        "start": 4.56,
+        "end": 4.98
       },
       {
-        "word": "Baghdad",
-        "start": 5.84,
-        "end": 5.96
+        "word": "Abbas",
+        "start": 4.98,
+        "end": 5.54
       },
       {
-        "word": "had",
-        "start": 5.96,
-        "end": 6.36
+        "word": "ibn",
+        "start": 5.54,
+        "end": 5.92
       },
       {
-        "word": "paper",
-        "start": 6.36,
-        "end": 6.56
+        "word": "Firnas",
+        "start": 5.92,
+        "end": 6.42
       },
       {
-        "word": "mills,",
-        "start": 6.56,
+        "word": "built",
+        "start": 6.42,
         "end": 6.9
       },
       {
-        "word": "and",
-        "start": 7.26,
-        "end": 7.56
+        "word": "a",
+        "start": 6.9,
+        "end": 7.1
       },
       {
-        "word": "cheap",
-        "start": 7.56,
-        "end": 7.76
+        "word": "glider,",
+        "start": 7.1,
+        "end": 7.46
       },
       {
-        "word": "paper",
-        "start": 7.76,
-        "end": 8.12
+        "word": "leapt",
+        "start": 8.06,
+        "end": 8.18
       },
       {
-        "word": "replaced",
-        "start": 8.12,
-        "end": 8.6
+        "word": "from",
+        "start": 8.18,
+        "end": 8.42
       },
       {
-        "word": "costly",
-        "start": 8.6,
-        "end": 8.88
+        "word": "a",
+        "start": 8.42,
+        "end": 8.5
       },
       {
-        "word": "parchment.",
-        "start": 8.88,
-        "end": 9.44
-      },
-      {
-        "word": "Books",
-        "start": 10.24,
-        "end": 10.48
-      },
-      {
-        "word": "and",
-        "start": 10.48,
-        "end": 10.72
-      },
-      {
-        "word": "libraries",
-        "start": 10.72,
-        "end": 11.04
-      },
-      {
-        "word": "exploded",
-        "start": 11.04,
-        "end": 11.64
-      },
-      {
-        "word": "across",
-        "start": 11.64,
-        "end": 12.06
-      },
-      {
-        "word": "Muslim",
-        "start": 12.06,
-        "end": 12.36
-      },
-      {
-        "word": "cities",
-        "start": 12.36,
-        "end": 12.84
+        "word": "hillside",
+        "start": 8.5,
+        "end": 8.9
       },
       {
         "word": "—",
-        "start": 12.84,
-        "end": 13.64
+        "start": 8.9,
+        "end": 9.24
       },
       {
-        "word": "because",
-        "start": 13.64,
-        "end": 13.94
+        "word": "and",
+        "start": 9.24,
+        "end": 9.34
       },
       {
-        "word": "in",
-        "start": 13.94,
-        "end": 14.1
+        "word": "survived.",
+        "start": 9.34,
+        "end": 9.6
       },
       {
-        "word": "Islam,",
-        "start": 14.1,
-        "end": 14.42
+        "word": "He",
+        "start": 10.52,
+        "end": 10.6
       },
       {
-        "word": "seeking",
-        "start": 14.68,
-        "end": 14.92
+        "word": "studied",
+        "start": 10.6,
+        "end": 10.86
       },
       {
-        "word": "knowledge",
-        "start": 14.92,
-        "end": 15.24
+        "word": "the",
+        "start": 10.86,
+        "end": 11.04
       },
       {
-        "word": "is",
-        "start": 15.24,
-        "end": 15.44
+        "word": "heavens",
+        "start": 11.04,
+        "end": 11.36
       },
       {
-        "word": "worship.",
-        "start": 15.44,
-        "end": 15.64
+        "word": "God",
+        "start": 11.36,
+        "end": 11.6
       },
       {
-        "word": "From",
-        "start": 16.54,
-        "end": 16.62
+        "word": "made,",
+        "start": 11.6,
+        "end": 11.96
       },
       {
-        "word": "there,",
-        "start": 16.62,
-        "end": 16.84
+        "word": "then",
+        "start": 12.5,
+        "end": 12.58
       },
       {
-        "word": "paper",
-        "start": 16.92,
-        "end": 17.14
+        "word": "dared",
+        "start": 12.58,
+        "end": 12.78
       },
       {
-        "word": "reached",
-        "start": 17.14,
-        "end": 17.46
+        "word": "to",
+        "start": 12.78,
+        "end": 13.06
       },
       {
-        "word": "Europe",
-        "start": 17.46,
-        "end": 17.84
-      },
-      {
-        "word": "through",
-        "start": 17.84,
-        "end": 18.2
-      },
-      {
-        "word": "Muslim",
-        "start": 18.2,
-        "end": 18.38
-      },
-      {
-        "word": "Spain.",
-        "start": 18.38,
-        "end": 18.92
-      },
-      {
-        "word": "Follow",
-        "start": 19.88,
-        "end": 20.22
+        "word": "reach",
+        "start": 13.06,
+        "end": 13.26
       },
       {
         "word": "for",
-        "start": 20.22,
-        "end": 20.4
+        "start": 13.26,
+        "end": 13.48
       },
       {
-        "word": "daily",
-        "start": 20.4,
-        "end": 20.58
+        "word": "them.",
+        "start": 13.48,
+        "end": 13.66
       },
       {
-        "word": "Islamic",
-        "start": 20.58,
-        "end": 21.0
+        "word": "Today,",
+        "start": 14.6,
+        "end": 14.6
       },
       {
-        "word": "wisdom.",
-        "start": 21.0,
-        "end": 21.34
+        "word": "a",
+        "start": 14.9,
+        "end": 14.94
+      },
+      {
+        "word": "crater",
+        "start": 14.94,
+        "end": 15.14
+      },
+      {
+        "word": "on",
+        "start": 15.14,
+        "end": 15.42
+      },
+      {
+        "word": "the",
+        "start": 15.42,
+        "end": 15.52
+      },
+      {
+        "word": "Moon",
+        "start": 15.52,
+        "end": 15.7
+      },
+      {
+        "word": "carries",
+        "start": 15.7,
+        "end": 15.98
+      },
+      {
+        "word": "his",
+        "start": 15.98,
+        "end": 16.26
+      },
+      {
+        "word": "name.",
+        "start": 16.26,
+        "end": 16.52
+      },
+      {
+        "word": "Save",
+        "start": 17.38,
+        "end": 17.58
+      },
+      {
+        "word": "this",
+        "start": 17.58,
+        "end": 17.82
+      },
+      {
+        "word": "one",
+        "start": 17.82,
+        "end": 18.06
+      },
+      {
+        "word": "for",
+        "start": 18.06,
+        "end": 18.4
+      },
+      {
+        "word": "later.",
+        "start": 18.4,
+        "end": 18.58
       }
     ]
   },
   "reference": {
-    "text": "Islamic Golden Age · Baghdad, 8th century",
-    "startSec": 19.88
+    "text": "Islamic Golden Age · 9th-Century Cordoba",
+    "startSec": 17.38
   },
-  "audioFile": "audio/w17.wav",
-  "durationSec": 21.94,
+  "audioFile": "audio/w19.wav",
+  "durationSec": 19.16,
   "scenes": [
-    "scenes/w17/scene_0.jpg",
-    "scenes/w17/scene_1.jpg",
-    "scenes/w17/scene_2.jpg",
-    "scenes/w17/scene_3.jpg"
+    "scenes/w19/scene_0.jpg",
+    "scenes/w19/scene_1.jpg",
+    "scenes/w19/scene_2.jpg",
+    "scenes/w19/scene_3.jpg"
   ]
 }
