@@ -1,43 +1,53 @@
 {
-  "id": "w19",
+  "id": "w21",
   "category": "Islamic Golden Age",
   "hook": {
-    "text": "Ever wondered who first dared to fly?",
+    "text": "Ever wondered who built working robots eight centuries ago?",
     "words": [
       {
         "word": "Ever",
         "start": 0.0,
-        "end": 0.22
+        "end": 0.2
       },
       {
         "word": "wondered",
-        "start": 0.22,
+        "start": 0.2,
         "end": 0.44
       },
       {
         "word": "who",
         "start": 0.44,
-        "end": 0.76
+        "end": 0.68
       },
       {
-        "word": "first",
-        "start": 0.76,
-        "end": 1.08
+        "word": "built",
+        "start": 0.68,
+        "end": 0.88
       },
       {
-        "word": "dared",
-        "start": 1.08,
-        "end": 1.3
+        "word": "working",
+        "start": 0.88,
+        "end": 1.18
       },
       {
-        "word": "to",
-        "start": 1.3,
-        "end": 1.5
+        "word": "robots",
+        "start": 1.18,
+        "end": 1.54
       },
       {
-        "word": "fly?",
-        "start": 1.5,
-        "end": 1.72
+        "word": "eight",
+        "start": 1.54,
+        "end": 2.04
+      },
+      {
+        "word": "centuries",
+        "start": 2.04,
+        "end": 2.42
+      },
+      {
+        "word": "ago?",
+        "start": 2.42,
+        "end": 2.88
       }
     ]
   },
@@ -45,241 +55,341 @@
     "words": [
       {
         "word": "In",
-        "start": 2.6,
-        "end": 2.7
+        "start": 3.78,
+        "end": 3.86
       },
       {
-        "word": "ninth-century",
-        "start": 2.7,
-        "end": 3.3
+        "word": "1206,",
+        "start": 3.86,
+        "end": 4.32
       },
       {
-        "word": "Cordoba,",
-        "start": 3.3,
-        "end": 3.74
-      },
-      {
-        "word": "the",
-        "start": 4.12,
-        "end": 4.3
+        "word": "a",
+        "start": 4.6,
+        "end": 4.72
       },
       {
         "word": "Muslim",
-        "start": 4.3,
-        "end": 4.56
+        "start": 4.72,
+        "end": 4.9
       },
       {
-        "word": "inventor",
-        "start": 4.56,
-        "end": 4.98
+        "word": "engineer",
+        "start": 4.9,
+        "end": 5.34
       },
       {
-        "word": "Abbas",
-        "start": 4.98,
-        "end": 5.54
+        "word": "named",
+        "start": 5.34,
+        "end": 5.88
       },
       {
-        "word": "ibn",
-        "start": 5.54,
-        "end": 5.92
+        "word": "al-Jazari",
+        "start": 5.88,
+        "end": 6.48
       },
       {
-        "word": "Firnas",
-        "start": 5.92,
-        "end": 6.42
+        "word": "wrote",
+        "start": 6.98,
+        "end": 7.26
       },
       {
-        "word": "built",
-        "start": 6.42,
-        "end": 6.9
+        "word": "out",
+        "start": 7.26,
+        "end": 7.48
       },
       {
-        "word": "a",
-        "start": 6.9,
-        "end": 7.1
+        "word": "about",
+        "start": 7.48,
+        "end": 7.66
       },
       {
-        "word": "glider,",
-        "start": 7.1,
-        "end": 7.46
+        "word": "fifty",
+        "start": 7.66,
+        "end": 7.98
       },
       {
-        "word": "leapt",
-        "start": 8.06,
-        "end": 8.18
+        "word": "machines",
+        "start": 7.98,
+        "end": 8.32
       },
       {
-        "word": "from",
-        "start": 8.18,
-        "end": 8.42
+        "word": "anyone",
+        "start": 8.32,
+        "end": 8.96
       },
       {
-        "word": "a",
-        "start": 8.42,
-        "end": 8.5
-      },
-      {
-        "word": "hillside",
-        "start": 8.5,
-        "end": 8.9
-      },
-      {
-        "word": "—",
-        "start": 8.9,
+        "word": "could",
+        "start": 8.96,
         "end": 9.24
       },
       {
-        "word": "and",
+        "word": "build",
         "start": 9.24,
-        "end": 9.34
+        "end": 9.68
       },
       {
-        "word": "survived.",
-        "start": 9.34,
-        "end": 9.6
+        "word": "—",
+        "start": 9.68,
+        "end": 10.24
       },
       {
-        "word": "He",
-        "start": 10.52,
-        "end": 10.6
+        "word": "towering",
+        "start": 10.24,
+        "end": 10.8
       },
       {
-        "word": "studied",
-        "start": 10.6,
-        "end": 10.86
+        "word": "water",
+        "start": 10.8,
+        "end": 11.12
       },
       {
-        "word": "the",
-        "start": 10.86,
-        "end": 11.04
+        "word": "clocks",
+        "start": 11.12,
+        "end": 11.46
       },
       {
-        "word": "heavens",
-        "start": 11.04,
-        "end": 11.36
+        "word": "and",
+        "start": 11.46,
+        "end": 11.8
       },
       {
-        "word": "God",
-        "start": 11.36,
-        "end": 11.6
+        "word": "figures",
+        "start": 11.8,
+        "end": 12.14
       },
       {
-        "word": "made,",
-        "start": 11.6,
-        "end": 11.96
+        "word": "that",
+        "start": 12.14,
+        "end": 12.34
       },
       {
-        "word": "then",
-        "start": 12.5,
-        "end": 12.58
-      },
-      {
-        "word": "dared",
-        "start": 12.58,
-        "end": 12.78
-      },
-      {
-        "word": "to",
-        "start": 12.78,
-        "end": 13.06
-      },
-      {
-        "word": "reach",
-        "start": 13.06,
-        "end": 13.26
-      },
-      {
-        "word": "for",
-        "start": 13.26,
-        "end": 13.48
-      },
-      {
-        "word": "them.",
-        "start": 13.48,
-        "end": 13.66
-      },
-      {
-        "word": "Today,",
-        "start": 14.6,
-        "end": 14.6
-      },
-      {
-        "word": "a",
-        "start": 14.9,
-        "end": 14.94
-      },
-      {
-        "word": "crater",
-        "start": 14.94,
-        "end": 15.14
+        "word": "moved",
+        "start": 12.34,
+        "end": 12.52
       },
       {
         "word": "on",
-        "start": 15.14,
-        "end": 15.42
+        "start": 12.52,
+        "end": 12.7
+      },
+      {
+        "word": "their",
+        "start": 12.7,
+        "end": 12.84
+      },
+      {
+        "word": "own,",
+        "start": 12.84,
+        "end": 13.08
+      },
+      {
+        "word": "some",
+        "start": 13.56,
+        "end": 13.74
+      },
+      {
+        "word": "of",
+        "start": 13.74,
+        "end": 13.86
       },
       {
         "word": "the",
-        "start": 15.42,
-        "end": 15.52
+        "start": 13.86,
+        "end": 13.94
       },
       {
-        "word": "Moon",
-        "start": 15.52,
-        "end": 15.7
+        "word": "very",
+        "start": 13.94,
+        "end": 14.16
       },
       {
-        "word": "carries",
-        "start": 15.7,
-        "end": 15.98
+        "word": "first",
+        "start": 14.16,
+        "end": 14.38
       },
       {
-        "word": "his",
-        "start": 15.98,
-        "end": 16.26
+        "word": "robots",
+        "start": 14.38,
+        "end": 14.68
       },
       {
-        "word": "name.",
-        "start": 16.26,
-        "end": 16.52
+        "word": "ever",
+        "start": 14.68,
+        "end": 15.0
       },
       {
-        "word": "Save",
-        "start": 17.38,
-        "end": 17.58
+        "word": "made.",
+        "start": 15.0,
+        "end": 15.28
       },
       {
-        "word": "this",
-        "start": 17.58,
-        "end": 17.82
+        "word": "In",
+        "start": 16.06,
+        "end": 16.12
       },
       {
-        "word": "one",
-        "start": 17.82,
+        "word": "Islam,",
+        "start": 16.12,
+        "end": 16.4
+      },
+      {
+        "word": "studying",
+        "start": 16.4,
+        "end": 17.04
+      },
+      {
+        "word": "how",
+        "start": 17.04,
+        "end": 17.28
+      },
+      {
+        "word": "creation",
+        "start": 17.28,
+        "end": 17.62
+      },
+      {
+        "word": "works",
+        "start": 17.62,
         "end": 18.06
       },
       {
-        "word": "for",
+        "word": "this",
         "start": 18.06,
-        "end": 18.4
+        "end": 18.3
       },
       {
-        "word": "later.",
-        "start": 18.4,
-        "end": 18.58
+        "word": "closely",
+        "start": 18.3,
+        "end": 18.6
+      },
+      {
+        "word": "is",
+        "start": 18.6,
+        "end": 19.1
+      },
+      {
+        "word": "itself",
+        "start": 19.1,
+        "end": 19.42
+      },
+      {
+        "word": "a",
+        "start": 19.42,
+        "end": 19.7
+      },
+      {
+        "word": "kind",
+        "start": 19.7,
+        "end": 19.94
+      },
+      {
+        "word": "of",
+        "start": 19.94,
+        "end": 20.04
+      },
+      {
+        "word": "worship,",
+        "start": 20.04,
+        "end": 20.24
+      },
+      {
+        "word": "drawing",
+        "start": 21.02,
+        "end": 21.14
+      },
+      {
+        "word": "us",
+        "start": 21.14,
+        "end": 21.42
+      },
+      {
+        "word": "nearer",
+        "start": 21.42,
+        "end": 21.62
+      },
+      {
+        "word": "to",
+        "start": 21.62,
+        "end": 21.94
+      },
+      {
+        "word": "the",
+        "start": 21.94,
+        "end": 22.04
+      },
+      {
+        "word": "One",
+        "start": 22.04,
+        "end": 22.26
+      },
+      {
+        "word": "who",
+        "start": 22.26,
+        "end": 22.58
+      },
+      {
+        "word": "designed",
+        "start": 22.58,
+        "end": 22.84
+      },
+      {
+        "word": "it",
+        "start": 22.84,
+        "end": 23.08
+      },
+      {
+        "word": "all.",
+        "start": 23.08,
+        "end": 23.32
+      },
+      {
+        "word": "Follow",
+        "start": 24.06,
+        "end": 24.42
+      },
+      {
+        "word": "for",
+        "start": 24.42,
+        "end": 24.6
+      },
+      {
+        "word": "one",
+        "start": 24.6,
+        "end": 24.84
+      },
+      {
+        "word": "piece",
+        "start": 24.84,
+        "end": 25.12
+      },
+      {
+        "word": "of",
+        "start": 25.12,
+        "end": 25.3
+      },
+      {
+        "word": "wisdom",
+        "start": 25.3,
+        "end": 25.46
+      },
+      {
+        "word": "daily.",
+        "start": 25.46,
+        "end": 25.84
       }
     ]
   },
   "reference": {
-    "text": "Islamic Golden Age · 9th-Century Cordoba",
-    "startSec": 17.38
+    "text": "Islamic Golden Age · 1206 CE",
+    "startSec": 24.06
   },
-  "audioFile": "audio/w19.wav",
-  "durationSec": 19.16,
+  "audioFile": "audio/w21.wav",
+  "durationSec": 26.45,
   "scenes": [
-    "scenes/w19/scene_0.jpg",
-    "scenes/w19/scene_1.jpg",
-    "scenes/w19/scene_2.jpg",
-    "scenes/w19/scene_3.jpg"
+    "scenes/w21/scene_0.jpg",
+    "scenes/w21/scene_1.jpg",
+    "scenes/w21/scene_2.jpg",
+    "scenes/w21/scene_3.jpg"
   ]
 }

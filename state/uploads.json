@@ -273,6 +273,15 @@
       "cta_type": "save",
       "title": "The flying man of Cordoba | Daily Islamic Wisdom",
       "uploaded_at": "2026-07-04T06:52:27+00:00"
+    },
+    {
+      "id": "w21",
+      "youtube_id": "DVCT5jxxaf8",
+      "category": "Islamic Golden Age",
+      "hook_type": "question_story",
+      "cta_type": "follow",
+      "title": "The engineer who built robots in 1206 | Daily Islamic Wisdom",
+      "uploaded_at": "2026-07-05T08:17:47+00:00"
     }
   ]
 }
