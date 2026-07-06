@@ -1,11 +1,13 @@
 {
   "used": [
     "ay_ease",
-    "ay_remember"
+    "ay_remember",
+    "ay_rest"
   ],
   "used_clips": [
     "f11",
-    "f1"
+    "f1",
+    "f3"
   ],
-  "last": "ay_remember"
+  "last": "ay_rest"
 }
