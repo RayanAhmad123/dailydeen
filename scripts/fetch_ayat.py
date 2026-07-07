@@ -17,8 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REC_DIR = ROOT / "assets" / "recitations"
-RECITER = "Minshawy_Murattal_128kbps"
-RECITER_NAME = "Mohamed Siddiq El-Minshawi"
+RECITER = "Yasser_Ad-Dussary_128kbps"
+RECITER_NAME = "Yasser Al-Dosari"
 TEXT_API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,en.sahih"
 AUDIO_URL = "https://everyayah.com/data/{rec}/{code}.mp3"
 
