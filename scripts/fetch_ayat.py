@@ -32,6 +32,15 @@ ENTRIES = {
     "ay_kawthar":     ("gratitude",   [(108, 1), (108, 2), (108, 3)]),
     "ay_asr":         ("time",        [(103, 1), (103, 2), (103, 3)]),
     "ay_hope":        ("hope",        [(3, 139)]),
+    # --- 2026-07-07 expansion (Ayah-only channel; keep passages short & famous) ---
+    "ay_fatiha":      ("peace",       [(1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 7)]),
+    "ay_near":        ("nearness",    [(2, 186)]),
+    "ay_patience":    ("consistency", [(2, 153)]),
+    "ay_increase":    ("gratitude",   [(14, 7)]),
+    "ay_purpose":     ("remembrance", [(51, 56)]),
+    "ay_mercy":       ("hope",        [(39, 53)]),
+    "ay_duha":        ("hope",        [(93, 3), (93, 4), (93, 5)]),
+    "ay_kursi":       ("trust",       [(2, 255)]),
 }
 
 

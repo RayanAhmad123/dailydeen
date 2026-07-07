@@ -3,13 +3,15 @@
     "ay_ease",
     "ay_remember",
     "ay_rest",
-    "ay_trust"
+    "ay_trust",
+    "ay_ikhlas"
   ],
   "used_clips": [
     "f11",
     "f1",
     "f3",
-    "f8"
+    "f8",
+    "f2"
   ],
-  "last": "ay_trust"
+  "last": "ay_ikhlas"
 }

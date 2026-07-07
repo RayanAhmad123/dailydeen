@@ -80,6 +80,86 @@
       "audio": "recitations/ay_hope.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 10.77
+    },
+    {
+      "id": "ay_fatiha",
+      "reference": "Quran 1:1-7",
+      "theme": "peace",
+      "arabic": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ مَٰلِكِ يَوْمِ ٱلدِّينِ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful. All praise is due to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked Your anger or of those who are astray.",
+      "audio": "recitations/ay_fatiha.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 47.06
+    },
+    {
+      "id": "ay_near",
+      "reference": "Quran 2:186",
+      "theme": "nearness",
+      "arabic": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ ۖ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ",
+      "translation": "And when My servants ask you, O Muhammad, concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me. So let them respond to Me by obedience and believe in Me that they may be rightly guided.",
+      "audio": "recitations/ay_near.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 26.26
+    },
+    {
+      "id": "ay_patience",
+      "reference": "Quran 2:153",
+      "theme": "consistency",
+      "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّٰبِرِينَ",
+      "translation": "O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.",
+      "audio": "recitations/ay_patience.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.32
+    },
+    {
+      "id": "ay_increase",
+      "reference": "Quran 14:7",
+      "theme": "gratitude",
+      "arabic": "وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِى لَشَدِيدٌۭ",
+      "translation": "And remember when your Lord proclaimed, 'If you are grateful, I will surely increase you in favor; but if you deny, indeed, My punishment is severe.' \"",
+      "audio": "recitations/ay_increase.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.92
+    },
+    {
+      "id": "ay_purpose",
+      "reference": "Quran 51:56",
+      "theme": "remembrance",
+      "arabic": "وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ",
+      "translation": "And I did not create the jinn and mankind except to worship Me.",
+      "audio": "recitations/ay_purpose.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 7.19
+    },
+    {
+      "id": "ay_mercy",
+      "reference": "Quran 39:53",
+      "theme": "hope",
+      "arabic": "۞ قُلْ يَٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
+      "translation": "Say, \"O My servants who have transgressed against themselves by sinning, do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful.\"",
+      "audio": "recitations/ay_mercy.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 29.13
+    },
+    {
+      "id": "ay_duha",
+      "reference": "Quran 93:3-5",
+      "theme": "hope",
+      "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ وَلَلْءَاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+      "translation": "Your Lord has not taken leave of you, O Muhammad, nor has He detested you. And the Hereafter is better for you than the first life. And your Lord is going to give you, and you will be satisfied.",
+      "audio": "recitations/ay_duha.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.73
+    },
+    {
+      "id": "ay_kursi",
+      "reference": "Quran 2:255",
+      "theme": "trust",
+      "arabic": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌۭ وَلَا نَوْمٌۭ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍۢ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+      "translation": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of all existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is presently before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
+      "audio": "recitations/ay_kursi.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 54.63
     }
   ]
 }
