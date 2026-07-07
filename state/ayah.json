@@ -2,12 +2,14 @@
   "used": [
     "ay_ease",
     "ay_remember",
-    "ay_rest"
+    "ay_rest",
+    "ay_trust"
   ],
   "used_clips": [
     "f11",
     "f1",
-    "f3"
+    "f3",
+    "f8"
   ],
-  "last": "ay_rest"
+  "last": "ay_trust"
 }
