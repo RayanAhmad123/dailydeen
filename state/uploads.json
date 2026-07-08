@@ -286,12 +286,21 @@
     {
       "id": "ay_rest",
       "youtube_id": "7UshQ113nZ0",
-      "category": "",
+      "category": "Ayah",
       "hook_type": "",
       "cta_type": "",
       "title": "Those who have believed and whose hearts are assured by the  | Quran 13:28",
       "via": "postpeer",
       "uploaded_at": "2026-07-06T08:23:25+00:00"
+    },
+    {
+      "id": "ay_trust",
+      "youtube_id": "83khZ-n3xC0",
+      "category": "Ayah",
+      "hook_type": "",
+      "cta_type": "",
+      "title": "And will provide for him from where he does not expect. And  | Quran 65:3",
+      "uploaded_at": "2026-07-07T03:47:21+00:00"
     }
   ]
 }

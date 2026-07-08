@@ -1,9 +1,9 @@
 {
-  "id": "ay_rest",
-  "arabic": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
-  "translation": "Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.\"",
-  "reference": "Quran 13:28",
-  "clipFile": "reflection/ay_rest.mp4",
-  "audioFile": "recitation/ay_rest.mp3",
-  "durationSec": 17.4
+  "id": "ay_ikhlas",
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ ٱللَّهُ ٱلصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+  "translation": "Say, \"He is Allah, who is One, Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent.\"",
+  "reference": "Quran 112:1-4",
+  "clipFile": "reflection/ay_ikhlas.mp4",
+  "audioFile": "recitation/ay_ikhlas.mp3",
+  "durationSec": 11.83
 }
