@@ -4,14 +4,16 @@
     "ay_remember",
     "ay_rest",
     "ay_trust",
-    "ay_ikhlas"
+    "ay_ikhlas",
+    "ay_kawthar"
   ],
   "used_clips": [
     "f11",
     "f1",
     "f3",
     "f8",
-    "f2"
+    "f2",
+    "f9"
   ],
-  "last": "ay_ikhlas"
+  "last": "ay_kawthar"
 }

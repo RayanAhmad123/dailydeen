@@ -124,20 +124,13 @@ def main():
 
     platforms = []
     if "youtube" in want:
-        # PostPeer's SCHEDULED-post schema is stricter than publishNow: the YouTube
-        # branch accepts ONLY `title` (description/tags/privacyStatus are rejected as
-        # additional properties → 400). For scheduled posts the top-level `content`
-        # becomes the description and it publishes public by default. publishNow keeps
-        # the full field set. (Verified 2026-07-07.)
-        if when == "now":
-            yt_psd = {
-                "title": meta["title"][:100],
-                "description": meta["description"][:4900],
-                "tags": meta.get("tags", [])[:15],
-                "privacyStatus": yt_privacy,
-            }
-        else:
-            yt_psd = {"title": meta["title"][:100]}
+        # PostPeer's YouTube branch accepts ONLY `title` for BOTH publishNow and
+        # scheduled posts (description/tags/privacyStatus are rejected as additional
+        # properties → 400). The top-level `content` (caption) becomes the description
+        # and it publishes public by default. (publishNow was tightened to match the
+        # scheduled schema — verified 2026-07-09; previously publishNow took the full
+        # field set.)
+        yt_psd = {"title": meta["title"][:100]}
         platforms.append({
             "platform": "youtube",
             "accountId": ACCOUNTS["youtube"],
