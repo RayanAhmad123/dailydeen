@@ -6,7 +6,8 @@
     "ay_trust",
     "ay_ikhlas",
     "ay_kawthar",
-    "ay_asr"
+    "ay_asr",
+    "ay_hope"
   ],
   "used_clips": [
     "f11",
@@ -15,7 +16,8 @@
     "f8",
     "f2",
     "f9",
-    "f4"
+    "f4",
+    "f5"
   ],
-  "last": "ay_asr"
+  "last": "ay_hope"
 }
