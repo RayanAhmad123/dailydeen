@@ -1,9 +1,53 @@
 {
-  "id": "ay_hope",
-  "arabic": "وَلَا تَهِنُوا۟ وَلَا تَحْزَنُوا۟ وَأَنتُمُ ٱلْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
-  "translation": "So do not weaken and do not grieve, and you will be superior if you are true believers.",
-  "reference": "Quran 3:139",
-  "clipFile": "reflection/ay_hope.mp4",
-  "audioFile": "recitation/ay_hope.mp3",
-  "durationSec": 11.97
+  "id": "ay_fatiha",
+  "arabic": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ مَٰلِكِ يَوْمِ ٱلدِّينِ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+  "translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful. All praise is due to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked Your anger or of those who are astray.",
+  "reference": "Quran 1:1-7",
+  "clipFile": "reflection/ay_fatiha.mp4",
+  "audioFile": "recitation/ay_fatiha.mp3",
+  "durationSec": 48.26,
+  "segments": [
+    {
+      "arabic": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+      "startSec": 0.0,
+      "endSec": 3.3
+    },
+    {
+      "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "translation": "All praise is due to Allah, Lord of the worlds -",
+      "startSec": 3.3,
+      "endSec": 9.5
+    },
+    {
+      "arabic": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "translation": "The Entirely Merciful, the Especially Merciful,",
+      "startSec": 9.5,
+      "endSec": 16.35
+    },
+    {
+      "arabic": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+      "translation": "Sovereign of the Day of Recompense.",
+      "startSec": 16.35,
+      "endSec": 22.6
+    },
+    {
+      "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "translation": "It is You we worship and You we ask for help.",
+      "startSec": 22.6,
+      "endSec": 29.48
+    },
+    {
+      "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "translation": "Guide us to the straight path -",
+      "startSec": 29.48,
+      "endSec": 32.18
+    },
+    {
+      "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "translation": "The path of those upon whom You have bestowed favor, not of those who have evoked Your anger or of those who are astray.",
+      "startSec": 32.18,
+      "endSec": 47.08
+    }
+  ]
 }

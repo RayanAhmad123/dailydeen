@@ -25,6 +25,14 @@ export type ReflectionData = {
   durationSec: number;
 };
 
+// One ayah of a multi-ayah passage, timed to its slice of the recitation.
+export type AyahSegment = {
+  arabic: string;
+  translation: string;
+  startSec: number; // relative to audio start
+  endSec: number;
+};
+
 // AyahVideo: footage (muted) + on-screen ayah (Arabic + translation + reference)
 // with the MATCHING Quran recitation baked in — posts directly, no in-app audio.
 export type AyahData = {
@@ -35,4 +43,7 @@ export type AyahData = {
   clipFile?: string | null; // trimmed 9:16 footage, relative to public/
   audioFile: string; // recitation, relative to public/, e.g. "recitation/ay_ease.mp3"
   durationSec: number;
+  // Long passages (e.g. a full surah): show one ayah at a time, synced to the
+  // recitation. When absent, the whole text is shown statically (short passages).
+  segments?: AyahSegment[];
 };

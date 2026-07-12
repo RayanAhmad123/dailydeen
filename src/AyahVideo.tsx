@@ -18,9 +18,10 @@ import { AyahData } from "./types";
  * Footage (muted) + the ayah (Arabic + translation + reference) with the matching
  * Quran recitation baked in. Posts directly with sound — no in-app audio step.
  */
-export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, clipFile, audioFile }) => {
+export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, clipFile, audioFile, segments }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
+  const sequenced = !!segments && segments.length > 0;
 
   const scale = interpolate(frame, [0, durationInFrames], [1.04, 1.14]);
   const arEnter = spring({ frame: frame - Math.round(0.5 * fps), fps, config: { damping: 18, mass: 0.8 } });
@@ -56,6 +57,89 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
         style={{ background: "radial-gradient(ellipse 120% 85% at 50% 50%, transparent 48%, rgba(0,0,0,0.55) 100%)" }}
       />
 
+      {sequenced ? (
+        <>
+          {/* One ayah at a time, timed to its slice of the recitation */}
+          {segments!.map((seg, i) => {
+            const startF = Math.round(seg.startSec * fps);
+            const endF = Math.round(seg.endSec * fps);
+            const isLast = i === segments!.length - 1;
+            if (frame < startF || (!isLast && frame >= endF)) return null;
+            const enter = spring({ frame: frame - startF, fps, config: { damping: 18, mass: 0.8 } });
+            const trEnter = spring({ frame: frame - startF - Math.round(0.25 * fps), fps, config: { damping: 18, mass: 0.8 } });
+            const exit = isLast
+              ? 1
+              : interpolate(frame, [endF - Math.round(0.3 * fps), endF], [1, 0], {
+                  extrapolateLeft: "clamp",
+                  extrapolateRight: "clamp",
+                });
+            return (
+              <AbsoluteFill
+                key={i}
+                style={{ justifyContent: "center", alignItems: "center", padding: "0 96px", opacity: exit * outFade }}
+              >
+                <div
+                  style={{
+                    opacity: enter,
+                    transform: `translateY(${(1 - enter) * 30}px)`,
+                    fontFamily: arabicFamily,
+                    direction: "rtl",
+                    fontWeight: 400,
+                    fontSize: 92,
+                    lineHeight: 1.7,
+                    color: theme.ivory,
+                    textAlign: "center",
+                    textShadow: "0 4px 30px rgba(0,0,0,0.85)",
+                  }}
+                >
+                  {seg.arabic}
+                </div>
+
+                <div style={{ margin: "36px 0 24px", opacity: trEnter }}>
+                  <Ornament />
+                </div>
+
+                <div
+                  style={{
+                    opacity: trEnter,
+                    transform: `translateY(${(1 - trEnter) * 24}px)`,
+                    fontFamily: serifFamily,
+                    fontWeight: 600,
+                    fontSize: 50,
+                    lineHeight: 1.32,
+                    color: theme.ivory,
+                    textAlign: "center",
+                    textShadow: "0 3px 20px rgba(0,0,0,0.8)",
+                  }}
+                >
+                  {seg.translation}
+                </div>
+              </AbsoluteFill>
+            );
+          })}
+
+          {/* Reference — persistent while the ayat rotate */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: 148,
+              left: 0,
+              right: 0,
+              textAlign: "center",
+              fontFamily: sansFamily,
+              fontWeight: 500,
+              fontSize: 30,
+              letterSpacing: 4,
+              textTransform: "uppercase",
+              color: theme.gold,
+              textShadow: "0 2px 14px rgba(0,0,0,0.85)",
+              opacity: enEnter * outFade,
+            }}
+          >
+            {reference}
+          </div>
+        </>
+      ) : (
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", padding: "0 96px", opacity: outFade }}>
         {/* Arabic ayah — the hero */}
         <div
@@ -113,6 +197,7 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
           {reference}
         </div>
       </AbsoluteFill>
+      )}
 
       <div
         style={{
