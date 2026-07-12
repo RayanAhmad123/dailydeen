@@ -10,8 +10,11 @@ Run:  python3 scripts/build_ayah.py
 Then: npx remotion render AyahVideo --props=src/ayahData.json --output=output/videos/<id>.mp4
 """
 import json
+import re
 import shutil
+import subprocess
 import sys
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,10 +23,49 @@ from build_reflection import trim_clip, pick_clip  # shared footage helpers
 
 TAIL_SEC = 1.2  # hold after the recitation ends
 HASHTAGS = ["islam", "quran", "recitation", "islamicreminders", "muslim", "deen", "shorts"]
+SEGMENT_MIN_SEC = 25  # long multi-ayah passages get one-ayah-at-a-time display
+TEXT_API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,en.sahih"
 
 
 def load(p, default):
     return json.loads(p.read_text()) if p.exists() else default
+
+
+def make_segments(ayah):
+    """Per-ayah display segments for long passages: authoritative text per ayah
+    from api.alquran.cloud + timings from the cached recitation parts. Returns
+    None (static full-text display) for short passages or on any failure."""
+    if float(ayah["durationSec"]) < SEGMENT_MIN_SEC:
+        return None
+    m = re.fullmatch(r"Quran (\d+):(\d+)-(\d+)", ayah["reference"])
+    if not m:
+        return None
+    s, a0, a1 = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    try:
+        segments, t = [], 0.0
+        for a in range(a0, a1 + 1):
+            part = ROOT / "assets" / "recitations" / "_parts" / f"{s:03d}{a:03d}.mp3"
+            r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                "-of", "csv=p=0", str(part)], capture_output=True, text=True, check=True)
+            length = float(r.stdout.strip())
+            with urllib.request.urlopen(TEXT_API.format(s=s, a=a), timeout=30) as resp:
+                d = json.loads(resp.read().decode())["data"]
+            ar = next(e["text"] for e in d if e["edition"]["identifier"] == "quran-uthmani")
+            en = next(e["text"] for e in d if e["edition"]["identifier"] == "en.sahih")
+            segments.append({"arabic": ar, "translation": en.replace("[", "").replace("]", ""),
+                             "startSec": round(t, 2), "endSec": round(t + length, 2)})
+            t += length
+        # text accuracy is non-negotiable: joined segments must equal the bank entry
+        if " ".join(x["arabic"] for x in segments) != ayah["arabic"]:
+            raise ValueError("Arabic mismatch vs bank")
+        if " ".join(x["translation"] for x in segments) != ayah["translation"]:
+            raise ValueError("Translation mismatch vs bank")
+        if abs(t - float(ayah["durationSec"])) > 0.2:
+            raise ValueError(f"part durations {t:.2f}s != recitation {ayah['durationSec']}s")
+        return segments
+    except Exception as e:  # noqa: BLE001 — fall back to static display, never block the build
+        print(f"  ! segments unavailable ({e}) — using static full-text display")
+        return None
 
 
 def main():
@@ -61,6 +103,10 @@ def main():
     props = {"id": vid, "arabic": ayah["arabic"], "translation": ayah["translation"],
              "reference": ayah["reference"], "clipFile": clip_rel,
              "audioFile": f"recitation/{vid}.mp3", "durationSec": dur}
+    segments = make_segments(ayah)
+    if segments:
+        props["segments"] = segments
+        print(f"  {len(segments)} per-ayah segments (long passage — one ayah at a time)")
     (ROOT / "src" / "ayahData.json").write_text(json.dumps(props, indent=2, ensure_ascii=False))
 
     hashtags = " ".join("#" + t for t in HASHTAGS)
