@@ -76,7 +76,13 @@ def main():
     state = load(ROOT / "state" / "ayah.json", {"used": [], "used_clips": [], "last": None})
 
     unused = [a for a in ayat if a["id"] not in set(state["used"])]
-    ayah = (unused or ayat)[0]
+    if not unused:
+        raise SystemExit(
+            "AYAH BANK EXHAUSTED — every entry in content/ayat.json is used. "
+            "Add new ayat (fetch_ayat.py), pre-render their montages "
+            "(scripts/build_montages.py) and update the cloud-assets release."
+        )
+    ayah = unused[0]
     vid = ayah["id"]
 
     # Recitation -> public/ so the composition can play it
@@ -88,17 +94,29 @@ def main():
     shutil.copyfile(src_audio, pub_audio)
     dur = round(float(ayah["durationSec"]) + TAIL_SEC, 2)
 
-    clip = pick_clip(footage, ayah.get("theme"), set(state["used_clips"]))
+    # Pre-rendered montage (built + frame-reviewed via scripts/build_montages.py,
+    # shipped in the cloud-assets release) takes priority — this is what the
+    # unattended GitHub Actions run uses. Falls back to live footage trimming.
+    clip = None
     clip_rel = None
-    if clip:
-        clip_abs = ROOT / "assets" / "footage" / clip["src"]
-        if clip_abs.exists():
-            out = ROOT / "public" / "reflection" / f"{vid}.mp4"
-            print(f"  footage {clip['src']}"
-                  + (f" (rotate {clip['rotate']})" if clip.get("rotate") else "")
-                  + f" -> {dur}s")
-            trim_clip(clip_abs, clip.get("start", 0), float(clip.get("dur", dur)), dur, out, clip.get("rotate"))
-            clip_rel = f"reflection/{vid}.mp4"
+    pre = ROOT / "assets" / "prerendered" / f"{vid}.mp4"
+    if pre.exists():
+        out = ROOT / "public" / "reflection" / f"{vid}.mp4"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(pre, out)
+        clip_rel = f"reflection/{vid}.mp4"
+        print(f"  footage: prerendered montage {pre.name}")
+    else:
+        clip = pick_clip(footage, ayah.get("theme"), set(state["used_clips"]))
+        if clip:
+            clip_abs = ROOT / "assets" / "footage" / clip["src"]
+            if clip_abs.exists():
+                out = ROOT / "public" / "reflection" / f"{vid}.mp4"
+                print(f"  footage {clip['src']}"
+                      + (f" (rotate {clip['rotate']})" if clip.get("rotate") else "")
+                      + f" -> {dur}s")
+                trim_clip(clip_abs, clip.get("start", 0), float(clip.get("dur", dur)), dur, out, clip.get("rotate"))
+                clip_rel = f"reflection/{vid}.mp4"
 
     props = {"id": vid, "arabic": ayah["arabic"], "translation": ayah["translation"],
              "reference": ayah["reference"], "clipFile": clip_rel,
@@ -110,8 +128,11 @@ def main():
     (ROOT / "src" / "ayahData.json").write_text(json.dumps(props, indent=2, ensure_ascii=False))
 
     hashtags = " ".join("#" + t for t in HASHTAGS)
+    # Curated per-ayah title from the bank (the auto-fallback truncates mid-word,
+    # which every manual run has had to fix — unattended runs need the curated one).
+    title = ayah.get("title") or f"{ayah['translation'][:60].rstrip('.,')} | {ayah['reference']}"
     meta = {
-        "title": f"{ayah['translation'][:60].rstrip('.,')} | {ayah['reference']}",
+        "title": title,
         "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{hashtags}",
         "caption": f"{ayah['translation']} {ayah['reference']} {hashtags}"[:2200],
         "tags": HASHTAGS,
@@ -129,6 +150,15 @@ def main():
     state["last"] = vid
     (ROOT / "state").mkdir(exist_ok=True)
     (ROOT / "state" / "ayah.json").write_text(json.dumps(state, indent=2, ensure_ascii=False))
+
+    # Cadence bookkeeping + the id handoff upload_postpeer.py reads
+    cad_p = ROOT / "state" / "cadence.json"
+    cad = load(cad_p, {})
+    cad["last_format"] = "ayah"
+    cad["last_id"] = vid
+    cad_p.write_text(json.dumps(cad, indent=2, ensure_ascii=False))
+    (ROOT / "work").mkdir(exist_ok=True)
+    (ROOT / "work" / "script.json").write_text(json.dumps({"id": vid}))
 
     print(f"Ayah video ready: id={vid}  {ayah['reference']}  ({dur}s, audio baked)")
     print(f"  {ayah['translation']}")

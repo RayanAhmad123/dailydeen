@@ -109,7 +109,8 @@
       "translation": "O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.",
       "audio": "recitations/ay_patience.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 14.32
+      "durationSec": 14.32,
+      "title": "Seek Help Through Patience and Prayer | Quran 2:153"
     },
     {
       "id": "ay_increase",
@@ -119,7 +120,8 @@
       "translation": "And remember when your Lord proclaimed, 'If you are grateful, I will surely increase you in favor; but if you deny, indeed, My punishment is severe.' \"",
       "audio": "recitations/ay_increase.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 14.92
+      "durationSec": 14.92,
+      "title": "\"If You Are Grateful, I Will Increase You\" | Quran 14:7"
     },
     {
       "id": "ay_purpose",
@@ -129,7 +131,8 @@
       "translation": "And I did not create the jinn and mankind except to worship Me.",
       "audio": "recitations/ay_purpose.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 7.19
+      "durationSec": 7.19,
+      "title": "Why Were Jinn and Mankind Created? | Quran 51:56"
     },
     {
       "id": "ay_mercy",
@@ -139,7 +142,8 @@
       "translation": "Say, \"O My servants who have transgressed against themselves by sinning, do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful.\"",
       "audio": "recitations/ay_mercy.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 29.13
+      "durationSec": 29.13,
+      "title": "\"Do Not Despair of the Mercy of Allah\" | Quran 39:53"
     },
     {
       "id": "ay_duha",
@@ -149,7 +153,8 @@
       "translation": "Your Lord has not taken leave of you, O Muhammad, nor has He detested you. And the Hereafter is better for you than the first life. And your Lord is going to give you, and you will be satisfied.",
       "audio": "recitations/ay_duha.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 11.73
+      "durationSec": 11.73,
+      "title": "\"Your Lord Has Not Taken Leave of You\" | Quran 93:3-5"
     },
     {
       "id": "ay_kursi",
@@ -159,7 +164,8 @@
       "translation": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of all existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is presently before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
       "audio": "recitations/ay_kursi.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 54.63
+      "durationSec": 54.63,
+      "title": "Ayat al-Kursi - The Throne Verse | Quran 2:255"
     }
   ]
 }

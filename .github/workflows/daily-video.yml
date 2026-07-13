@@ -1,0 +1,102 @@
+# Fully unattended daily Ayah video: pick next unused ayah -> build props ->
+# render with Remotion -> publish PUBLIC to YouTube + TikTok via PostPeer ->
+# commit advanced state back to main. No local machine needed.
+#
+# Media the repo can't hold (gitignored): recitation mp3s + pre-rendered,
+# frame-reviewed footage montages live as tarballs on the `cloud-assets`
+# GitHub release. Top-up procedure when the ayah bank runs low:
+#   1. locally: python3 scripts/fetch_ayat.py            (extend the bank)
+#   2. plan shots in content/montages.json, then python3 scripts/build_montages.py
+#   3. frame-review the new assets/prerendered/*.mp4
+#   4. tar + `gh release upload cloud-assets ... --clobber` (see release notes)
+# When the bank is exhausted, build_ayah.py exits nonzero -> this workflow
+# fails -> GitHub emails the repo owner. Nothing gets double-posted:
+# upload_postpeer.py is idempotent per caption, and state only lands on main
+# after a fully successful run.
+name: daily-video
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC = 09:00 CEST, right after YouTube's quota reset
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build + render only (no posting, no state push); upload the mp4 as an artifact"
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-video
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q requests
+          npm ci
+
+      - name: Download cloud assets (recitations + pre-rendered montages)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download cloud-assets --pattern '*.tar.gz' --dir /tmp/cloud-assets
+          mkdir -p assets
+          tar -xzf /tmp/cloud-assets/recitations.tar.gz -C assets
+          tar -xzf /tmp/cloud-assets/prerendered.tar.gz -C assets
+          ls assets/recitations assets/prerendered
+
+      - name: Build ayah props (fails when the bank is exhausted)
+        run: python3 scripts/build_ayah.py
+
+      - name: Render
+        run: |
+          VID=$(python3 -c "import json;print(json.load(open('work/script.json'))['id'])")
+          echo "VID=$VID" >> "$GITHUB_ENV"
+          npx remotion render AyahVideo --props=src/ayahData.json --output="output/videos/$VID.mp4"
+
+      - name: Upload render as artifact (dry run only)
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.VID }}
+          path: |
+            output/videos/${{ env.VID }}.mp4
+            output/videos/${{ env.VID }}.meta.json
+            src/ayahData.json
+
+      - name: Publish via PostPeer (YouTube + TikTok, public)
+        if: ${{ !inputs.dry_run }}
+        env:
+          POSTPEER_API_KEY: ${{ secrets.POSTPEER_API_KEY }}
+        run: python3 scripts/upload_postpeer.py
+
+      - name: Commit state to main
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "daily-video-bot"
+          git config user.email "actions@github.com"
+          git add state/ src/ayahData.json
+          git commit -m "Ayah video $VID (automated daily run)"
+          git pull --rebase origin main
+          git push origin HEAD:main

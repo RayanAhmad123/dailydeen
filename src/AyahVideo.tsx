@@ -23,6 +23,17 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
   const { fps, durationInFrames } = useVideoConfig();
   const sequenced = !!segments && segments.length > 0;
 
+  // Long single-ayah texts (e.g. Ayat al-Kursi, 2:255) can't be split into
+  // segments — auto-fit the static layout instead. Texts at or below the sizes
+  // every published video used (≤190 Arabic / ≤250 translation chars) render
+  // exactly as before; longer ones scale down smoothly.
+  const arFit = Math.min(1, Math.pow(190 / arabic.length, 0.6));
+  const arSize = Math.max(48, Math.round(92 * arFit));
+  const arLineHeight = arSize < 75 ? 1.55 : 1.7;
+  const enFit = Math.min(1, Math.pow(250 / translation.length, 0.6));
+  const enSize = Math.max(28, Math.round(50 * enFit));
+  const enLineHeight = enSize < 42 ? 1.28 : 1.32;
+
   const scale = interpolate(frame, [0, durationInFrames], [1.04, 1.14]);
   const arEnter = spring({ frame: frame - Math.round(0.5 * fps), fps, config: { damping: 18, mass: 0.8 } });
   const enEnter = spring({ frame: frame - Math.round(1.4 * fps), fps, config: { damping: 18, mass: 0.8 } });
@@ -149,8 +160,8 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
             fontFamily: arabicFamily,
             direction: "rtl",
             fontWeight: 400,
-            fontSize: 92,
-            lineHeight: 1.7,
+            fontSize: arSize,
+            lineHeight: arLineHeight,
             color: theme.ivory,
             textAlign: "center",
             textShadow: "0 4px 30px rgba(0,0,0,0.85)",
@@ -170,8 +181,8 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
             transform: `translateY(${(1 - enEnter) * 24}px)`,
             fontFamily: serifFamily,
             fontWeight: 600,
-            fontSize: 50,
-            lineHeight: 1.32,
+            fontSize: enSize,
+            lineHeight: enLineHeight,
             color: theme.ivory,
             textAlign: "center",
             textShadow: "0 3px 20px rgba(0,0,0,0.8)",

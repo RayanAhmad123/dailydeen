@@ -8,7 +8,8 @@
     "ay_kawthar",
     "ay_asr",
     "ay_hope",
-    "ay_fatiha"
+    "ay_fatiha",
+    "ay_near"
   ],
   "used_clips": [
     "f11",
@@ -23,5 +24,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_fatiha"
+  "last": "ay_near"
 }
