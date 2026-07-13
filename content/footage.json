@@ -1,17 +1,150 @@
 {
   "_readme": "Curated footage approved from work/footage_candidates.json (reviewed visually). `src` is relative to assets/footage/. `dur` is the clean single-shot length available from `start`; build_reflection.py outputs a uniform 15s, looping shorter shots. `theme` loosely matches quote themes (falls back to rotation). Optional `rotate` ('cw'|'ccw') fixes clips shot in portrait but stored as landscape with no rotation metadata (set during visual review). Skipped: crowded squares, construction, signage, person-focused shots.",
   "clips": [
-    { "id": "f1", "src": "raw/DJI_20260618163914_0034_D.MP4", "start": 0.4, "dur": 18.0, "rotate": "cw", "theme": "remembrance", "tags": ["mosque-interior", "dome", "blue-mosque"] },
-    { "id": "f2", "src": "raw/DJI_20260618163828_0033_D.MP4", "start": 0.4, "dur": 18.0, "theme": "nearness", "tags": ["mosque-interior", "blue-mosque"] },
-    { "id": "f3", "src": "raw/DJI_20260619112733_0024_D.MP4", "start": 0.4, "dur": 7.7, "theme": "remembrance", "tags": ["mosque-interior", "domes"] },
-    { "id": "f4", "src": "raw/DJI_20260618164114_0035_D.MP4", "start": 0.4, "dur": 15.4, "theme": "peace", "tags": ["courtyard", "blue-mosque", "arches"] },
-    { "id": "f5", "src": "raw/DJI_20260618161908_0031_D.MP4", "start": 0.4, "dur": 11.3, "theme": "brotherhood", "tags": ["courtyard", "blue-mosque"] },
-    { "id": "f6", "src": "raw/DJI_20260618164322_0036_D.MP4", "start": 0.4, "dur": 6.3, "theme": "consistency", "tags": ["colonnade", "gallery", "leading-lines"] },
-    { "id": "f7", "src": "raw/DJI_20260618162324_0032_D.MP4", "start": 0.4, "dur": 9.8, "theme": "ease", "tags": ["courtyard", "tree", "minaret"] },
-    { "id": "f8", "src": "raw/DJI_20260618175030_0057_D.MP4", "start": 0.4, "dur": 10.6, "theme": "trust", "tags": ["mosque-exterior", "minaret"] },
-    { "id": "f9", "src": "raw/DJI_20260619112526_0022_D.MP4", "start": 0.4, "dur": 6.1, "theme": "gratitude", "tags": ["mosque", "garden", "nature"] },
-    { "id": "f10", "src": "raw/DJI_20260618170234_0045_D.MP4", "start": 0.4, "dur": 15.6, "theme": "gratitude", "tags": ["park", "palm", "nature", "sky"], "note": "busy square: foreground pedestrians cross the center crop ~4-16s — re-check before using over on-screen text" },
-    { "id": "f11", "src": "raw/DJI_20260621144014_0001_D.MP4", "start": 0.4, "dur": 6.5, "theme": "hope", "tags": ["archway", "frame", "steps", "minaret"] },
-    { "id": "f12", "src": "raw/DJI_20260619152542_0031_D.MP4", "start": 0.4, "dur": 7.1, "theme": "kindness", "tags": ["park", "minaret", "sky"] }
+    {
+      "id": "f1",
+      "src": "raw/DJI_20260618163914_0034_D.MP4",
+      "start": 0.4,
+      "dur": 18.0,
+      "rotate": "cw",
+      "theme": "remembrance",
+      "tags": [
+        "mosque-interior",
+        "dome",
+        "blue-mosque"
+      ]
+    },
+    {
+      "id": "f2",
+      "src": "raw/DJI_20260618163828_0033_D.MP4",
+      "start": 0.4,
+      "dur": 18.0,
+      "theme": "nearness",
+      "tags": [
+        "mosque-interior",
+        "blue-mosque"
+      ]
+    },
+    {
+      "id": "f3",
+      "src": "raw/DJI_20260619112733_0024_D.MP4",
+      "start": 0.4,
+      "dur": 7.7,
+      "theme": "remembrance",
+      "tags": [
+        "mosque-interior",
+        "domes"
+      ]
+    },
+    {
+      "id": "f4",
+      "src": "raw/DJI_20260618164114_0035_D.MP4",
+      "start": 0.4,
+      "dur": 15.4,
+      "theme": "peace",
+      "tags": [
+        "courtyard",
+        "blue-mosque",
+        "arches"
+      ],
+      "note": "clean window is only start->9.0s (8.6s usable): a pedestrian close-up group with visible faces enters from ~9s — never take more"
+    },
+    {
+      "id": "f5",
+      "src": "raw/DJI_20260618161908_0031_D.MP4",
+      "start": 0.4,
+      "dur": 11.3,
+      "theme": "brotherhood",
+      "tags": [
+        "courtyard",
+        "blue-mosque"
+      ]
+    },
+    {
+      "id": "f6",
+      "src": "raw/DJI_20260618164322_0036_D.MP4",
+      "start": 0.4,
+      "dur": 6.3,
+      "theme": "consistency",
+      "tags": [
+        "colonnade",
+        "gallery",
+        "leading-lines"
+      ]
+    },
+    {
+      "id": "f7",
+      "src": "raw/DJI_20260618162324_0032_D.MP4",
+      "start": 0.4,
+      "dur": 9.8,
+      "theme": "ease",
+      "tags": [
+        "courtyard",
+        "tree",
+        "minaret"
+      ]
+    },
+    {
+      "id": "f8",
+      "src": "raw/DJI_20260618175030_0057_D.MP4",
+      "start": 0.4,
+      "dur": 10.6,
+      "theme": "trust",
+      "tags": [
+        "mosque-exterior",
+        "minaret"
+      ]
+    },
+    {
+      "id": "f9",
+      "src": "raw/DJI_20260619112526_0022_D.MP4",
+      "start": 0.4,
+      "dur": 6.1,
+      "theme": "gratitude",
+      "tags": [
+        "mosque",
+        "garden",
+        "nature"
+      ]
+    },
+    {
+      "id": "f10",
+      "src": "raw/DJI_20260618170234_0045_D.MP4",
+      "start": 0.4,
+      "dur": 15.6,
+      "theme": "gratitude",
+      "tags": [
+        "park",
+        "palm",
+        "nature",
+        "sky"
+      ],
+      "note": "busy square: foreground pedestrians cross the center crop ~4-16s — re-check before using over on-screen text"
+    },
+    {
+      "id": "f11",
+      "src": "raw/DJI_20260621144014_0001_D.MP4",
+      "start": 0.4,
+      "dur": 6.5,
+      "theme": "hope",
+      "tags": [
+        "archway",
+        "frame",
+        "steps",
+        "minaret"
+      ]
+    },
+    {
+      "id": "f12",
+      "src": "raw/DJI_20260619152542_0031_D.MP4",
+      "start": 0.4,
+      "dur": 7.1,
+      "theme": "kindness",
+      "tags": [
+        "park",
+        "minaret",
+        "sky"
+      ]
+    }
   ]
 }
