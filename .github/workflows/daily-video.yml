@@ -52,7 +52,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          # fonts-hosny-amiri + noto: system fallback for Arabic glyphs (Quranic
+          # annotation marks) missing from the Google Fonts webfont subset —
+          # without it headless Chrome on Linux renders tofu boxes in the ayah.
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-hosny-amiri fonts-noto-core fonts-noto-ui-core
           pip install -q requests
           npm ci
 
