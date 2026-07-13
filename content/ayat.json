@@ -166,6 +166,105 @@
       "reciter": "Yasser Al-Dosari",
       "durationSec": 54.63,
       "title": "Ayat al-Kursi - The Throne Verse | Quran 2:255"
+    },
+    {
+      "id": "ay_house",
+      "reference": "Quran 106:3-4",
+      "theme": "pilgrimage",
+      "arabic": "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍۢ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+      "translation": "Let them worship the Lord of this House, Who has fed them, saving them from hunger and made them safe, saving them from fear.",
+      "audio": "recitations/ay_house.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.31,
+      "title": "Lord of This House | Quran 106:3-4"
+    },
+    {
+      "id": "ay_signs",
+      "reference": "Quran 3:190",
+      "theme": "creation",
+      "arabic": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ لَءَايَٰتٍۢ لِّأُو۟لِى ٱلْأَلْبَٰبِ",
+      "translation": "Indeed, in the creation of the heavens and the earth and the alternation of the night and the day are signs for those of understanding.",
+      "audio": "recitations/ay_signs.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 13.77,
+      "title": "\"Signs for Those of Understanding\" | Quran 3:190"
+    },
+    {
+      "id": "ay_dhikr",
+      "reference": "Quran 33:41-42",
+      "theme": "remembrance",
+      "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱذْكُرُوا۟ ٱللَّهَ ذِكْرًۭا كَثِيرًۭا وَسَبِّحُوهُ بُكْرَةًۭ وَأَصِيلًا",
+      "translation": "O you who have believed, remember Allah with much remembrance And exalt Him morning and afternoon.",
+      "audio": "recitations/ay_dhikr.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.52,
+      "title": "\"Remember Allah Often\" | Quran 33:41-42"
+    },
+    {
+      "id": "ay_falaq",
+      "reference": "Quran 113:1-5",
+      "theme": "protection",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ مِن شَرِّ مَا خَلَقَ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "translation": "Say, \"I seek refuge in the Lord of daybreak From the evil of that which He created And from the evil of darkness when it settles And from the evil of the blowers in knots And from the evil of an envier when he envies.\"",
+      "audio": "recitations/ay_falaq.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 20.14,
+      "title": "Surah Al-Falaq - The Daybreak | Quran 113:1-5"
+    },
+    {
+      "id": "ay_unity",
+      "reference": "Quran 49:13",
+      "theme": "unity",
+      "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَٰكُم مِّن ذَكَرٍۢ وَأُنثَىٰ وَجَعَلْنَٰكُمْ شُعُوبًۭا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌۭ",
+      "translation": "O mankind, indeed We have created you from male and female and made you peoples and tribes that you may know one another. Indeed, the most noble of you in the sight of Allah is the most righteous of you. Indeed, Allah is Knowing and Acquainted.",
+      "audio": "recitations/ay_unity.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 30.26,
+      "title": "\"That You May Know One Another\" | Quran 49:13"
+    },
+    {
+      "id": "ay_mountains",
+      "reference": "Quran 78:6-7",
+      "theme": "creation",
+      "arabic": "أَلَمْ نَجْعَلِ ٱلْأَرْضَ مِهَٰدًۭا وَٱلْجِبَالَ أَوْتَادًۭا",
+      "translation": "Have We not made the earth a resting place? And the mountains as stakes?",
+      "audio": "recitations/ay_mountains.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 6.19,
+      "title": "\"And the Mountains as Stakes\" | Quran 78:6-7"
+    },
+    {
+      "id": "ay_knowledge",
+      "reference": "Quran 20:114",
+      "theme": "knowledge",
+      "arabic": "فَتَعَٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۗ وَلَا تَعْجَلْ بِٱلْقُرْءَانِ مِن قَبْلِ أَن يُقْضَىٰٓ إِلَيْكَ وَحْيُهُۥ ۖ وَقُل رَّبِّ زِدْنِى عِلْمًۭا",
+      "translation": "So high above all is Allah, the Sovereign, the Truth. And, O Muhammad, do not hasten with recitation of the Qur'an before its revelation is completed to you, and say, \"My Lord, increase me in knowledge.\"",
+      "audio": "recitations/ay_knowledge.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 15.45,
+      "title": "\"My Lord, Increase Me in Knowledge\" | Quran 20:114"
+    },
+    {
+      "id": "ay_names",
+      "reference": "Quran 59:24",
+      "theme": "awe",
+      "arabic": "هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "translation": "He is Allah, the Creator, the Inventor, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
+      "audio": "recitations/ay_names.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 26.13,
+      "title": "\"To Him Belong the Best Names\" | Quran 59:24"
+    },
+    {
+      "id": "ay_favors",
+      "reference": "Quran 16:18",
+      "theme": "gratitude",
+      "arabic": "وَإِن تَعُدُّوا۟ نِعْمَةَ ٱللَّهِ لَا تُحْصُوهَآ ۗ إِنَّ ٱللَّهَ لَغَفُورٌۭ رَّحِيمٌۭ",
+      "translation": "And if you should count the favors of Allah, you could not enumerate them. Indeed, Allah is Forgiving and Merciful.",
+      "audio": "recitations/ay_favors.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.19,
+      "title": "You Could Not Count the Favors of Allah | Quran 16:18"
     }
   ]
 }

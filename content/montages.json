@@ -5,51 +5,236 @@
       "id": "ay_patience",
       "note": "colonnade (consistency theme) -> courtyard",
       "shots": [
-        { "clip": "f6", "take": 5.9 },
-        { "clip": "f5", "take": 10.62 }
+        {
+          "clip": "f6",
+          "take": 5.9
+        },
+        {
+          "clip": "f5",
+          "take": 10.62
+        }
       ]
     },
     {
       "id": "ay_increase",
       "note": "garden (gratitude theme) -> courtyard tree; both mildly slowed to fill",
       "shots": [
-        { "clip": "f9", "take": 5.7, "speed": 1.132 },
-        { "clip": "f7", "take": 9.4, "speed": 1.135 }
+        {
+          "clip": "f9",
+          "take": 5.7,
+          "speed": 1.132
+        },
+        {
+          "clip": "f7",
+          "take": 9.4,
+          "speed": 1.135
+        }
       ]
     },
     {
       "id": "ay_purpose",
       "note": "single shot: interior domes (remembrance theme)",
       "shots": [
-        { "clip": "f3", "take": 7.3, "speed": 1.1493 }
+        {
+          "clip": "f3",
+          "take": 7.3,
+          "speed": 1.1493
+        }
       ]
     },
     {
       "id": "ay_mercy",
       "note": "archway (hope theme) -> minaret -> interior dome: ascent toward mercy",
       "shots": [
-        { "clip": "f11", "take": 6.1 },
-        { "clip": "f8", "take": 10.2 },
-        { "clip": "f1", "take": 16.03 }
+        {
+          "clip": "f11",
+          "take": 6.1
+        },
+        {
+          "clip": "f8",
+          "take": 10.2
+        },
+        {
+          "clip": "f1",
+          "take": 16.03
+        }
       ]
     },
     {
       "id": "ay_duha",
       "note": "park minaret sky (morning light, fits ad-Duha) -> courtyard tree",
       "shots": [
-        { "clip": "f12", "take": 6.7 },
-        { "clip": "f7", "take": 7.23 }
+        {
+          "clip": "f12",
+          "take": 6.7
+        },
+        {
+          "clip": "f7",
+          "take": 7.23
+        }
       ]
     },
     {
       "id": "ay_kursi",
       "note": "exterior (trust theme) -> courtyard -> courtyard -> interior -> dome: journey inward for Ayat al-Kursi",
       "shots": [
-        { "clip": "f8", "take": 10.2 },
-        { "clip": "f4", "take": 8.6 },
-        { "clip": "f5", "take": 10.9 },
-        { "clip": "f2", "take": 17.6 },
-        { "clip": "f1", "take": 12.53 }
+        {
+          "clip": "f8",
+          "take": 10.2
+        },
+        {
+          "clip": "f4",
+          "take": 8.6
+        },
+        {
+          "clip": "f5",
+          "take": 10.9
+        },
+        {
+          "clip": "f2",
+          "take": 17.6
+        },
+        {
+          "clip": "f1",
+          "take": 12.53
+        }
+      ]
+    },
+    {
+      "id": "ay_house",
+      "note": "Haram interior chandeliers -> Kaaba kiswah+clock tower (early clean window only, head enters ~5s): the House inside and out",
+      "shots": [
+        {
+          "clip": "f32",
+          "take": 8.91
+        },
+        {
+          "clip": "f25",
+          "take": 4.6
+        }
+      ]
+    },
+    {
+      "id": "ay_signs",
+      "note": "snow alpine lake -> fjord cliff: creation of heavens and earth",
+      "shots": [
+        {
+          "clip": "f30",
+          "take": 7.99
+        },
+        {
+          "clip": "f17",
+          "take": 7.98
+        }
+      ]
+    },
+    {
+      "id": "ay_dhikr",
+      "note": "Kocatepe dome interior -> ornate golden interior",
+      "shots": [
+        {
+          "clip": "f19",
+          "take": 8.4
+        },
+        {
+          "clip": "f20",
+          "take": 8.32
+        }
+      ]
+    },
+    {
+      "id": "ay_falaq",
+      "note": "golden minaret at dusk (daybreak mood) -> minaret through leaves",
+      "shots": [
+        {
+          "clip": "f14",
+          "take": 15.0
+        },
+        {
+          "clip": "f27",
+          "take": 7.34
+        }
+      ]
+    },
+    {
+      "id": "ay_unity",
+      "note": "tawaf night crowd (ummah) -> Haram interior -> Sheikh Zayed colonnade; mild slows to fill 31.5s",
+      "shots": [
+        {
+          "clip": "f21",
+          "take": 8.3,
+          "speed": 1.18
+        },
+        {
+          "clip": "f32",
+          "take": 10.06,
+          "speed": 1.18
+        },
+        {
+          "clip": "f16",
+          "take": 10.4,
+          "speed": 1.135
+        }
+      ]
+    },
+    {
+      "id": "ay_mountains",
+      "note": "single shot: green mountain over lake",
+      "shots": [
+        {
+          "clip": "f29",
+          "take": 7.39
+        }
+      ]
+    },
+    {
+      "id": "ay_knowledge",
+      "note": "modern mosque windows+calligraphy -> white mosque -> minaret in leaves",
+      "shots": [
+        {
+          "clip": "f24",
+          "take": 8.04
+        },
+        {
+          "clip": "f31",
+          "take": 4.39
+        },
+        {
+          "clip": "f27",
+          "take": 6.22
+        }
+      ]
+    },
+    {
+      "id": "ay_names",
+      "note": "Kul Sharif plaza -> Kul Sharif close -> Istanbul domes: His are the best names",
+      "shots": [
+        {
+          "clip": "f13",
+          "take": 12.0
+        },
+        {
+          "clip": "f28",
+          "take": 7.2
+        },
+        {
+          "clip": "f18",
+          "take": 10.13
+        }
+      ]
+    },
+    {
+      "id": "ay_favors",
+      "note": "fjord boat wake -> alpine village lake: uncountable favors",
+      "shots": [
+        {
+          "clip": "f15",
+          "take": 8.5
+        },
+        {
+          "clip": "f22",
+          "take": 4.89
+        }
       ]
     }
   ]

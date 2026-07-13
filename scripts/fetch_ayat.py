@@ -41,6 +41,17 @@ ENTRIES = {
     "ay_mercy":       ("hope",        [(39, 53)]),
     "ay_duha":        ("hope",        [(93, 3), (93, 4), (93, 5)]),
     "ay_kursi":       ("trust",       [(2, 255)]),
+    # --- 2026-07-14 expansion (paired with the new Pexels footage: Kaaba/Haram,
+    #     Kul Sharif, interiors, alpine nature) ---
+    "ay_house":       ("pilgrimage",  [(106, 3), (106, 4)]),
+    "ay_signs":       ("creation",    [(3, 190)]),
+    "ay_dhikr":       ("remembrance", [(33, 41), (33, 42)]),
+    "ay_falaq":       ("protection",  [(113, 1), (113, 2), (113, 3), (113, 4), (113, 5)]),
+    "ay_unity":       ("unity",       [(49, 13)]),
+    "ay_mountains":   ("creation",    [(78, 6), (78, 7)]),
+    "ay_knowledge":   ("knowledge",   [(20, 114)]),
+    "ay_names":       ("awe",         [(59, 24)]),
+    "ay_favors":      ("gratitude",   [(16, 18)]),
 }
 
 
@@ -84,6 +95,13 @@ def main():
     REC_DIR.mkdir(parents=True, exist_ok=True)
     tmp = REC_DIR / "_parts"
     tmp.mkdir(exist_ok=True)
+    # Rebuilds drop hand-curated fields — carry the per-ayah `title` (used by the
+    # unattended upload for clean YouTube titles) over from the existing bank.
+    bank_path = ROOT / "content" / "ayat.json"
+    titles = {}
+    if bank_path.exists():
+        titles = {a["id"]: a["title"] for a in json.loads(bank_path.read_text())["ayat"]
+                  if a.get("title")}
     bank = []
     for vid, (theme, refs) in ENTRIES.items():
         ar_parts, en_parts, audio_parts = [], [], []
@@ -108,6 +126,8 @@ def main():
             "reciter": RECITER_NAME,
             "durationSec": duration(out_mp3),
         }
+        if vid in titles:
+            entry["title"] = titles[vid]
         bank.append(entry)
         print(f"  {vid:<14} {ref:<14} {entry['durationSec']:>5}s  {entry['translation'][:48]}")
 
