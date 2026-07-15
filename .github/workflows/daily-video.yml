@@ -126,4 +126,11 @@ jobs:
           git add state/ src/ayahData.json
           git commit -m "Ayah video $VID (automated daily run)"
           git pull --rebase origin main
-          git push origin HEAD:main
+          # Push can race with its own retry ("cannot lock ref ... is at <our
+          # commit>", seen 2026-07-15): the ref updates but the client reports
+          # rejection. Only swallow the error when main already IS our commit.
+          git push origin HEAD:main || {
+            git fetch origin main
+            [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] \
+              && echo "push race: commit already on main" || exit 1
+          }
