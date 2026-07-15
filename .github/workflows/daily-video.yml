@@ -17,9 +17,12 @@ name: daily-video
 
 on:
   schedule:
-    # 07:23 UTC = 09:23 CEST. Off-peak minute on purpose: GitHub drops cron
-    # events at contended times (top of the hour especially) — 07:00 never fired.
-    - cron: "23 7 * * *"
+    # GitHub cron is unreliable (dropped 07:00 on 07-14 and 07:23 on 07-15
+    # outright — no run, no error). Two entries as primary + backup: whichever
+    # fires first posts; any later fire cancels itself via the "already posted
+    # today" guard below, so duplicates are impossible.
+    - cron: "23 7 * * *"   # 09:23 CEST
+    - cron: "23 8 * * *"   # 10:23 CEST backup
   workflow_dispatch:
     inputs:
       dry_run:
@@ -42,6 +45,25 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          # enough history for the already-posted-today guard to see the last
+          # state commit (the bot commits state/ daily, so it's always near HEAD)
+          fetch-depth: 50
+
+      # Makes duplicate fires (backup cron, manual dispatch after a cron run,
+      # delayed cron after a manual run) harmless: exactly one post per day.
+      # Dry runs are exempt — they never post or push state.
+      - name: Stop if today's video was already posted
+        if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LAST_POST=$(git log -1 --format=%cs -- state/)
+          if [ "$LAST_POST" = "$(date -u +%F)" ]; then
+            echo "state/ already advanced today ($LAST_POST) — cancelling this run."
+            gh run cancel "$GITHUB_RUN_ID" -R "$GITHUB_REPOSITORY"
+            sleep 120           # cancellation is async; wait for it to land
+            exit 1              # backstop: never fall through to a second post
+          fi
 
       - uses: actions/setup-node@v4
         with:
