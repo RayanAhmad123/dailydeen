@@ -43,6 +43,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write   # the already-posted guard cancels its own run
 
 jobs:
   publish:
