@@ -16,11 +16,18 @@
 name: daily-video
 
 on:
+  # PRIMARY TRIGGER: a claude.ai cloud routine pushes a timestamp to
+  # .github/trigger-daily every morning. GitHub's cron scheduler NEVER fired
+  # for this repo (5/5 schedule events dropped 07-14..07-16, config verified
+  # clean, disable/enable re-registration didn't help) — push events are real
+  # webhooks and fire reliably. The bot's own state commits don't touch this
+  # path, so no trigger loop.
+  push:
+    branches: [main]
+    paths: [".github/trigger-daily"]
+  # Kept as a free extra chance in case GitHub's scheduler ever heals; the
+  # already-posted-today guard makes any duplicate fire cancel itself.
   schedule:
-    # GitHub cron is unreliable (dropped 07:00 on 07-14 and 07:23 on 07-15
-    # outright — no run, no error). Two entries as primary + backup: whichever
-    # fires first posts; any later fire cancels itself via the "already posted
-    # today" guard below, so duplicates are impossible.
     - cron: "23 7 * * *"   # 09:23 CEST
     - cron: "23 8 * * *"   # 10:23 CEST backup
   workflow_dispatch:
