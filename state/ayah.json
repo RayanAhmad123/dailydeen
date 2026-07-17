@@ -12,7 +12,8 @@
     "ay_near",
     "ay_patience",
     "ay_increase",
-    "ay_purpose"
+    "ay_purpose",
+    "ay_mercy"
   ],
   "used_clips": [
     "f11",
@@ -27,5 +28,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_purpose"
+  "last": "ay_mercy"
 }
