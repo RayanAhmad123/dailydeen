@@ -13,7 +13,8 @@
     "ay_patience",
     "ay_increase",
     "ay_purpose",
-    "ay_mercy"
+    "ay_mercy",
+    "ay_duha"
   ],
   "used_clips": [
     "f11",
@@ -28,5 +29,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_mercy"
+  "last": "ay_duha"
 }
