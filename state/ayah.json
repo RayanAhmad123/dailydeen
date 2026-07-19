@@ -14,7 +14,8 @@
     "ay_increase",
     "ay_purpose",
     "ay_mercy",
-    "ay_duha"
+    "ay_duha",
+    "ay_kursi"
   ],
   "used_clips": [
     "f11",
@@ -29,5 +30,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_duha"
+  "last": "ay_kursi"
 }
