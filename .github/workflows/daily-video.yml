@@ -142,3 +142,31 @@ jobs:
             [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] \
               && echo "push race: commit already on main" || exit 1
           }
+
+      # PostPeer's backend can double-publish a single post request (seen
+      # 2026-07-19: one API call, two YouTube uploads 6s apart — likely their
+      # internal retry on a slow upload). We can't prevent or delete it without
+      # YouTube write credentials, but the channel's public RSS feed exposes it:
+      # fail the run (-> GitHub email) so the owner deletes the extra in Studio.
+      # Runs AFTER the state commit on purpose: a duplicate must not stop
+      # tomorrow's run from advancing to the next ayah.
+      - name: Alert if the platform double-published today's video
+        if: ${{ !inputs.dry_run }}
+        run: |
+          sleep 120   # give the RSS feed a moment to include the new upload
+          python3 - <<'EOF'
+          import html, json, re, sys, urllib.request
+          vid = json.load(open("work/script.json"))["id"]
+          title = json.load(open(f"output/videos/{vid}.meta.json"))["title"]
+          feed = urllib.request.urlopen(
+              "https://www.youtube.com/feeds/videos.xml?channel_id=UCU1KnLLtieO2pooAGFiI4Ww",
+              timeout=30).read().decode()
+          titles = [html.unescape(t) for t in re.findall(r"<title>([^<]*)</title>", feed)]
+          n = titles.count(title)
+          print(f"'{title}' appears {n}x in the channel feed")
+          if n > 1:
+              sys.exit(f"DUPLICATE UPLOAD: PostPeer double-published '{title}' "
+                       f"({n} copies). Delete the extra copy in YouTube Studio "
+                       f"(keep the id registered in state/uploads.json) and check "
+                       f"TikTok for a duplicate too.")
+          EOF
