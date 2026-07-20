@@ -15,7 +15,8 @@
     "ay_purpose",
     "ay_mercy",
     "ay_duha",
-    "ay_kursi"
+    "ay_kursi",
+    "ay_house"
   ],
   "used_clips": [
     "f11",
@@ -30,5 +31,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_kursi"
+  "last": "ay_house"
 }
