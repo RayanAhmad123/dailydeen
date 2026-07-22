@@ -1,9 +1,9 @@
 {
-  "id": "ay_signs",
-  "arabic": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ لَءَايَٰتٍۢ لِّأُو۟لِى ٱلْأَلْبَٰبِ",
-  "translation": "Indeed, in the creation of the heavens and the earth and the alternation of the night and the day are signs for those of understanding.",
-  "reference": "Quran 3:190",
-  "clipFile": "reflection/ay_signs.mp4",
-  "audioFile": "recitation/ay_signs.mp3",
-  "durationSec": 14.97
+  "id": "ay_dhikr",
+  "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱذْكُرُوا۟ ٱللَّهَ ذِكْرًۭا كَثِيرًۭا وَسَبِّحُوهُ بُكْرَةًۭ وَأَصِيلًا",
+  "translation": "O you who have believed, remember Allah with much remembrance And exalt Him morning and afternoon.",
+  "reference": "Quran 33:41-42",
+  "clipFile": "reflection/ay_dhikr.mp4",
+  "audioFile": "recitation/ay_dhikr.mp3",
+  "durationSec": 15.72
 }
