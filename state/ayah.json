@@ -18,7 +18,8 @@
     "ay_kursi",
     "ay_house",
     "ay_signs",
-    "ay_dhikr"
+    "ay_dhikr",
+    "ay_falaq"
   ],
   "used_clips": [
     "f11",
@@ -33,5 +34,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_dhikr"
+  "last": "ay_falaq"
 }
