@@ -20,7 +20,8 @@
     "ay_signs",
     "ay_dhikr",
     "ay_falaq",
-    "ay_unity"
+    "ay_unity",
+    "ay_mountains"
   ],
   "used_clips": [
     "f11",
@@ -35,5 +36,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_unity"
+  "last": "ay_mountains"
 }
