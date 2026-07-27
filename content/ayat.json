@@ -265,6 +265,116 @@
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.19,
       "title": "You Could Not Count the Favors of Allah | Quran 16:18"
+    },
+    {
+      "id": "ay_soul",
+      "reference": "Quran 89:27-30",
+      "theme": "peace",
+      "arabic": "يَٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةًۭ مَّرْضِيَّةًۭ فَٱدْخُلِى فِى عِبَٰدِى وَٱدْخُلِى جَنَّتِى",
+      "translation": "To the righteous it will be said, \"O reassured soul, Return to your Lord, well-pleased and pleasing to Him, And enter among My righteous servants And enter My Paradise.\"",
+      "audio": "recitations/ay_soul.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 22.39,
+      "title": "\"O Reassured Soul, Return to Your Lord\" | Quran 89:27-30"
+    },
+    {
+      "id": "ay_rahmah",
+      "reference": "Quran 21:107",
+      "theme": "mercy",
+      "arabic": "وَمَآ أَرْسَلْنَٰكَ إِلَّا رَحْمَةًۭ لِّلْعَٰلَمِينَ",
+      "translation": "And We have not sent you, O Muhammad, except as a mercy to the worlds.",
+      "audio": "recitations/ay_rahmah.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 7.09,
+      "title": "\"A Mercy to the Worlds\" | Quran 21:107"
+    },
+    {
+      "id": "ay_hear",
+      "reference": "Quran 20:46",
+      "theme": "reassurance",
+      "arabic": "قَالَ لَا تَخَافَآ ۖ إِنَّنِى مَعَكُمَآ أَسْمَعُ وَأَرَىٰ",
+      "translation": "Allah said, \"Fear not. Indeed, I am with you both; I hear and I see.",
+      "audio": "recitations/ay_hear.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.74,
+      "title": "\"Fear Not — I Am With You\" | Quran 20:46"
+    },
+    {
+      "id": "ay_strive",
+      "reference": "Quran 29:69",
+      "theme": "guidance",
+      "arabic": "وَٱلَّذِينَ جَٰهَدُوا۟ فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلْمُحْسِنِينَ",
+      "translation": "And those who strive for Us - We will surely guide them to Our ways. And indeed, Allah is with the doers of good.",
+      "audio": "recitations/ay_strive.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 16.33,
+      "title": "\"Strive for Us — We Will Guide You\" | Quran 29:69"
+    },
+    {
+      "id": "ay_forgive",
+      "reference": "Quran 4:110",
+      "theme": "forgiveness",
+      "arabic": "وَمَن يَعْمَلْ سُوٓءًا أَوْ يَظْلِمْ نَفْسَهُۥ ثُمَّ يَسْتَغْفِرِ ٱللَّهَ يَجِدِ ٱللَّهَ غَفُورًۭا رَّحِيمًۭا",
+      "translation": "And whoever does a wrong or wrongs himself but then seeks forgiveness of Allah will find Allah Forgiving and Merciful.",
+      "audio": "recitations/ay_forgive.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 18.01,
+      "title": "\"He Will Find Allah Forgiving and Merciful\" | Quran 4:110"
+    },
+    {
+      "id": "ay_test",
+      "reference": "Quran 67:2",
+      "theme": "purpose",
+      "arabic": "ٱلَّذِى خَلَقَ ٱلْمَوْتَ وَٱلْحَيَوٰةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًۭا ۚ وَهُوَ ٱلْعَزِيزُ ٱلْغَفُورُ",
+      "translation": "He who created death and life to test you as to which of you is best in deed - and He is the Exalted in Might, the Forgiving -",
+      "audio": "recitations/ay_test.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.32,
+      "title": "Why Death and Life Were Created | Quran 67:2"
+    },
+    {
+      "id": "ay_humble",
+      "reference": "Quran 25:63",
+      "theme": "character",
+      "arabic": "وَعِبَادُ ٱلرَّحْمَٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًۭا وَإِذَا خَاطَبَهُمُ ٱلْجَٰهِلُونَ قَالُوا۟ سَلَٰمًۭا",
+      "translation": "And the servants of the Most Merciful are those who walk upon the earth easily, and when the ignorant address them harshly, they say words of peace,",
+      "audio": "recitations/ay_humble.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.56,
+      "title": "The Servants of the Most Merciful | Quran 25:63"
+    },
+    {
+      "id": "ay_protector",
+      "reference": "Quran 3:150",
+      "theme": "trust",
+      "arabic": "بَلِ ٱللَّهُ مَوْلَىٰكُمْ ۖ وَهُوَ خَيْرُ ٱلنَّٰصِرِينَ",
+      "translation": "But Allah is your protector, and He is the best of helpers.",
+      "audio": "recitations/ay_protector.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 6.17,
+      "title": "\"The Best of Helpers\" | Quran 3:150"
+    },
+    {
+      "id": "ay_longing",
+      "reference": "Quran 94:7-8",
+      "theme": "devotion",
+      "arabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+      "translation": "So when you have finished your duties, then stand up for worship. And to your Lord direct your longing.",
+      "audio": "recitations/ay_longing.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 6.56,
+      "title": "\"To Your Lord Direct Your Longing\" | Quran 94:7-8"
+    },
+    {
+      "id": "ay_with",
+      "reference": "Quran 16:128",
+      "theme": "reassurance",
+      "arabic": "إِنَّ ٱللَّهَ مَعَ ٱلَّذِينَ ٱتَّقَوا۟ وَّٱلَّذِينَ هُم مُّحْسِنُونَ",
+      "translation": "Indeed, Allah is with those who fear Him and those who are doers of good.",
+      "audio": "recitations/ay_with.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 10.43,
+      "title": "\"Allah Is With Those Who Do Good\" | Quran 16:128"
     }
   ]
 }

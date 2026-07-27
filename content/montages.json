@@ -236,6 +236,138 @@
           "take": 4.89
         }
       ]
+    },
+    {
+      "id": "ay_soul",
+      "note": "serene lake dawn -> fjord cliff -> Haram interior: the reassured soul returns to its Lord",
+      "shots": [
+        {
+          "clip": "f23",
+          "take": 9.0
+        },
+        {
+          "clip": "f17",
+          "take": 9.0
+        },
+        {
+          "clip": "f32",
+          "take": 7.8
+        }
+      ]
+    },
+    {
+      "id": "ay_rahmah",
+      "note": "single shot: Sheikh Zayed white colonnade (mercy to the worlds)",
+      "shots": [
+        {
+          "clip": "f16",
+          "take": 8.4
+        }
+      ]
+    },
+    {
+      "id": "ay_hear",
+      "note": "green mountain lake -> alpine village: 'Fear not, I am with you' spoken in creation",
+      "shots": [
+        {
+          "clip": "f29",
+          "take": 8.2
+        },
+        {
+          "clip": "f22",
+          "take": 7.0
+        }
+      ]
+    },
+    {
+      "id": "ay_strive",
+      "note": "golden minaret at dusk -> Kocatepe dome interior: striving toward guidance",
+      "shots": [
+        {
+          "clip": "f14",
+          "take": 10.0
+        },
+        {
+          "clip": "f19",
+          "take": 9.6
+        }
+      ]
+    },
+    {
+      "id": "ay_forgive",
+      "note": "worshippers far in mosque -> serene interior dome: repentance finds mercy",
+      "shots": [
+        {
+          "clip": "f20",
+          "take": 10.8
+        },
+        {
+          "clip": "f2",
+          "take": 10.0
+        }
+      ]
+    },
+    {
+      "id": "ay_test",
+      "note": "fjord boat wake (transience of life) -> Istanbul domes (what remains)",
+      "shots": [
+        {
+          "clip": "f15",
+          "take": 8.0
+        },
+        {
+          "clip": "f18",
+          "take": 7.0
+        }
+      ]
+    },
+    {
+      "id": "ay_humble",
+      "note": "courtyard walk (clean window) -> colonnade distant walkers: walking the earth gently",
+      "shots": [
+        {
+          "clip": "f4",
+          "take": 8.0
+        },
+        {
+          "clip": "f16",
+          "take": 7.0
+        }
+      ]
+    },
+    {
+      "id": "ay_protector",
+      "note": "single shot: golden minaret at dusk (trust theme) — the best of helpers",
+      "shots": [
+        {
+          "clip": "f14",
+          "take": 7.6
+        }
+      ]
+    },
+    {
+      "id": "ay_longing",
+      "note": "single shot: Kocatepe dome interior — to your Lord direct your longing",
+      "shots": [
+        {
+          "clip": "f19",
+          "take": 8.0
+        }
+      ]
+    },
+    {
+      "id": "ay_with",
+      "note": "tawaf night crowd (doers of good) -> white twin-minaret mosque (f31 filler)",
+      "shots": [
+        {
+          "clip": "f21",
+          "take": 8.6
+        },
+        {
+          "clip": "f31",
+          "take": 4.5
+        }
+      ]
     }
   ]
 }

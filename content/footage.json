@@ -1,418 +1,419 @@
 {
- "_readme": "Curated footage approved from work/footage_candidates.json (reviewed visually). `src` is relative to assets/footage/. `dur` is the clean single-shot length available from `start`; build_reflection.py outputs a uniform 15s, looping shorter shots. `theme` loosely matches quote themes (falls back to rotation). Optional `rotate` ('cw'|'ccw') fixes clips shot in portrait but stored as landscape with no rotation metadata (set during visual review). Skipped: crowded squares, construction, signage, person-focused shots. f13+ are Pexels stock (portrait, correctly oriented, no rotate needed; f23 is landscape). Rejected at 2026-07-13 review: 16329835 (storefront signage), 15860717 (cyclist subject).",
- "clips": [
-  {
-   "id": "f1",
-   "src": "raw/DJI_20260618163914_0034_D.MP4",
-   "start": 0.4,
-   "dur": 18.0,
-   "rotate": "cw",
-   "theme": "remembrance",
-   "tags": [
-    "mosque-interior",
-    "dome",
-    "blue-mosque"
-   ]
-  },
-  {
-   "id": "f2",
-   "src": "raw/DJI_20260618163828_0033_D.MP4",
-   "start": 0.4,
-   "dur": 18.0,
-   "theme": "nearness",
-   "tags": [
-    "mosque-interior",
-    "blue-mosque"
-   ]
-  },
-  {
-   "id": "f3",
-   "src": "raw/DJI_20260619112733_0024_D.MP4",
-   "start": 0.4,
-   "dur": 7.7,
-   "theme": "remembrance",
-   "tags": [
-    "mosque-interior",
-    "domes"
-   ]
-  },
-  {
-   "id": "f4",
-   "src": "raw/DJI_20260618164114_0035_D.MP4",
-   "start": 0.4,
-   "dur": 15.4,
-   "theme": "peace",
-   "tags": [
-    "courtyard",
-    "blue-mosque",
-    "arches"
-   ],
-   "note": "clean window is only start->9.0s (8.6s usable): a pedestrian close-up group with visible faces enters from ~9s — never take more"
-  },
-  {
-   "id": "f5",
-   "src": "raw/DJI_20260618161908_0031_D.MP4",
-   "start": 0.4,
-   "dur": 11.3,
-   "theme": "brotherhood",
-   "tags": [
-    "courtyard",
-    "blue-mosque"
-   ]
-  },
-  {
-   "id": "f6",
-   "src": "raw/DJI_20260618164322_0036_D.MP4",
-   "start": 0.4,
-   "dur": 6.3,
-   "theme": "consistency",
-   "tags": [
-    "colonnade",
-    "gallery",
-    "leading-lines"
-   ]
-  },
-  {
-   "id": "f7",
-   "src": "raw/DJI_20260618162324_0032_D.MP4",
-   "start": 0.4,
-   "dur": 9.8,
-   "theme": "ease",
-   "tags": [
-    "courtyard",
-    "tree",
-    "minaret"
-   ]
-  },
-  {
-   "id": "f8",
-   "src": "raw/DJI_20260618175030_0057_D.MP4",
-   "start": 0.4,
-   "dur": 10.6,
-   "theme": "trust",
-   "tags": [
-    "mosque-exterior",
-    "minaret"
-   ]
-  },
-  {
-   "id": "f9",
-   "src": "raw/DJI_20260619112526_0022_D.MP4",
-   "start": 0.4,
-   "dur": 6.1,
-   "theme": "gratitude",
-   "tags": [
-    "mosque",
-    "garden",
-    "nature"
-   ]
-  },
-  {
-   "id": "f10",
-   "src": "raw/DJI_20260618170234_0045_D.MP4",
-   "start": 0.4,
-   "dur": 15.6,
-   "theme": "gratitude",
-   "tags": [
-    "park",
-    "palm",
-    "nature",
-    "sky"
-   ],
-   "note": "busy square: foreground pedestrians cross the center crop ~4-16s — re-check before using over on-screen text"
-  },
-  {
-   "id": "f11",
-   "src": "raw/DJI_20260621144014_0001_D.MP4",
-   "start": 0.4,
-   "dur": 6.5,
-   "theme": "hope",
-   "tags": [
-    "archway",
-    "frame",
-    "steps",
-    "minaret"
-   ]
-  },
-  {
-   "id": "f12",
-   "src": "raw/DJI_20260619152542_0031_D.MP4",
-   "start": 0.4,
-   "dur": 7.1,
-   "theme": "kindness",
-   "tags": [
-    "park",
-    "minaret",
-    "sky"
-   ]
-  },
-  {
-   "id": "f13",
-   "src": "raw/12081733-uhd_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 14.39,
-   "theme": "awe",
-   "tags": [
-    "mosque-exterior",
-    "kul-sharif",
-    "minarets",
-    "plaza"
-   ],
-   "note": "people small in plaza — fine under text"
-  },
-  {
-   "id": "f14",
-   "src": "raw/12389404_1080_1920_60fps.mp4",
-   "start": 0.4,
-   "dur": 18.0,
-   "theme": "hope",
-   "tags": [
-    "minaret",
-    "dusk",
-    "golden",
-    "birds"
-   ]
-  },
-  {
-   "id": "f15",
-   "src": "raw/12981811_1080_1920_30fps.mp4",
-   "start": 0.4,
-   "dur": 9.8,
-   "theme": "creation",
-   "tags": [
-    "nature",
-    "lake",
-    "mountains",
-    "boat-wake"
-   ]
-  },
-  {
-   "id": "f16",
-   "src": "raw/13725833_1080_1920_30fps.mp4",
-   "start": 0.4,
-   "dur": 10.8,
-   "theme": "peace",
-   "tags": [
-    "colonnade",
-    "reflecting-pool",
-    "sheikh-zayed",
-    "arches"
-   ],
-   "note": "distant walkers, back/side only"
-  },
-  {
-   "id": "f17",
-   "src": "raw/13878303-uhd_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 18.0,
-   "theme": "creation",
-   "tags": [
-    "nature",
-    "cliff",
-    "fjord",
-    "water"
-   ]
-  },
-  {
-   "id": "f18",
-   "src": "raw/14384317_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 14.4,
-   "theme": "awe",
-   "tags": [
-    "istanbul",
-    "domes",
-    "minaret",
-    "suleymaniye"
-   ]
-  },
-  {
-   "id": "f19",
-   "src": "raw/14526728_1080_1920_60fps.mp4",
-   "start": 0.4,
-   "dur": 12.1,
-   "theme": "remembrance",
-   "tags": [
-    "mosque-interior",
-    "dome",
-    "chandeliers",
-    "kocatepe"
-   ]
-  },
-  {
-   "id": "f20",
-   "src": "raw/14676916_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 14.88,
-   "theme": "remembrance",
-   "tags": [
-    "mosque-interior",
-    "ornate",
-    "stained-glass",
-    "golden-dome"
-   ],
-   "note": "two seated worshippers far away"
-  },
-  {
-   "id": "f21",
-   "src": "raw/14701003_2160_3840_24fps.mp4",
-   "start": 0.4,
-   "dur": 8.7,
-   "theme": "pilgrimage",
-   "tags": [
-    "kaaba",
-    "masjid-al-haram",
-    "night",
-    "crowd"
-   ],
-   "note": "dense tawaf crowd, faces indistinct at distance"
-  },
-  {
-   "id": "f22",
-   "src": "raw/14707905_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 7.1,
-   "theme": "creation",
-   "tags": [
-    "nature",
-    "alpine-lake",
-    "mountains",
-    "village"
-   ]
-  },
-  {
-   "id": "f23",
-   "src": "raw/14754728_2560_1440_30fps.mp4",
-   "start": 0.4,
-   "dur": 18.0,
-   "theme": "peace",
-   "tags": [
-    "courtyard",
-    "sadirvan",
-    "ottoman"
-   ],
-   "note": "LANDSCAPE source — 9:16 center-crop verified on preview; people small at edges"
-  },
-  {
-   "id": "f24",
-   "src": "raw/14862056_1440_2560_30fps.mp4",
-   "start": 0.4,
-   "dur": 8.24,
-   "theme": "knowledge",
-   "tags": [
-    "mosque-interior",
-    "windows",
-    "calligraphy",
-    "modern"
-   ]
-  },
-  {
-   "id": "f25",
-   "src": "raw/14892981_1080_1920_30fps.mp4",
-   "start": 0.4,
-   "dur": 12.43,
-   "theme": "pilgrimage",
-   "tags": [
-    "kaaba",
-    "kiswah",
-    "clock-tower",
-    "makkah"
-   ],
-   "note": "clean window only start->5.0s (4.6s usable): heads enter bottom-left after"
-  },
-  {
-   "id": "f26",
-   "src": "raw/14899913_1080_1920_30fps.mp4",
-   "start": 0.4,
-   "dur": 7.97,
-   "theme": "pilgrimage",
-   "tags": [
-    "kaaba",
-    "minarets",
-    "pilgrims",
-    "makkah"
-   ],
-   "note": "UNUSABLE under text: dense close crowd with identifiable faces lower third for the whole clip — do not use unless heavily reframed"
-  },
-  {
-   "id": "f27",
-   "src": "raw/15017834_1080_1920_30fps.mp4",
-   "start": 0.4,
-   "dur": 7.43,
-   "theme": "peace",
-   "tags": [
-    "minaret",
-    "leaves",
-    "tree",
-    "framed"
-   ]
-  },
-  {
-   "id": "f28",
-   "src": "raw/15624878_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 7.57,
-   "theme": "awe",
-   "tags": [
-    "kul-sharif",
-    "architecture",
-    "dome",
-    "minarets"
-   ]
-  },
-  {
-   "id": "f29",
-   "src": "raw/15860717_2160_3840_30fps.mp4",
-   "start": 0.4,
-   "dur": 8.23,
-   "theme": "creation",
-   "tags": [
-    "nature",
-    "mountain",
-    "lake",
-    "forest"
-   ]
-  },
-  {
-   "id": "f30",
-   "src": "raw/16171044_2160_3840_60fps.mp4",
-   "start": 0.4,
-   "dur": 8.39,
-   "theme": "creation",
-   "tags": [
-    "nature",
-    "alpine-lake",
-    "snow-mountains",
-    "turquoise"
-   ]
-  },
-  {
-   "id": "f31",
-   "src": "raw/16510575-uhd_2160_3840_60fps.mp4",
-   "start": 0.0,
-   "dur": 4.59,
-   "theme": "light",
-   "tags": [
-    "mosque-exterior",
-    "white",
-    "calligraphy",
-    "minarets"
-   ],
-   "note": "only 4.6s — filler shot in montages"
-  },
-  {
-   "id": "f32",
-   "src": "raw/18588430-hd_1080_1920_60fps.mp4",
-   "start": 0.4,
-   "dur": 10.46,
-   "theme": "pilgrimage",
-   "tags": [
-    "masjid-al-haram",
-    "interior",
-    "chandeliers",
-    "dome"
-   ],
-   "note": "pilgrims small below"
-  }
- ]
+  "_readme": "Curated footage approved from work/footage_candidates.json (reviewed visually). `src` is relative to assets/footage/. `dur` is the clean single-shot length available from `start`; build_reflection.py outputs a uniform 15s, looping shorter shots. `theme` loosely matches quote themes (falls back to rotation). Optional `rotate` ('cw'|'ccw') fixes clips shot in portrait but stored as landscape with no rotation metadata (set during visual review). Skipped: crowded squares, construction, signage, person-focused shots. f13+ are Pexels stock (portrait, correctly oriented, no rotate needed; f23 is landscape). Rejected at 2026-07-13 review: 16329835 (storefront signage), 15860717 (cyclist subject).",
+  "clips": [
+    {
+      "id": "f1",
+      "src": "raw/DJI_20260618163914_0034_D.MP4",
+      "start": 0.4,
+      "dur": 18.0,
+      "rotate": "cw",
+      "theme": "remembrance",
+      "tags": [
+        "mosque-interior",
+        "dome",
+        "blue-mosque"
+      ]
+    },
+    {
+      "id": "f2",
+      "src": "raw/DJI_20260618163828_0033_D.MP4",
+      "start": 0.4,
+      "dur": 18.0,
+      "theme": "nearness",
+      "tags": [
+        "mosque-interior",
+        "blue-mosque"
+      ]
+    },
+    {
+      "id": "f3",
+      "src": "raw/DJI_20260619112733_0024_D.MP4",
+      "start": 0.4,
+      "dur": 7.7,
+      "theme": "remembrance",
+      "tags": [
+        "mosque-interior",
+        "domes"
+      ]
+    },
+    {
+      "id": "f4",
+      "src": "raw/DJI_20260618164114_0035_D.MP4",
+      "start": 0.4,
+      "dur": 15.4,
+      "theme": "peace",
+      "tags": [
+        "courtyard",
+        "blue-mosque",
+        "arches"
+      ],
+      "note": "clean window is only start->9.0s (8.6s usable): a pedestrian close-up group with visible faces enters from ~9s — never take more"
+    },
+    {
+      "id": "f5",
+      "src": "raw/DJI_20260618161908_0031_D.MP4",
+      "start": 0.4,
+      "dur": 11.3,
+      "theme": "brotherhood",
+      "tags": [
+        "courtyard",
+        "blue-mosque"
+      ]
+    },
+    {
+      "id": "f6",
+      "src": "raw/DJI_20260618164322_0036_D.MP4",
+      "start": 0.4,
+      "dur": 6.3,
+      "theme": "consistency",
+      "tags": [
+        "colonnade",
+        "gallery",
+        "leading-lines"
+      ]
+    },
+    {
+      "id": "f7",
+      "src": "raw/DJI_20260618162324_0032_D.MP4",
+      "start": 0.4,
+      "dur": 9.8,
+      "theme": "ease",
+      "tags": [
+        "courtyard",
+        "tree",
+        "minaret"
+      ]
+    },
+    {
+      "id": "f8",
+      "src": "raw/DJI_20260618175030_0057_D.MP4",
+      "start": 0.4,
+      "dur": 10.6,
+      "theme": "trust",
+      "tags": [
+        "mosque-exterior",
+        "minaret"
+      ],
+      "note": "clean window is only start->5.0s: close foreground heads with identifiable faces enter bottom of frame ~5.5s on (found 2026-07-27; ay_kursi was published with them before this note)"
+    },
+    {
+      "id": "f9",
+      "src": "raw/DJI_20260619112526_0022_D.MP4",
+      "start": 0.4,
+      "dur": 6.1,
+      "theme": "gratitude",
+      "tags": [
+        "mosque",
+        "garden",
+        "nature"
+      ]
+    },
+    {
+      "id": "f10",
+      "src": "raw/DJI_20260618170234_0045_D.MP4",
+      "start": 0.4,
+      "dur": 15.6,
+      "theme": "gratitude",
+      "tags": [
+        "park",
+        "palm",
+        "nature",
+        "sky"
+      ],
+      "note": "busy square: foreground pedestrians cross the center crop ~4-16s — re-check before using over on-screen text"
+    },
+    {
+      "id": "f11",
+      "src": "raw/DJI_20260621144014_0001_D.MP4",
+      "start": 0.4,
+      "dur": 6.5,
+      "theme": "hope",
+      "tags": [
+        "archway",
+        "frame",
+        "steps",
+        "minaret"
+      ]
+    },
+    {
+      "id": "f12",
+      "src": "raw/DJI_20260619152542_0031_D.MP4",
+      "start": 0.4,
+      "dur": 7.1,
+      "theme": "kindness",
+      "tags": [
+        "park",
+        "minaret",
+        "sky"
+      ]
+    },
+    {
+      "id": "f13",
+      "src": "raw/12081733-uhd_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 14.39,
+      "theme": "awe",
+      "tags": [
+        "mosque-exterior",
+        "kul-sharif",
+        "minarets",
+        "plaza"
+      ],
+      "note": "people small in plaza — fine under text"
+    },
+    {
+      "id": "f14",
+      "src": "raw/12389404_1080_1920_60fps.mp4",
+      "start": 0.4,
+      "dur": 18.0,
+      "theme": "hope",
+      "tags": [
+        "minaret",
+        "dusk",
+        "golden",
+        "birds"
+      ]
+    },
+    {
+      "id": "f15",
+      "src": "raw/12981811_1080_1920_30fps.mp4",
+      "start": 0.4,
+      "dur": 9.8,
+      "theme": "creation",
+      "tags": [
+        "nature",
+        "lake",
+        "mountains",
+        "boat-wake"
+      ]
+    },
+    {
+      "id": "f16",
+      "src": "raw/13725833_1080_1920_30fps.mp4",
+      "start": 0.4,
+      "dur": 10.8,
+      "theme": "peace",
+      "tags": [
+        "colonnade",
+        "reflecting-pool",
+        "sheikh-zayed",
+        "arches"
+      ],
+      "note": "distant walkers, back/side only"
+    },
+    {
+      "id": "f17",
+      "src": "raw/13878303-uhd_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 18.0,
+      "theme": "creation",
+      "tags": [
+        "nature",
+        "cliff",
+        "fjord",
+        "water"
+      ]
+    },
+    {
+      "id": "f18",
+      "src": "raw/14384317_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 14.4,
+      "theme": "awe",
+      "tags": [
+        "istanbul",
+        "domes",
+        "minaret",
+        "suleymaniye"
+      ]
+    },
+    {
+      "id": "f19",
+      "src": "raw/14526728_1080_1920_60fps.mp4",
+      "start": 0.4,
+      "dur": 12.1,
+      "theme": "remembrance",
+      "tags": [
+        "mosque-interior",
+        "dome",
+        "chandeliers",
+        "kocatepe"
+      ]
+    },
+    {
+      "id": "f20",
+      "src": "raw/14676916_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 14.88,
+      "theme": "remembrance",
+      "tags": [
+        "mosque-interior",
+        "ornate",
+        "stained-glass",
+        "golden-dome"
+      ],
+      "note": "two seated worshippers far away"
+    },
+    {
+      "id": "f21",
+      "src": "raw/14701003_2160_3840_24fps.mp4",
+      "start": 0.4,
+      "dur": 8.7,
+      "theme": "pilgrimage",
+      "tags": [
+        "kaaba",
+        "masjid-al-haram",
+        "night",
+        "crowd"
+      ],
+      "note": "dense tawaf crowd, faces indistinct at distance"
+    },
+    {
+      "id": "f22",
+      "src": "raw/14707905_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 7.1,
+      "theme": "creation",
+      "tags": [
+        "nature",
+        "alpine-lake",
+        "mountains",
+        "village"
+      ]
+    },
+    {
+      "id": "f23",
+      "src": "raw/14754728_2560_1440_30fps.mp4",
+      "start": 0.4,
+      "dur": 18.0,
+      "theme": "peace",
+      "tags": [
+        "courtyard",
+        "sadirvan",
+        "ottoman"
+      ],
+      "note": "LANDSCAPE source — 9:16 center-crop verified on preview; people small at edges"
+    },
+    {
+      "id": "f24",
+      "src": "raw/14862056_1440_2560_30fps.mp4",
+      "start": 0.4,
+      "dur": 8.24,
+      "theme": "knowledge",
+      "tags": [
+        "mosque-interior",
+        "windows",
+        "calligraphy",
+        "modern"
+      ]
+    },
+    {
+      "id": "f25",
+      "src": "raw/14892981_1080_1920_30fps.mp4",
+      "start": 0.4,
+      "dur": 12.43,
+      "theme": "pilgrimage",
+      "tags": [
+        "kaaba",
+        "kiswah",
+        "clock-tower",
+        "makkah"
+      ],
+      "note": "clean window only start->5.0s (4.6s usable): heads enter bottom-left after"
+    },
+    {
+      "id": "f26",
+      "src": "raw/14899913_1080_1920_30fps.mp4",
+      "start": 0.4,
+      "dur": 7.97,
+      "theme": "pilgrimage",
+      "tags": [
+        "kaaba",
+        "minarets",
+        "pilgrims",
+        "makkah"
+      ],
+      "note": "UNUSABLE under text: dense close crowd with identifiable faces lower third for the whole clip — do not use unless heavily reframed"
+    },
+    {
+      "id": "f27",
+      "src": "raw/15017834_1080_1920_30fps.mp4",
+      "start": 0.4,
+      "dur": 7.43,
+      "theme": "peace",
+      "tags": [
+        "minaret",
+        "leaves",
+        "tree",
+        "framed"
+      ]
+    },
+    {
+      "id": "f28",
+      "src": "raw/15624878_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 7.57,
+      "theme": "awe",
+      "tags": [
+        "kul-sharif",
+        "architecture",
+        "dome",
+        "minarets"
+      ]
+    },
+    {
+      "id": "f29",
+      "src": "raw/15860717_2160_3840_30fps.mp4",
+      "start": 0.4,
+      "dur": 8.23,
+      "theme": "creation",
+      "tags": [
+        "nature",
+        "mountain",
+        "lake",
+        "forest"
+      ]
+    },
+    {
+      "id": "f30",
+      "src": "raw/16171044_2160_3840_60fps.mp4",
+      "start": 0.4,
+      "dur": 8.39,
+      "theme": "creation",
+      "tags": [
+        "nature",
+        "alpine-lake",
+        "snow-mountains",
+        "turquoise"
+      ]
+    },
+    {
+      "id": "f31",
+      "src": "raw/16510575-uhd_2160_3840_60fps.mp4",
+      "start": 0.0,
+      "dur": 4.59,
+      "theme": "light",
+      "tags": [
+        "mosque-exterior",
+        "white",
+        "calligraphy",
+        "minarets"
+      ],
+      "note": "only 4.6s — filler shot in montages"
+    },
+    {
+      "id": "f32",
+      "src": "raw/18588430-hd_1080_1920_60fps.mp4",
+      "start": 0.4,
+      "dur": 10.46,
+      "theme": "pilgrimage",
+      "tags": [
+        "masjid-al-haram",
+        "interior",
+        "chandeliers",
+        "dome"
+      ],
+      "note": "pilgrims small below"
+    }
+  ]
 }

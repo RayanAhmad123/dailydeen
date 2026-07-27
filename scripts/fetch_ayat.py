@@ -52,6 +52,18 @@ ENTRIES = {
     "ay_knowledge":   ("knowledge",   [(20, 114)]),
     "ay_names":       ("awe",         [(59, 24)]),
     "ay_favors":      ("gratitude",   [(16, 18)]),
+    # --- 2026-07-27 expansion (per the performance analysis: prefer 10-16s single
+    #     ayat — they beat >16s on views/retention/subs — with emotional titles) ---
+    "ay_soul":        ("peace",       [(89, 27), (89, 28), (89, 29), (89, 30)]),
+    "ay_rahmah":      ("mercy",       [(21, 107)]),
+    "ay_hear":        ("reassurance", [(20, 46)]),
+    "ay_strive":      ("guidance",    [(29, 69)]),
+    "ay_forgive":     ("forgiveness", [(4, 110)]),
+    "ay_test":        ("purpose",     [(67, 2)]),
+    "ay_humble":      ("character",   [(25, 63)]),
+    "ay_protector":   ("trust",       [(3, 150)]),
+    "ay_longing":     ("devotion",    [(94, 7), (94, 8)]),
+    "ay_with":        ("reassurance", [(16, 128)]),
 }
 
 
