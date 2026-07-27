@@ -22,7 +22,8 @@
     "ay_falaq",
     "ay_unity",
     "ay_mountains",
-    "ay_knowledge"
+    "ay_knowledge",
+    "ay_names"
   ],
   "used_clips": [
     "f11",
@@ -37,5 +38,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_knowledge"
+  "last": "ay_names"
 }
