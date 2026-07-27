@@ -23,6 +23,9 @@ from build_reflection import trim_clip, pick_clip  # shared footage helpers
 
 TAIL_SEC = 1.2  # hold after the recitation ends
 HASHTAGS = ["islam", "quran", "recitation", "islamicreminders", "muslim", "deen", "shorts"]
+# Shares are the channel's untapped growth lever (2026-07-27 analysis: 32 shares
+# across the whole ayah era, like-rates 8-23%) — every caption asks for the send.
+SHARE_CTA = "Send this to someone who needs it today."
 SEGMENT_MIN_SEC = 25  # long multi-ayah passages get one-ayah-at-a-time display
 TEXT_API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,en.sahih"
 
@@ -133,8 +136,8 @@ def main():
     title = ayah.get("title") or f"{ayah['translation'][:60].rstrip('.,')} | {ayah['reference']}"
     meta = {
         "title": title,
-        "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{hashtags}",
-        "caption": f"{ayah['translation']} {ayah['reference']} {hashtags}"[:2200],
+        "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{SHARE_CTA}\n\n{hashtags}",
+        "caption": f"{ayah['translation']} {ayah['reference']} {SHARE_CTA} {hashtags}"[:2200],
         "tags": HASHTAGS,
         "video": f"output/videos/{vid}.mp4",
     }

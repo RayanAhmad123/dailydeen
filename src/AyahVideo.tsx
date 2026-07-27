@@ -43,6 +43,13 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
     [1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
+  // Share CTA crossfades in over the handle for the final seconds
+  const ctaIn = interpolate(
+    frame,
+    [durationInFrames - Math.round(2.6 * fps), durationInFrames - Math.round(1.8 * fps)],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
 
   return (
     <AbsoluteFill>
@@ -222,10 +229,28 @@ export const AyahVideo: React.FC<AyahData> = ({ arabic, translation, reference, 
           letterSpacing: 6,
           textTransform: "uppercase",
           color: theme.ivoryDim,
-          opacity: outFade,
+          opacity: outFade * (1 - ctaIn),
         }}
       >
         @DailyDeen
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: 64,
+          left: 0,
+          right: 0,
+          textAlign: "center",
+          fontFamily: sansFamily,
+          fontSize: 26,
+          letterSpacing: 4,
+          textTransform: "uppercase",
+          color: theme.gold,
+          textShadow: "0 2px 14px rgba(0,0,0,0.85)",
+          opacity: outFade * ctaIn,
+        }}
+      >
+        Send this to someone who needs it
       </div>
     </AbsoluteFill>
   );
