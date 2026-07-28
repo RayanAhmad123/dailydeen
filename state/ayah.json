@@ -23,7 +23,8 @@
     "ay_unity",
     "ay_mountains",
     "ay_knowledge",
-    "ay_names"
+    "ay_names",
+    "ay_favors"
   ],
   "used_clips": [
     "f11",
@@ -38,5 +39,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_names"
+  "last": "ay_favors"
 }
