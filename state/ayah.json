@@ -24,7 +24,8 @@
     "ay_mountains",
     "ay_knowledge",
     "ay_names",
-    "ay_favors"
+    "ay_favors",
+    "ay_soul"
   ],
   "used_clips": [
     "f11",
@@ -39,5 +40,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_favors"
+  "last": "ay_soul"
 }
