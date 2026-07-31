@@ -26,7 +26,8 @@
     "ay_names",
     "ay_favors",
     "ay_soul",
-    "ay_rahmah"
+    "ay_rahmah",
+    "ay_hear"
   ],
   "used_clips": [
     "f11",
@@ -41,5 +42,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_rahmah"
+  "last": "ay_hear"
 }
