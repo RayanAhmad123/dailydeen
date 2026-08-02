@@ -30,6 +30,10 @@ on:
   # Early-UTC slot on purpose: PostPeer's TikTok app has a daily active-user
   # cap (reached_active_user_cap killed the TikTok leg Jul 24 + 29-31 at the
   # old ~07:26 UTC slot); posting right after the quota window resets avoids it.
+  # The YouTube leg does NOT post at this hour: PostPeer's shared YouTube quota
+  # (100 uploads/day across all their users) resets at midnight Pacific and is
+  # drained by early-UTC (429'd Aug 1-2) — upload_postpeer.py hands YouTube to
+  # PostPeer's scheduler for ~10 min after that reset instead (QUOTA SPLIT).
   schedule:
     - cron: "23 5 * * *"   # 07:23 CEST
     - cron: "23 6 * * *"   # 08:23 CEST backup
@@ -146,6 +150,27 @@ jobs:
               && echo "push race: commit already on main" || exit 1
           }
 
+      # upload_postpeer.py stays exit-0 on platform-level failures so the state
+      # commit above still lands (a lost leg must not stall tomorrow's video).
+      # This step turns those failures — plus problems its reconcile pass found
+      # in earlier posts (a scheduled YouTube leg that died, an extra copy) —
+      # into a failed run, so GitHub emails the owner.
+      - name: Alert if a publish leg failed
+        if: ${{ !inputs.dry_run }}
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          res = json.load(open("work/postpeer_result.json"))
+          bad = [l for l in res.get("legs", []) if not l.get("success")]
+          bad += res.get("problems", [])
+          for b in bad:
+              print(f"PUBLISH PROBLEM: {b}")
+          if bad:
+              sys.exit(f"{len(bad)} publish problem(s) — see above. State already "
+                       "advanced; fix per scripts/upload_postpeer.py docstring.")
+          print("all publish legs OK")
+          EOF
+
       # PostPeer's backend can double-publish a single post request (seen
       # 2026-07-19: one API call, two YouTube uploads 6s apart — likely their
       # internal retry on a slow upload). We can't prevent or delete it without
@@ -153,6 +178,10 @@ jobs:
       # fail the run (-> GitHub email) so the owner deletes the extra in Studio.
       # Runs AFTER the state commit on purpose: a duplicate must not stop
       # tomorrow's run from advancing to the next ayah.
+      # NB: the YouTube leg is normally a PostPeer-scheduled post (~07:10 UTC),
+      # so at this point today's title appears 0x in the feed — this check only
+      # fires on >1. Double-publish of the scheduled leg is caught a day later
+      # by upload_postpeer.py's reconcile pass (48h window).
       - name: Alert if the platform double-published today's video
         if: ${{ !inputs.dry_run }}
         run: |

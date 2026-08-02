@@ -9,6 +9,18 @@ NOTE: PostPeer PUBLISHES DIRECTLY — its YouTube integration ignores privacySta
 (posts public). To control timing use PP_WHEN (scheduledFor), not private staging.
 For a private review copy, use scripts/upload_youtube.py instead.
 
+QUOTA SPLIT: PostPeer's YouTube leg draws on PostPeer's OWN Google project quota —
+100 video uploads/day shared across ALL PostPeer users, resetting at midnight
+Pacific (07:00 UTC in summer). The pool drains within hours of the reset (a
+13:35 UTC attempt on 2026-08-02 429'd; the ~07:23 UTC slot worked all July),
+while PostPeer's TikTok app has its own daily active-user cap that is only safe
+right after 00:00 UTC. No single time suits both, so with PP_WHEN=now this
+script posts TikTok immediately and hands YouTube to PostPeer's scheduler for
+~10 min after the next Pacific-midnight reset. The YouTube id is then back-filled
+into state/uploads.json by the NEXT run's reconcile pass, and platform-level
+failures land in work/postpeer_result.json for the workflow's alert step (this
+script stays exit-0 on leg failures so state still advances).
+
 Env:
   POSTPEER_API_KEY   required (in ~/.zshenv)
   PP_PLATFORMS       "youtube,tiktok" (default both)
@@ -90,10 +102,137 @@ def verify_by_media(key, public_url, tries=3):
     return None
 
 
+def yt_publish_when(now_utc):
+    """'now' inside the first 2h after a Pacific-midnight quota reset, else an
+    ISO-Z scheduledFor ~10 min after the next reset (see QUOTA SPLIT above)."""
+    from datetime import timedelta
+    from zoneinfo import ZoneInfo
+    pt = now_utc.astimezone(ZoneInfo("America/Los_Angeles"))
+    reset = pt.replace(hour=0, minute=0, second=0, microsecond=0)
+    if pt - reset < timedelta(hours=2):
+        return "now"
+    nxt = (pt + timedelta(days=1)).replace(hour=0, minute=10, second=0, microsecond=0)
+    return nxt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def leg_outcomes(data, requested):
+    """Normalize per-platform outcomes from a create-response (success bool) or a
+    GET-shaped post (status string) into {platform, success, url, error} dicts."""
+    out = []
+    plats = data.get("platforms") or []
+    for want in requested:
+        e = next((p for p in plats if p.get("platform") == want), {})
+        ok = bool(e.get("success") is True or e.get("platformPostUrl")
+                  or e.get("status") in ("published", "scheduled"))
+        out.append({"platform": want, "success": ok,
+                    "url": e.get("platformPostUrl"),
+                    "error": (e.get("error") or e.get("errorMessage") or "")[:300]})
+    return out
+
+
+def bank_titles():
+    """vid -> curated video title, reconstructed exactly like build_ayah.py."""
+    try:
+        bank = json.loads((ROOT / "content" / "ayat.json").read_text())
+        ayat = bank.get("ayat", bank if isinstance(bank, list) else [])
+        return {a["id"]: (a.get("title") or f"{a['translation'][:60].rstrip('.,')} | {a['reference']}")
+                for a in ayat if a.get("id")}
+    except Exception:
+        return {}
+
+
+def register_youtube(reg, vid, ytid, title, uploaded_at=None, script=None):
+    script = script or {}
+    reg["uploads"].append({
+        "id": vid, "youtube_id": ytid,
+        "category": script.get("category", ""),
+        "hook_type": script.get("hook_type", ""), "cta_type": script.get("cta_type", ""),
+        "title": title, "via": "postpeer",
+        "uploaded_at": uploaded_at or datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    })
+
+
+def reconcile_registry(key):
+    """Back-fill state/uploads.json with YouTube ids that published AFTER their
+    run ended (the daily YouTube leg is a PostPeer-scheduled post now), and
+    return problems: failed YouTube legs with no live copy and no pending retry,
+    or a video that ended up published more than once."""
+    reg_path = ROOT / "state" / "uploads.json"
+    reg = json.loads(reg_path.read_text()) if reg_path.exists() else {"uploads": []}
+    known_ids = {u.get("youtube_id") for u in reg["uploads"]}
+    known_vids = {u.get("id") for u in reg["uploads"]}
+    try:
+        r = requests.get(f"{API}/posts?limit=40", headers=headers(key), timeout=30)
+        posts = r.json().get("posts") or r.json().get("data") or []
+    except requests.RequestException as e:
+        print(f"  reconcile: could not list posts ({e}) — skipping")
+        return []
+    titles = bank_titles()
+    state = {}  # vid -> {"published": [(ytid, at)], "pending": bool, "failed": bool}
+    for p in posts:
+        media = (p.get("mediaItems") or [{}])[0].get("url") or ""
+        vid = media.rsplit("/", 1)[-1].removesuffix(".mp4")
+        if not vid:
+            continue
+        for pl in (p.get("platforms") or []):
+            if pl.get("platform") != "youtube":
+                continue
+            s = state.setdefault(vid, {"published": [], "pending": False, "failed": False})
+            url = pl.get("platformPostUrl") or ""
+            if "watch?v=" in url:
+                ytid = url.split("watch?v=")[1].split("&")[0]
+                s["published"].append((ytid, pl.get("publishedAt")))
+            elif pl.get("status") == "failed":
+                s["failed"] = True
+            else:  # scheduled / pending / processing — a retry is in flight
+                s["pending"] = True
+
+    def recent(at):  # PostPeer keeps records forever; only alert on fresh events
+        try:
+            dt = datetime.fromisoformat((at or "").replace("Z", "+00:00"))
+            return (datetime.now(timezone.utc) - dt).total_seconds() < 48 * 3600
+        except (ValueError, TypeError):  # unparsable or naive timestamp
+            return False
+
+    problems, added = [], 0
+    for vid, s in state.items():
+        new = [(yt, at) for yt, at in s["published"] if yt not in known_ids]
+        if vid not in known_vids:
+            # First registered copy is canonical; register exactly one.
+            for ytid, at in new[:1]:
+                try:
+                    at_norm = datetime.fromisoformat(at.replace("Z", "+00:00")) \
+                        .isoformat(timespec="seconds")
+                except (ValueError, AttributeError):
+                    at_norm = None
+                register_youtube(reg, vid, ytid, titles.get(vid, vid), at_norm)
+                known_ids.add(ytid)
+                known_vids.add(vid)
+                added += 1
+            new = new[1:]
+        if any(recent(at) for _, at in new):
+            # An extra live copy beyond the registered one, published in the last
+            # 48h (older records may already be handled in Studio — PostPeer's
+            # post list is immutable, so we can't see deletions).
+            problems.append({"platform": "youtube", "success": False,
+                             "error": f"{vid}: extra YouTube copy published — delete it "
+                                      f"in Studio (keep the id in state/uploads.json)"})
+        if s["failed"] and not s["published"] and not s["pending"] and vid not in known_vids:
+            problems.append({"platform": "youtube", "success": False,
+                             "error": f"{vid}: YouTube leg failed and no retry is scheduled "
+                                      f"— re-post manually (see docstring)"})
+    if added:
+        reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False))
+        print(f"  reconcile: registered {added} YouTube upload(s) that published after their run")
+    return problems
+
+
 def main():
     key = os.environ.get("POSTPEER_API_KEY")
     if not key:
         sys.exit("POSTPEER_API_KEY not set (add it to ~/.zshenv)")
+
+    problems = reconcile_registry(key)
 
     script = json.loads((ROOT / "work" / "script.json").read_text())
     vid = script["id"]
@@ -115,89 +254,109 @@ def main():
     if done:
         print(f"  already ATTEMPTED on {sorted(done)} for this caption — skipping "
               f"(a PostPeer 'failed' may still be live on-platform; verify manually before any re-post)")
+    result_path = ROOT / "work" / "postpeer_result.json"
     if not want:
         print("Nothing to post — every requested platform was already attempted for this caption. Done.")
+        result_path.write_text(json.dumps({"legs": [], "problems": problems}, indent=2))
         return
 
-    public_url = upload_media(key, video)
-    print(f"  media public URL: {public_url}")
-
-    platforms = []
-    if "youtube" in want:
-        # PostPeer's YouTube branch accepts ONLY `title` for BOTH publishNow and
-        # scheduled posts (description/tags/privacyStatus are rejected as additional
-        # properties → 400). The top-level `content` (caption) becomes the description
-        # and it publishes public by default. (publishNow was tightened to match the
-        # scheduled schema — verified 2026-07-09; previously publishNow took the full
-        # field set.)
-        yt_psd = {"title": meta["title"][:100]}
-        platforms.append({
-            "platform": "youtube",
-            "accountId": ACCOUNTS["youtube"],
-            "platformSpecificData": yt_psd,
-        })
-    if "tiktok" in want:
-        platforms.append({
-            "platform": "tiktok",
-            "accountId": ACCOUNTS["tiktok"],
-            "platformSpecificData": {
-                "privacyLevel": "SELF_ONLY" if tiktok_draft else "PUBLIC_TO_EVERYONE",
-                "draft": tiktok_draft,
-                "isAigc": False,
-            },
-        })
-
-    body = {
-        "content": meta.get("caption", meta["title"]),
-        "platforms": platforms,
-        "mediaItems": [{"type": "video", "url": public_url}],
-    }
-    if when == "now":
-        body["publishNow"] = True
+    # One post per leg: the two platforms need different publish times (QUOTA
+    # SPLIT above), and separate media URLs keep verify_by_media unambiguous.
+    if when != "now":
+        legs_plan = [(want, when, os.environ.get("PP_TZ", "Europe/Stockholm"))]
     else:
-        body["scheduledFor"] = when
-        body["timezone"] = os.environ.get("PP_TZ", "Europe/Stockholm")
+        legs_plan = []
+        if "tiktok" in want:
+            legs_plan.append((["tiktok"], "now", None))
+        if "youtube" in want:
+            legs_plan.append((["youtube"], yt_publish_when(datetime.now(timezone.utc)), "UTC"))
 
-    try:
-        r = requests.post(f"{API}/posts", headers=headers(key), json=body, timeout=120)
-        data = r.json() if r.content else {}
-        ok = r.ok and data.get("success") is not False
-        code = r.status_code
-    except requests.RequestException as e:
-        data, ok, code = {}, False, f"exc:{e}"
+    results = []
+    for leg_platforms, leg_when, leg_tz in legs_plan:
+        public_url = upload_media(key, video)
+        print(f"  media public URL: {public_url}")
 
-    if not ok:
-        # A 502/timeout can be a gateway timeout where the post WAS created. Verify by
-        # the unique media URL we just uploaded — NEVER blind-retry (that duplicated posts).
-        print(f"  post returned {code}; verifying whether it landed (no blind retry)...")
-        verified = verify_by_media(key, public_url)
-        if verified:
-            print("  -> it DID land; using the created post (no retry).")
-            data, ok = verified, True
+        platforms = []
+        if "youtube" in leg_platforms:
+            # PostPeer's YouTube branch accepts ONLY `title` for BOTH publishNow and
+            # scheduled posts (description/tags/privacyStatus are rejected as additional
+            # properties → 400). The top-level `content` (caption) becomes the description
+            # and it publishes public by default. (publishNow was tightened to match the
+            # scheduled schema — verified 2026-07-09; previously publishNow took the full
+            # field set.)
+            platforms.append({
+                "platform": "youtube",
+                "accountId": ACCOUNTS["youtube"],
+                "platformSpecificData": {"title": meta["title"][:100]},
+            })
+        if "tiktok" in leg_platforms:
+            platforms.append({
+                "platform": "tiktok",
+                "accountId": ACCOUNTS["tiktok"],
+                "platformSpecificData": {
+                    "privacyLevel": "SELF_ONLY" if tiktok_draft else "PUBLIC_TO_EVERYONE",
+                    "draft": tiktok_draft,
+                    "isAigc": False,
+                },
+            })
+
+        body = {
+            "content": caption,
+            "platforms": platforms,
+            "mediaItems": [{"type": "video", "url": public_url}],
+        }
+        if leg_when == "now":
+            body["publishNow"] = True
         else:
-            sys.exit(f"PostPeer post failed ({code}) and not found on verify: "
-                     f"{json.dumps(data)[:400]}. Re-run is safe (it self-verifies).")
+            body["scheduledFor"] = leg_when
+            body["timezone"] = leg_tz
 
-    print(f"PostPeer post: {json.dumps(data)[:600]}")
-    print(f"  platforms: {[p['platform'] for p in platforms]} | yt={yt_privacy} | "
-          f"tiktok={'draft' if tiktok_draft else 'public'} | when={when}")
+        try:
+            r = requests.post(f"{API}/posts", headers=headers(key), json=body, timeout=120)
+            data = r.json() if r.content else {}
+            ok = r.ok and data.get("success") is not False
+            code = r.status_code
+        except requests.RequestException as e:
+            data, ok, code = {}, False, f"exc:{e}"
 
-    # Register the YouTube post for the analytics feedback loop
-    yt = next((p for p in data.get("platforms", []) if p.get("platform") == "youtube"
-               and p.get("success")), None)
-    if yt and "watch?v=" in (yt.get("platformPostUrl") or ""):
-        ytid = yt["platformPostUrl"].split("watch?v=")[1].split("&")[0]
-        reg_path = ROOT / "state" / "uploads.json"
-        reg = json.loads(reg_path.read_text()) if reg_path.exists() else {"uploads": []}
-        reg["uploads"].append({
-            "id": vid, "youtube_id": ytid,
-            "category": script.get("category", ""),
-            "hook_type": script.get("hook_type", ""), "cta_type": script.get("cta_type", ""),
-            "title": meta["title"], "via": "postpeer",
-            "uploaded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        })
-        reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False))
-        print(f"  registered youtube {ytid} in state/uploads.json ({len(reg['uploads'])} uploads)")
+        if not ok:
+            # A 502/timeout can be a gateway timeout where the post WAS created. Verify by
+            # the unique media URL we just uploaded — NEVER blind-retry (that duplicated posts).
+            # (A post that exists but whose platform leg failed — e.g. a YouTube 429 — also
+            # lands here: verify finds it and leg_outcomes reports the failure.)
+            print(f"  post returned {code}; verifying whether it landed (no blind retry)...")
+            verified = verify_by_media(key, public_url)
+            if verified:
+                print("  -> it DID land; using the created post (no retry).")
+                data = verified
+            else:
+                sys.exit(f"PostPeer post failed ({code}) and not found on verify: "
+                         f"{json.dumps(data)[:400]}. Re-run is safe (it self-verifies).")
+
+        print(f"PostPeer post: {json.dumps(data)[:600]}")
+        print(f"  platforms: {leg_platforms} | yt={yt_privacy} | "
+              f"tiktok={'draft' if tiktok_draft else 'public'} | when={leg_when}")
+        for o in leg_outcomes(data, leg_platforms):
+            o["when"] = leg_when
+            results.append(o)
+
+        # Register an immediately-published YouTube leg for the analytics feedback
+        # loop (a scheduled leg is registered by the next run's reconcile pass).
+        yt = next((p for p in data.get("platforms", []) if p.get("platform") == "youtube"
+                   and p.get("success")), None)
+        if yt and "watch?v=" in (yt.get("platformPostUrl") or ""):
+            ytid = yt["platformPostUrl"].split("watch?v=")[1].split("&")[0]
+            reg_path = ROOT / "state" / "uploads.json"
+            reg = json.loads(reg_path.read_text()) if reg_path.exists() else {"uploads": []}
+            register_youtube(reg, vid, ytid, meta["title"], script=script)
+            reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False))
+            print(f"  registered youtube {ytid} in state/uploads.json ({len(reg['uploads'])} uploads)")
+
+    result_path.write_text(json.dumps({"legs": results, "problems": problems}, indent=2))
+    failed = [r for r in results if not r["success"]] + problems
+    if failed:
+        print(f"  WARNING: {len(failed)} publish problem(s) — recorded in work/postpeer_result.json "
+              f"(the workflow alerts on this after committing state)")
 
 
 if __name__ == "__main__":
