@@ -28,7 +28,8 @@
     "ay_soul",
     "ay_rahmah",
     "ay_hear",
-    "ay_strive"
+    "ay_strive",
+    "ay_forgive"
   ],
   "used_clips": [
     "f11",
@@ -43,5 +44,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_strive"
+  "last": "ay_forgive"
 }
