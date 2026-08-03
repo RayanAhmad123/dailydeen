@@ -29,7 +29,8 @@
     "ay_rahmah",
     "ay_hear",
     "ay_strive",
-    "ay_forgive"
+    "ay_forgive",
+    "ay_test"
   ],
   "used_clips": [
     "f11",
@@ -44,5 +45,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_forgive"
+  "last": "ay_test"
 }
