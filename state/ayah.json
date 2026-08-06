@@ -32,7 +32,8 @@
     "ay_forgive",
     "ay_test",
     "ay_humble",
-    "ay_protector"
+    "ay_protector",
+    "ay_longing"
   ],
   "used_clips": [
     "f11",
@@ -47,5 +48,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_protector"
+  "last": "ay_longing"
 }
