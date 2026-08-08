@@ -375,6 +375,138 @@
       "reciter": "Yasser Al-Dosari",
       "durationSec": 10.43,
       "title": "\"Allah Is With Those Who Do Good\" | Quran 16:128"
+    },
+    {
+      "id": "ay_tin",
+      "reference": "Quran 95:4",
+      "theme": "creation",
+      "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍۢ",
+      "translation": "We have certainly created man in the best of stature;",
+      "audio": "recitations/ay_tin.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 6.59,
+      "title": "Created in the Best of Stature | Quran 95:4"
+    },
+    {
+      "id": "ay_salam",
+      "reference": "Quran 36:58",
+      "theme": "peace",
+      "arabic": "سَلَٰمٌۭ قَوْلًۭا مِّن رَّبٍّۢ رَّحِيمٍۢ",
+      "translation": "And \"Peace,\" a word from a Merciful Lord.",
+      "audio": "recitations/ay_salam.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 5.91,
+      "title": "\"Peace\" — A Word From a Merciful Lord | Quran 36:58"
+    },
+    {
+      "id": "ay_favor",
+      "reference": "Quran 55:13",
+      "theme": "gratitude",
+      "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "translation": "So which of the favors of your Lord would you deny?",
+      "audio": "recitations/ay_favor.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 8.03,
+      "title": "Which of Your Lord's Favors Will You Deny? | Quran 55:13"
+    },
+    {
+      "id": "ay_rahman",
+      "reference": "Quran 55:1-4",
+      "theme": "mercy",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ عَلَّمَ ٱلْقُرْءَانَ خَلَقَ ٱلْإِنسَٰنَ عَلَّمَهُ ٱلْبَيَانَ",
+      "translation": "The Most Merciful Taught the Qur'an, Created man, And taught him eloquence.",
+      "audio": "recitations/ay_rahman.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 15.44,
+      "title": "The Most Merciful Taught the Quran | Quran 55:1-4"
+    },
+    {
+      "id": "ay_closer",
+      "reference": "Quran 50:16",
+      "theme": "nearness",
+      "arabic": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ",
+      "translation": "And We have already created man and know what his soul whispers to him, and We are closer to him than his jugular vein",
+      "audio": "recitations/ay_closer.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 24.67,
+      "title": "Closer Than Your Jugular Vein | Quran 50:16"
+    },
+    {
+      "id": "ay_return",
+      "reference": "Quran 2:156",
+      "theme": "patience",
+      "arabic": "ٱلَّذِينَ إِذَآ أَصَٰبَتْهُم مُّصِيبَةٌۭ قَالُوٓا۟ إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ",
+      "translation": "Who, when disaster strikes them, say, \"Indeed we belong to Allah, and indeed to Him we will return.\"",
+      "audio": "recitations/ay_return.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 30.23,
+      "title": "\"Indeed, to Him We Will Return\" | Quran 2:156"
+    },
+    {
+      "id": "ay_reward",
+      "reference": "Quran 55:60",
+      "theme": "character",
+      "arabic": "هَلْ جَزَآءُ ٱلْإِحْسَٰنِ إِلَّا ٱلْإِحْسَٰنُ",
+      "translation": "Is the reward for good anything but good?",
+      "audio": "recitations/ay_reward.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 6.12,
+      "title": "Is the Reward for Good Anything but Good? | Quran 55:60"
+    },
+    {
+      "id": "ay_istighfar",
+      "reference": "Quran 71:10-11",
+      "theme": "forgiveness",
+      "arabic": "فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًۭا يُرْسِلِ ٱلسَّمَآءَ عَلَيْكُم مِّدْرَارًۭا",
+      "translation": "And said, 'Ask forgiveness of your Lord. Indeed, He is ever a Perpetual Forgiver. He will send rain from the sky upon you in continuing showers",
+      "audio": "recitations/ay_istighfar.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 12.75,
+      "title": "Seek Forgiveness — He Will Send Rain | Quran 71:10-11"
+    },
+    {
+      "id": "ay_parents",
+      "reference": "Quran 17:24",
+      "theme": "character",
+      "arabic": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًۭا",
+      "translation": "And lower to them the wing of humility out of mercy and say, \"My Lord, have mercy upon them as they brought me up when I was small.\"",
+      "audio": "recitations/ay_parents.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 10.51,
+      "title": "\"My Lord, Have Mercy Upon Them\" | Quran 17:24"
+    },
+    {
+      "id": "ay_salawat",
+      "reference": "Quran 33:56",
+      "theme": "devotion",
+      "arabic": "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
+      "translation": "Indeed, Allah confers blessing upon the Prophet, and His angels ask Him to do so. O you who have believed, ask Allah to confer blessing upon him and ask Allah to grant him peace.",
+      "audio": "recitations/ay_salawat.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 17.51,
+      "title": "Allah and His Angels Bless the Prophet ﷺ | Quran 33:56"
+    },
+    {
+      "id": "ay_goodlife",
+      "reference": "Quran 16:97",
+      "theme": "hope",
+      "arabic": "مَنْ عَمِلَ صَٰلِحًۭا مِّن ذَكَرٍ أَوْ أُنثَىٰ وَهُوَ مُؤْمِنٌۭ فَلَنُحْيِيَنَّهُۥ حَيَوٰةًۭ طَيِّبَةًۭ ۖ وَلَنَجْزِيَنَّهُمْ أَجْرَهُم بِأَحْسَنِ مَا كَانُوا۟ يَعْمَلُونَ",
+      "translation": "Whoever does righteousness, whether male or female, while he is a believer - We will surely cause him to live a good life, and We will surely give them their reward in the Hereafter according to the best of what they used to do.",
+      "audio": "recitations/ay_goodlife.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 31.51,
+      "title": "\"We Will Give Them a Good Life\" | Quran 16:97"
+    },
+    {
+      "id": "ay_hearts",
+      "reference": "Quran 3:8",
+      "theme": "guidance",
+      "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ",
+      "translation": "Who say, \"Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
+      "audio": "recitations/ay_hearts.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 18.35,
+      "title": "\"Let Not Our Hearts Deviate\" | Quran 3:8"
     }
   ]
 }

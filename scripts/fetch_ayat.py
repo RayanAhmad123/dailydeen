@@ -64,6 +64,20 @@ ENTRIES = {
     "ay_protector":   ("trust",       [(3, 150)]),
     "ay_longing":     ("devotion",    [(94, 7), (94, 8)]),
     "ay_with":        ("reassurance", [(16, 128)]),
+    # --- 2026-08-09 expansion (bank ran dry 08-08; same recipe: short, famous,
+    #     uplifting — prefer 10-16s single ayat per the performance analysis) ---
+    "ay_tin":         ("creation",    [(95, 4)]),
+    "ay_salam":       ("peace",       [(36, 58)]),
+    "ay_favor":       ("gratitude",   [(55, 13)]),
+    "ay_rahman":      ("mercy",       [(55, 1), (55, 2), (55, 3), (55, 4)]),
+    "ay_closer":      ("nearness",    [(50, 16)]),
+    "ay_return":      ("patience",    [(2, 156)]),
+    "ay_reward":      ("character",   [(55, 60)]),
+    "ay_istighfar":   ("forgiveness", [(71, 10), (71, 11)]),
+    "ay_parents":     ("character",   [(17, 24)]),
+    "ay_salawat":     ("devotion",    [(33, 56)]),
+    "ay_goodlife":    ("hope",        [(16, 97)]),
+    "ay_hearts":      ("guidance",    [(3, 8)]),
 }
 
 
