@@ -34,7 +34,8 @@
     "ay_humble",
     "ay_protector",
     "ay_longing",
-    "ay_with"
+    "ay_with",
+    "ay_tin"
   ],
   "used_clips": [
     "f11",
@@ -49,5 +50,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_with"
+  "last": "ay_tin"
 }
