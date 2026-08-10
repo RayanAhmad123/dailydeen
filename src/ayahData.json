@@ -1,9 +1,9 @@
 {
-  "id": "ay_tin",
-  "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍۢ",
-  "translation": "We have certainly created man in the best of stature;",
-  "reference": "Quran 95:4",
-  "clipFile": "reflection/ay_tin.mp4",
-  "audioFile": "recitation/ay_tin.mp3",
-  "durationSec": 7.79
+  "id": "ay_salam",
+  "arabic": "سَلَٰمٌۭ قَوْلًۭا مِّن رَّبٍّۢ رَّحِيمٍۢ",
+  "translation": "And \"Peace,\" a word from a Merciful Lord.",
+  "reference": "Quran 36:58",
+  "clipFile": "reflection/ay_salam.mp4",
+  "audioFile": "recitation/ay_salam.mp3",
+  "durationSec": 7.11
 }
