@@ -36,7 +36,8 @@
     "ay_longing",
     "ay_with",
     "ay_tin",
-    "ay_salam"
+    "ay_salam",
+    "ay_favor"
   ],
   "used_clips": [
     "f11",
@@ -51,5 +52,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_salam"
+  "last": "ay_favor"
 }
