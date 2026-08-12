@@ -1,9 +1,9 @@
 {
-  "id": "ay_favor",
-  "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-  "translation": "So which of the favors of your Lord would you deny?",
-  "reference": "Quran 55:13",
-  "clipFile": "reflection/ay_favor.mp4",
-  "audioFile": "recitation/ay_favor.mp3",
-  "durationSec": 9.23
+  "id": "ay_rahman",
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ عَلَّمَ ٱلْقُرْءَانَ خَلَقَ ٱلْإِنسَٰنَ عَلَّمَهُ ٱلْبَيَانَ",
+  "translation": "The Most Merciful Taught the Qur'an, Created man, And taught him eloquence.",
+  "reference": "Quran 55:1-4",
+  "clipFile": "reflection/ay_rahman.mp4",
+  "audioFile": "recitation/ay_rahman.mp3",
+  "durationSec": 16.64
 }
