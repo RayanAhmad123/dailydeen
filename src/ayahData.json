@@ -1,9 +1,9 @@
 {
-  "id": "ay_rahman",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ عَلَّمَ ٱلْقُرْءَانَ خَلَقَ ٱلْإِنسَٰنَ عَلَّمَهُ ٱلْبَيَانَ",
-  "translation": "The Most Merciful Taught the Qur'an, Created man, And taught him eloquence.",
-  "reference": "Quran 55:1-4",
-  "clipFile": "reflection/ay_rahman.mp4",
-  "audioFile": "recitation/ay_rahman.mp3",
-  "durationSec": 16.64
+  "id": "ay_closer",
+  "arabic": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ",
+  "translation": "And We have already created man and know what his soul whispers to him, and We are closer to him than his jugular vein",
+  "reference": "Quran 50:16",
+  "clipFile": "reflection/ay_closer.mp4",
+  "audioFile": "recitation/ay_closer.mp3",
+  "durationSec": 25.87
 }
