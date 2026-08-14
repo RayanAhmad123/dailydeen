@@ -23,9 +23,22 @@ from build_reflection import trim_clip, pick_clip  # shared footage helpers
 
 TAIL_SEC = 1.2  # hold after the recitation ends
 HASHTAGS = ["islam", "quran", "recitation", "islamicreminders", "muslim", "deen", "shorts"]
-# Shares are the channel's untapped growth lever (2026-07-27 analysis: 32 shares
-# across the whole ayah era, like-rates 8-23%) — every caption asks for the send.
-SHARE_CTA = "Send this to someone who needs it today."
+# Comments are the channel's untapped signal (2026-08-14 analysis: 0-3 comments
+# per video despite 8-23% like rates) — every caption asks for a reply the viewer
+# can give in one word (Ameen) or one tap (tag a friend). Picked deterministically
+# per video id: upload_postpeer's idempotency keys on the exact caption text.
+COMMENT_CTAS = [
+    'Type "Ameen" if this touched your heart. 🤍',
+    "Tag someone who needs this ayah today.",
+    'Comment "Ameen" and send this to a friend.',
+    "Tag a friend who should hear this recitation.",
+]
+
+
+def comment_cta(vid):
+    import hashlib
+    n = int(hashlib.md5(vid.encode()).hexdigest(), 16)
+    return COMMENT_CTAS[n % len(COMMENT_CTAS)]
 SEGMENT_MIN_SEC = 25  # long multi-ayah passages get one-ayah-at-a-time display
 TEXT_API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,en.sahih"
 
@@ -136,8 +149,8 @@ def main():
     title = ayah.get("title") or f"{ayah['translation'][:60].rstrip('.,')} | {ayah['reference']}"
     meta = {
         "title": title,
-        "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{SHARE_CTA}\n\n{hashtags}",
-        "caption": f"{ayah['translation']} {ayah['reference']} {SHARE_CTA} {hashtags}"[:2200],
+        "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{comment_cta(vid)}\n\n{hashtags}",
+        "caption": f"{ayah['translation']} {ayah['reference']} {comment_cta(vid)} {hashtags}"[:2200],
         "tags": HASHTAGS,
         "video": f"output/videos/{vid}.mp4",
     }

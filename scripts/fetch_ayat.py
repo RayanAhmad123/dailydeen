@@ -78,6 +78,21 @@ ENTRIES = {
     "ay_salawat":     ("devotion",    [(33, 56)]),
     "ay_goodlife":    ("hope",        [(16, 97)]),
     "ay_hearts":      ("guidance",    [(3, 8)]),
+    # --- 2026-08-14 expansion (per that day's 39-video analysis: theme beats
+    #     duration — first/second-person divine promises & comfort and existential
+    #     questions win; nature-sign trivia flops; length is NOT a constraint) ---
+    "ay_callme":      ("nearness",    [(40, 60)]),
+    "ay_sharh":       ("hope",        [(94, 1), (94, 2), (94, 3), (94, 4)]),
+    "ay_guide":       ("reassurance", [(26, 62)]),
+    "ay_promise":     ("patience",    [(30, 60)]),
+    "ay_wakil":       ("trust",       [(3, 173)]),
+    "ay_provision":   ("trust",       [(11, 6)]),
+    "ay_atom":        ("purpose",     [(99, 7), (99, 8)]),
+    "ay_mulk":        ("awe",         [(67, 1)]),
+    "ay_qadr":        ("awe",         [(97, 1), (97, 2), (97, 3), (97, 4), (97, 5)]),
+    "ay_nas":         ("protection",  [(114, 1), (114, 2), (114, 3), (114, 4), (114, 5), (114, 6)]),
+    "ay_repel":       ("character",   [(41, 34)]),
+    "ay_race":        ("hope",        [(3, 133)]),
 }
 
 

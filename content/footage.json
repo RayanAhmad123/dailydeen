@@ -12,7 +12,8 @@
         "mosque-interior",
         "dome",
         "blue-mosque"
-      ]
+      ],
+      "note": "close worshipper with visible face crosses the frame in the first ~1.5s — never OPEN a montage with f1; fine mid-sequence where the crossfade covers it (found 2026-08-14)"
     },
     {
       "id": "f2",

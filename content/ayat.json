@@ -507,6 +507,138 @@
       "reciter": "Yasser Al-Dosari",
       "durationSec": 18.35,
       "title": "\"Let Not Our Hearts Deviate\" | Quran 3:8"
+    },
+    {
+      "id": "ay_callme",
+      "reference": "Quran 40:60",
+      "theme": "nearness",
+      "arabic": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ ۚ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ",
+      "translation": "And your Lord says, \"Call upon Me; I will respond to you.\" Indeed, those who disdain My worship will enter Hell rendered contemptible.",
+      "audio": "recitations/ay_callme.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 23.65,
+      "title": "\"Call Upon Me — I Will Respond\" | Quran 40:60"
+    },
+    {
+      "id": "ay_sharh",
+      "reference": "Quran 94:1-4",
+      "theme": "hope",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ وَوَضَعْنَا عَنكَ وِزْرَكَ ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ وَرَفَعْنَا لَكَ ذِكْرَكَ",
+      "translation": "Did We not expand for you, O Muhammad, your breast? And We removed from you your burden Which had weighed upon your back And raised high for you your repute.",
+      "audio": "recitations/ay_sharh.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 12.96,
+      "title": "\"And We Removed From You Your Burden\" | Quran 94:1-4"
+    },
+    {
+      "id": "ay_guide",
+      "reference": "Quran 26:62",
+      "theme": "reassurance",
+      "arabic": "قَالَ كَلَّآ ۖ إِنَّ مَعِىَ رَبِّى سَيَهْدِينِ",
+      "translation": "Moses said, \"No! Indeed, with me is my Lord; He will guide me.\"",
+      "audio": "recitations/ay_guide.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 7.09,
+      "title": "\"My Lord Is With Me — He Will Guide Me\" | Quran 26:62"
+    },
+    {
+      "id": "ay_promise",
+      "reference": "Quran 30:60",
+      "theme": "patience",
+      "arabic": "فَٱصْبِرْ إِنَّ وَعْدَ ٱللَّهِ حَقٌّۭ ۖ وَلَا يَسْتَخِفَّنَّكَ ٱلَّذِينَ لَا يُوقِنُونَ",
+      "translation": "So be patient. Indeed, the promise of Allah is truth. And let them not disquiet you who are not certain in faith.",
+      "audio": "recitations/ay_promise.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.79,
+      "title": "\"The Promise of Allah Is Truth\" | Quran 30:60"
+    },
+    {
+      "id": "ay_wakil",
+      "reference": "Quran 3:173",
+      "theme": "trust",
+      "arabic": "ٱلَّذِينَ قَالَ لَهُمُ ٱلنَّاسُ إِنَّ ٱلنَّاسَ قَدْ جَمَعُوا۟ لَكُمْ فَٱخْشَوْهُمْ فَزَادَهُمْ إِيمَٰنًۭا وَقَالُوا۟ حَسْبُنَا ٱللَّهُ وَنِعْمَ ٱلْوَكِيلُ",
+      "translation": "Those to whom hypocrites said, \"Indeed, the people have gathered against you, so fear them.\" But it merely increased them in faith, and they said, \"Sufficient for us is Allah, and He is the best Disposer of affairs.\"",
+      "audio": "recitations/ay_wakil.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 30.75,
+      "title": "\"Sufficient for Us Is Allah\" | Quran 3:173"
+    },
+    {
+      "id": "ay_provision",
+      "reference": "Quran 11:6",
+      "theme": "trust",
+      "arabic": "۞ وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ إِلَّا عَلَى ٱللَّهِ رِزْقُهَا وَيَعْلَمُ مُسْتَقَرَّهَا وَمُسْتَوْدَعَهَا ۚ كُلٌّۭ فِى كِتَٰبٍۢ مُّبِينٍۢ",
+      "translation": "And there is no creature on earth but that upon Allah is its provision, and He knows its place of dwelling and place of storage. All is in a clear register.",
+      "audio": "recitations/ay_provision.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 22.87,
+      "title": "Every Creature's Provision Is Upon Allah | Quran 11:6"
+    },
+    {
+      "id": "ay_atom",
+      "reference": "Quran 99:7-8",
+      "theme": "purpose",
+      "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًۭا يَرَهُۥ وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍۢ شَرًّۭا يَرَهُۥ",
+      "translation": "So whoever does an atom's weight of good will see it, And whoever does an atom's weight of evil will see it.",
+      "audio": "recitations/ay_atom.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 16.22,
+      "title": "An Atom's Weight of Good | Quran 99:7-8"
+    },
+    {
+      "id": "ay_mulk",
+      "reference": "Quran 67:1",
+      "theme": "awe",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
+      "translation": "Blessed is He in whose hand is dominion, and He is over all things competent -",
+      "audio": "recitations/ay_mulk.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 8.05,
+      "title": "In His Hand Is All Dominion | Quran 67:1"
+    },
+    {
+      "id": "ay_qadr",
+      "reference": "Quran 97:1-5",
+      "theme": "awe",
+      "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "translation": "Indeed, We sent the Qur'an down during the Night of Decree. And what can make you know what is the Night of Decree? The Night of Decree is better than a thousand months. The angels and the Spirit descend therein by permission of their Lord for every matter. Peace it is until the emergence of dawn.",
+      "audio": "recitations/ay_qadr.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 48.2,
+      "title": "Better Than a Thousand Months | Quran 97:1-5"
+    },
+    {
+      "id": "ay_nas",
+      "reference": "Quran 114:1-6",
+      "theme": "protection",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ مَلِكِ ٱلنَّاسِ إِلَٰهِ ٱلنَّاسِ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "translation": "Say, \"I seek refuge in the Lord of mankind, The Sovereign of mankind. The God of mankind, From the evil of the retreating whisperer - Who whispers evil into the breasts of mankind - From among the jinn and mankind.\"",
+      "audio": "recitations/ay_nas.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 35.29,
+      "title": "Surah An-Nas - Mankind | Quran 114:1-6"
+    },
+    {
+      "id": "ay_repel",
+      "reference": "Quran 41:34",
+      "theme": "character",
+      "arabic": "وَلَا تَسْتَوِى ٱلْحَسَنَةُ وَلَا ٱلسَّيِّئَةُ ۚ ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ فَإِذَا ٱلَّذِى بَيْنَكَ وَبَيْنَهُۥ عَدَٰوَةٌۭ كَأَنَّهُۥ وَلِىٌّ حَمِيمٌۭ",
+      "translation": "And not equal are the good deed and the bad. Repel evil by that deed which is better; and thereupon the one whom between you and him is enmity will become as though he was a devoted friend.",
+      "audio": "recitations/ay_repel.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 16.47,
+      "title": "Repel Evil With What Is Better | Quran 41:34"
+    },
+    {
+      "id": "ay_race",
+      "reference": "Quran 3:133",
+      "theme": "hope",
+      "arabic": "۞ وَسَارِعُوٓا۟ إِلَىٰ مَغْفِرَةٍۢ مِّن رَّبِّكُمْ وَجَنَّةٍ عَرْضُهَا ٱلسَّمَٰوَٰتُ وَٱلْأَرْضُ أُعِدَّتْ لِلْمُتَّقِينَ",
+      "translation": "And hasten to forgiveness from your Lord and a garden as wide as the heavens and earth, prepared for the righteous",
+      "audio": "recitations/ay_race.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 20.04,
+      "title": "A Garden as Wide as the Heavens | Quran 3:133"
     }
   ]
 }
