@@ -39,7 +39,8 @@
     "ay_salam",
     "ay_favor",
     "ay_rahman",
-    "ay_closer"
+    "ay_closer",
+    "ay_return"
   ],
   "used_clips": [
     "f11",
@@ -54,5 +55,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_closer"
+  "last": "ay_return"
 }
