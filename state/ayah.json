@@ -41,7 +41,8 @@
     "ay_rahman",
     "ay_closer",
     "ay_return",
-    "ay_reward"
+    "ay_reward",
+    "ay_istighfar"
   ],
   "used_clips": [
     "f11",
@@ -56,5 +57,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_reward"
+  "last": "ay_istighfar"
 }
