@@ -45,7 +45,8 @@
     "ay_istighfar",
     "ay_parents",
     "ay_salawat",
-    "ay_goodlife"
+    "ay_goodlife",
+    "ay_hearts"
   ],
   "used_clips": [
     "f11",
@@ -60,5 +61,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_goodlife"
+  "last": "ay_hearts"
 }
