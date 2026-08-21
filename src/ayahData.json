@@ -1,9 +1,9 @@
 {
-  "id": "ay_hearts",
-  "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ",
-  "translation": "Who say, \"Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
-  "reference": "Quran 3:8",
-  "clipFile": "reflection/ay_hearts.mp4",
-  "audioFile": "recitation/ay_hearts.mp3",
-  "durationSec": 19.55
+  "id": "ay_callme",
+  "arabic": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ ۚ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ",
+  "translation": "And your Lord says, \"Call upon Me; I will respond to you.\" Indeed, those who disdain My worship will enter Hell rendered contemptible.",
+  "reference": "Quran 40:60",
+  "clipFile": "reflection/ay_callme.mp4",
+  "audioFile": "recitation/ay_callme.mp3",
+  "durationSec": 24.85
 }
