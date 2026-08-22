@@ -47,7 +47,8 @@
     "ay_salawat",
     "ay_goodlife",
     "ay_hearts",
-    "ay_callme"
+    "ay_callme",
+    "ay_sharh"
   ],
   "used_clips": [
     "f11",
@@ -62,5 +63,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_callme"
+  "last": "ay_sharh"
 }
