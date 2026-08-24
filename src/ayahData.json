@@ -1,9 +1,9 @@
 {
-  "id": "ay_guide",
-  "arabic": "قَالَ كَلَّآ ۖ إِنَّ مَعِىَ رَبِّى سَيَهْدِينِ",
-  "translation": "Moses said, \"No! Indeed, with me is my Lord; He will guide me.\"",
-  "reference": "Quran 26:62",
-  "clipFile": "reflection/ay_guide.mp4",
-  "audioFile": "recitation/ay_guide.mp3",
-  "durationSec": 8.29
+  "id": "ay_promise",
+  "arabic": "فَٱصْبِرْ إِنَّ وَعْدَ ٱللَّهِ حَقٌّۭ ۖ وَلَا يَسْتَخِفَّنَّكَ ٱلَّذِينَ لَا يُوقِنُونَ",
+  "translation": "So be patient. Indeed, the promise of Allah is truth. And let them not disquiet you who are not certain in faith.",
+  "reference": "Quran 30:60",
+  "clipFile": "reflection/ay_promise.mp4",
+  "audioFile": "recitation/ay_promise.mp3",
+  "durationSec": 15.99
 }
