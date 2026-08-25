@@ -50,7 +50,8 @@
     "ay_callme",
     "ay_sharh",
     "ay_guide",
-    "ay_promise"
+    "ay_promise",
+    "ay_wakil"
   ],
   "used_clips": [
     "f11",
@@ -65,5 +66,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_promise"
+  "last": "ay_wakil"
 }
