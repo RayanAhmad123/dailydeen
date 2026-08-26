@@ -717,6 +717,171 @@
           "take": 6.1
         }
       ]
+    },
+    {
+      "id": "ay_iam",
+      "note": "first-person majesty: Haram interior chandeliers -> Kocatepe dome (f20 dropped in frame review: standing visitor center-frame)",
+      "shots": [
+        {
+          "clip": "f32",
+          "take": 10.46
+        },
+        {
+          "clip": "f19",
+          "take": 6.5
+        }
+      ]
+    },
+    {
+      "id": "ay_found",
+      "note": "found and guided: sadirvan courtyard -> golden dusk minaret with birds",
+      "shots": [
+        {
+          "clip": "f23",
+          "take": 9.5
+        },
+        {
+          "clip": "f14",
+          "take": 10.5
+        }
+      ]
+    },
+    {
+      "id": "ay_heart",
+      "note": "He guides the heart: Istanbul domes -> Kocatepe chandelier interior",
+      "shots": [
+        {
+          "clip": "f18",
+          "take": 10.0
+        },
+        {
+          "clip": "f19",
+          "take": 10.5
+        }
+      ]
+    },
+    {
+      "id": "ay_wadud",
+      "note": "Merciful and Affectionate: archway frame -> minaret through leaves",
+      "shots": [
+        {
+          "clip": "f11",
+          "take": 6.5
+        },
+        {
+          "clip": "f27",
+          "take": 7.4,
+          "speed": 1.06
+        }
+      ]
+    },
+    {
+      "id": "ay_bounty",
+      "note": "His bounty in creation: boat wake -> mountain lake -> mosque garden",
+      "shots": [
+        {
+          "clip": "f15",
+          "take": 9.8
+        },
+        {
+          "clip": "f29",
+          "take": 8.2
+        },
+        {
+          "clip": "f9",
+          "take": 6.1
+        }
+      ]
+    },
+    {
+      "id": "ay_account",
+      "note": "spacious earth, patient rewarded: fjord grandeur -> sadirvan courtyard",
+      "shots": [
+        {
+          "clip": "f17",
+          "take": 16.0
+        },
+        {
+          "clip": "f23",
+          "take": 13.0
+        }
+      ]
+    },
+    {
+      "id": "ay_servants",
+      "note": "single shot: blue-mosque interior — intimate first-person address",
+      "shots": [
+        {
+          "clip": "f2",
+          "take": 12.5
+        }
+      ]
+    },
+    {
+      "id": "ay_why",
+      "note": "created with purpose, return to Us: Kaaba tawaf night -> Haram interior",
+      "shots": [
+        {
+          "clip": "f21",
+          "take": 8.7
+        },
+        {
+          "clip": "f32",
+          "take": 10.46
+        }
+      ]
+    },
+    {
+      "id": "ay_neglected",
+      "note": "single shot: Kul Sharif dome — not left neglected",
+      "shots": [
+        {
+          "clip": "f28",
+          "take": 7.4
+        }
+      ]
+    },
+    {
+      "id": "ay_graves",
+      "note": "single shot: Suleymaniye domes — what remains after the race",
+      "shots": [
+        {
+          "clip": "f18",
+          "take": 8.4
+        }
+      ]
+    },
+    {
+      "id": "ay_taste",
+      "note": "worldly delusion to the meeting: alpine village -> boat wake -> golden dusk",
+      "shots": [
+        {
+          "clip": "f22",
+          "take": 7.1
+        },
+        {
+          "clip": "f15",
+          "take": 9.8
+        },
+        {
+          "clip": "f14",
+          "take": 15.0
+        }
+      ]
+    },
+    {
+      "id": "ay_play",
+      "note": "play vs the real life: Kul Sharif plaza bustle -> Haram interior",
+      "shots": [
+        {
+          "clip": "f13",
+          "take": 12.0
+        },
+        {
+          "clip": "f32",
+          "take": 8.5
+        }
+      ]
     }
   ]
 }

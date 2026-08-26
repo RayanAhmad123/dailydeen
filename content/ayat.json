@@ -639,6 +639,138 @@
       "reciter": "Yasser Al-Dosari",
       "durationSec": 20.04,
       "title": "A Garden as Wide as the Heavens | Quran 3:133"
+    },
+    {
+      "id": "ay_found",
+      "reference": "Quran 93:6-8",
+      "theme": "reassurance",
+      "arabic": "أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ",
+      "translation": "Did He not find you an orphan and give you refuge? And He found you lost and guided you, And He found you poor and made you self-sufficient.",
+      "audio": "recitations/ay_found.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 17.14,
+      "title": "He Found You Lost and Guided You | Quran 93:6-8"
+    },
+    {
+      "id": "ay_heart",
+      "reference": "Quran 64:11",
+      "theme": "trust",
+      "arabic": "مَآ أَصَابَ مِن مُّصِيبَةٍ إِلَّا بِإِذْنِ ٱللَّهِ ۗ وَمَن يُؤْمِنۢ بِٱللَّهِ يَهْدِ قَلْبَهُۥ ۚ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌۭ",
+      "translation": "No disaster strikes except by permission of Allah. And whoever believes in Allah - He will guide his heart. And Allah is Knowing of all things.",
+      "audio": "recitations/ay_heart.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 18.03,
+      "title": "He Will Guide His Heart | Quran 64:11"
+    },
+    {
+      "id": "ay_wadud",
+      "reference": "Quran 11:90",
+      "theme": "forgiveness",
+      "arabic": "وَٱسْتَغْفِرُوا۟ رَبَّكُمْ ثُمَّ تُوبُوٓا۟ إِلَيْهِ ۚ إِنَّ رَبِّى رَحِيمٌۭ وَدُودٌۭ",
+      "translation": "And ask forgiveness of your Lord and then repent to Him. Indeed, my Lord is Merciful and Affectionate.\"",
+      "audio": "recitations/ay_wadud.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.79,
+      "title": "My Lord Is Merciful and Affectionate | Quran 11:90"
+    },
+    {
+      "id": "ay_bounty",
+      "reference": "Quran 2:268",
+      "theme": "provision",
+      "arabic": "ٱلشَّيْطَٰنُ يَعِدُكُمُ ٱلْفَقْرَ وَيَأْمُرُكُم بِٱلْفَحْشَآءِ ۖ وَٱللَّهُ يَعِدُكُم مَّغْفِرَةًۭ مِّنْهُ وَفَضْلًۭا ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌۭ",
+      "translation": "Satan threatens you with poverty and orders you to immorality, while Allah promises you forgiveness from Him and bounty. And Allah is all-Encompassing and Knowing.",
+      "audio": "recitations/ay_bounty.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 18.11,
+      "title": "Allah Promises You Forgiveness and Bounty | Quran 2:268"
+    },
+    {
+      "id": "ay_account",
+      "reference": "Quran 39:10",
+      "theme": "patience",
+      "arabic": "قُلْ يَٰعِبَادِ ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ رَبَّكُمْ ۚ لِلَّذِينَ أَحْسَنُوا۟ فِى هَٰذِهِ ٱلدُّنْيَا حَسَنَةٌۭ ۗ وَأَرْضُ ٱللَّهِ وَٰسِعَةٌ ۗ إِنَّمَا يُوَفَّى ٱلصَّٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍۢ",
+      "translation": "Say, \"O My servants who have believed, fear your Lord. For those who do good in this world is good, and the earth of Allah is spacious. Indeed, the patient will be given their reward without account.\"",
+      "audio": "recitations/ay_account.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 26.13,
+      "title": "Reward Without Account | Quran 39:10"
+    },
+    {
+      "id": "ay_servants",
+      "reference": "Quran 15:49",
+      "theme": "forgiveness",
+      "arabic": "۞ نَبِّئْ عِبَادِىٓ أَنِّىٓ أَنَا ٱلْغَفُورُ ٱلرَّحِيمُ",
+      "translation": "O Muhammad, inform My servants that it is I who am the Forgiving, the Merciful.",
+      "audio": "recitations/ay_servants.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 10.25,
+      "title": "Tell My Servants I Am the Forgiving | Quran 15:49"
+    },
+    {
+      "id": "ay_why",
+      "reference": "Quran 23:115",
+      "theme": "purpose",
+      "arabic": "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَٰكُمْ عَبَثًۭا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
+      "translation": "Then did you think that We created you uselessly and that to Us you would not be returned?\"",
+      "audio": "recitations/ay_why.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 16.52,
+      "title": "Did You Think We Created You Without Purpose? | Quran 23:115"
+    },
+    {
+      "id": "ay_neglected",
+      "reference": "Quran 75:36",
+      "theme": "purpose",
+      "arabic": "أَيَحْسَبُ ٱلْإِنسَٰنُ أَن يُتْرَكَ سُدًى",
+      "translation": "Does man think that he will be left neglected?",
+      "audio": "recitations/ay_neglected.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 5.49,
+      "title": "Does Man Think He Will Be Left Neglected? | Quran 75:36"
+    },
+    {
+      "id": "ay_graves",
+      "reference": "Quran 102:1-2",
+      "theme": "reflection",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "translation": "Competition in worldly increase diverts you Until you visit the graveyards.",
+      "audio": "recitations/ay_graves.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 6.5,
+      "title": "Until You Visit the Graves | Quran 102:1-2"
+    },
+    {
+      "id": "ay_taste",
+      "reference": "Quran 3:185",
+      "theme": "reflection",
+      "arabic": "كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ ٱلْقِيَٰمَةِ ۖ فَمَن زُحْزِحَ عَنِ ٱلنَّارِ وَأُدْخِلَ ٱلْجَنَّةَ فَقَدْ فَازَ ۗ وَمَا ٱلْحَيَوٰةُ ٱلدُّنْيَآ إِلَّا مَتَٰعُ ٱلْغُرُورِ",
+      "translation": "Every soul will taste death, and you will only be given your full compensation on the Day of Resurrection. So he who is drawn away from the Fire and admitted to Paradise has attained his desire. And what is the life of this world except the enjoyment of delusion.",
+      "audio": "recitations/ay_taste.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 28.46,
+      "title": "Every Soul Will Taste Death | Quran 3:185"
+    },
+    {
+      "id": "ay_play",
+      "reference": "Quran 29:64",
+      "theme": "reflection",
+      "arabic": "وَمَا هَٰذِهِ ٱلْحَيَوٰةُ ٱلدُّنْيَآ إِلَّا لَهْوٌۭ وَلَعِبٌۭ ۚ وَإِنَّ ٱلدَّارَ ٱلْءَاخِرَةَ لَهِىَ ٱلْحَيَوَانُ ۚ لَوْ كَانُوا۟ يَعْلَمُونَ",
+      "translation": "And this worldly life is not but diversion and amusement. And indeed, the home of the Hereafter - that is the eternal life, if only they knew.",
+      "audio": "recitations/ay_play.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 17.41,
+      "title": "This Life Is Only Play | Quran 29:64"
+    },
+    {
+      "id": "ay_iam",
+      "reference": "Quran 20:14",
+      "theme": "faith",
+      "arabic": "إِنَّنِىٓ أَنَا ٱللَّهُ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعْبُدْنِى وَأَقِمِ ٱلصَّلَوٰةَ لِذِكْرِىٓ",
+      "translation": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
+      "audio": "recitations/ay_iam.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.35,
+      "title": "\"Indeed, I Am Allah\" | Quran 20:14"
     }
   ]
 }

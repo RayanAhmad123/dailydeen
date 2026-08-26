@@ -93,6 +93,22 @@ ENTRIES = {
     "ay_nas":         ("protection",  [(114, 1), (114, 2), (114, 3), (114, 4), (114, 5), (114, 6)]),
     "ay_repel":       ("character",   [(41, 34)]),
     "ay_race":        ("hope",        [(3, 133)]),
+    # --- 2026-08-26 expansion (re-curated after the 08-24 patch was lost; same
+    #     brief: first-person divine promises/comfort + existential questions per
+    #     the 08-14 analysis; no abstract nature-sign themes. Full translations
+    #     reviewed before inclusion — no legal/contextual passages.) ---
+    "ay_iam":         ("faith",       [(20, 14)]),
+    "ay_found":       ("reassurance", [(93, 6), (93, 7), (93, 8)]),
+    "ay_heart":       ("trust",       [(64, 11)]),
+    "ay_wadud":       ("forgiveness", [(11, 90)]),
+    "ay_bounty":      ("provision",   [(2, 268)]),
+    "ay_account":     ("patience",    [(39, 10)]),
+    "ay_servants":    ("forgiveness", [(15, 49)]),
+    "ay_why":         ("purpose",     [(23, 115)]),
+    "ay_neglected":   ("purpose",     [(75, 36)]),
+    "ay_graves":      ("reflection",  [(102, 1), (102, 2)]),
+    "ay_taste":       ("reflection",  [(3, 185)]),
+    "ay_play":        ("reflection",  [(29, 64)]),
 }
 
 
