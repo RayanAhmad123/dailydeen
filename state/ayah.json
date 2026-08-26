@@ -51,7 +51,8 @@
     "ay_sharh",
     "ay_guide",
     "ay_promise",
-    "ay_wakil"
+    "ay_wakil",
+    "ay_provision"
   ],
   "used_clips": [
     "f11",
@@ -66,5 +67,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_wakil"
+  "last": "ay_provision"
 }
