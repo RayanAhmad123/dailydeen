@@ -1,9 +1,9 @@
 {
-  "id": "ay_atom",
-  "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًۭا يَرَهُۥ وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍۢ شَرًّۭا يَرَهُۥ",
-  "translation": "So whoever does an atom's weight of good will see it, And whoever does an atom's weight of evil will see it.",
-  "reference": "Quran 99:7-8",
-  "clipFile": "reflection/ay_atom.mp4",
-  "audioFile": "recitation/ay_atom.mp3",
-  "durationSec": 17.42
+  "id": "ay_mulk",
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
+  "translation": "Blessed is He in whose hand is dominion, and He is over all things competent -",
+  "reference": "Quran 67:1",
+  "clipFile": "reflection/ay_mulk.mp4",
+  "audioFile": "recitation/ay_mulk.mp3",
+  "durationSec": 9.25
 }

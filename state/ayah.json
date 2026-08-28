@@ -53,7 +53,8 @@
     "ay_promise",
     "ay_wakil",
     "ay_provision",
-    "ay_atom"
+    "ay_atom",
+    "ay_mulk"
   ],
   "used_clips": [
     "f11",
@@ -68,5 +69,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_atom"
+  "last": "ay_mulk"
 }
