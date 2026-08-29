@@ -1,9 +1,41 @@
 {
-  "id": "ay_mulk",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
-  "translation": "Blessed is He in whose hand is dominion, and He is over all things competent -",
-  "reference": "Quran 67:1",
-  "clipFile": "reflection/ay_mulk.mp4",
-  "audioFile": "recitation/ay_mulk.mp3",
-  "durationSec": 9.25
+  "id": "ay_qadr",
+  "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+  "translation": "Indeed, We sent the Qur'an down during the Night of Decree. And what can make you know what is the Night of Decree? The Night of Decree is better than a thousand months. The angels and the Spirit descend therein by permission of their Lord for every matter. Peace it is until the emergence of dawn.",
+  "reference": "Quran 97:1-5",
+  "clipFile": "reflection/ay_qadr.mp4",
+  "audioFile": "recitation/ay_qadr.mp3",
+  "durationSec": 49.4,
+  "segments": [
+    {
+      "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "translation": "Indeed, We sent the Qur'an down during the Night of Decree.",
+      "startSec": 0.0,
+      "endSec": 7.53
+    },
+    {
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "translation": "And what can make you know what is the Night of Decree?",
+      "startSec": 7.53,
+      "endSec": 13.23
+    },
+    {
+      "arabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
+      "translation": "The Night of Decree is better than a thousand months.",
+      "startSec": 13.23,
+      "endSec": 17.71
+    },
+    {
+      "arabic": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
+      "translation": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
+      "startSec": 17.71,
+      "endSec": 43.21
+    },
+    {
+      "arabic": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "translation": "Peace it is until the emergence of dawn.",
+      "startSec": 43.21,
+      "endSec": 48.24
+    }
+  ]
 }
