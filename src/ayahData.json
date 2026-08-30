@@ -1,41 +1,47 @@
 {
-  "id": "ay_qadr",
-  "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
-  "translation": "Indeed, We sent the Qur'an down during the Night of Decree. And what can make you know what is the Night of Decree? The Night of Decree is better than a thousand months. The angels and the Spirit descend therein by permission of their Lord for every matter. Peace it is until the emergence of dawn.",
-  "reference": "Quran 97:1-5",
-  "clipFile": "reflection/ay_qadr.mp4",
-  "audioFile": "recitation/ay_qadr.mp3",
-  "durationSec": 49.4,
+  "id": "ay_nas",
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ مَلِكِ ٱلنَّاسِ إِلَٰهِ ٱلنَّاسِ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+  "translation": "Say, \"I seek refuge in the Lord of mankind, The Sovereign of mankind. The God of mankind, From the evil of the retreating whisperer - Who whispers evil into the breasts of mankind - From among the jinn and mankind.\"",
+  "reference": "Quran 114:1-6",
+  "clipFile": "reflection/ay_nas.mp4",
+  "audioFile": "recitation/ay_nas.mp3",
+  "durationSec": 36.49,
   "segments": [
     {
-      "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
-      "translation": "Indeed, We sent the Qur'an down during the Night of Decree.",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "translation": "Say, \"I seek refuge in the Lord of mankind,",
       "startSec": 0.0,
-      "endSec": 7.53
+      "endSec": 6.23
     },
     {
-      "arabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
-      "translation": "And what can make you know what is the Night of Decree?",
-      "startSec": 7.53,
-      "endSec": 13.23
+      "arabic": "مَلِكِ ٱلنَّاسِ",
+      "translation": "The Sovereign of mankind.",
+      "startSec": 6.23,
+      "endSec": 11.12
     },
     {
-      "arabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
-      "translation": "The Night of Decree is better than a thousand months.",
-      "startSec": 13.23,
-      "endSec": 17.71
+      "arabic": "إِلَٰهِ ٱلنَّاسِ",
+      "translation": "The God of mankind,",
+      "startSec": 11.12,
+      "endSec": 14.97
     },
     {
-      "arabic": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
-      "translation": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
-      "startSec": 17.71,
-      "endSec": 43.21
+      "arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "translation": "From the evil of the retreating whisperer -",
+      "startSec": 14.97,
+      "endSec": 22.5
     },
     {
-      "arabic": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
-      "translation": "Peace it is until the emergence of dawn.",
-      "startSec": 43.21,
-      "endSec": 48.24
+      "arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "translation": "Who whispers evil into the breasts of mankind -",
+      "startSec": 22.5,
+      "endSec": 29.01
+    },
+    {
+      "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "translation": "From among the jinn and mankind.\"",
+      "startSec": 29.01,
+      "endSec": 35.34
     }
   ]
 }
