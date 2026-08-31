@@ -56,7 +56,8 @@
     "ay_atom",
     "ay_mulk",
     "ay_qadr",
-    "ay_nas"
+    "ay_nas",
+    "ay_repel"
   ],
   "used_clips": [
     "f11",
@@ -71,5 +72,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_nas"
+  "last": "ay_repel"
 }

@@ -1,47 +1,9 @@
 {
-  "id": "ay_nas",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ مَلِكِ ٱلنَّاسِ إِلَٰهِ ٱلنَّاسِ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
-  "translation": "Say, \"I seek refuge in the Lord of mankind, The Sovereign of mankind. The God of mankind, From the evil of the retreating whisperer - Who whispers evil into the breasts of mankind - From among the jinn and mankind.\"",
-  "reference": "Quran 114:1-6",
-  "clipFile": "reflection/ay_nas.mp4",
-  "audioFile": "recitation/ay_nas.mp3",
-  "durationSec": 36.49,
-  "segments": [
-    {
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
-      "translation": "Say, \"I seek refuge in the Lord of mankind,",
-      "startSec": 0.0,
-      "endSec": 6.23
-    },
-    {
-      "arabic": "مَلِكِ ٱلنَّاسِ",
-      "translation": "The Sovereign of mankind.",
-      "startSec": 6.23,
-      "endSec": 11.12
-    },
-    {
-      "arabic": "إِلَٰهِ ٱلنَّاسِ",
-      "translation": "The God of mankind,",
-      "startSec": 11.12,
-      "endSec": 14.97
-    },
-    {
-      "arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
-      "translation": "From the evil of the retreating whisperer -",
-      "startSec": 14.97,
-      "endSec": 22.5
-    },
-    {
-      "arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
-      "translation": "Who whispers evil into the breasts of mankind -",
-      "startSec": 22.5,
-      "endSec": 29.01
-    },
-    {
-      "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
-      "translation": "From among the jinn and mankind.\"",
-      "startSec": 29.01,
-      "endSec": 35.34
-    }
-  ]
+  "id": "ay_repel",
+  "arabic": "وَلَا تَسْتَوِى ٱلْحَسَنَةُ وَلَا ٱلسَّيِّئَةُ ۚ ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ فَإِذَا ٱلَّذِى بَيْنَكَ وَبَيْنَهُۥ عَدَٰوَةٌۭ كَأَنَّهُۥ وَلِىٌّ حَمِيمٌۭ",
+  "translation": "And not equal are the good deed and the bad. Repel evil by that deed which is better; and thereupon the one whom between you and him is enmity will become as though he was a devoted friend.",
+  "reference": "Quran 41:34",
+  "clipFile": "reflection/ay_repel.mp4",
+  "audioFile": "recitation/ay_repel.mp3",
+  "durationSec": 17.67
 }
