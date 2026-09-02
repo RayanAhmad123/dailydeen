@@ -9,17 +9,24 @@ NOTE: PostPeer PUBLISHES DIRECTLY — its YouTube integration ignores privacySta
 (posts public). To control timing use PP_WHEN (scheduledFor), not private staging.
 For a private review copy, use scripts/upload_youtube.py instead.
 
-QUOTA SPLIT: PostPeer's YouTube leg draws on PostPeer's OWN Google project quota —
-100 video uploads/day shared across ALL PostPeer users, resetting at midnight
-Pacific (07:00 UTC in summer). The pool drains within hours of the reset (a
-13:35 UTC attempt on 2026-08-02 429'd; the ~07:23 UTC slot worked all July),
-while PostPeer's TikTok app has its own daily active-user cap that is only safe
-right after 00:00 UTC. No single time suits both, so with PP_WHEN=now this
-script posts TikTok immediately and hands YouTube to PostPeer's scheduler for
-~10 min after the next Pacific-midnight reset. The YouTube id is then back-filled
-into state/uploads.json by the NEXT run's reconcile pass, and platform-level
-failures land in work/postpeer_result.json for the workflow's alert step (this
-script stays exit-0 on leg failures so state still advances).
+QUOTA SPLIT: neither platform can be posted whenever the run happens to fire.
+PostPeer's YouTube leg draws on PostPeer's OWN Google project quota — 100 video
+uploads/day shared across ALL PostPeer users, resetting at midnight Pacific
+(07:00 UTC in summer) and draining within hours (a 13:35 UTC attempt on
+2026-08-02 429'd). PostPeer's TikTok app has its own daily active-user cap that
+resets at 00:00 UTC and is likewise drained within hours: the 04:26 UTC slot was
+safe until 2026-08-26, then failed 7 days straight with
+"reached_active_user_cap" (08-27..09-02) — silently, because TikTok settles
+ASYNCHRONOUSLY (see await_terminal below).
+
+So each leg is now timed to its own quota reset, whatever time the run fires:
+tt_publish_when() posts TikTok immediately only inside the first hour after
+00:00 UTC and otherwise hands it to PostPeer's scheduler for the next 00:05 UTC;
+yt_publish_when() does the same against the Pacific-midnight reset. Ids that
+publish after the run ends are back-filled into state/uploads.json by the NEXT
+run's reconcile pass, which also reports legs that failed after the fact.
+Platform-level failures land in work/postpeer_result.json for the workflow's
+alert step (this script stays exit-0 on leg failures so state still advances).
 
 Env:
   POSTPEER_API_KEY   required (in ~/.zshenv)
@@ -115,6 +122,49 @@ def yt_publish_when(now_utc):
     return nxt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def tt_publish_when(now_utc):
+    """'now' inside the first hour after TikTok's 00:00 UTC cap reset, else an
+    ISO-Z scheduledFor 00:05 UTC on the next reset (see QUOTA SPLIT above)."""
+    from datetime import timedelta
+    if now_utc.hour < 1:
+        return "now"
+    nxt = (now_utc + timedelta(days=1)).replace(hour=0, minute=5, second=0, microsecond=0)
+    return nxt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def await_terminal(key, watch, timeout=300, interval=20):
+    """Wait for publishNow posts to SETTLE, and return {postId: platforms}.
+
+    PostPeer answers a publishNow create with status 'pending' and success:true
+    per platform — the real outcome lands asynchronously (TikTok's
+    reached_active_user_cap arrives ~2 min later). Without this poll the run
+    reports a success it never had: that is how 7 days of TikTok posts were lost
+    unnoticed in 2026-08. Posts still pending at the timeout are left out; the
+    next run's reconcile pass reports them.
+    """
+    import time
+    watch = set(watch)
+    settled = {}
+    deadline = time.monotonic() + timeout
+    while watch and time.monotonic() < deadline:
+        time.sleep(interval)
+        try:
+            r = requests.get(f"{API}/posts?limit=15", headers=headers(key), timeout=30)
+            posts = {p.get("postId"): p for p in
+                     (r.json().get("posts") or r.json().get("data") or [])}
+        except requests.RequestException:
+            continue
+        for pid in list(watch):
+            plats = (posts.get(pid) or {}).get("platforms") or []
+            if plats and all(x.get("status") in ("published", "failed") for x in plats):
+                settled[pid] = plats
+                watch.discard(pid)
+    for pid in watch:
+        print(f"  post {pid}: still pending after {timeout}s — the next run's "
+              f"reconcile pass will report its outcome")
+    return settled
+
+
 def leg_outcomes(data, requested):
     """Normalize per-platform outcomes from a create-response (success bool) or a
     GET-shaped post (status string) into {platform, success, url, error} dicts."""
@@ -156,7 +206,8 @@ def reconcile_registry(key):
     """Back-fill state/uploads.json with YouTube ids that published AFTER their
     run ended (the daily YouTube leg is a PostPeer-scheduled post now), and
     return problems: failed YouTube legs with no live copy and no pending retry,
-    or a video that ended up published more than once."""
+    a video that ended up published more than once, or a TikTok leg that failed
+    after its own run had finished watching it (the scheduled-leg case)."""
     reg_path = ROOT / "state" / "uploads.json"
     reg = json.loads(reg_path.read_text()) if reg_path.exists() else {"uploads": []}
     known_ids = {u.get("youtube_id") for u in reg["uploads"]}
@@ -168,6 +219,7 @@ def reconcile_registry(key):
         print(f"  reconcile: could not list posts ({e}) — skipping")
         return []
     titles = bank_titles()
+    problems = []
     state = {}  # vid -> {"published": [(ytid, at)], "pending": bool, "failed": bool}
     for p in posts:
         media = (p.get("mediaItems") or [{}])[0].get("url") or ""
@@ -187,6 +239,31 @@ def reconcile_registry(key):
             else:  # scheduled / pending / processing — a retry is in flight
                 s["pending"] = True
 
+    def settled_since_last_run(p):
+        """True if this post's status changed since roughly the previous daily
+        run — so a failure is reported ONCE, not on every run for two days."""
+        try:
+            dt = datetime.fromisoformat((p.get("updatedAt") or "").replace("Z", "+00:00"))
+        except (ValueError, TypeError):
+            return False
+        return (datetime.now(timezone.utc) - dt).total_seconds() < 26 * 3600
+
+    # TikTok legs settle asynchronously and a SCHEDULED one settles long after
+    # its run ended, so await_terminal can't see it — catch it here instead.
+    # PostPeer also marks TikTok PROCESSING_DOWNLOAD timeouts 'failed' when the
+    # video did publish, so this only alerts: never auto-repost (see docstring).
+    for p in posts:
+        if not settled_since_last_run(p):
+            continue
+        media = (p.get("mediaItems") or [{}])[0].get("url") or ""
+        vid = media.rsplit("/", 1)[-1].removesuffix(".mp4")
+        for pl in (p.get("platforms") or []):
+            if pl.get("platform") == "tiktok" and pl.get("status") == "failed":
+                problems.append({"platform": "tiktok", "success": False,
+                                 "error": f"{vid}: TikTok leg failed after its run "
+                                          f"({(pl.get('errorMessage') or 'no message')[:120]}) "
+                                          f"— check TikTok before any manual re-post"})
+
     def recent(at):  # PostPeer keeps records forever; only alert on fresh events
         try:
             dt = datetime.fromisoformat((at or "").replace("Z", "+00:00"))
@@ -194,7 +271,7 @@ def reconcile_registry(key):
         except (ValueError, TypeError):  # unparsable or naive timestamp
             return False
 
-    problems, added = [], 0
+    added = 0
     for vid, s in state.items():
         new = [(yt, at) for yt, at in s["published"] if yt not in known_ids]
         if vid not in known_vids:
@@ -265,13 +342,15 @@ def main():
     if when != "now":
         legs_plan = [(want, when, os.environ.get("PP_TZ", "Europe/Stockholm"))]
     else:
+        now_utc = datetime.now(timezone.utc)
         legs_plan = []
         if "tiktok" in want:
-            legs_plan.append((["tiktok"], "now", None))
+            legs_plan.append((["tiktok"], tt_publish_when(now_utc), "UTC"))
         if "youtube" in want:
-            legs_plan.append((["youtube"], yt_publish_when(datetime.now(timezone.utc)), "UTC"))
+            legs_plan.append((["youtube"], yt_publish_when(now_utc), "UTC"))
 
     results = []
+    pending = {}   # postId -> [indices into results] for publishNow legs
     for leg_platforms, leg_when, leg_tz in legs_plan:
         public_url = upload_media(key, video)
         print(f"  media public URL: {public_url}")
@@ -339,6 +418,11 @@ def main():
         for o in leg_outcomes(data, leg_platforms):
             o["when"] = leg_when
             results.append(o)
+        # A publishNow leg's reported success is provisional — the platform
+        # settles asynchronously. Collect it for the await_terminal pass below.
+        if leg_when == "now" and data.get("postId"):
+            pending[data["postId"]] = list(range(len(results) - len(leg_platforms),
+                                                 len(results)))
 
         # Register an immediately-published YouTube leg for the analytics feedback
         # loop (a scheduled leg is registered by the next run's reconcile pass).
@@ -351,6 +435,18 @@ def main():
             register_youtube(reg, vid, ytid, meta["title"], script=script)
             reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False))
             print(f"  registered youtube {ytid} in state/uploads.json ({len(reg['uploads'])} uploads)")
+
+    if pending:
+        print(f"  waiting for {len(pending)} immediate post(s) to settle on-platform...")
+        for pid, plats in await_terminal(key, pending).items():
+            for i in pending[pid]:
+                final = leg_outcomes({"platforms": plats}, [results[i]["platform"]])[0]
+                final["when"] = results[i]["when"]
+                if final["success"] != results[i]["success"]:
+                    print(f"  {final['platform']}: settled as "
+                          f"{'published' if final['success'] else 'FAILED'}"
+                          f"{' — ' + final['error'] if final['error'] else ''}")
+                results[i] = final
 
     result_path.write_text(json.dumps({"legs": results, "problems": problems}, indent=2))
     failed = [r for r in results if not r["success"]] + problems

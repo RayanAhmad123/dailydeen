@@ -27,16 +27,17 @@ on:
     paths: [".github/trigger-daily"]
   # Kept as a free extra chance in case GitHub's scheduler ever heals; the
   # already-posted-today guard makes any duplicate fire cancel itself.
-  # Early-UTC slot on purpose: PostPeer's TikTok app has a daily active-user
-  # cap (reached_active_user_cap killed the TikTok leg Jul 24 + 29-31 at the
-  # old ~07:26 UTC slot); posting right after the quota window resets avoids it.
-  # The YouTube leg does NOT post at this hour: PostPeer's shared YouTube quota
-  # (100 uploads/day across all their users) resets at midnight Pacific and is
-  # drained by early-UTC (429'd Aug 1-2) — upload_postpeer.py hands YouTube to
-  # PostPeer's scheduler for ~10 min after that reset instead (QUOTA SPLIT).
+  # Just-after-00:00-UTC slot on purpose: PostPeer's TikTok app has a daily
+  # active-user cap that resets at 00:00 UTC and drains within hours. It killed
+  # the TikTok leg at the old ~07:26 UTC slot (Jul 24, 29-31), then caught up
+  # with the 04:26 UTC slot too — 7 silent losses, Aug 27..Sep 2. Only the first
+  # hour after the reset is safe. A run outside it is NOT lost: upload_postpeer's
+  # tt_publish_when() hands TikTok to PostPeer's scheduler for the next 00:05
+  # UTC, exactly like the YouTube leg, whose own quota (100 uploads/day shared
+  # across all PostPeer users) resets at midnight Pacific instead (QUOTA SPLIT).
   schedule:
-    - cron: "23 5 * * *"   # 07:23 CEST
-    - cron: "23 6 * * *"   # 08:23 CEST backup
+    - cron: "10 0 * * *"   # 00:10 UTC — inside TikTok's fresh cap window
+    - cron: "40 0 * * *"   # 00:40 UTC backup
   workflow_dispatch:
     inputs:
       dry_run:
@@ -182,6 +183,10 @@ jobs:
       # so at this point today's title appears 0x in the feed — this check only
       # fires on >1. Double-publish of the scheduled leg is caught a day later
       # by upload_postpeer.py's reconcile pass (48h window).
+      # A feed fetch that errors is NOT a duplicate: YouTube 404s this URL for
+      # datacenter IPs intermittently (every run 09-01..09-02 while the TikTok
+      # leg was the real problem). Failing on it would bury the alert above in
+      # daily red runs, so an unreachable feed only warns.
       - name: Alert if the platform double-published today's video
         if: ${{ !inputs.dry_run }}
         run: |
@@ -190,9 +195,14 @@ jobs:
           import html, json, re, sys, urllib.request
           vid = json.load(open("work/script.json"))["id"]
           title = json.load(open(f"output/videos/{vid}.meta.json"))["title"]
-          feed = urllib.request.urlopen(
-              "https://www.youtube.com/feeds/videos.xml?channel_id=UCU1KnLLtieO2pooAGFiI4Ww",
-              timeout=30).read().decode()
+          try:
+              feed = urllib.request.urlopen(
+                  "https://www.youtube.com/feeds/videos.xml?channel_id=UCU1KnLLtieO2pooAGFiI4Ww",
+                  timeout=30).read().decode()
+          except Exception as e:
+              print(f"WARNING: could not read the channel feed ({e}) — "
+                    f"skipping the duplicate check for this run")
+              sys.exit(0)
           titles = [html.unescape(t) for t in re.findall(r"<title>([^<]*)</title>", feed)]
           n = titles.count(title)
           print(f"'{title}' appears {n}x in the channel feed")
