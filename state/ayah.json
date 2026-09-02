@@ -58,7 +58,8 @@
     "ay_qadr",
     "ay_nas",
     "ay_repel",
-    "ay_race"
+    "ay_race",
+    "ay_found"
   ],
   "used_clips": [
     "f11",
@@ -73,5 +74,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_race"
+  "last": "ay_found"
 }
