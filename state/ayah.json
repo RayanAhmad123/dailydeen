@@ -61,7 +61,8 @@
     "ay_race",
     "ay_found",
     "ay_heart",
-    "ay_wadud"
+    "ay_wadud",
+    "ay_bounty"
   ],
   "used_clips": [
     "f11",
@@ -76,5 +77,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_wadud"
+  "last": "ay_bounty"
 }
