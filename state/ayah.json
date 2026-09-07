@@ -63,7 +63,8 @@
     "ay_heart",
     "ay_wadud",
     "ay_bounty",
-    "ay_account"
+    "ay_account",
+    "ay_servants"
   ],
   "used_clips": [
     "f11",
@@ -78,5 +79,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_account"
+  "last": "ay_servants"
 }
