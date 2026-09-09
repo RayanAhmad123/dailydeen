@@ -65,7 +65,8 @@
     "ay_bounty",
     "ay_account",
     "ay_servants",
-    "ay_why"
+    "ay_why",
+    "ay_neglected"
   ],
   "used_clips": [
     "f11",
@@ -80,5 +81,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_why"
+  "last": "ay_neglected"
 }
