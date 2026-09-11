@@ -67,7 +67,8 @@
     "ay_servants",
     "ay_why",
     "ay_neglected",
-    "ay_graves"
+    "ay_graves",
+    "ay_taste"
   ],
   "used_clips": [
     "f11",
@@ -82,5 +83,5 @@
     "f7",
     "f12"
   ],
-  "last": "ay_graves"
+  "last": "ay_taste"
 }
