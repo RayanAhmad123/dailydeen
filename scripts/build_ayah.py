@@ -39,6 +39,88 @@ def comment_cta(vid):
     import hashlib
     n = int(hashlib.md5(vid.encode()).hexdigest(), 16)
     return COMMENT_CTAS[n % len(COMMENT_CTAS)]
+
+
+# --- Arabic-first metadata (A/B since 2026-09-13) -------------------------
+# The 2026-09-13 analysis found ~75% of Ayah-era views come from Arabic-speaking
+# countries (IQ, DZ, MA, EG, SY, SA) while every title/description/hashtag was
+# English. AYAH_META_LANG picks the metadata language for this build:
+#   "ab" (default) alternate ar/en by the bank position -> a clean A/B;
+#   "ar" / "en"    force one. The choice is recorded in state/ayah.json
+# (meta_lang) and in state/uploads.json so analyze_performance.py can score it.
+HASHTAGS_AR = ["قرآن", "تلاوة", "القرآن_الكريم", "اسلام", "ياسر_الدوسري",
+               "quran", "islam", "recitation", "shorts"]
+COMMENT_CTAS_AR = [
+    "اكتب آمين إذا لامست قلبك 🤍",
+    "أرسلها لمن يحتاجها اليوم.",
+    "من أي بلد تشاهد؟ اكتب في التعليقات.",
+    "شارك الأجر: أرسلها لصديق.",
+]
+AR_TITLE_MAX = 100  # YouTube title limit
+RECITER_AR = {"Yasser Al-Dosari": "ياسر الدوسري", "Minshawi": "محمد صديق المنشاوي"}
+BASMALA_WORDS = 4  # "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ" prefixed to a surah's first ayah
+
+
+def strip_tashkeel(s):
+    import re
+    return re.sub(r"[\u064B-\u065F\u0670\u06D6-\u06ED]", "", s)
+
+
+def meta_lang(state):
+    import os
+    forced = os.environ.get("AYAH_META_LANG", "ab").lower()
+    if forced in ("ar", "en"):
+        return forced
+    return "ar" if len(state.get("used", [])) % 2 == 0 else "en"
+
+
+def arabic_ref(ayah):
+    """'سورة الأنبياء: 87' from the bank's surahArabic + reference."""
+    surah = strip_tashkeel(ayah.get("surahArabic") or "").replace("سورة", "").strip()
+    surah = f"سورة {surah}" if surah else ""
+    nums = ayah["reference"].split(":", 1)[1] if ":" in ayah["reference"] else ""
+    return f"{surah}: {nums}".strip(": ")
+
+
+def arabic_title(ayah):
+    """﴿first words of the ayah﴾ | سورة X: N — trimmed to the YouTube limit."""
+    words = ayah["arabic"].split()
+    if strip_tashkeel(words[0]) == "بسم" and len(words) > BASMALA_WORDS + 2:
+        words = words[BASMALA_WORDS:]  # title = the ayah itself, not the basmala
+    ref = arabic_ref(ayah)
+    for n in range(min(9, len(words)), 2, -1):
+        head = " ".join(words[:n]) + ("…" if n < len(words) else "")
+        title = f"﴿{head}﴾ | {ref}"
+        if len(title) <= AR_TITLE_MAX:
+            return title
+    return f"﴿{words[0]}…﴾ | {ref}"[:AR_TITLE_MAX]
+
+
+def build_meta(ayah, vid, lang):
+    if lang == "ar":
+        import hashlib
+        cta = COMMENT_CTAS_AR[int(hashlib.md5(vid.encode()).hexdigest(), 16) % len(COMMENT_CTAS_AR)]
+        tags = " ".join("#" + t for t in HASHTAGS_AR)
+        ref_ar = arabic_ref(ayah)
+        return {
+            "title": arabic_title(ayah),
+            "description": (f"{ayah['arabic']}\n\n{ref_ar} ({ayah['reference']})\n"
+                            f"تلاوة: {RECITER_AR.get(ayah.get('reciter', ''), ayah.get('reciter', ''))}\n\n"
+                            f"{ayah['translation']}\n\n"
+                            f"{cta}\n\n{tags}"),
+            "caption": f"{ayah['arabic']} {ref_ar} ({ayah['reference']}) {cta} {tags}"[:2200],
+            "tags": HASHTAGS_AR,
+        }
+    hashtags = " ".join("#" + t for t in HASHTAGS)
+    # Curated per-ayah title from the bank (the auto-fallback truncates mid-word,
+    # which every manual run has had to fix — unattended runs need the curated one).
+    title = ayah.get("title") or f"{ayah['translation'][:60].rstrip('.,')} | {ayah['reference']}"
+    return {
+        "title": title,
+        "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{comment_cta(vid)}\n\n{hashtags}",
+        "caption": f"{ayah['translation']} {ayah['reference']} {comment_cta(vid)} {hashtags}"[:2200],
+        "tags": HASHTAGS,
+    }
 SEGMENT_MIN_SEC = 25  # long multi-ayah passages get one-ayah-at-a-time display
 TEXT_API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,en.sahih"
 
@@ -143,17 +225,10 @@ def main():
         print(f"  {len(segments)} per-ayah segments (long passage — one ayah at a time)")
     (ROOT / "src" / "ayahData.json").write_text(json.dumps(props, indent=2, ensure_ascii=False))
 
-    hashtags = " ".join("#" + t for t in HASHTAGS)
-    # Curated per-ayah title from the bank (the auto-fallback truncates mid-word,
-    # which every manual run has had to fix — unattended runs need the curated one).
-    title = ayah.get("title") or f"{ayah['translation'][:60].rstrip('.,')} | {ayah['reference']}"
-    meta = {
-        "title": title,
-        "description": f"{ayah['translation']}\n\n{ayah['reference']} - recitation by {ayah.get('reciter','')}\n\n{comment_cta(vid)}\n\n{hashtags}",
-        "caption": f"{ayah['translation']} {ayah['reference']} {comment_cta(vid)} {hashtags}"[:2200],
-        "tags": HASHTAGS,
-        "video": f"output/videos/{vid}.mp4",
-    }
+    lang = meta_lang(state)
+    meta = {**build_meta(ayah, vid, lang), "meta_lang": lang,
+            "video": f"output/videos/{vid}.mp4"}
+    print(f"  metadata language: {lang}  title: {meta['title']}")
     out_dir = ROOT / "output" / "videos"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / f"{vid}.meta.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
@@ -164,6 +239,7 @@ def main():
     if clip and clip["id"] not in state["used_clips"]:
         state["used_clips"].append(clip["id"])
     state["last"] = vid
+    state.setdefault("meta_lang", {})[vid] = lang  # read back by the uploader's reconcile pass
     (ROOT / "state").mkdir(exist_ok=True)
     (ROOT / "state" / "ayah.json").write_text(json.dumps(state, indent=2, ensure_ascii=False))
 
@@ -174,7 +250,9 @@ def main():
     cad["last_id"] = vid
     cad_p.write_text(json.dumps(cad, indent=2, ensure_ascii=False))
     (ROOT / "work").mkdir(exist_ok=True)
-    (ROOT / "work" / "script.json").write_text(json.dumps({"id": vid}))
+    # id handoff + the fields upload_postpeer.py registers for the analytics loop
+    (ROOT / "work" / "script.json").write_text(json.dumps(
+        {"id": vid, "category": "Ayah", "theme": ayah.get("theme", ""), "meta_lang": lang}))
 
     print(f"Ayah video ready: id={vid}  {ayah['reference']}  ({dur}s, audio baked)")
     print(f"  {ayah['translation']}")

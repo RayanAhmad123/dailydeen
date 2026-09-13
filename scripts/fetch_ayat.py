@@ -109,6 +109,78 @@ ENTRIES = {
     "ay_graves":      ("reflection",  [(102, 1), (102, 2)]),
     "ay_taste":       ("reflection",  [(3, 185)]),
     "ay_play":        ("reflection",  [(29, 64)]),
+    # --- 2026-09-13 expansion (bank hit 0/71; per that day's 64-video analysis:
+    #     full short surahs + dhikr lead, first-person promises/duas of the
+    #     prophets and existential questions hold ~1k, third-person
+    #     "He is with you" reassurance and nature-sign themes trail) ---
+    "ay_kafirun":     ("faith",       [(109, 1), (109, 2), (109, 3), (109, 4), (109, 5), (109, 6)]),
+    "ay_nasr":        ("gratitude",   [(110, 1), (110, 2), (110, 3)]),
+    "ay_alaq":        ("knowledge",   [(96, 1), (96, 2), (96, 3), (96, 4), (96, 5)]),
+    "ay_fil":         ("awe",         [(105, 1), (105, 2), (105, 3), (105, 4), (105, 5)]),
+    "ay_hashr":       ("awe",         [(59, 22), (59, 23)]),
+    "ay_yunus":       ("forgiveness", [(21, 87)]),
+    "ay_ayyub":       ("hope",        [(21, 83)]),
+    "ay_musa":        ("hope",        [(20, 25), (20, 26), (20, 27), (20, 28)]),
+    "ay_need":        ("hope",        [(28, 24)]),
+    "ay_complain":    ("patience",    [(12, 86)]),
+    "ay_relief":      ("hope",        [(12, 87)]),
+    "ay_cave":        ("hope",        [(18, 10)]),
+    "ay_cure":        ("trust",       [(26, 78), (26, 79), (26, 80)]),
+    "ay_support":     ("hope",        [(47, 7)]),
+    "ay_decree":      ("trust",       [(9, 51)]),
+    "ay_sufficient":  ("trust",       [(9, 129)]),
+    "ay_nofear":      ("hope",        [(10, 62)]),
+    "ay_healing":     ("mercy",       [(17, 82)]),
+    "ay_respond":     ("hope",        [(27, 62)]),
+    "ay_perish":      ("reflection",  [(55, 26), (55, 27)]),
+    "ay_tried":       ("reflection",  [(29, 2), (29, 3)]),
+    "ay_adornment":   ("reflection",  [(18, 46)]),
+    "ay_be":          ("awe",         [(36, 82)]),
+    "ay_greater":     ("remembrance", [(29, 45)]),
+    "ay_spouses":     ("mercy",       [(30, 21)]),
+    "ay_living":      ("devotion",    [(6, 162), (6, 163)]),
+    "ay_tidings":     ("hope",        [(41, 30)]),
+    "ay_owner":       ("awe",         [(3, 26)]),
+    "ay_hereafter":   ("reflection",  [(87, 16), (87, 17)]),
+    "ay_forgiver":    ("forgiveness", [(20, 82)]),
+    "ay_guardian":    ("awe",         [(15, 9)]),
+}
+
+# Curated YouTube titles for entries added from 2026-09-13 on (earlier titles
+# live in content/ayat.json and are carried over on rebuild). Quoted direct
+# speech / questions per the performance analyses.
+TITLES = {
+    "ay_kafirun":    "\"For You Is Your Religion, and for Me Is Mine\" | Quran 109:1-6",
+    "ay_nasr":       "When the Victory of Allah Has Come | Quran 110:1-3",
+    "ay_alaq":       "\"Read in the Name of Your Lord\" | Quran 96:1-5",
+    "ay_fil":        "The Army of the Elephant | Quran 105:1-5",
+    "ay_hashr":      "He Is Allah, the Creator, the Inventor | Quran 59:22-23",
+    "ay_yunus":      "\"There Is No Deity Except You; Exalted Are You\" | Quran 21:87",
+    "ay_ayyub":      "\"Adversity Has Touched Me, and You Are the Most Merciful\" | Quran 21:83",
+    "ay_musa":       "\"My Lord, Expand for Me My Chest\" | Quran 20:25-28",
+    "ay_need":       "\"My Lord, I Am in Need of Whatever Good You Send Down\" | Quran 28:24",
+    "ay_complain":   "\"I Only Complain of My Grief to Allah\" | Quran 12:86",
+    "ay_relief":     "\"Do Not Despair of Relief From Allah\" | Quran 12:87",
+    "ay_cave":       "\"Our Lord, Grant Us Mercy From Yourself\" | Quran 18:10",
+    "ay_cure":       "\"When I Am Ill, It Is He Who Cures Me\" | Quran 26:78-80",
+    "ay_support":    "\"If You Support Allah, He Will Support You\" | Quran 47:7",
+    "ay_decree":     "\"Nothing Will Strike Us Except What Allah Has Decreed\" | Quran 9:51",
+    "ay_sufficient": "\"Sufficient for Me Is Allah\" | Quran 9:129",
+    "ay_nofear":     "No Fear Upon Them, Nor Will They Grieve | Quran 10:62",
+    "ay_healing":    "A Healing and Mercy for the Believers | Quran 17:82",
+    "ay_respond":    "Who Responds to the Desperate One When He Calls? | Quran 27:62",
+    "ay_perish":     "Everyone on Earth Will Perish | Quran 55:26-27",
+    "ay_tried":      "Do People Think They Will Not Be Tested? | Quran 29:2-3",
+    "ay_adornment":  "Wealth and Children Are Only Adornment | Quran 18:46",
+    "ay_be":         "\"Be,\" and It Is | Quran 36:82",
+    "ay_greater":    "The Remembrance of Allah Is Greater | Quran 29:45",
+    "ay_spouses":    "He Placed Between You Affection and Mercy | Quran 30:21",
+    "ay_living":     "\"My Living and My Dying Are for Allah\" | Quran 6:162-163",
+    "ay_tidings":    "\"Do Not Fear and Do Not Grieve\" | Quran 41:30",
+    "ay_owner":      "\"O Allah, Owner of Sovereignty\" | Quran 3:26",
+    "ay_hereafter":  "The Hereafter Is Better and More Enduring | Quran 87:16-17",
+    "ay_forgiver":   "\"I Am the Perpetual Forgiver\" | Quran 20:82",
+    "ay_guardian":   "\"We Will Be Its Guardian\" | Quran 15:9",
 }
 
 
@@ -121,7 +193,7 @@ def fetch_text(s, a):
     d = get_json(TEXT_API.format(s=s, a=a))["data"]
     ar = next(e["text"] for e in d if e["edition"]["identifier"] == "quran-uthmani")
     en = next(e["text"] for e in d if e["edition"]["identifier"] == "en.sahih")
-    return ar, en
+    return ar, en, d[0]["surah"]["name"]
 
 
 def download(code, dest):
@@ -162,8 +234,9 @@ def main():
     bank = []
     for vid, (theme, refs) in ENTRIES.items():
         ar_parts, en_parts, audio_parts = [], [], []
+        surah_ar = ""
         for s, a in refs:
-            ar, en = fetch_text(s, a)
+            ar, en, surah_ar = fetch_text(s, a)
             ar_parts.append(ar)
             en_parts.append(en)
             code = f"{s:03d}{a:03d}"
@@ -182,9 +255,12 @@ def main():
             "audio": f"recitations/{vid}.mp3",
             "reciter": RECITER_NAME,
             "durationSec": duration(out_mp3),
+            # Arabic surah name (API, e.g. "سُورَةُ الأَنبِيَاءِ") for the Arabic-first
+            # metadata mode in build_ayah.py — the audience is ~75% Arabic-speaking.
+            "surahArabic": surah_ar,
         }
-        if vid in titles:
-            entry["title"] = titles[vid]
+        if vid in titles or vid in TITLES:
+            entry["title"] = titles.get(vid) or TITLES[vid]
         bank.append(entry)
         print(f"  {vid:<14} {ref:<14} {entry['durationSec']:>5}s  {entry['translation'][:48]}")
 

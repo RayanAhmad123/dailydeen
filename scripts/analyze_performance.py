@@ -89,6 +89,35 @@ def main():
     by_cat = aggregate("category")
     by_hook = aggregate("hook_type")
 
+    # Ayah era (2026-07-07 on): the levers are the verse THEME and, since the
+    # 2026-09-13 A/B, the metadata LANGUAGE — category/hook_type are empty for
+    # these uploads, so score them on their own fields. Theme falls back to the
+    # bank for registrations that predate the field. Distribution duds (<20
+    # views after 2 days) are excluded: they say nothing about the content.
+    try:
+        bank = {a["id"]: a for a in json.loads(
+            (ROOT / "content" / "ayat.json").read_text())["ayat"]}
+    except (OSError, ValueError, KeyError):
+        bank = {}
+    ayah = [v for v in videos if v["id"].startswith("ay_")]
+    for v in ayah:
+        v["theme"] = v.get("theme") or bank.get(v["id"], {}).get("theme", "")
+        v["meta_lang"] = v.get("meta_lang") or "en"
+    scored = [v for v in ayah if v["mature"] and v["views"] >= 20]
+
+    def agg_ayah(key):
+        groups = {}
+        for v in scored:
+            if v.get(key):
+                groups.setdefault(v[key], []).append(v)
+        return {k: {"n": len(g), "avg_score": round(sum(x["score"] for x in g) / len(g), 4),
+                    "median_views": sorted(x["views"] for x in g)[len(g) // 2],
+                    "like_rate": round(sum(x["likes"] for x in g) / max(sum(x["views"] for x in g), 1), 4)}
+                for k, g in groups.items()}
+    by_theme = agg_ayah("theme")
+    by_lang = agg_ayah("meta_lang")
+    duds = [v["id"] for v in ayah if v["mature"] and v["views"] < 20]
+
     mature = [v for v in videos if v["mature"]]
     note = ""
     if len(videos) % 4 == 3 and by_cat:
@@ -103,11 +132,27 @@ def main():
         note = "Data too young (<2 days old) — rotate categories freely for now."
     rec_hook = max(by_hook, key=lambda k: by_hook[k]["avg_score"]) if mature and by_hook else None
 
+    if ayah:
+        # Ayah-only channel: the category/hook recommendation is meaningless
+        # (those fields only exist on the retired silhouette format).
+        rec_cat, rec_hook = "Ayah", None
+        best = sorted(by_theme, key=lambda k: -by_theme[k]["avg_score"])
+        note = (f"Ayah era: best themes (>=2 videos) "
+                f"{[k for k in best if by_theme[k]['n'] >= 2][:5]}; "
+                f"metadata language A/B: {by_lang}; distribution duds excluded: {duds}")
     out = {"videos": videos, "by_category": by_cat, "by_hook_type": by_hook,
+           "by_theme": by_theme if ayah else {}, "by_meta_lang": by_lang if ayah else {},
+           "ayah_duds": duds if ayah else [],
            "recommend_category": rec_cat, "recommend_hook_type": rec_hook, "note": note}
     (ROOT / "work" / "strategy.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
     print(f"{len(videos)} uploads analyzed. Recommend category: {rec_cat or '(any)'}; "
           f"hook type: {rec_hook or '(rotate)'}\n{note}")
+    if ayah:
+        print("\nAyah themes (mature, non-dud):")
+        for k in sorted(by_theme, key=lambda k: -by_theme[k]["median_views"]):
+            d = by_theme[k]
+            print(f"  {k:14} n={d['n']:2}  median {d['median_views']:5}  like {d['like_rate']:.1%}  score {d['avg_score']}")
+        print(f"Metadata language: {by_lang}")
 
 
 if __name__ == "__main__":

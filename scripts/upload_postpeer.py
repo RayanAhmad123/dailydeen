@@ -191,12 +191,32 @@ def bank_titles():
         return {}
 
 
+def ayah_facts(vid):
+    """theme + metadata language of an Ayah video, from the bank and state — for
+    registrations made by the reconcile pass, which has no work/script.json."""
+    out = {}
+    try:
+        bank = json.loads((ROOT / "content" / "ayat.json").read_text())["ayat"]
+        a = next((x for x in bank if x.get("id") == vid), None)
+        if a:
+            out = {"category": "Ayah", "theme": a.get("theme", "")}
+        st = json.loads((ROOT / "state" / "ayah.json").read_text())
+        if vid in st.get("meta_lang", {}):
+            out["meta_lang"] = st["meta_lang"][vid]
+        elif a:
+            out["meta_lang"] = "en"   # every video before the 2026-09-13 A/B was English
+    except (OSError, ValueError, KeyError):
+        pass
+    return out
+
+
 def register_youtube(reg, vid, ytid, title, uploaded_at=None, script=None):
-    script = script or {}
+    script = {**ayah_facts(vid), **(script or {})}
     reg["uploads"].append({
         "id": vid, "youtube_id": ytid,
         "category": script.get("category", ""),
         "hook_type": script.get("hook_type", ""), "cta_type": script.get("cta_type", ""),
+        "theme": script.get("theme", ""), "meta_lang": script.get("meta_lang", ""),
         "title": title, "via": "postpeer",
         "uploaded_at": uploaded_at or datetime.now(timezone.utc).isoformat(timespec="seconds"),
     })

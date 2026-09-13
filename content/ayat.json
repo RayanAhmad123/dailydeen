@@ -9,7 +9,8 @@
       "translation": "For indeed, with hardship will be ease. Indeed, with hardship will be ease.",
       "audio": "recitations/ay_ease.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 6.84
+      "durationSec": 6.84,
+      "surahArabic": "سُورَةُ الشَّرۡحِ"
     },
     {
       "id": "ay_remember",
@@ -19,7 +20,8 @@
       "translation": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
       "audio": "recitations/ay_remember.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 10.93
+      "durationSec": 10.93,
+      "surahArabic": "سُورَةُ البَقَرَةِ"
     },
     {
       "id": "ay_rest",
@@ -29,7 +31,8 @@
       "translation": "Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.\"",
       "audio": "recitations/ay_rest.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 16.05
+      "durationSec": 16.05,
+      "surahArabic": "سُورَةُ الرَّعۡدِ"
     },
     {
       "id": "ay_trust",
@@ -39,7 +42,8 @@
       "translation": "And will provide for him from where he does not expect. And whoever relies upon Allah - then He is sufficient for him. Indeed, Allah will accomplish His purpose. Allah has already set for everything a decreed extent.",
       "audio": "recitations/ay_trust.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 18.22
+      "durationSec": 18.22,
+      "surahArabic": "سُورَةُ الطَّلَاقِ"
     },
     {
       "id": "ay_ikhlas",
@@ -49,7 +53,8 @@
       "translation": "Say, \"He is Allah, who is One, Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent.\"",
       "audio": "recitations/ay_ikhlas.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 10.63
+      "durationSec": 10.63,
+      "surahArabic": "سُورَةُ الإِخۡلَاصِ"
     },
     {
       "id": "ay_kawthar",
@@ -59,7 +64,8 @@
       "translation": "Indeed, We have granted you, O Muhammad, al-Kawthar. So pray to your Lord and sacrifice to Him alone. Indeed, your enemy is the one cut off.",
       "audio": "recitations/ay_kawthar.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 12.04
+      "durationSec": 12.04,
+      "surahArabic": "سُورَةُ الكَوۡثَرِ"
     },
     {
       "id": "ay_asr",
@@ -69,7 +75,8 @@
       "translation": "By time, Indeed, mankind is in loss, Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
       "audio": "recitations/ay_asr.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 17.24
+      "durationSec": 17.24,
+      "surahArabic": "سُورَةُ العَصۡرِ"
     },
     {
       "id": "ay_hope",
@@ -79,7 +86,8 @@
       "translation": "So do not weaken and do not grieve, and you will be superior if you are true believers.",
       "audio": "recitations/ay_hope.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 10.77
+      "durationSec": 10.77,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ"
     },
     {
       "id": "ay_fatiha",
@@ -89,7 +97,8 @@
       "translation": "In the name of Allah, the Entirely Merciful, the Especially Merciful. All praise is due to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked Your anger or of those who are astray.",
       "audio": "recitations/ay_fatiha.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 47.06
+      "durationSec": 47.06,
+      "surahArabic": "سُورَةُ ٱلْفَاتِحَةِ"
     },
     {
       "id": "ay_near",
@@ -99,7 +108,8 @@
       "translation": "And when My servants ask you, O Muhammad, concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me. So let them respond to Me by obedience and believe in Me that they may be rightly guided.",
       "audio": "recitations/ay_near.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 26.26
+      "durationSec": 26.26,
+      "surahArabic": "سُورَةُ البَقَرَةِ"
     },
     {
       "id": "ay_patience",
@@ -110,6 +120,7 @@
       "audio": "recitations/ay_patience.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 14.32,
+      "surahArabic": "سُورَةُ البَقَرَةِ",
       "title": "Seek Help Through Patience and Prayer | Quran 2:153"
     },
     {
@@ -121,6 +132,7 @@
       "audio": "recitations/ay_increase.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 14.92,
+      "surahArabic": "سُورَةُ إِبۡرَاهِيمَ",
       "title": "\"If You Are Grateful, I Will Increase You\" | Quran 14:7"
     },
     {
@@ -132,6 +144,7 @@
       "audio": "recitations/ay_purpose.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 7.19,
+      "surahArabic": "سُورَةُ الذَّارِيَاتِ",
       "title": "Why Were Jinn and Mankind Created? | Quran 51:56"
     },
     {
@@ -143,6 +156,7 @@
       "audio": "recitations/ay_mercy.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 29.13,
+      "surahArabic": "سُورَةُ الزُّمَرِ",
       "title": "\"Do Not Despair of the Mercy of Allah\" | Quran 39:53"
     },
     {
@@ -154,6 +168,7 @@
       "audio": "recitations/ay_duha.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.73,
+      "surahArabic": "سُورَةُ الضُّحَىٰ",
       "title": "\"Your Lord Has Not Taken Leave of You\" | Quran 93:3-5"
     },
     {
@@ -165,6 +180,7 @@
       "audio": "recitations/ay_kursi.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 54.63,
+      "surahArabic": "سُورَةُ البَقَرَةِ",
       "title": "Ayat al-Kursi - The Throne Verse | Quran 2:255"
     },
     {
@@ -176,6 +192,7 @@
       "audio": "recitations/ay_house.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.31,
+      "surahArabic": "سُورَةُ قُرَيۡشٍ",
       "title": "Lord of This House | Quran 106:3-4"
     },
     {
@@ -187,6 +204,7 @@
       "audio": "recitations/ay_signs.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 13.77,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
       "title": "\"Signs for Those of Understanding\" | Quran 3:190"
     },
     {
@@ -198,6 +216,7 @@
       "audio": "recitations/ay_dhikr.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 14.52,
+      "surahArabic": "سُورَةُ الأَحۡزَابِ",
       "title": "\"Remember Allah Often\" | Quran 33:41-42"
     },
     {
@@ -209,6 +228,7 @@
       "audio": "recitations/ay_falaq.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 20.14,
+      "surahArabic": "سُورَةُ الفَلَقِ",
       "title": "Surah Al-Falaq - The Daybreak | Quran 113:1-5"
     },
     {
@@ -220,6 +240,7 @@
       "audio": "recitations/ay_unity.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 30.26,
+      "surahArabic": "سُورَةُ الحُجُرَاتِ",
       "title": "\"That You May Know One Another\" | Quran 49:13"
     },
     {
@@ -231,6 +252,7 @@
       "audio": "recitations/ay_mountains.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 6.19,
+      "surahArabic": "سُورَةُ النَّبَإِ",
       "title": "\"And the Mountains as Stakes\" | Quran 78:6-7"
     },
     {
@@ -242,6 +264,7 @@
       "audio": "recitations/ay_knowledge.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 15.45,
+      "surahArabic": "سُورَةُ طه",
       "title": "\"My Lord, Increase Me in Knowledge\" | Quran 20:114"
     },
     {
@@ -253,6 +276,7 @@
       "audio": "recitations/ay_names.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 26.13,
+      "surahArabic": "سُورَةُ الحَشۡرِ",
       "title": "\"To Him Belong the Best Names\" | Quran 59:24"
     },
     {
@@ -264,6 +288,7 @@
       "audio": "recitations/ay_favors.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.19,
+      "surahArabic": "سُورَةُ النَّحۡلِ",
       "title": "You Could Not Count the Favors of Allah | Quran 16:18"
     },
     {
@@ -275,6 +300,7 @@
       "audio": "recitations/ay_soul.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 22.39,
+      "surahArabic": "سُورَةُ الفَجۡرِ",
       "title": "\"O Reassured Soul, Return to Your Lord\" | Quran 89:27-30"
     },
     {
@@ -286,6 +312,7 @@
       "audio": "recitations/ay_rahmah.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 7.09,
+      "surahArabic": "سُورَةُ الأَنبِيَاءِ",
       "title": "\"A Mercy to the Worlds\" | Quran 21:107"
     },
     {
@@ -297,6 +324,7 @@
       "audio": "recitations/ay_hear.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.74,
+      "surahArabic": "سُورَةُ طه",
       "title": "\"Fear Not — I Am With You\" | Quran 20:46"
     },
     {
@@ -308,6 +336,7 @@
       "audio": "recitations/ay_strive.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 16.33,
+      "surahArabic": "سُورَةُ العَنكَبُوتِ",
       "title": "\"Strive for Us — We Will Guide You\" | Quran 29:69"
     },
     {
@@ -319,6 +348,7 @@
       "audio": "recitations/ay_forgive.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 18.01,
+      "surahArabic": "سُورَةُ النِّسَاءِ",
       "title": "\"He Will Find Allah Forgiving and Merciful\" | Quran 4:110"
     },
     {
@@ -330,6 +360,7 @@
       "audio": "recitations/ay_test.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.32,
+      "surahArabic": "سُورَةُ المُلۡكِ",
       "title": "Why Death and Life Were Created | Quran 67:2"
     },
     {
@@ -341,6 +372,7 @@
       "audio": "recitations/ay_humble.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.56,
+      "surahArabic": "سُورَةُ الفُرۡقَانِ",
       "title": "The Servants of the Most Merciful | Quran 25:63"
     },
     {
@@ -352,6 +384,7 @@
       "audio": "recitations/ay_protector.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 6.17,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
       "title": "\"The Best of Helpers\" | Quran 3:150"
     },
     {
@@ -363,6 +396,7 @@
       "audio": "recitations/ay_longing.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 6.56,
+      "surahArabic": "سُورَةُ الشَّرۡحِ",
       "title": "\"To Your Lord Direct Your Longing\" | Quran 94:7-8"
     },
     {
@@ -374,6 +408,7 @@
       "audio": "recitations/ay_with.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 10.43,
+      "surahArabic": "سُورَةُ النَّحۡلِ",
       "title": "\"Allah Is With Those Who Do Good\" | Quran 16:128"
     },
     {
@@ -385,6 +420,7 @@
       "audio": "recitations/ay_tin.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 6.59,
+      "surahArabic": "سُورَةُ التِّينِ",
       "title": "Created in the Best of Stature | Quran 95:4"
     },
     {
@@ -396,6 +432,7 @@
       "audio": "recitations/ay_salam.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 5.91,
+      "surahArabic": "سُورَةُ يسٓ",
       "title": "\"Peace\" — A Word From a Merciful Lord | Quran 36:58"
     },
     {
@@ -407,6 +444,7 @@
       "audio": "recitations/ay_favor.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 8.03,
+      "surahArabic": "سُورَةُ الرَّحۡمَٰن",
       "title": "Which of Your Lord's Favors Will You Deny? | Quran 55:13"
     },
     {
@@ -418,6 +456,7 @@
       "audio": "recitations/ay_rahman.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 15.44,
+      "surahArabic": "سُورَةُ الرَّحۡمَٰن",
       "title": "The Most Merciful Taught the Quran | Quran 55:1-4"
     },
     {
@@ -429,6 +468,7 @@
       "audio": "recitations/ay_closer.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 24.67,
+      "surahArabic": "سُورَةُ قٓ",
       "title": "Closer Than Your Jugular Vein | Quran 50:16"
     },
     {
@@ -440,6 +480,7 @@
       "audio": "recitations/ay_return.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 30.23,
+      "surahArabic": "سُورَةُ البَقَرَةِ",
       "title": "\"Indeed, to Him We Will Return\" | Quran 2:156"
     },
     {
@@ -451,6 +492,7 @@
       "audio": "recitations/ay_reward.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 6.12,
+      "surahArabic": "سُورَةُ الرَّحۡمَٰن",
       "title": "Is the Reward for Good Anything but Good? | Quran 55:60"
     },
     {
@@ -462,6 +504,7 @@
       "audio": "recitations/ay_istighfar.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 12.75,
+      "surahArabic": "سُورَةُ نُوحٍ",
       "title": "Seek Forgiveness — He Will Send Rain | Quran 71:10-11"
     },
     {
@@ -473,6 +516,7 @@
       "audio": "recitations/ay_parents.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 10.51,
+      "surahArabic": "سُورَةُ الإِسۡرَاءِ",
       "title": "\"My Lord, Have Mercy Upon Them\" | Quran 17:24"
     },
     {
@@ -484,6 +528,7 @@
       "audio": "recitations/ay_salawat.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 17.51,
+      "surahArabic": "سُورَةُ الأَحۡزَابِ",
       "title": "Allah and His Angels Bless the Prophet ﷺ | Quran 33:56"
     },
     {
@@ -495,6 +540,7 @@
       "audio": "recitations/ay_goodlife.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 31.51,
+      "surahArabic": "سُورَةُ النَّحۡلِ",
       "title": "\"We Will Give Them a Good Life\" | Quran 16:97"
     },
     {
@@ -506,6 +552,7 @@
       "audio": "recitations/ay_hearts.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 18.35,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
       "title": "\"Let Not Our Hearts Deviate\" | Quran 3:8"
     },
     {
@@ -517,6 +564,7 @@
       "audio": "recitations/ay_callme.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 23.65,
+      "surahArabic": "سُورَةُ غَافِرٍ",
       "title": "\"Call Upon Me — I Will Respond\" | Quran 40:60"
     },
     {
@@ -528,6 +576,7 @@
       "audio": "recitations/ay_sharh.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 12.96,
+      "surahArabic": "سُورَةُ الشَّرۡحِ",
       "title": "\"And We Removed From You Your Burden\" | Quran 94:1-4"
     },
     {
@@ -539,6 +588,7 @@
       "audio": "recitations/ay_guide.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 7.09,
+      "surahArabic": "سُورَةُ الشُّعَرَاءِ",
       "title": "\"My Lord Is With Me — He Will Guide Me\" | Quran 26:62"
     },
     {
@@ -550,6 +600,7 @@
       "audio": "recitations/ay_promise.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 14.79,
+      "surahArabic": "سُورَةُ الرُّومِ",
       "title": "\"The Promise of Allah Is Truth\" | Quran 30:60"
     },
     {
@@ -561,6 +612,7 @@
       "audio": "recitations/ay_wakil.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 30.75,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
       "title": "\"Sufficient for Us Is Allah\" | Quran 3:173"
     },
     {
@@ -572,6 +624,7 @@
       "audio": "recitations/ay_provision.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 22.87,
+      "surahArabic": "سُورَةُ هُودٍ",
       "title": "Every Creature's Provision Is Upon Allah | Quran 11:6"
     },
     {
@@ -583,6 +636,7 @@
       "audio": "recitations/ay_atom.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 16.22,
+      "surahArabic": "سُورَةُ الزَّلۡزَلَةِ",
       "title": "An Atom's Weight of Good | Quran 99:7-8"
     },
     {
@@ -594,6 +648,7 @@
       "audio": "recitations/ay_mulk.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 8.05,
+      "surahArabic": "سُورَةُ المُلۡكِ",
       "title": "In His Hand Is All Dominion | Quran 67:1"
     },
     {
@@ -605,6 +660,7 @@
       "audio": "recitations/ay_qadr.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 48.2,
+      "surahArabic": "سُورَةُ القَدۡرِ",
       "title": "Better Than a Thousand Months | Quran 97:1-5"
     },
     {
@@ -616,6 +672,7 @@
       "audio": "recitations/ay_nas.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 35.29,
+      "surahArabic": "سُورَةُ النَّاسِ",
       "title": "Surah An-Nas - Mankind | Quran 114:1-6"
     },
     {
@@ -627,6 +684,7 @@
       "audio": "recitations/ay_repel.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 16.47,
+      "surahArabic": "سُورَةُ فُصِّلَتۡ",
       "title": "Repel Evil With What Is Better | Quran 41:34"
     },
     {
@@ -638,7 +696,20 @@
       "audio": "recitations/ay_race.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 20.04,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
       "title": "A Garden as Wide as the Heavens | Quran 3:133"
+    },
+    {
+      "id": "ay_iam",
+      "reference": "Quran 20:14",
+      "theme": "faith",
+      "arabic": "إِنَّنِىٓ أَنَا ٱللَّهُ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعْبُدْنِى وَأَقِمِ ٱلصَّلَوٰةَ لِذِكْرِىٓ",
+      "translation": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
+      "audio": "recitations/ay_iam.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.35,
+      "surahArabic": "سُورَةُ طه",
+      "title": "\"Indeed, I Am Allah\" | Quran 20:14"
     },
     {
       "id": "ay_found",
@@ -649,6 +720,7 @@
       "audio": "recitations/ay_found.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 17.14,
+      "surahArabic": "سُورَةُ الضُّحَىٰ",
       "title": "He Found You Lost and Guided You | Quran 93:6-8"
     },
     {
@@ -660,6 +732,7 @@
       "audio": "recitations/ay_heart.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 18.03,
+      "surahArabic": "سُورَةُ التَّغَابُنِ",
       "title": "He Will Guide His Heart | Quran 64:11"
     },
     {
@@ -671,6 +744,7 @@
       "audio": "recitations/ay_wadud.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 11.79,
+      "surahArabic": "سُورَةُ هُودٍ",
       "title": "My Lord Is Merciful and Affectionate | Quran 11:90"
     },
     {
@@ -682,6 +756,7 @@
       "audio": "recitations/ay_bounty.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 18.11,
+      "surahArabic": "سُورَةُ البَقَرَةِ",
       "title": "Allah Promises You Forgiveness and Bounty | Quran 2:268"
     },
     {
@@ -693,6 +768,7 @@
       "audio": "recitations/ay_account.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 26.13,
+      "surahArabic": "سُورَةُ الزُّمَرِ",
       "title": "Reward Without Account | Quran 39:10"
     },
     {
@@ -704,6 +780,7 @@
       "audio": "recitations/ay_servants.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 10.25,
+      "surahArabic": "سُورَةُ الحِجۡرِ",
       "title": "Tell My Servants I Am the Forgiving | Quran 15:49"
     },
     {
@@ -715,6 +792,7 @@
       "audio": "recitations/ay_why.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 16.52,
+      "surahArabic": "سُورَةُ المُؤۡمِنُونَ",
       "title": "Did You Think We Created You Without Purpose? | Quran 23:115"
     },
     {
@@ -726,6 +804,7 @@
       "audio": "recitations/ay_neglected.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 5.49,
+      "surahArabic": "سُورَةُ القِيَامَةِ",
       "title": "Does Man Think He Will Be Left Neglected? | Quran 75:36"
     },
     {
@@ -737,6 +816,7 @@
       "audio": "recitations/ay_graves.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 6.5,
+      "surahArabic": "سُورَةُ التَّكَاثُرِ",
       "title": "Until You Visit the Graves | Quran 102:1-2"
     },
     {
@@ -748,6 +828,7 @@
       "audio": "recitations/ay_taste.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 28.46,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
       "title": "Every Soul Will Taste Death | Quran 3:185"
     },
     {
@@ -759,18 +840,380 @@
       "audio": "recitations/ay_play.mp3",
       "reciter": "Yasser Al-Dosari",
       "durationSec": 17.41,
+      "surahArabic": "سُورَةُ العَنكَبُوتِ",
       "title": "This Life Is Only Play | Quran 29:64"
     },
     {
-      "id": "ay_iam",
-      "reference": "Quran 20:14",
+      "id": "ay_kafirun",
+      "reference": "Quran 109:1-6",
       "theme": "faith",
-      "arabic": "إِنَّنِىٓ أَنَا ٱللَّهُ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعْبُدْنِى وَأَقِمِ ٱلصَّلَوٰةَ لِذِكْرِىٓ",
-      "translation": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
-      "audio": "recitations/ay_iam.mp3",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ لَآ أَعْبُدُ مَا تَعْبُدُونَ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+      "translation": "Say, \"O disbelievers, I do not worship what you worship. Nor are you worshippers of what I worship. Nor will I be a worshipper of what you worship. Nor will you be worshippers of what I worship. For you is your religion, and for me is my religion.\"",
+      "audio": "recitations/ay_kafirun.mp3",
       "reciter": "Yasser Al-Dosari",
-      "durationSec": 14.35,
-      "title": "\"Indeed, I Am Allah\" | Quran 20:14"
+      "durationSec": 35.13,
+      "surahArabic": "سُورَةُ الكَافِرُونَ",
+      "title": "\"For You Is Your Religion, and for Me Is Mine\" | Quran 109:1-6"
+    },
+    {
+      "id": "ay_nasr",
+      "reference": "Quran 110:1-3",
+      "theme": "gratitude",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًۭا فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "translation": "When the victory of Allah has come and the conquest, And you see the people entering into the religion of Allah in multitudes, Then exalt Him with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance.",
+      "audio": "recitations/ay_nasr.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 19.98,
+      "surahArabic": "سُورَةُ النَّصۡرِ",
+      "title": "When the Victory of Allah Has Come | Quran 110:1-3"
+    },
+    {
+      "id": "ay_alaq",
+      "reference": "Quran 96:1-5",
+      "theme": "knowledge",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ خَلَقَ ٱلْإِنسَٰنَ مِنْ عَلَقٍ ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ عَلَّمَ ٱلْإِنسَٰنَ مَا لَمْ يَعْلَمْ",
+      "translation": "Recite in the name of your Lord who created - Created man from a clinging substance. Recite, and your Lord is the most Generous - Who taught by the pen - Taught man that which he knew not.",
+      "audio": "recitations/ay_alaq.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 16.59,
+      "surahArabic": "سُورَةُ العَلَقِ",
+      "title": "\"Read in the Name of Your Lord\" | Quran 96:1-5"
+    },
+    {
+      "id": "ay_fil",
+      "reference": "Quran 105:1-5",
+      "theme": "awe",
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍۢ وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ تَرْمِيهِم بِحِجَارَةٍۢ مِّن سِجِّيلٍۢ فَجَعَلَهُمْ كَعَصْفٍۢ مَّأْكُولٍۭ",
+      "translation": "Have you not considered, O Muhammad, how your Lord dealt with the companions of the elephant? Did He not make their plan into misguidance? And He sent against them birds in flocks, Striking them with stones of hard clay, And He made them like eaten straw.",
+      "audio": "recitations/ay_fil.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 24.14,
+      "surahArabic": "سُورَةُ الفِيلِ",
+      "title": "The Army of the Elephant | Quran 105:1-5"
+    },
+    {
+      "id": "ay_hashr",
+      "reference": "Quran 59:22-23",
+      "theme": "awe",
+      "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+      "translation": "He is Allah, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful. He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Bestower of Faith, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allah above whatever they associate with Him.",
+      "audio": "recitations/ay_hashr.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 42.48,
+      "surahArabic": "سُورَةُ الحَشۡرِ",
+      "title": "He Is Allah, the Creator, the Inventor | Quran 59:22-23"
+    },
+    {
+      "id": "ay_yunus",
+      "reference": "Quran 21:87",
+      "theme": "forgiveness",
+      "arabic": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبًۭا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِى ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+      "translation": "And mention the man of the fish, when he went off in anger and thought that We would not decree anything upon him. And he called out within the darknesses, \"There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.\"",
+      "audio": "recitations/ay_yunus.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 29.32,
+      "surahArabic": "سُورَةُ الأَنبِيَاءِ",
+      "title": "\"There Is No Deity Except You; Exalted Are You\" | Quran 21:87"
+    },
+    {
+      "id": "ay_ayyub",
+      "reference": "Quran 21:83",
+      "theme": "hope",
+      "arabic": "۞ وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُۥٓ أَنِّى مَسَّنِىَ ٱلضُّرُّ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+      "translation": "And mention Job, when he called to his Lord, \"Indeed, adversity has touched me, and you are the Most Merciful of the merciful.\"",
+      "audio": "recitations/ay_ayyub.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 12.29,
+      "surahArabic": "سُورَةُ الأَنبِيَاءِ",
+      "title": "\"Adversity Has Touched Me, and You Are the Most Merciful\" | Quran 21:83"
+    },
+    {
+      "id": "ay_musa",
+      "reference": "Quran 20:25-28",
+      "theme": "hope",
+      "arabic": "قَالَ رَبِّ ٱشْرَحْ لِى صَدْرِى وَيَسِّرْ لِىٓ أَمْرِى وَٱحْلُلْ عُقْدَةًۭ مِّن لِّسَانِى يَفْقَهُوا۟ قَوْلِى",
+      "translation": "Moses said, \"My Lord, expand for me my breast with assurance And ease for me my task And untie the knot from my tongue That they may understand my speech.",
+      "audio": "recitations/ay_musa.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 11.89,
+      "surahArabic": "سُورَةُ طه",
+      "title": "\"My Lord, Expand for Me My Chest\" | Quran 20:25-28"
+    },
+    {
+      "id": "ay_need",
+      "reference": "Quran 28:24",
+      "theme": "hope",
+      "arabic": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ فَقَالَ رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍۢ فَقِيرٌۭ",
+      "translation": "So he watered their flocks for them; then he went back to the shade and said, \"My Lord, indeed I am, for whatever good You would send down to me, in need.\"",
+      "audio": "recitations/ay_need.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 15.13,
+      "surahArabic": "سُورَةُ القَصَصِ",
+      "title": "\"My Lord, I Am in Need of Whatever Good You Send Down\" | Quran 28:24"
+    },
+    {
+      "id": "ay_complain",
+      "reference": "Quran 12:86",
+      "theme": "patience",
+      "arabic": "قَالَ إِنَّمَآ أَشْكُوا۟ بَثِّى وَحُزْنِىٓ إِلَى ٱللَّهِ وَأَعْلَمُ مِنَ ٱللَّهِ مَا لَا تَعْلَمُونَ",
+      "translation": "He said, \"I only complain of my suffering and my grief to Allah, and I know from Allah that which you do not know.",
+      "audio": "recitations/ay_complain.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 13.64,
+      "surahArabic": "سُورَةُ يُوسُفَ",
+      "title": "\"I Only Complain of My Grief to Allah\" | Quran 12:86"
+    },
+    {
+      "id": "ay_relief",
+      "reference": "Quran 12:87",
+      "theme": "hope",
+      "arabic": "يَٰبَنِىَّ ٱذْهَبُوا۟ فَتَحَسَّسُوا۟ مِن يُوسُفَ وَأَخِيهِ وَلَا تَا۟يْـَٔسُوا۟ مِن رَّوْحِ ٱللَّهِ ۖ إِنَّهُۥ لَا يَا۟يْـَٔسُ مِن رَّوْحِ ٱللَّهِ إِلَّا ٱلْقَوْمُ ٱلْكَٰفِرُونَ",
+      "translation": "O my sons, go and find out about Joseph and his brother and despair not of relief from Allah. Indeed, no one despairs of relief from Allah except the disbelieving people.\"",
+      "audio": "recitations/ay_relief.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 29.08,
+      "surahArabic": "سُورَةُ يُوسُفَ",
+      "title": "\"Do Not Despair of Relief From Allah\" | Quran 12:87"
+    },
+    {
+      "id": "ay_cave",
+      "reference": "Quran 18:10",
+      "theme": "hope",
+      "arabic": "إِذْ أَوَى ٱلْفِتْيَةُ إِلَى ٱلْكَهْفِ فَقَالُوا۟ رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحْمَةًۭ وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًۭا",
+      "translation": "Mention when the youths retreated to the cave and said, \"Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.\"",
+      "audio": "recitations/ay_cave.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 22.06,
+      "surahArabic": "سُورَةُ الكَهۡفِ",
+      "title": "\"Our Lord, Grant Us Mercy From Yourself\" | Quran 18:10"
+    },
+    {
+      "id": "ay_cure",
+      "reference": "Quran 26:78-80",
+      "theme": "trust",
+      "arabic": "ٱلَّذِى خَلَقَنِى فَهُوَ يَهْدِينِ وَٱلَّذِى هُوَ يُطْعِمُنِى وَيَسْقِينِ وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+      "translation": "Who created me, and He it is who guides me. And it is He who feeds me and gives me drink. And when I am ill, it is He who cures me",
+      "audio": "recitations/ay_cure.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.97,
+      "surahArabic": "سُورَةُ الشُّعَرَاءِ",
+      "title": "\"When I Am Ill, It Is He Who Cures Me\" | Quran 26:78-80"
+    },
+    {
+      "id": "ay_support",
+      "reference": "Quran 47:7",
+      "theme": "hope",
+      "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِن تَنصُرُوا۟ ٱللَّهَ يَنصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ",
+      "translation": "O you who have believed, if you support Allah, He will support you and plant firmly your feet.",
+      "audio": "recitations/ay_support.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 17.25,
+      "surahArabic": "سُورَةُ مُحَمَّدٍ",
+      "title": "\"If You Support Allah, He Will Support You\" | Quran 47:7"
+    },
+    {
+      "id": "ay_decree",
+      "reference": "Quran 9:51",
+      "theme": "trust",
+      "arabic": "قُل لَّن يُصِيبَنَآ إِلَّا مَا كَتَبَ ٱللَّهُ لَنَا هُوَ مَوْلَىٰنَا ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+      "translation": "Say, \"Never will we be struck except by what Allah has decreed for us; He is our protector.\" And upon Allah let the believers rely.",
+      "audio": "recitations/ay_decree.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 13.49,
+      "surahArabic": "سُورَةُ التَّوۡبَةِ",
+      "title": "\"Nothing Will Strike Us Except What Allah Has Decreed\" | Quran 9:51"
+    },
+    {
+      "id": "ay_sufficient",
+      "reference": "Quran 9:129",
+      "theme": "trust",
+      "arabic": "فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+      "translation": "But if they turn away, O Muhammad, say, \"Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.\"",
+      "audio": "recitations/ay_sufficient.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 25.79,
+      "surahArabic": "سُورَةُ التَّوۡبَةِ",
+      "title": "\"Sufficient for Me Is Allah\" | Quran 9:129"
+    },
+    {
+      "id": "ay_nofear",
+      "reference": "Quran 10:62",
+      "theme": "hope",
+      "arabic": "أَلَآ إِنَّ أَوْلِيَآءَ ٱللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+      "translation": "Unquestionably, for the allies of Allah there will be no fear concerning them, nor will they grieve",
+      "audio": "recitations/ay_nofear.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.01,
+      "surahArabic": "سُورَةُ يُونُسَ",
+      "title": "No Fear Upon Them, Nor Will They Grieve | Quran 10:62"
+    },
+    {
+      "id": "ay_healing",
+      "reference": "Quran 17:82",
+      "theme": "mercy",
+      "arabic": "وَنُنَزِّلُ مِنَ ٱلْقُرْءَانِ مَا هُوَ شِفَآءٌۭ وَرَحْمَةٌۭ لِّلْمُؤْمِنِينَ ۙ وَلَا يَزِيدُ ٱلظَّٰلِمِينَ إِلَّا خَسَارًۭا",
+      "translation": "And We send down of the Qur'an that which is healing and mercy for the believers, but it does not increase the wrongdoers except in loss.",
+      "audio": "recitations/ay_healing.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 18.79,
+      "surahArabic": "سُورَةُ الإِسۡرَاءِ",
+      "title": "A Healing and Mercy for the Believers | Quran 17:82"
+    },
+    {
+      "id": "ay_respond",
+      "reference": "Quran 27:62",
+      "theme": "hope",
+      "arabic": "أَمَّن يُجِيبُ ٱلْمُضْطَرَّ إِذَا دَعَاهُ وَيَكْشِفُ ٱلسُّوٓءَ وَيَجْعَلُكُمْ خُلَفَآءَ ٱلْأَرْضِ ۗ أَءِلَٰهٌۭ مَّعَ ٱللَّهِ ۚ قَلِيلًۭا مَّا تَذَكَّرُونَ",
+      "translation": "Is He not best who responds to the desperate one when he calls upon Him and removes evil and makes you inheritors of the earth? Is there a deity with Allah? Little do you remember.",
+      "audio": "recitations/ay_respond.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 35.25,
+      "surahArabic": "سُورَةُ النَّمۡلِ",
+      "title": "Who Responds to the Desperate One When He Calls? | Quran 27:62"
+    },
+    {
+      "id": "ay_perish",
+      "reference": "Quran 55:26-27",
+      "theme": "reflection",
+      "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۢ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "translation": "Everyone upon the earth will perish, And there will remain the Face of your Lord, Owner of Majesty and Honor.",
+      "audio": "recitations/ay_perish.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 10.03,
+      "surahArabic": "سُورَةُ الرَّحۡمَٰن",
+      "title": "Everyone on Earth Will Perish | Quran 55:26-27"
+    },
+    {
+      "id": "ay_tried",
+      "reference": "Quran 29:2-3",
+      "theme": "reflection",
+      "arabic": "أَحَسِبَ ٱلنَّاسُ أَن يُتْرَكُوٓا۟ أَن يَقُولُوٓا۟ ءَامَنَّا وَهُمْ لَا يُفْتَنُونَ وَلَقَدْ فَتَنَّا ٱلَّذِينَ مِن قَبْلِهِمْ ۖ فَلَيَعْلَمَنَّ ٱللَّهُ ٱلَّذِينَ صَدَقُوا۟ وَلَيَعْلَمَنَّ ٱلْكَٰذِبِينَ",
+      "translation": "Do the people think that they will be left to say, \"We believe\" and they will not be tried? But We have certainly tried those before them, and Allah will surely make evident those who are truthful, and He will surely make evident the liars.",
+      "audio": "recitations/ay_tried.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 24.32,
+      "surahArabic": "سُورَةُ العَنكَبُوتِ",
+      "title": "Do People Think They Will Not Be Tested? | Quran 29:2-3"
+    },
+    {
+      "id": "ay_adornment",
+      "reference": "Quran 18:46",
+      "theme": "reflection",
+      "arabic": "ٱلْمَالُ وَٱلْبَنُونَ زِينَةُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱلْبَٰقِيَٰتُ ٱلصَّٰلِحَٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًۭا وَخَيْرٌ أَمَلًۭا",
+      "translation": "Wealth and children are but adornment of the worldly life. But the enduring good deeds are better to your Lord for reward and better for one's hope.",
+      "audio": "recitations/ay_adornment.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 14.87,
+      "surahArabic": "سُورَةُ الكَهۡفِ",
+      "title": "Wealth and Children Are Only Adornment | Quran 18:46"
+    },
+    {
+      "id": "ay_be",
+      "reference": "Quran 36:82",
+      "theme": "awe",
+      "arabic": "إِنَّمَآ أَمْرُهُۥٓ إِذَآ أَرَادَ شَيْـًٔا أَن يَقُولَ لَهُۥ كُن فَيَكُونُ",
+      "translation": "His command is only when He intends a thing that He says to it, \"Be,\" and it is.",
+      "audio": "recitations/ay_be.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 17.07,
+      "surahArabic": "سُورَةُ يسٓ",
+      "title": "\"Be,\" and It Is | Quran 36:82"
+    },
+    {
+      "id": "ay_greater",
+      "reference": "Quran 29:45",
+      "theme": "remembrance",
+      "arabic": "ٱتْلُ مَآ أُوحِىَ إِلَيْكَ مِنَ ٱلْكِتَٰبِ وَأَقِمِ ٱلصَّلَوٰةَ ۖ إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ ۗ وَلَذِكْرُ ٱللَّهِ أَكْبَرُ ۗ وَٱللَّهُ يَعْلَمُ مَا تَصْنَعُونَ",
+      "translation": "Recite, O Muhammad, what has been revealed to you of the Book and establish prayer. Indeed, prayer prohibits immorality and wrongdoing, and the remembrance of Allah is greater. And Allah knows that which you do.",
+      "audio": "recitations/ay_greater.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 21.82,
+      "surahArabic": "سُورَةُ العَنكَبُوتِ",
+      "title": "The Remembrance of Allah Is Greater | Quran 29:45"
+    },
+    {
+      "id": "ay_spouses",
+      "reference": "Quran 30:21",
+      "theme": "mercy",
+      "arabic": "وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًۭا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةًۭ وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍۢ لِّقَوْمٍۢ يَتَفَكَّرُونَ",
+      "translation": "And of His signs is that He created for you from yourselves mates that you may find tranquillity in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought.",
+      "audio": "recitations/ay_spouses.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 24.77,
+      "surahArabic": "سُورَةُ الرُّومِ",
+      "title": "He Placed Between You Affection and Mercy | Quran 30:21"
+    },
+    {
+      "id": "ay_living",
+      "reference": "Quran 6:162-163",
+      "theme": "devotion",
+      "arabic": "قُلْ إِنَّ صَلَاتِى وَنُسُكِى وَمَحْيَاىَ وَمَمَاتِى لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ لَا شَرِيكَ لَهُۥ ۖ وَبِذَٰلِكَ أُمِرْتُ وَأَنَا۠ أَوَّلُ ٱلْمُسْلِمِينَ",
+      "translation": "Say, \"Indeed, my prayer, my rites of sacrifice, my living and my dying are for Allah, Lord of the worlds. No partner has He. And this I have been commanded, and I am the first among you of the Muslims.\"",
+      "audio": "recitations/ay_living.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 15.91,
+      "surahArabic": "سُورَةُ الأَنۡعَامِ",
+      "title": "\"My Living and My Dying Are for Allah\" | Quran 6:162-163"
+    },
+    {
+      "id": "ay_tidings",
+      "reference": "Quran 41:30",
+      "theme": "hope",
+      "arabic": "إِنَّ ٱلَّذِينَ قَالُوا۟ رَبُّنَا ٱللَّهُ ثُمَّ ٱسْتَقَٰمُوا۟ تَتَنَزَّلُ عَلَيْهِمُ ٱلْمَلَٰٓئِكَةُ أَلَّا تَخَافُوا۟ وَلَا تَحْزَنُوا۟ وَأَبْشِرُوا۟ بِٱلْجَنَّةِ ٱلَّتِى كُنتُمْ تُوعَدُونَ",
+      "translation": "Indeed, those who have said, \"Our Lord is Allah \" and then remained on a right course - the angels will descend upon them, saying, \"Do not fear and do not grieve but receive good tidings of Paradise, which you were promised.",
+      "audio": "recitations/ay_tidings.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 28.12,
+      "surahArabic": "سُورَةُ فُصِّلَتۡ",
+      "title": "\"Do Not Fear and Do Not Grieve\" | Quran 41:30"
+    },
+    {
+      "id": "ay_owner",
+      "reference": "Quran 3:26",
+      "theme": "awe",
+      "arabic": "قُلِ ٱللَّهُمَّ مَٰلِكَ ٱلْمُلْكِ تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتَنزِعُ ٱلْمُلْكَ مِمَّن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ ۖ بِيَدِكَ ٱلْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
+      "translation": "Say, \"O Allah, Owner of Sovereignty, You give sovereignty to whom You will and You take sovereignty away from whom You will. You honor whom You will and You humble whom You will. In Your hand is all good. Indeed, You are over all things competent.",
+      "audio": "recitations/ay_owner.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 40.5,
+      "surahArabic": "سُورَةُ آلِ عِمۡرَانَ",
+      "title": "\"O Allah, Owner of Sovereignty\" | Quran 3:26"
+    },
+    {
+      "id": "ay_hereafter",
+      "reference": "Quran 87:16-17",
+      "theme": "reflection",
+      "arabic": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا وَٱلْءَاخِرَةُ خَيْرٌۭ وَأَبْقَىٰٓ",
+      "translation": "But you prefer the worldly life, While the Hereafter is better and more enduring.",
+      "audio": "recitations/ay_hereafter.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 7.44,
+      "surahArabic": "سُورَةُ الأَعۡلَىٰ",
+      "title": "The Hereafter Is Better and More Enduring | Quran 87:16-17"
+    },
+    {
+      "id": "ay_forgiver",
+      "reference": "Quran 20:82",
+      "theme": "forgiveness",
+      "arabic": "وَإِنِّى لَغَفَّارٌۭ لِّمَن تَابَ وَءَامَنَ وَعَمِلَ صَٰلِحًۭا ثُمَّ ٱهْتَدَىٰ",
+      "translation": "But indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness and then continues in guidance.",
+      "audio": "recitations/ay_forgiver.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 9.65,
+      "surahArabic": "سُورَةُ طه",
+      "title": "\"I Am the Perpetual Forgiver\" | Quran 20:82"
+    },
+    {
+      "id": "ay_guardian",
+      "reference": "Quran 15:9",
+      "theme": "awe",
+      "arabic": "إِنَّا نَحْنُ نَزَّلْنَا ٱلذِّكْرَ وَإِنَّا لَهُۥ لَحَٰفِظُونَ",
+      "translation": "Indeed, it is We who sent down the Qur'an and indeed, We will be its guardian.",
+      "audio": "recitations/ay_guardian.mp3",
+      "reciter": "Yasser Al-Dosari",
+      "durationSec": 8.03,
+      "surahArabic": "سُورَةُ الحِجۡرِ",
+      "title": "\"We Will Be Its Guardian\" | Quran 15:9"
     }
   ]
 }
