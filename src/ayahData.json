@@ -1,9 +1,47 @@
 {
-  "id": "ay_iam",
-  "arabic": "إِنَّنِىٓ أَنَا ٱللَّهُ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعْبُدْنِى وَأَقِمِ ٱلصَّلَوٰةَ لِذِكْرِىٓ",
-  "translation": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
-  "reference": "Quran 20:14",
-  "clipFile": "reflection/ay_iam.mp4",
-  "audioFile": "recitation/ay_iam.mp3",
-  "durationSec": 15.55
+  "id": "ay_kafirun",
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ لَآ أَعْبُدُ مَا تَعْبُدُونَ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+  "translation": "Say, \"O disbelievers, I do not worship what you worship. Nor are you worshippers of what I worship. Nor will I be a worshipper of what you worship. Nor will you be worshippers of what I worship. For you is your religion, and for me is my religion.\"",
+  "reference": "Quran 109:1-6",
+  "clipFile": "reflection/ay_kafirun.mp4",
+  "audioFile": "recitation/ay_kafirun.mp3",
+  "durationSec": 36.33,
+  "segments": [
+    {
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+      "translation": "Say, \"O disbelievers,",
+      "startSec": 0.0,
+      "endSec": 5.0
+    },
+    {
+      "arabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+      "translation": "I do not worship what you worship.",
+      "startSec": 5.0,
+      "endSec": 10.94
+    },
+    {
+      "arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      "translation": "Nor are you worshippers of what I worship.",
+      "startSec": 10.94,
+      "endSec": 17.63
+    },
+    {
+      "arabic": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
+      "translation": "Nor will I be a worshipper of what you worship.",
+      "startSec": 17.63,
+      "endSec": 23.46
+    },
+    {
+      "arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      "translation": "Nor will you be worshippers of what I worship.",
+      "startSec": 23.46,
+      "endSec": 30.0
+    },
+    {
+      "arabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+      "translation": "For you is your religion, and for me is my religion.\"",
+      "startSec": 30.0,
+      "endSec": 35.18
+    }
+  ]
 }
