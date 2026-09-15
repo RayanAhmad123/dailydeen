@@ -1,47 +1,9 @@
 {
-  "id": "ay_kafirun",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ لَآ أَعْبُدُ مَا تَعْبُدُونَ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
-  "translation": "Say, \"O disbelievers, I do not worship what you worship. Nor are you worshippers of what I worship. Nor will I be a worshipper of what you worship. Nor will you be worshippers of what I worship. For you is your religion, and for me is my religion.\"",
-  "reference": "Quran 109:1-6",
-  "clipFile": "reflection/ay_kafirun.mp4",
-  "audioFile": "recitation/ay_kafirun.mp3",
-  "durationSec": 36.33,
-  "segments": [
-    {
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
-      "translation": "Say, \"O disbelievers,",
-      "startSec": 0.0,
-      "endSec": 5.0
-    },
-    {
-      "arabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
-      "translation": "I do not worship what you worship.",
-      "startSec": 5.0,
-      "endSec": 10.94
-    },
-    {
-      "arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
-      "translation": "Nor are you worshippers of what I worship.",
-      "startSec": 10.94,
-      "endSec": 17.63
-    },
-    {
-      "arabic": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
-      "translation": "Nor will I be a worshipper of what you worship.",
-      "startSec": 17.63,
-      "endSec": 23.46
-    },
-    {
-      "arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
-      "translation": "Nor will you be worshippers of what I worship.",
-      "startSec": 23.46,
-      "endSec": 30.0
-    },
-    {
-      "arabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
-      "translation": "For you is your religion, and for me is my religion.\"",
-      "startSec": 30.0,
-      "endSec": 35.18
-    }
-  ]
+  "id": "ay_nasr",
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًۭا فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+  "translation": "When the victory of Allah has come and the conquest, And you see the people entering into the religion of Allah in multitudes, Then exalt Him with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance.",
+  "reference": "Quran 110:1-3",
+  "clipFile": "reflection/ay_nasr.mp4",
+  "audioFile": "recitation/ay_nasr.mp3",
+  "durationSec": 21.18
 }

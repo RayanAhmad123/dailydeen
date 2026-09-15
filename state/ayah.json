@@ -71,7 +71,8 @@
     "ay_taste",
     "ay_play",
     "ay_iam",
-    "ay_kafirun"
+    "ay_kafirun",
+    "ay_nasr"
   ],
   "used_clips": [
     "f11",
@@ -86,8 +87,9 @@
     "f7",
     "f12"
   ],
-  "last": "ay_kafirun",
+  "last": "ay_nasr",
   "meta_lang": {
-    "ay_kafirun": "en"
+    "ay_kafirun": "en",
+    "ay_nasr": "ar"
   }
 }
