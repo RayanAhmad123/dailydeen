@@ -72,7 +72,8 @@
     "ay_play",
     "ay_iam",
     "ay_kafirun",
-    "ay_nasr"
+    "ay_nasr",
+    "ay_alaq"
   ],
   "used_clips": [
     "f11",
@@ -87,9 +88,10 @@
     "f7",
     "f12"
   ],
-  "last": "ay_nasr",
+  "last": "ay_alaq",
   "meta_lang": {
     "ay_kafirun": "en",
-    "ay_nasr": "ar"
+    "ay_nasr": "ar",
+    "ay_alaq": "en"
   }
 }
