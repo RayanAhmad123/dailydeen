@@ -76,7 +76,8 @@
     "ay_alaq",
     "ay_fil",
     "ay_hashr",
-    "ay_yunus"
+    "ay_yunus",
+    "ay_ayyub"
   ],
   "used_clips": [
     "f11",
@@ -91,13 +92,14 @@
     "f7",
     "f12"
   ],
-  "last": "ay_yunus",
+  "last": "ay_ayyub",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
     "ay_alaq": "en",
     "ay_fil": "ar",
     "ay_hashr": "en",
-    "ay_yunus": "ar"
+    "ay_yunus": "ar",
+    "ay_ayyub": "en"
   }
 }
