@@ -78,7 +78,8 @@
     "ay_hashr",
     "ay_yunus",
     "ay_ayyub",
-    "ay_musa"
+    "ay_musa",
+    "ay_need"
   ],
   "used_clips": [
     "f11",
@@ -93,7 +94,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_musa",
+  "last": "ay_need",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -102,6 +103,7 @@
     "ay_hashr": "en",
     "ay_yunus": "ar",
     "ay_ayyub": "en",
-    "ay_musa": "ar"
+    "ay_musa": "ar",
+    "ay_need": "en"
   }
 }
