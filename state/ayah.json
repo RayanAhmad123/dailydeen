@@ -79,7 +79,8 @@
     "ay_yunus",
     "ay_ayyub",
     "ay_musa",
-    "ay_need"
+    "ay_need",
+    "ay_complain"
   ],
   "used_clips": [
     "f11",
@@ -94,7 +95,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_need",
+  "last": "ay_complain",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -104,6 +105,7 @@
     "ay_yunus": "ar",
     "ay_ayyub": "en",
     "ay_musa": "ar",
-    "ay_need": "en"
+    "ay_need": "en",
+    "ay_complain": "ar"
   }
 }
