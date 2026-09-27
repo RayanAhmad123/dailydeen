@@ -1,9 +1,9 @@
 {
-  "id": "ay_cure",
-  "arabic": "ٱلَّذِى خَلَقَنِى فَهُوَ يَهْدِينِ وَٱلَّذِى هُوَ يُطْعِمُنِى وَيَسْقِينِ وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
-  "translation": "Who created me, and He it is who guides me. And it is He who feeds me and gives me drink. And when I am ill, it is He who cures me",
-  "reference": "Quran 26:78-80",
-  "clipFile": "reflection/ay_cure.mp4",
-  "audioFile": "recitation/ay_cure.mp3",
-  "durationSec": 16.17
+  "id": "ay_support",
+  "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِن تَنصُرُوا۟ ٱللَّهَ يَنصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ",
+  "translation": "O you who have believed, if you support Allah, He will support you and plant firmly your feet.",
+  "reference": "Quran 47:7",
+  "clipFile": "reflection/ay_support.mp4",
+  "audioFile": "recitation/ay_support.mp3",
+  "durationSec": 18.45
 }

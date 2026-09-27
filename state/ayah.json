@@ -83,7 +83,8 @@
     "ay_complain",
     "ay_relief",
     "ay_cave",
-    "ay_cure"
+    "ay_cure",
+    "ay_support"
   ],
   "used_clips": [
     "f11",
@@ -98,7 +99,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_cure",
+  "last": "ay_support",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -112,6 +113,7 @@
     "ay_complain": "ar",
     "ay_relief": "en",
     "ay_cave": "ar",
-    "ay_cure": "en"
+    "ay_cure": "en",
+    "ay_support": "ar"
   }
 }
