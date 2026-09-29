@@ -85,7 +85,8 @@
     "ay_cave",
     "ay_cure",
     "ay_support",
-    "ay_decree"
+    "ay_decree",
+    "ay_sufficient"
   ],
   "used_clips": [
     "f11",
@@ -100,7 +101,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_decree",
+  "last": "ay_sufficient",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -116,6 +117,7 @@
     "ay_cave": "ar",
     "ay_cure": "en",
     "ay_support": "ar",
-    "ay_decree": "en"
+    "ay_decree": "en",
+    "ay_sufficient": "ar"
   }
 }
