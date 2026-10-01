@@ -87,7 +87,8 @@
     "ay_support",
     "ay_decree",
     "ay_sufficient",
-    "ay_nofear"
+    "ay_nofear",
+    "ay_healing"
   ],
   "used_clips": [
     "f11",
@@ -102,7 +103,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_nofear",
+  "last": "ay_healing",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -120,6 +121,7 @@
     "ay_support": "ar",
     "ay_decree": "en",
     "ay_sufficient": "ar",
-    "ay_nofear": "en"
+    "ay_nofear": "en",
+    "ay_healing": "ar"
   }
 }
