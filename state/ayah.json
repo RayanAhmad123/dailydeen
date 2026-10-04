@@ -90,7 +90,8 @@
     "ay_nofear",
     "ay_healing",
     "ay_respond",
-    "ay_perish"
+    "ay_perish",
+    "ay_tried"
   ],
   "used_clips": [
     "f11",
@@ -105,7 +106,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_perish",
+  "last": "ay_tried",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -126,6 +127,7 @@
     "ay_nofear": "en",
     "ay_healing": "ar",
     "ay_respond": "en",
-    "ay_perish": "ar"
+    "ay_perish": "ar",
+    "ay_tried": "en"
   }
 }
