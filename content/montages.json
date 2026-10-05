@@ -1376,6 +1376,490 @@
           "take": 9.53
         }
       ]
+    },
+    {
+      "id": "ay_adam",
+      "note": "forgiveness: f3 -> f19 (auto-planned 2026-10-06, target 16.49s)",
+      "shots": [
+        {
+          "clip": "f3",
+          "take": 7.7
+        },
+        {
+          "clip": "f19",
+          "take": 10.09
+        }
+      ]
+    },
+    {
+      "id": "ay_deceived",
+      "note": "purpose: f17 -> f15 (auto-planned 2026-10-06, target 25.86s)",
+      "shots": [
+        {
+          "clip": "f17",
+          "take": 18.0
+        },
+        {
+          "clip": "f15",
+          "take": 9.16
+        }
+      ]
+    },
+    {
+      "id": "ay_qariah",
+      "note": "reflection: f23 -> f22 -> f29 -> f30 -> f13 (auto-planned 2026-10-06, target 50.36s)",
+      "shots": [
+        {
+          "clip": "f23",
+          "take": 18.0
+        },
+        {
+          "clip": "f22",
+          "take": 7.1
+        },
+        {
+          "clip": "f29",
+          "take": 8.23
+        },
+        {
+          "clip": "f30",
+          "take": 8.39
+        },
+        {
+          "clip": "f13",
+          "take": 12.94
+        }
+      ]
+    },
+    {
+      "id": "ay_eyes",
+      "note": "reassurance: f14 (auto-planned 2026-10-06, target 11.32s)",
+      "shots": [
+        {
+          "clip": "f14",
+          "take": 11.62
+        }
+      ]
+    },
+    {
+      "id": "ay_wherever",
+      "note": "awe: f18 -> f28 (auto-planned 2026-10-06, target 16.52s)",
+      "shots": [
+        {
+          "clip": "f18",
+          "take": 14.4
+        },
+        {
+          "clip": "f28",
+          "take": 3.42
+        }
+      ]
+    },
+    {
+      "id": "ay_zakariya",
+      "note": "hope: f11 -> f27 -> f7 (auto-planned 2026-10-06, target 19.91s)",
+      "shots": [
+        {
+          "clip": "f11",
+          "take": 6.5
+        },
+        {
+          "clip": "f27",
+          "take": 7.43
+        },
+        {
+          "clip": "f7",
+          "take": 8.28
+        }
+      ]
+    },
+    {
+      "id": "ay_twoways",
+      "note": "purpose: f17 (auto-planned 2026-10-06, target 12.54s)",
+      "shots": [
+        {
+          "clip": "f17",
+          "take": 12.84
+        }
+      ]
+    },
+    {
+      "id": "ay_maun",
+      "note": "character: f5 -> f16 -> f6 -> f7 (auto-planned 2026-10-06, target 27.24s)",
+      "shots": [
+        {
+          "clip": "f5",
+          "take": 11.3
+        },
+        {
+          "clip": "f16",
+          "take": 10.8
+        },
+        {
+          "clip": "f6",
+          "take": 6.3
+        },
+        {
+          "clip": "f7",
+          "take": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ay_dunya",
+      "note": "hope: f9 -> f12 -> f14 (auto-planned 2026-10-06, target 26.26s)",
+      "shots": [
+        {
+          "clip": "f9",
+          "take": 6.1
+        },
+        {
+          "clip": "f12",
+          "take": 7.1
+        },
+        {
+          "clip": "f14",
+          "take": 15.36
+        }
+      ]
+    },
+    {
+      "id": "ay_needallah",
+      "note": "faith: f32 -> f2 (auto-planned 2026-10-06, target 18.47s)",
+      "shots": [
+        {
+          "clip": "f32",
+          "take": 10.46
+        },
+        {
+          "clip": "f2",
+          "take": 9.31
+        }
+      ]
+    },
+    {
+      "id": "ay_ala",
+      "note": "remembrance: f24 -> f19 (auto-planned 2026-10-06, target 8.78s)",
+      "shots": [
+        {
+          "clip": "f24",
+          "take": 8.24
+        },
+        {
+          "clip": "f19",
+          "take": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ay_sulayman",
+      "note": "gratitude: f9 -> f12 -> f22 -> f29 -> f27 (auto-planned 2026-10-06, target 29.13s)",
+      "shots": [
+        {
+          "clip": "f9",
+          "take": 6.1
+        },
+        {
+          "clip": "f12",
+          "take": 7.1
+        },
+        {
+          "clip": "f22",
+          "take": 7.1
+        },
+        {
+          "clip": "f29",
+          "take": 8.23
+        },
+        {
+          "clip": "f27",
+          "take": 4.9
+        }
+      ]
+    },
+    {
+      "id": "ay_purify",
+      "note": "character: f5 -> f23 (auto-planned 2026-10-06, target 16.04s)",
+      "shots": [
+        {
+          "clip": "f5",
+          "take": 11.3
+        },
+        {
+          "clip": "f23",
+          "take": 6.04
+        }
+      ]
+    },
+    {
+      "id": "ay_adiyat",
+      "note": "reflection: f15 -> f30 -> f13 -> f17 -> f23 (auto-planned 2026-10-06, target 49.29s)",
+      "shots": [
+        {
+          "clip": "f15",
+          "take": 9.8
+        },
+        {
+          "clip": "f30",
+          "take": 8.39
+        },
+        {
+          "clip": "f13",
+          "take": 14.39
+        },
+        {
+          "clip": "f17",
+          "take": 18.0
+        },
+        {
+          "clip": "f23",
+          "take": 3.01
+        }
+      ]
+    },
+    {
+      "id": "ay_easeway",
+      "note": "hope: f11 -> f14 (auto-planned 2026-10-06, target 9.74s)",
+      "shots": [
+        {
+          "clip": "f11",
+          "take": 6.5
+        },
+        {
+          "clip": "f14",
+          "take": 4.54
+        }
+      ]
+    },
+    {
+      "id": "ay_ink",
+      "note": "awe: f18 -> f28 (auto-planned 2026-10-06, target 15.0s)",
+      "shots": [
+        {
+          "clip": "f18",
+          "take": 14.4
+        },
+        {
+          "clip": "f28",
+          "take": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ay_ibrahim",
+      "note": "devotion: f21 -> f32 -> f2 (auto-planned 2026-10-06, target 20.06s)",
+      "shots": [
+        {
+          "clip": "f21",
+          "take": 8.7
+        },
+        {
+          "clip": "f32",
+          "take": 10.46
+        },
+        {
+          "clip": "f2",
+          "take": 3.2
+        }
+      ]
+    },
+    {
+      "id": "ay_laboring",
+      "note": "purpose: f15 -> f13 (auto-planned 2026-10-06, target 12.57s)",
+      "shots": [
+        {
+          "clip": "f15",
+          "take": 9.8
+        },
+        {
+          "clip": "f13",
+          "take": 4.07
+        }
+      ]
+    },
+    {
+      "id": "ay_luqman",
+      "note": "character: f16 -> f6 -> f5 (auto-planned 2026-10-06, target 20.98s)",
+      "shots": [
+        {
+          "clip": "f16",
+          "take": 10.8
+        },
+        {
+          "clip": "f6",
+          "take": 6.3
+        },
+        {
+          "clip": "f5",
+          "take": 6.18
+        }
+      ]
+    },
+    {
+      "id": "ay_comfort",
+      "note": "mercy: f9 -> f27 -> f12 (auto-planned 2026-10-06, target 15.6s)",
+      "shots": [
+        {
+          "clip": "f9",
+          "take": 6.1
+        },
+        {
+          "clip": "f27",
+          "take": 7.43
+        },
+        {
+          "clip": "f12",
+          "take": 4.37
+        }
+      ]
+    },
+    {
+      "id": "ay_knows",
+      "note": "awe: f24 -> f18 (auto-planned 2026-10-06, target 15.75s)",
+      "shots": [
+        {
+          "clip": "f24",
+          "take": 8.24
+        },
+        {
+          "clip": "f18",
+          "take": 8.81
+        }
+      ]
+    },
+    {
+      "id": "ay_anxious",
+      "note": "reflection: f22 -> f29 -> f30 -> f17 (auto-planned 2026-10-06, target 23.17s)",
+      "shots": [
+        {
+          "clip": "f22",
+          "take": 7.1
+        },
+        {
+          "clip": "f29",
+          "take": 8.23
+        },
+        {
+          "clip": "f30",
+          "take": 8.39
+        },
+        {
+          "clip": "f17",
+          "take": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ay_yusuf",
+      "note": "trust: f18 -> f14 (auto-planned 2026-10-06, target 22.55s)",
+      "shots": [
+        {
+          "clip": "f18",
+          "take": 14.4
+        },
+        {
+          "clip": "f14",
+          "take": 9.45
+        }
+      ]
+    },
+    {
+      "id": "ay_devote",
+      "note": "remembrance: f3 (auto-planned 2026-10-06, target 6.2s)",
+      "shots": [
+        {
+          "clip": "f3",
+          "take": 6.5
+        }
+      ]
+    },
+    {
+      "id": "ay_tomorrow",
+      "note": "reflection: f15 -> f23 -> f22 (auto-planned 2026-10-06, target 28.17s)",
+      "shots": [
+        {
+          "clip": "f15",
+          "take": 9.8
+        },
+        {
+          "clip": "f23",
+          "take": 18.0
+        },
+        {
+          "clip": "f22",
+          "take": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ay_love",
+      "note": "devotion: f21 -> f32 (auto-planned 2026-10-06, target 16.83s)",
+      "shots": [
+        {
+          "clip": "f21",
+          "take": 8.7
+        },
+        {
+          "clip": "f32",
+          "take": 9.43
+        }
+      ]
+    },
+    {
+      "id": "ay_entrance",
+      "note": "trust: f13 -> f5 (auto-planned 2026-10-06, target 15.18s)",
+      "shots": [
+        {
+          "clip": "f13",
+          "take": 14.39
+        },
+        {
+          "clip": "f5",
+          "take": 3.0
+        }
+      ]
+    },
+    {
+      "id": "ay_turnaway",
+      "note": "remembrance: f19 -> f3 (auto-planned 2026-10-06, target 13.85s)",
+      "shots": [
+        {
+          "clip": "f19",
+          "take": 12.1
+        },
+        {
+          "clip": "f3",
+          "take": 3.05
+        }
+      ]
+    },
+    {
+      "id": "ay_accept",
+      "note": "devotion: f21 -> f2 (auto-planned 2026-10-06, target 16.31s)",
+      "shots": [
+        {
+          "clip": "f21",
+          "take": 8.7
+        },
+        {
+          "clip": "f2",
+          "take": 8.91
+        }
+      ]
+    },
+    {
+      "id": "ay_forgivemercy",
+      "note": "forgiveness: f16 -> f3 (auto-planned 2026-10-06, target 11.13s)",
+      "shots": [
+        {
+          "clip": "f16",
+          "take": 10.8
+        },
+        {
+          "clip": "f3",
+          "take": 3.0
+        }
+      ]
     }
   ]
 }

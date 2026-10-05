@@ -109,6 +109,12 @@ jobs:
           tar -xzf /tmp/cloud-assets/prerendered.tar.gz -C assets
           ls assets/recitations assets/prerendered
 
+      # Bank topped up in git but the tarball not re-uploaded yet: fetch just the
+      # next ayah's recitation (same source/concat as fetch_ayat.py). Without a
+      # prerendered montage the video renders without background footage.
+      - name: Fetch a recitation missing from the release
+        run: python3 scripts/ensure_recitations.py
+
       - name: Build ayah props (fails when the bank is exhausted)
         run: python3 scripts/build_ayah.py
 
