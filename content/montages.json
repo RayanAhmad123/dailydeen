@@ -1485,10 +1485,10 @@
     },
     {
       "id": "ay_maun",
-      "note": "character: f5 -> f16 -> f6 -> f7 (auto-planned 2026-10-06, target 27.24s)",
+      "note": "character: f23 -> f16 -> f6 -> f7 (auto-planned 2026-10-06, f5 swapped out at frame review: close tourists under the text; target 27.24s)",
       "shots": [
         {
-          "clip": "f5",
+          "clip": "f23",
           "take": 11.3
         },
         {
@@ -1579,15 +1579,15 @@
     },
     {
       "id": "ay_purify",
-      "note": "character: f5 -> f23 (auto-planned 2026-10-06, target 16.04s)",
+      "note": "character: f16 -> f23 (auto-planned 2026-10-06, f5 swapped out at frame review: close tourists under the text; target 16.04s)",
       "shots": [
         {
-          "clip": "f5",
-          "take": 11.3
+          "clip": "f16",
+          "take": 10.8
         },
         {
           "clip": "f23",
-          "take": 6.04
+          "take": 6.54
         }
       ]
     },
@@ -1679,7 +1679,7 @@
     },
     {
       "id": "ay_luqman",
-      "note": "character: f16 -> f6 -> f5 (auto-planned 2026-10-06, target 20.98s)",
+      "note": "character: f16 -> f6 -> f7 (auto-planned 2026-10-06, f5 swapped out at frame review: close tourists under the text; target 20.98s)",
       "shots": [
         {
           "clip": "f16",
@@ -1690,7 +1690,7 @@
           "take": 6.3
         },
         {
-          "clip": "f5",
+          "clip": "f7",
           "take": 6.18
         }
       ]
@@ -1807,14 +1807,14 @@
     },
     {
       "id": "ay_entrance",
-      "note": "trust: f13 -> f5 (auto-planned 2026-10-06, target 15.18s)",
+      "note": "trust: f13 -> f28 (auto-planned 2026-10-06, f5 swapped out at frame review: close tourists under the text; target 15.18s)",
       "shots": [
         {
           "clip": "f13",
           "take": 14.39
         },
         {
-          "clip": "f5",
+          "clip": "f28",
           "take": 3.0
         }
       ]
