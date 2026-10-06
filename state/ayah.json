@@ -92,7 +92,8 @@
     "ay_respond",
     "ay_perish",
     "ay_tried",
-    "ay_adornment"
+    "ay_adornment",
+    "ay_be"
   ],
   "used_clips": [
     "f11",
@@ -107,7 +108,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_adornment",
+  "last": "ay_be",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -130,6 +131,7 @@
     "ay_respond": "en",
     "ay_perish": "ar",
     "ay_tried": "en",
-    "ay_adornment": "ar"
+    "ay_adornment": "ar",
+    "ay_be": "en"
   }
 }
