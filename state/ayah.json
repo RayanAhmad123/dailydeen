@@ -97,7 +97,8 @@
     "ay_greater",
     "ay_spouses",
     "ay_living",
-    "ay_tidings"
+    "ay_tidings",
+    "ay_owner"
   ],
   "used_clips": [
     "f11",
@@ -112,7 +113,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_tidings",
+  "last": "ay_owner",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -140,6 +141,7 @@
     "ay_greater": "ar",
     "ay_spouses": "en",
     "ay_living": "ar",
-    "ay_tidings": "en"
+    "ay_tidings": "en",
+    "ay_owner": "ar"
   }
 }
