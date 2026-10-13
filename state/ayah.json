@@ -99,7 +99,8 @@
     "ay_living",
     "ay_tidings",
     "ay_owner",
-    "ay_hereafter"
+    "ay_hereafter",
+    "ay_forgiver"
   ],
   "used_clips": [
     "f11",
@@ -114,7 +115,7 @@
     "f7",
     "f12"
   ],
-  "last": "ay_hereafter",
+  "last": "ay_forgiver",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -144,6 +145,7 @@
     "ay_living": "ar",
     "ay_tidings": "en",
     "ay_owner": "ar",
-    "ay_hereafter": "en"
+    "ay_hereafter": "en",
+    "ay_forgiver": "ar"
   }
 }
