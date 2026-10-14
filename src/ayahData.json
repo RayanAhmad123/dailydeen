@@ -1,9 +1,9 @@
 {
-  "id": "ay_forgiver",
-  "arabic": "وَإِنِّى لَغَفَّارٌۭ لِّمَن تَابَ وَءَامَنَ وَعَمِلَ صَٰلِحًۭا ثُمَّ ٱهْتَدَىٰ",
-  "translation": "But indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness and then continues in guidance.",
-  "reference": "Quran 20:82",
-  "clipFile": "reflection/ay_forgiver.mp4",
-  "audioFile": "recitation/ay_forgiver.mp3",
-  "durationSec": 10.85
+  "id": "ay_guardian",
+  "arabic": "إِنَّا نَحْنُ نَزَّلْنَا ٱلذِّكْرَ وَإِنَّا لَهُۥ لَحَٰفِظُونَ",
+  "translation": "Indeed, it is We who sent down the Qur'an and indeed, We will be its guardian.",
+  "reference": "Quran 15:9",
+  "clipFile": "reflection/ay_guardian.mp4",
+  "audioFile": "recitation/ay_guardian.mp3",
+  "durationSec": 9.23
 }
