@@ -1,9 +1,9 @@
 {
-  "id": "ay_guardian",
-  "arabic": "إِنَّا نَحْنُ نَزَّلْنَا ٱلذِّكْرَ وَإِنَّا لَهُۥ لَحَٰفِظُونَ",
-  "translation": "Indeed, it is We who sent down the Qur'an and indeed, We will be its guardian.",
-  "reference": "Quran 15:9",
-  "clipFile": "reflection/ay_guardian.mp4",
-  "audioFile": "recitation/ay_guardian.mp3",
-  "durationSec": 9.23
+  "id": "ay_adam",
+  "arabic": "قَالَا رَبَّنَا ظَلَمْنَآ أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ ٱلْخَٰسِرِينَ",
+  "translation": "They said, \"Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.\"",
+  "reference": "Quran 7:23",
+  "clipFile": null,
+  "audioFile": "recitation/ay_adam.mp3",
+  "durationSec": 16.49
 }

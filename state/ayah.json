@@ -101,7 +101,8 @@
     "ay_owner",
     "ay_hereafter",
     "ay_forgiver",
-    "ay_guardian"
+    "ay_guardian",
+    "ay_adam"
   ],
   "used_clips": [
     "f11",
@@ -114,9 +115,10 @@
     "f5",
     "f6",
     "f7",
-    "f12"
+    "f12",
+    "f10"
   ],
-  "last": "ay_guardian",
+  "last": "ay_adam",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -148,6 +150,7 @@
     "ay_owner": "ar",
     "ay_hereafter": "en",
     "ay_forgiver": "ar",
-    "ay_guardian": "en"
+    "ay_guardian": "en",
+    "ay_adam": "ar"
   }
 }
