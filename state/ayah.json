@@ -103,7 +103,8 @@
     "ay_forgiver",
     "ay_guardian",
     "ay_adam",
-    "ay_deceived"
+    "ay_deceived",
+    "ay_qariah"
   ],
   "used_clips": [
     "f11",
@@ -118,9 +119,10 @@
     "f7",
     "f12",
     "f10",
-    "f13"
+    "f13",
+    "f14"
   ],
-  "last": "ay_deceived",
+  "last": "ay_qariah",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -154,6 +156,7 @@
     "ay_forgiver": "ar",
     "ay_guardian": "en",
     "ay_adam": "ar",
-    "ay_deceived": "en"
+    "ay_deceived": "en",
+    "ay_qariah": "ar"
   }
 }
