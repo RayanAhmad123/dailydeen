@@ -1,77 +1,9 @@
 {
-  "id": "ay_qariah",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ مَا ٱلْقَارِعَةُ وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ فَأُمُّهُۥ هَاوِيَةٌۭ وَمَآ أَدْرَىٰكَ مَا هِيَهْ نَارٌ حَامِيَةٌۢ",
-  "translation": "The Striking Calamity - What is the Striking Calamity? And what can make you know what is the Striking Calamity? It is the Day when people will be like moths, dispersed, And the mountains will be like wool, fluffed up. Then as for one whose scales are heavy with good deeds, He will be in a pleasant life. But as for one whose scales are light, His refuge will be an abyss. And what can make you know what that is? It is a Fire, intensely hot.",
-  "reference": "Quran 101:1-11",
+  "id": "ay_eyes",
+  "arabic": "وَٱصْبِرْ لِحُكْمِ رَبِّكَ فَإِنَّكَ بِأَعْيُنِنَا ۖ وَسَبِّحْ بِحَمْدِ رَبِّكَ حِينَ تَقُومُ",
+  "translation": "And be patient, O Muhammad, for the decision of your Lord, for indeed, you are in Our eyes. And exalt Allah with praise of your Lord when you arise.",
+  "reference": "Quran 52:48",
   "clipFile": null,
-  "audioFile": "recitation/ay_qariah.mp3",
-  "durationSec": 50.36,
-  "segments": [
-    {
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
-      "translation": "The Striking Calamity -",
-      "startSec": 0.0,
-      "endSec": 1.94
-    },
-    {
-      "arabic": "مَا ٱلْقَارِعَةُ",
-      "translation": "What is the Striking Calamity?",
-      "startSec": 1.94,
-      "endSec": 3.91
-    },
-    {
-      "arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
-      "translation": "And what can make you know what is the Striking Calamity?",
-      "startSec": 3.91,
-      "endSec": 10.45
-    },
-    {
-      "arabic": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
-      "translation": "It is the Day when people will be like moths, dispersed,",
-      "startSec": 10.45,
-      "endSec": 17.25
-    },
-    {
-      "arabic": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
-      "translation": "And the mountains will be like wool, fluffed up.",
-      "startSec": 17.25,
-      "endSec": 23.63
-    },
-    {
-      "arabic": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
-      "translation": "Then as for one whose scales are heavy with good deeds,",
-      "startSec": 23.63,
-      "endSec": 28.63
-    },
-    {
-      "arabic": "فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ",
-      "translation": "He will be in a pleasant life.",
-      "startSec": 28.63,
-      "endSec": 31.95
-    },
-    {
-      "arabic": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
-      "translation": "But as for one whose scales are light,",
-      "startSec": 31.95,
-      "endSec": 36.17
-    },
-    {
-      "arabic": "فَأُمُّهُۥ هَاوِيَةٌۭ",
-      "translation": "His refuge will be an abyss.",
-      "startSec": 36.17,
-      "endSec": 39.96
-    },
-    {
-      "arabic": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
-      "translation": "And what can make you know what that is?",
-      "startSec": 39.96,
-      "endSec": 46.19
-    },
-    {
-      "arabic": "نَارٌ حَامِيَةٌۢ",
-      "translation": "It is a Fire, intensely hot.",
-      "startSec": 46.19,
-      "endSec": 49.25
-    }
-  ]
+  "audioFile": "recitation/ay_eyes.mp3",
+  "durationSec": 11.32
 }
