@@ -105,7 +105,8 @@
     "ay_adam",
     "ay_deceived",
     "ay_qariah",
-    "ay_eyes"
+    "ay_eyes",
+    "ay_wherever"
   ],
   "used_clips": [
     "f11",
@@ -122,9 +123,10 @@
     "f10",
     "f13",
     "f14",
-    "f15"
+    "f15",
+    "f18"
   ],
-  "last": "ay_eyes",
+  "last": "ay_wherever",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -160,6 +162,7 @@
     "ay_adam": "ar",
     "ay_deceived": "en",
     "ay_qariah": "ar",
-    "ay_eyes": "en"
+    "ay_eyes": "en",
+    "ay_wherever": "ar"
   }
 }
