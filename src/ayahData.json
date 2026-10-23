@@ -1,53 +1,9 @@
 {
-  "id": "ay_maun",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ فَوَيْلٌۭ لِّلْمُصَلِّينَ ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ ٱلَّذِينَ هُمْ يُرَآءُونَ وَيَمْنَعُونَ ٱلْمَاعُونَ",
-  "translation": "Have you seen the one who denies the Recompense? For that is the one who drives away the orphan And does not encourage the feeding of the poor. So woe to those who pray But who are heedless of their prayer - Those who make show of their deeds And withhold simple assistance.",
-  "reference": "Quran 107:1-7",
+  "id": "ay_dunya",
+  "arabic": "وَمِنْهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةًۭ وَفِى ٱلْءَاخِرَةِ حَسَنَةًۭ وَقِنَا عَذَابَ ٱلنَّارِ",
+  "translation": "But among them is he who says, \"Our Lord, give us in this world that which is good and in the Hereafter that which is good and protect us from the punishment of the Fire.\"",
+  "reference": "Quran 2:201",
   "clipFile": null,
-  "audioFile": "recitation/ay_maun.mp3",
-  "durationSec": 27.24,
-  "segments": [
-    {
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
-      "translation": "Have you seen the one who denies the Recompense?",
-      "startSec": 0.0,
-      "endSec": 3.77
-    },
-    {
-      "arabic": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
-      "translation": "For that is the one who drives away the orphan",
-      "startSec": 3.77,
-      "endSec": 7.28
-    },
-    {
-      "arabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
-      "translation": "And does not encourage the feeding of the poor.",
-      "startSec": 7.28,
-      "endSec": 11.31
-    },
-    {
-      "arabic": "فَوَيْلٌۭ لِّلْمُصَلِّينَ",
-      "translation": "So woe to those who pray",
-      "startSec": 11.31,
-      "endSec": 13.62
-    },
-    {
-      "arabic": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
-      "translation": "But who are heedless of their prayer -",
-      "startSec": 13.62,
-      "endSec": 18.43
-    },
-    {
-      "arabic": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
-      "translation": "Those who make show of their deeds",
-      "startSec": 18.43,
-      "endSec": 22.83
-    },
-    {
-      "arabic": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
-      "translation": "And withhold simple assistance.",
-      "startSec": 22.83,
-      "endSec": 26.1
-    }
-  ]
+  "audioFile": "recitation/ay_dunya.mp3",
+  "durationSec": 26.26
 }
