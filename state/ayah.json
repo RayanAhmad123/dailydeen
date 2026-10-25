@@ -111,7 +111,8 @@
     "ay_twoways",
     "ay_maun",
     "ay_dunya",
-    "ay_needallah"
+    "ay_needallah",
+    "ay_ala"
   ],
   "used_clips": [
     "f11",
@@ -134,9 +135,10 @@
     "f17",
     "f19",
     "f20",
-    "f21"
+    "f21",
+    "f22"
   ],
-  "last": "ay_needallah",
+  "last": "ay_ala",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -178,6 +180,7 @@
     "ay_twoways": "ar",
     "ay_maun": "en",
     "ay_dunya": "ar",
-    "ay_needallah": "en"
+    "ay_needallah": "en",
+    "ay_ala": "ar"
   }
 }
