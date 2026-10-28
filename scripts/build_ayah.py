@@ -3,6 +3,10 @@
 recitation into public/, trim/rotate/mute the footage to 9:16 looped to the
 recitation length, and write src/ayahData.json + upload metadata.
 
+Footage, in order: the ayah's pre-rendered montage (cloud-assets release) ->
+a raw clip from the local footage library -> in CI, existing montages re-cut
+to length (reuse_montage), with a weekly alert until the real ones are uploaded.
+
 The recitation is baked into the render (via the composition's <Audio>), so the
 video posts directly with sound — no in-app audio step.
 
@@ -21,7 +25,15 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_reflection import trim_clip, pick_clip  # shared footage helpers
 
-TAIL_SEC = 1.2  # hold after the recitation ends
+# Hold after the recitation ends. Was 1.2s with the text fading out — an "it's
+# over" signal that broke the Shorts loop (every replay counts as a view since
+# 2025-03-31). Now a short breath, text stays up, and the loop restarts cleanly.
+TAIL_SEC = 0.4  # keep in sync with build_montages.py
+# CI fallback when an ayah has no pre-rendered montage (see reuse_montage).
+REUSE_REST = 21         # skip montages whose own video went out in the last N runs
+FADE_SEC = 1.0          # crossfade between chained montages (same as build_montages.py)
+MAX_REUSE_SHOTS = 6     # montages chained at most for one long recitation
+FOOTAGE_ALERT_DAYS = 7  # fail the run (-> email) at most once a week for the fallback
 HASHTAGS = ["islam", "quran", "recitation", "islamicreminders", "muslim", "deen", "shorts"]
 # Comments are the channel's untapped signal (2026-08-14 analysis: 0-3 comments
 # per video despite 8-23% like rates) — every caption asks for a reply the viewer
@@ -67,8 +79,11 @@ def strip_tashkeel(s):
 
 
 def meta_lang(state):
+    # Decided 2026-10-28: Arabic-first won the 09-13..10-25 A/B (median 918 vs 623
+    # YouTube views, ~1K reached 52% vs 23% of the time, ~21 videos per arm), so
+    # it's the default. "ab" re-runs the alternation, "en" forces English.
     import os
-    forced = os.environ.get("AYAH_META_LANG", "ab").lower()
+    forced = os.environ.get("AYAH_META_LANG", "ar").lower()
     if forced in ("ar", "en"):
         return forced
     return "ar" if len(state.get("used", [])) % 2 == 0 else "en"
@@ -166,12 +181,114 @@ def make_segments(ayah):
         return None
 
 
+def probe_duration(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                        "-of", "csv=p=0", str(path)], capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return 0.0
+
+
+def reuse_montage(vid, theme, dur, ayat, state, out):
+    """CI fallback for an ayah with no pre-rendered montage (bank topped up in git,
+    cloud-assets release not re-uploaded): re-cut montages that DO exist rather
+    than post text on a blank background — 14 videos went out like that
+    2026-10-15..10-28 before anyone noticed. Prefers the least-reused montage,
+    the same theme, one whose own video is not recent, and one long enough to
+    cover the recitation; otherwise chains the next best with the usual 1s
+    crossfade. Writes `out` and returns the montage ids used ([] = nothing usable)."""
+    pre_dir = ROOT / "assets" / "prerendered"
+    if not pre_dir.exists():
+        return []
+    themes = {a["id"]: a.get("theme") for a in ayat}
+    recent = set(state.get("used", [])[-REUSE_REST:])
+    reuse = state.get("montage_reuse", {})
+    cands = []
+    for p in sorted(pre_dir.glob("*.mp4")):
+        if p.name.startswith(".") or p.stem == vid:  # skip macOS ._ resource forks
+            continue
+        d = probe_duration(p)
+        if d < 3:
+            continue
+        cands.append({"id": p.stem, "path": p, "dur": d})
+    if not cands:
+        return []
+
+    def score(c):
+        return (reuse.get(c["id"], 0) * 10
+                + (0 if themes.get(c["id"]) == theme else 3)
+                + (0 if c["dur"] >= dur else 2)
+                + (5 if c["id"] in recent else 0))
+
+    ranked = sorted(cands, key=lambda c: (score(c), c["id"]))
+    chosen, total = [], 0.0
+    for c in ranked:
+        chosen.append(c)
+        total = sum(x["dur"] for x in chosen) - FADE_SEC * (len(chosen) - 1)
+        if total >= dur or len(chosen) == MAX_REUSE_SHOTS:
+            break
+    if total < dur - 0.05:
+        raise RuntimeError(f"only {total:.1f}s of montages to reuse, need {dur}s")
+
+    args = []
+    for c in chosen:
+        args += ["-i", str(c["path"])]
+    if len(chosen) == 1:
+        fc = "[0:v]fps=30,format=yuv420p[v]"
+    else:
+        fc = ";".join(f"[{i}:v]fps=30,format=yuv420p,settb=AVTB[v{i}]" for i in range(len(chosen)))
+        prev, off = "[v0]", 0.0
+        for i in range(1, len(chosen)):
+            off += chosen[i - 1]["dur"] - FADE_SEC
+            nxt = "[v]" if i == len(chosen) - 1 else f"[x{i}]"
+            fc += f";{prev}[v{i}]xfade=transition=fade:duration={FADE_SEC}:offset={off:.3f}{nxt}"
+            prev = nxt
+    out.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", *args, "-filter_complex", fc,
+                    "-map", "[v]", "-an", "-t", str(dur), "-r", "30", "-c:v", "libx264",
+                    "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(out)],
+                   check=True)
+    got = probe_duration(out)
+    if got < dur - 0.2:
+        raise RuntimeError(f"reused footage is {got:.2f}s, need {dur}s")
+    for c in chosen:
+        reuse[c["id"]] = reuse.get(c["id"], 0) + 1
+    state["montage_reuse"] = reuse
+    return [c["id"] for c in chosen]
+
+
+def footage_warning(vid, used_ids, state):
+    """Record why this video's footage is a stand-in; raise the alert at most once
+    per FOOTAGE_ALERT_DAYS (a no-footage video always alerts). The workflow fails
+    AFTER the state commit when work/build_warnings.json says alert, so the run
+    still advances and GitHub emails the owner."""
+    from datetime import date
+    today = date.today()
+    last = state.get("footage_alert_last")
+    due = (not used_ids) or last is None or (today - date.fromisoformat(last)).days >= FOOTAGE_ALERT_DAYS
+    if used_ids:
+        msg = (f"{vid}: no pre-rendered montage in the cloud-assets release, so it reused "
+               f"{', '.join(used_ids)}. Build this batch's montages on the Mac "
+               f"(scripts/build_montages.py) and re-upload prerendered.tar.gz.")
+    else:
+        msg = (f"{vid}: no montage and none to reuse — rendered WITHOUT footage. "
+               f"Re-upload prerendered.tar.gz to the cloud-assets release.")
+    if due:
+        state["footage_alert_last"] = today.isoformat()
+    (ROOT / "work").mkdir(exist_ok=True)
+    (ROOT / "work" / "build_warnings.json").write_text(json.dumps(
+        {"warnings": [msg], "alert": due}, indent=2, ensure_ascii=False))
+    print(f"  ! {msg}" + ("" if due else " (alert already sent this week)"))
+
+
 def main():
     ayat = load(ROOT / "content" / "ayat.json", {"ayat": []})["ayat"]
     if not ayat:
         raise SystemExit("content/ayat.json is empty — run scripts/fetch_ayat.py first.")
     footage = load(ROOT / "content" / "footage.json", {"clips": []})["clips"]
     state = load(ROOT / "state" / "ayah.json", {"used": [], "used_clips": [], "last": None})
+    (ROOT / "work" / "build_warnings.json").unlink(missing_ok=True)  # only this run's warnings
 
     unused = [a for a in ayat if a["id"] not in set(state["used"])]
     if not unused:
@@ -205,27 +322,39 @@ def main():
         clip_rel = f"reflection/{vid}.mp4"
         print(f"  footage: prerendered montage {pre.name}")
     else:
+        out = ROOT / "public" / "reflection" / f"{vid}.mp4"
         clip = pick_clip(footage, ayah.get("theme"), set(state["used_clips"]))
-        if clip:
-            clip_abs = ROOT / "assets" / "footage" / clip["src"]
-            if clip_abs.exists():
-                out = ROOT / "public" / "reflection" / f"{vid}.mp4"
-                print(f"  footage {clip['src']}"
-                      + (f" (rotate {clip['rotate']})" if clip.get("rotate") else "")
-                      + f" -> {dur}s")
-                trim_clip(clip_abs, clip.get("start", 0), float(clip.get("dur", dur)), dur, out, clip.get("rotate"))
+        clip_abs = ROOT / "assets" / "footage" / clip["src"] if clip else None
+        if clip and clip_abs.exists():  # local run with the footage library
+            print(f"  footage {clip['src']}"
+                  + (f" (rotate {clip['rotate']})" if clip.get("rotate") else "")
+                  + f" -> {dur}s")
+            trim_clip(clip_abs, clip.get("start", 0), float(clip.get("dur", dur)), dur, out, clip.get("rotate"))
+            clip_rel = f"reflection/{vid}.mp4"
+        else:  # CI: no montage shipped for this ayah — reuse existing ones
+            clip = None
+            try:
+                reused = reuse_montage(vid, ayah.get("theme"), dur, ayat, state, out)
+            except Exception as e:  # noqa: BLE001 — never block the post over footage
+                print(f"  ! montage reuse failed: {e}")
+                reused = []
+            if reused:
                 clip_rel = f"reflection/{vid}.mp4"
+                state.setdefault("reused_footage", {})[vid] = reused
+                print(f"  footage: reused montage(s) {', '.join(reused)} -> {dur}s")
+            footage_warning(vid, reused, state)
 
+    lang = meta_lang(state)
     props = {"id": vid, "arabic": ayah["arabic"], "translation": ayah["translation"],
              "reference": ayah["reference"], "clipFile": clip_rel,
-             "audioFile": f"recitation/{vid}.mp3", "durationSec": dur}
+             "audioFile": f"recitation/{vid}.mp3", "durationSec": dur,
+             "lang": lang}  # picks the on-screen CTA language
     segments = make_segments(ayah)
     if segments:
         props["segments"] = segments
         print(f"  {len(segments)} per-ayah segments (long passage — one ayah at a time)")
     (ROOT / "src" / "ayahData.json").write_text(json.dumps(props, indent=2, ensure_ascii=False))
 
-    lang = meta_lang(state)
     meta = {**build_meta(ayah, vid, lang), "meta_lang": lang,
             "video": f"output/videos/{vid}.mp4"}
     print(f"  metadata language: {lang}  title: {meta['title']}")
@@ -256,7 +385,7 @@ def main():
 
     print(f"Ayah video ready: id={vid}  {ayah['reference']}  ({dur}s, audio baked)")
     print(f"  {ayah['translation']}")
-    print(f"  clip: {clip_rel or '(quote over themed background)'}")
+    print(f"  clip: {clip_rel or '(NO FOOTAGE — text over the plain background)'}")
     print(f"  render: npx remotion render AyahVideo --props=src/ayahData.json --output=output/videos/{vid}.mp4")
 
 

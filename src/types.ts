@@ -46,4 +46,7 @@ export type AyahData = {
   // Long passages (e.g. a full surah): show one ayah at a time, synced to the
   // recitation. When absent, the whole text is shown statically (short passages).
   segments?: AyahSegment[];
+  // Metadata language of this upload ("ar" default since 2026-10-28); sets the
+  // language of the on-screen share CTA. Absent = English (older props).
+  lang?: "ar" | "en";
 };

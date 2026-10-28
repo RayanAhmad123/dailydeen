@@ -3,7 +3,7 @@
 
 Reads content/montages.json (hand-planned shot lists over content/footage.json
 clips) and renders assets/prerendered/<id>.mp4 — 1080x1920 cover-crop, 30fps,
-muted, 1s crossfades, sized to the ayah's recitation length + 1.2s tail (same
+muted, 1s crossfades, sized to the ayah's recitation length + TAIL_SEC (same
 math as build_ayah.py). Frame-review the outputs, then upload them (plus the
 recitations) to the `cloud-assets` GitHub release:
 
@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TAIL_SEC = 1.2   # keep in sync with build_ayah.py
+TAIL_SEC = 0.4   # keep in sync with build_ayah.py (was 1.2 until 2026-10-28)
 FADE = 1.0
 COVER = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1"
 ROTATE = {"cw": "transpose=1", "ccw": "transpose=2", "180": "transpose=2,transpose=2"}
