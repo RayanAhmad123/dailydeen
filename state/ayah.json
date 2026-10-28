@@ -114,7 +114,8 @@
     "ay_needallah",
     "ay_ala",
     "ay_sulayman",
-    "ay_purify"
+    "ay_purify",
+    "ay_adiyat"
   ],
   "used_clips": [
     "f11",
@@ -140,9 +141,10 @@
     "f21",
     "f22",
     "f23",
-    "f24"
+    "f24",
+    "f25"
   ],
-  "last": "ay_purify",
+  "last": "ay_adiyat",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -187,6 +189,7 @@
     "ay_needallah": "en",
     "ay_ala": "ar",
     "ay_sulayman": "en",
-    "ay_purify": "ar"
+    "ay_purify": "ar",
+    "ay_adiyat": "en"
   }
 }
