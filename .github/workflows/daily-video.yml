@@ -110,8 +110,9 @@ jobs:
           ls assets/recitations assets/prerendered
 
       # Bank topped up in git but the tarball not re-uploaded yet: fetch just the
-      # next ayah's recitation (same source/concat as fetch_ayat.py). Without a
-      # prerendered montage the video renders without background footage.
+      # next ayah's recitation (same source/concat as fetch_ayat.py). Without its
+      # own prerendered montage, build_ayah.py re-cuts existing ones and the alert
+      # step below emails about it (weekly) until the release is re-uploaded.
       - name: Fetch a recitation missing from the release
         run: python3 scripts/ensure_recitations.py
 
@@ -140,6 +141,15 @@ jobs:
           POSTPEER_API_KEY: ${{ secrets.POSTPEER_API_KEY }}
         run: python3 scripts/upload_postpeer.py
 
+      # Public view counts (no login) -> state/views.json, committed with the state
+      # below. The OAuth analytics loop only runs on the Mac, so this is what keeps
+      # a readable record in the repo. Best-effort: it never fails the run.
+      - name: Track public view counts
+        if: ${{ !inputs.dry_run }}
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python3 scripts/public_stats.py
+
       - name: Commit state to main
         if: ${{ !inputs.dry_run }}
         run: |
@@ -161,20 +171,30 @@ jobs:
       # commit above still lands (a lost leg must not stall tomorrow's video).
       # This step turns those failures — plus problems its reconcile pass found
       # in earlier posts (a scheduled YouTube leg that died, an extra copy) —
-      # into a failed run, so GitHub emails the owner.
-      - name: Alert if a publish leg failed
+      # into a failed run, so GitHub emails the owner. It also raises
+      # build_ayah.py's footage warning (no montage shipped for today's ayah, so
+      # existing ones were re-cut, or none at all): at most once a week while the
+      # stand-in footage lasts, every time a video goes out with no footage.
+      - name: Alert if a publish leg failed or the footage is a stand-in
         if: ${{ !inputs.dry_run }}
         run: |
           python3 - <<'EOF'
-          import json, sys
+          import json, os, sys
           res = json.load(open("work/postpeer_result.json"))
           bad = [l for l in res.get("legs", []) if not l.get("success")]
           bad += res.get("problems", [])
           for b in bad:
               print(f"PUBLISH PROBLEM: {b}")
+          warn = (json.load(open("work/build_warnings.json"))
+                  if os.path.exists("work/build_warnings.json") else {})
+          for w in warn.get("warnings", []):
+              print(f"::warning::FOOTAGE: {w}")
+          if warn.get("alert"):
+              bad += warn["warnings"]
           if bad:
-              sys.exit(f"{len(bad)} publish problem(s) — see above. State already "
-                       "advanced; fix per scripts/upload_postpeer.py docstring.")
+              sys.exit(f"{len(bad)} problem(s) — see above. State already "
+                       "advanced; publish fixes per scripts/upload_postpeer.py docstring, "
+                       "footage per scripts/build_montages.py.")
           print("all publish legs OK")
           EOF
 
