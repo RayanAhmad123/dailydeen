@@ -1,77 +1,10 @@
 {
-  "id": "ay_adiyat",
-  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَٰدِيَٰتِ ضَبْحًۭا فَٱلْمُورِيَٰتِ قَدْحًۭا فَٱلْمُغِيرَٰتِ صُبْحًۭا فَأَثَرْنَ بِهِۦ نَقْعًۭا فَوَسَطْنَ بِهِۦ جَمْعًا إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌۭ وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌۭ وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ ۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ وَحُصِّلَ مَا فِى ٱلصُّدُورِ إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ",
-  "translation": "By the racers, panting, And the producers of sparks when striking And the chargers at dawn, Stirring up thereby clouds of dust, Arriving thereby in the center collectively, Indeed mankind, to his Lord, is ungrateful. And indeed, he is to that a witness. And indeed he is, in love of wealth, intense. But does he not know that when the contents of the graves are scattered And that within the breasts is obtained, Indeed, their Lord with them, that Day, is fully Acquainted.",
-  "reference": "Quran 100:1-11",
-  "clipFile": null,
-  "audioFile": "recitation/ay_adiyat.mp3",
-  "durationSec": 49.29,
-  "segments": [
-    {
-      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَٰدِيَٰتِ ضَبْحًۭا",
-      "translation": "By the racers, panting,",
-      "startSec": 0.0,
-      "endSec": 2.86
-    },
-    {
-      "arabic": "فَٱلْمُورِيَٰتِ قَدْحًۭا",
-      "translation": "And the producers of sparks when striking",
-      "startSec": 2.86,
-      "endSec": 5.48
-    },
-    {
-      "arabic": "فَٱلْمُغِيرَٰتِ صُبْحًۭا",
-      "translation": "And the chargers at dawn,",
-      "startSec": 5.48,
-      "endSec": 8.23
-    },
-    {
-      "arabic": "فَأَثَرْنَ بِهِۦ نَقْعًۭا",
-      "translation": "Stirring up thereby clouds of dust,",
-      "startSec": 8.23,
-      "endSec": 10.98
-    },
-    {
-      "arabic": "فَوَسَطْنَ بِهِۦ جَمْعًا",
-      "translation": "Arriving thereby in the center collectively,",
-      "startSec": 10.98,
-      "endSec": 13.6
-    },
-    {
-      "arabic": "إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌۭ",
-      "translation": "Indeed mankind, to his Lord, is ungrateful.",
-      "startSec": 13.6,
-      "endSec": 19.85
-    },
-    {
-      "arabic": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌۭ",
-      "translation": "And indeed, he is to that a witness.",
-      "startSec": 19.85,
-      "endSec": 24.25
-    },
-    {
-      "arabic": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
-      "translation": "And indeed he is, in love of wealth, intense.",
-      "startSec": 24.25,
-      "endSec": 29.27
-    },
-    {
-      "arabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
-      "translation": "But does he not know that when the contents of the graves are scattered",
-      "startSec": 29.27,
-      "endSec": 35.15
-    },
-    {
-      "arabic": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
-      "translation": "And that within the breasts is obtained,",
-      "startSec": 35.15,
-      "endSec": 39.24
-    },
-    {
-      "arabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ",
-      "translation": "Indeed, their Lord with them, that Day, is fully Acquainted.",
-      "startSec": 39.24,
-      "endSec": 48.18
-    }
-  ]
+  "id": "ay_easeway",
+  "arabic": "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ وَصَدَّقَ بِٱلْحُسْنَىٰ فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ",
+  "translation": "As for he who gives and fears Allah And believes in the best reward, We will ease him toward ease.",
+  "reference": "Quran 92:5-7",
+  "clipFile": "reflection/ay_easeway.mp4",
+  "audioFile": "recitation/ay_easeway.mp3",
+  "durationSec": 8.94,
+  "lang": "ar"
 }
