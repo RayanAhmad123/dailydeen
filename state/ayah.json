@@ -116,7 +116,8 @@
     "ay_sulayman",
     "ay_purify",
     "ay_adiyat",
-    "ay_easeway"
+    "ay_easeway",
+    "ay_ink"
   ],
   "used_clips": [
     "f11",
@@ -145,7 +146,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_easeway",
+  "last": "ay_ink",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -192,14 +193,19 @@
     "ay_sulayman": "en",
     "ay_purify": "ar",
     "ay_adiyat": "en",
-    "ay_easeway": "ar"
+    "ay_easeway": "ar",
+    "ay_ink": "ar"
   },
   "montage_reuse": {
-    "ay_ayyub": 1
+    "ay_ayyub": 1,
+    "ay_be": 1
   },
   "reused_footage": {
     "ay_easeway": [
       "ay_ayyub"
+    ],
+    "ay_ink": [
+      "ay_be"
     ]
   },
   "footage_alert_last": "2026-10-29"
