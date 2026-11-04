@@ -91,7 +91,10 @@ def meta_lang(state):
 
 def arabic_ref(ayah):
     """'سورة الأنبياء: 87' from the bank's surahArabic + reference."""
-    surah = strip_tashkeel(ayah.get("surahArabic") or "").replace("سورة", "").strip()
+    # The API spells آ as ا + madda (U+0653), which strip_tashkeel would drop
+    # ("ال عمران"), and pads some names with a tatweel ("المائـدة").
+    name = (ayah.get("surahArabic") or "").replace("\u0627\u0653", "\u0622").replace("\u0640", "")
+    surah = strip_tashkeel(name).replace("سورة", "").strip()
     surah = f"سورة {surah}" if surah else ""
     nums = ayah["reference"].split(":", 1)[1] if ":" in ayah["reference"] else ""
     return f"{surah}: {nums}".strip(": ")
@@ -99,7 +102,7 @@ def arabic_ref(ayah):
 
 def arabic_title(ayah):
     """﴿first words of the ayah﴾ | سورة X: N — trimmed to the YouTube limit."""
-    words = ayah["arabic"].split()
+    words = [w for w in ayah["arabic"].split() if w != "\u06de"]  # ۞ section mark: text only
     if strip_tashkeel(words[0]) == "بسم" and len(words) > BASMALA_WORDS + 2:
         words = words[BASMALA_WORDS:]  # title = the ayah itself, not the basmala
     ref = arabic_ref(ayah)
