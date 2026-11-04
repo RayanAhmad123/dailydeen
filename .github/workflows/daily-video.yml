@@ -201,40 +201,25 @@ jobs:
       # PostPeer's backend can double-publish a single post request (seen
       # 2026-07-19: one API call, two YouTube uploads 6s apart — likely their
       # internal retry on a slow upload). We can't prevent or delete it without
-      # YouTube write credentials, but the channel's public RSS feed exposes it:
-      # fail the run (-> GitHub email) so the owner deletes the extra in Studio.
-      # Runs AFTER the state commit on purpose: a duplicate must not stop
-      # tomorrow's run from advancing to the next ayah.
-      # NB: the YouTube leg is normally a PostPeer-scheduled post (~07:10 UTC),
-      # so at this point today's title appears 0x in the feed — this check only
-      # fires on >1. Double-publish of the scheduled leg is caught a day later
-      # by upload_postpeer.py's reconcile pass (48h window).
-      # A feed fetch that errors is NOT a duplicate: YouTube 404s this URL for
-      # datacenter IPs intermittently (every run 09-01..09-02 while the TikTok
-      # leg was the real problem). Failing on it would bury the alert above in
-      # daily red runs, so an unreachable feed only warns.
-      - name: Alert if the platform double-published today's video
-        if: ${{ !inputs.dry_run }}
+      # YouTube write credentials, so the run fails (-> GitHub email) and the
+      # owner deletes the extra in Studio. Copies PostPeer itself records are
+      # caught by upload_postpeer.py's reconcile pass; copies it doesn't are
+      # caught by public_stats.py, which compares the newest Shorts on the
+      # channel tab by title on the NEXT day's run (the YouTube leg publishes
+      # ~08:10 UTC, hours after this job, and the RSS feed this step used to
+      # read 404s for runner IPs most days, so the old same-run check never
+      # saw anything). Each duplicate is reported once. Runs AFTER the state
+      # commit on purpose: a duplicate must not stop tomorrow's run.
+      - name: Alert if the platform double-published a video
+        if: ${{ !cancelled() && !inputs.dry_run }}
         run: |
-          sleep 120   # give the RSS feed a moment to include the new upload
           python3 - <<'EOF'
-          import html, json, re, sys, urllib.request
-          vid = json.load(open("work/script.json"))["id"]
-          title = json.load(open(f"output/videos/{vid}.meta.json"))["title"]
-          try:
-              feed = urllib.request.urlopen(
-                  "https://www.youtube.com/feeds/videos.xml?channel_id=UCU1KnLLtieO2pooAGFiI4Ww",
-                  timeout=30).read().decode()
-          except Exception as e:
-              print(f"WARNING: could not read the channel feed ({e}) — "
-                    f"skipping the duplicate check for this run")
-              sys.exit(0)
-          titles = [html.unescape(t) for t in re.findall(r"<title>([^<]*)</title>", feed)]
-          n = titles.count(title)
-          print(f"'{title}' appears {n}x in the channel feed")
-          if n > 1:
-              sys.exit(f"DUPLICATE UPLOAD: PostPeer double-published '{title}' "
-                       f"({n} copies). Delete the extra copy in YouTube Studio "
-                       f"(keep the id registered in state/uploads.json) and check "
-                       f"TikTok for a duplicate too.")
+          import json, os, sys
+          p = "work/stats_alerts.json"
+          alerts = json.load(open(p)).get("alerts", []) if os.path.exists(p) else []
+          for a in alerts:
+              print(a)
+          if alerts:
+              sys.exit(f"{len(alerts)} duplicate upload(s) — see above.")
+          print("no duplicate uploads on the channel")
           EOF
