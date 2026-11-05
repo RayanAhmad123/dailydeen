@@ -122,7 +122,8 @@
     "ay_laboring",
     "ay_luqman",
     "ay_comfort",
-    "ay_knows"
+    "ay_knows",
+    "ay_anxious"
   ],
   "used_clips": [
     "f11",
@@ -151,7 +152,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_knows",
+  "last": "ay_anxious",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -204,7 +205,8 @@
     "ay_laboring": "ar",
     "ay_luqman": "ar",
     "ay_comfort": "ar",
-    "ay_knows": "ar"
+    "ay_knows": "ar",
+    "ay_anxious": "ar"
   },
   "montage_reuse": {
     "ay_ayyub": 1,
@@ -214,7 +216,8 @@
     "ay_why": 1,
     "ay_cave": 1,
     "ay_healing": 1,
-    "ay_fil": 1
+    "ay_fil": 1,
+    "ay_taste": 1
   },
   "reused_footage": {
     "ay_easeway": [
@@ -238,7 +241,10 @@
     ],
     "ay_knows": [
       "ay_fil"
+    ],
+    "ay_anxious": [
+      "ay_taste"
     ]
   },
-  "footage_alert_last": "2026-10-29"
+  "footage_alert_last": "2026-11-05"
 }
