@@ -130,7 +130,8 @@
     "ay_love",
     "ay_entrance",
     "ay_turnaway",
-    "ay_accept"
+    "ay_accept",
+    "ay_forgivemercy"
   ],
   "used_clips": [
     "f11",
@@ -159,7 +160,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_accept",
+  "last": "ay_forgivemercy",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -220,7 +221,8 @@
     "ay_love": "ar",
     "ay_entrance": "ar",
     "ay_turnaway": "ar",
-    "ay_accept": "ar"
+    "ay_accept": "ar",
+    "ay_forgivemercy": "ar"
   },
   "montage_reuse": {
     "ay_ayyub": 1,
@@ -240,7 +242,8 @@
     "ay_alaq": 1,
     "ay_cure": 1,
     "ay_bounty": 1,
-    "ay_found": 1
+    "ay_found": 1,
+    "ay_forgiver": 1
   },
   "reused_footage": {
     "ay_easeway": [
@@ -290,6 +293,9 @@
     ],
     "ay_accept": [
       "ay_found"
+    ],
+    "ay_forgivemercy": [
+      "ay_forgiver"
     ]
   },
   "footage_alert_last": "2026-11-12"
