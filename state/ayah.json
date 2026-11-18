@@ -135,7 +135,8 @@
     "ay_lighten",
     "ay_seekhelp",
     "ay_fromallah",
-    "ay_musamother"
+    "ay_musamother",
+    "ay_misdeeds"
   ],
   "used_clips": [
     "f11",
@@ -164,7 +165,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_musamother",
+  "last": "ay_misdeeds",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -230,7 +231,8 @@
     "ay_lighten": "ar",
     "ay_seekhelp": "ar",
     "ay_fromallah": "ar",
-    "ay_musamother": "ar"
+    "ay_musamother": "ar",
+    "ay_misdeeds": "ar"
   },
   "montage_reuse": {
     "ay_ayyub": 1,
@@ -257,7 +259,8 @@
     "ay_hashr": 1,
     "ay_nasr": 1,
     "ay_decree": 1,
-    "ay_heart": 1
+    "ay_heart": 1,
+    "ay_yunus": 1
   },
   "reused_footage": {
     "ay_easeway": [
@@ -324,6 +327,9 @@
     "ay_musamother": [
       "ay_decree",
       "ay_heart"
+    ],
+    "ay_misdeeds": [
+      "ay_yunus"
     ]
   },
   "footage_alert_last": "2026-11-12"
