@@ -139,7 +139,8 @@
     "ay_misdeeds",
     "ay_example",
     "ay_jumuah",
-    "ay_despair"
+    "ay_despair",
+    "ay_lasting"
   ],
   "used_clips": [
     "f11",
@@ -168,7 +169,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_despair",
+  "last": "ay_lasting",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -238,7 +239,8 @@
     "ay_misdeeds": "ar",
     "ay_example": "ar",
     "ay_jumuah": "ar",
-    "ay_despair": "ar"
+    "ay_despair": "ar",
+    "ay_lasting": "ar"
   },
   "montage_reuse": {
     "ay_ayyub": 1,
@@ -269,7 +271,8 @@
     "ay_yunus": 1,
     "ay_kafirun": 1,
     "ay_owner": 1,
-    "ay_relief": 1
+    "ay_relief": 1,
+    "ay_play": 1
   },
   "reused_footage": {
     "ay_easeway": [
@@ -348,6 +351,9 @@
     ],
     "ay_despair": [
       "ay_relief"
+    ],
+    "ay_lasting": [
+      "ay_play"
     ]
   },
   "footage_alert_last": "2026-11-19"
