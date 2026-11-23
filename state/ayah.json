@@ -140,7 +140,8 @@
     "ay_example",
     "ay_jumuah",
     "ay_despair",
-    "ay_lasting"
+    "ay_lasting",
+    "ay_hidden"
   ],
   "used_clips": [
     "f11",
@@ -169,7 +170,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_lasting",
+  "last": "ay_hidden",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -240,7 +241,8 @@
     "ay_example": "ar",
     "ay_jumuah": "ar",
     "ay_despair": "ar",
-    "ay_lasting": "ar"
+    "ay_lasting": "ar",
+    "ay_hidden": "ar"
   },
   "montage_reuse": {
     "ay_ayyub": 1,
@@ -272,7 +274,11 @@
     "ay_kafirun": 1,
     "ay_owner": 1,
     "ay_relief": 1,
-    "ay_play": 1
+    "ay_play": 1,
+    "ay_guardian": 1,
+    "ay_iam": 1,
+    "ay_musa": 1,
+    "ay_need": 1
   },
   "reused_footage": {
     "ay_easeway": [
@@ -354,6 +360,12 @@
     ],
     "ay_lasting": [
       "ay_play"
+    ],
+    "ay_hidden": [
+      "ay_guardian",
+      "ay_iam",
+      "ay_musa",
+      "ay_need"
     ]
   },
   "footage_alert_last": "2026-11-19"
