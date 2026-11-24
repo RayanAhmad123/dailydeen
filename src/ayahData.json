@@ -1,24 +1,10 @@
 {
-  "id": "ay_hidden",
-  "arabic": "تَتَجَافَىٰ جُنُوبُهُمْ عَنِ ٱلْمَضَاجِعِ يَدْعُونَ رَبَّهُمْ خَوْفًۭا وَطَمَعًۭا وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ فَلَا تَعْلَمُ نَفْسٌۭ مَّآ أُخْفِىَ لَهُم مِّن قُرَّةِ أَعْيُنٍۢ جَزَآءًۢ بِمَا كَانُوا۟ يَعْمَلُونَ",
-  "translation": "They arise from their beds; they supplicate their Lord in fear and aspiration, and from what We have provided them, they spend. And no soul knows what has been hidden for them of comfort for eyes as reward for what they used to do.",
-  "reference": "Quran 32:16-17",
-  "clipFile": "reflection/ay_hidden.mp4",
-  "audioFile": "recitation/ay_hidden.mp3",
-  "durationSec": 45.62,
-  "lang": "ar",
-  "segments": [
-    {
-      "arabic": "تَتَجَافَىٰ جُنُوبُهُمْ عَنِ ٱلْمَضَاجِعِ يَدْعُونَ رَبَّهُمْ خَوْفًۭا وَطَمَعًۭا وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ",
-      "translation": "They arise from their beds; they supplicate their Lord in fear and aspiration, and from what We have provided them, they spend.",
-      "startSec": 0.0,
-      "endSec": 18.69
-    },
-    {
-      "arabic": "فَلَا تَعْلَمُ نَفْسٌۭ مَّآ أُخْفِىَ لَهُم مِّن قُرَّةِ أَعْيُنٍۢ جَزَآءًۢ بِمَا كَانُوا۟ يَعْمَلُونَ",
-      "translation": "And no soul knows what has been hidden for them of comfort for eyes as reward for what they used to do.",
-      "startSec": 18.69,
-      "endSec": 45.23
-    }
-  ]
+  "id": "ay_subtle",
+  "arabic": "ٱللَّهُ لَطِيفٌۢ بِعِبَادِهِۦ يَرْزُقُ مَن يَشَآءُ ۖ وَهُوَ ٱلْقَوِىُّ ٱلْعَزِيزُ",
+  "translation": "Allah is Subtle with His servants; He gives provisions to whom He wills. And He is the Powerful, the Exalted in Might.",
+  "reference": "Quran 42:19",
+  "clipFile": "reflection/ay_subtle.mp4",
+  "audioFile": "recitation/ay_subtle.mp3",
+  "durationSec": 13.5,
+  "lang": "ar"
 }
