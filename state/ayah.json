@@ -144,7 +144,8 @@
     "ay_hidden",
     "ay_subtle",
     "ay_brotherhood",
-    "ay_wisdom"
+    "ay_wisdom",
+    "ay_whoforgives"
   ],
   "used_clips": [
     "f11",
@@ -173,7 +174,7 @@
     "f24",
     "f25"
   ],
-  "last": "ay_wisdom",
+  "last": "ay_whoforgives",
   "meta_lang": {
     "ay_kafirun": "en",
     "ay_nasr": "ar",
@@ -248,7 +249,8 @@
     "ay_hidden": "ar",
     "ay_subtle": "ar",
     "ay_brotherhood": "ar",
-    "ay_wisdom": "ar"
+    "ay_wisdom": "ar",
+    "ay_whoforgives": "ar"
   },
   "montage_reuse": {
     "ay_ayyub": 1,
@@ -287,7 +289,11 @@
     "ay_need": 1,
     "ay_nofear": 1,
     "ay_respond": 1,
-    "ay_tidings": 1
+    "ay_tidings": 1,
+    "ay_servants": 1,
+    "ay_wadud": 1,
+    "ay_neglected": 1,
+    "ay_perish": 1
   },
   "reused_footage": {
     "ay_easeway": [
@@ -384,6 +390,12 @@
     ],
     "ay_wisdom": [
       "ay_tidings"
+    ],
+    "ay_whoforgives": [
+      "ay_servants",
+      "ay_wadud",
+      "ay_neglected",
+      "ay_perish"
     ]
   },
   "footage_alert_last": "2026-11-26"
